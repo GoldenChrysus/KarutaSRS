@@ -1,10 +1,10 @@
-# PostgreSQL. Versions 9.3 and up are supported.
+# PostgreSQL. Versions 9.1 and up are supported.
 #
 # Install the pg driver:
 #   gem install pg
-# On macOS with Homebrew:
+# On OS X with Homebrew:
 #   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
-# On macOS with MacPorts:
+# On OS X with MacPorts:
 #   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
 # On Windows:
 #   gem install pg
@@ -17,19 +17,22 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: localhost
   # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: karutasrs_api_development
+  database: <%= ENV.fetch("db_database") %>
+  username: <%= ENV.fetch("db_username") %>
+  password: <%= ENV.fetch("db_password") %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: karutasrs_api
+  #username: core
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,14 +60,16 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: karutasrs_api_test
+  database: <%= ENV.fetch("db_database") %>
+  username: <%= ENV.fetch("db_username") %>
+  password: <%= ENV.fetch("db_password") %>
 
-# As with config/credentials.yml, you never want to store sensitive information,
+# As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
 #
 # Instead, provide the password as a unix environment variable when you boot
-# the app. Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
+# the app. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full rundown on how to provide these environment variables in a
 # production deployment.
 #
@@ -80,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: karutasrs_api_production
-  username: karutasrs_api
-  password: <%= ENV['KARUTASRS_API_DATABASE_PASSWORD'] %>
+  database: <%= ENV.fetch("db_database") %>
+  username: <%= ENV.fetch("db_username") %>
+  password: <%= ENV.fetch("db_password") %>
