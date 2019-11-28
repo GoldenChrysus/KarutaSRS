@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 poems = Poem.create([
 	{
+		id: 17,
 		name: "17",
 		first_verse: "First V",
 		second_verse: "Second V"
@@ -17,14 +18,3 @@ poems = Poem.create([
 		second_verse: "Second V"
 	}
 ]);
-users = User.create([
-	{
-		email: "test@test.com",
-		password: "12345"
-	}
-]);
-
-LearnedItem.create({
-	user: users.first,
-	poem: poems.first
-});
