@@ -5,3 +5,26 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+poems = Poem.create([
+	{
+		name: "17",
+		first_verse: "First V",
+		second_verse: "Second V"
+	},
+	{
+		name: "18",
+		first_verse: "First V",
+		second_verse: "Second V"
+	}
+]);
+users = User.create([
+	{
+		email: "test@test.com",
+		password: "12345"
+	}
+]);
+
+LearnedItem.create({
+	user: users.first,
+	poem: poems.first
+});
