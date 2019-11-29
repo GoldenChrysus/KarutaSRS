@@ -9,49 +9,49 @@ poems = Poem.create([
 	{
 		id: "1",
 		name: "Tenchi Tenno",
-		first_verse: "あきのたのかりほのいおのとまおあらみ",
-		second_verse_raw: "わがころもでわつゆにぬれつつ",
-		second_verse_card: "わかころもてわつゆにぬれつつ",
+		first_verse: "あきのたのかりほのいほのとまをあらみ",
+		second_verse_raw: "わがころもではつゆにぬれつつ",
+		second_verse_card: "わかころもてはつゆにぬれつつ",
 		kimariji: "あきの"
 	},
 	{
 		id: "2",
 		name: "Jito Tenno",
-		first_verse: "はるすぎてなつきにけらししろたえの",
-		second_verse_raw: "ころもほすちょあまのかぐやま",
-		second_verse_card: "ころもほすちょあまのかくやま",
+		first_verse: "はるすぎてなつきにけらししろたへの",
+		second_verse_raw: "ころもほすてふあまのかぐやま",
+		second_verse_card: "ころもほすてふあまのかくやま",
 		kimariji: "はるす"
 	},
 	{
 		id: "3",
 		name: "Kakinomoto no Hitomaro",
-		first_verse: "あしびきのやまどりのおのしだりおの",
-		second_verse_raw: "ながながしよおひとりかもねん",
-		second_verse_card: "なかなかしよおひとりかもねん",
+		first_verse: "あしびきのやまどりのをのしだりをの",
+		second_verse_raw: "ながながしよをひとりかもねむ",
+		second_verse_card: "なかなかしよをひとりかもねむ",
 		kimariji: "あし"
 	},
 	{
 		id: "4",
 		name: "Yamabe no Akahito",
-		first_verse: "たごのうらにうちいでてみればしろたえの",
-		second_verse_raw: "ふじのたかねにゆきわふりつつ",
-		second_verse_card: "ふしのたかねにゆきわふりつつ",
+		first_verse: "たごのうらにうちいでてみればしろたへの",
+		second_verse_raw: "ふじのたかねにゆきはふりつつ",
+		second_verse_card: "ふしのたかねにゆきはふりつつ",
 		kimariji: "たご"
 	},
 	{
 		id: "5",
 		name: "Sarumaru Dayu",
-		first_verse: "おくやまにもみじふみわけなくしかの",
-		second_verse_raw: "こえきくときぞあきわかなしき",
-		second_verse_card: "こえきくときそあきわかなしき",
+		first_verse: "おくやまにもみぢふみわけなくしかの",
+		second_verse_raw: "こゑきくときぞあきはかなしき",
+		second_verse_card: "こゑきくときそあきはかなしき",
 		kimariji: "おく"
 	},
 	{
 		id: "6",
 		name: "Chunagon Yakamochi",
 		first_verse: "かささぎのわたせるはしにおくしもの",
-		second_verse_raw: "しろきおみればよぞふけにける",
-		second_verse_card: "しろきおみれはよそふけにける",
+		second_verse_raw: "しろきをみればよぞふけにける",
+		second_verse_card: "しろきをみれはよそふけにける",
 		kimariji: "かさ"
 	},
 	{
@@ -65,15 +65,15 @@ poems = Poem.create([
 	{
 		id: "8",
 		name: "Kisen Hoshi ",
-		first_verse: "わがいおわみやこのたつみしかぞすむ",
-		second_verse_raw: "よおうじやまとひとわいうなり",
-		second_verse_card: "よおうしやまとひとわいうなり",
+		first_verse: "わがいほはみやこのたつみしかぞすむ",
+		second_verse_raw: "よをうぢやまとひとはいふなり",
+		second_verse_card: "よをうちやまとひとはいふなり",
 		kimariji: "わがい"
 	},
 	{
 		id: "9",
 		name: "Ono no Komachi",
-		first_verse: "はなのいろわうつりにけりないたずらに",
+		first_verse: "はなのいろはうつりにけりないたづらに",
 		second_verse_raw: "わがみよにふるながめせしまに",
 		second_verse_card: "わかみよにふるなかめせしまに",
 		kimariji: "はなの"
@@ -81,39 +81,39 @@ poems = Poem.create([
 	{
 		id: "10",
 		name: "Semimaru",
-		first_verse: "これやこのゆくもかえるもわかれてわ",
-		second_verse_raw: "しるもしらぬもおさかのせき",
-		second_verse_card: "しるもしらぬもおさかのせき",
+		first_verse: "これやこのゆくもかへるもわかれては",
+		second_verse_raw: "しるもしらぬもあふさかのせき",
+		second_verse_card: "しるもしらぬもあふさかのせき",
 		kimariji: "これ"
 	},
 	{
 		id: "11",
 		name: "Sangi Takamura",
 		first_verse: "わたのはらやそしまかけてこぎいでぬと",
-		second_verse_raw: "ひとにわつげよあまのつりぶね",
-		second_verse_card: "ひとにわつけよあまのつりふね",
+		second_verse_raw: "ひとにはつげよあまのつりぶね",
+		second_verse_card: "ひとにはつけよあまのつりふね",
 		kimariji: "わたのはらや"
 	},
 	{
 		id: "12",
 		name: "Sojo Henjo",
-		first_verse: "あまつかぜくものかよいじふきとじよ",
-		second_verse_raw: "おとめのすがたしばしとどめん",
-		second_verse_card: "おとめのすかたしはしととめん",
+		first_verse: "あまつかぜくものかよひぢふきとぢよ",
+		second_verse_raw: "をとめのすがたしばしとどめむ",
+		second_verse_card: "をとめのすかたしはしととめむ",
 		kimariji: "あまつ"
 	},
 	{
 		id: "13",
 		name: "Yozei In ",
-		first_verse: "つくばねのみねよりおつるみなのがわ",
-		second_verse_raw: "こいぞつもりてふちとなりぬる",
-		second_verse_card: "こいそつもりてふちとなりぬる",
+		first_verse: "つくばねのみねよりおつるみなのがは",
+		second_verse_raw: "こひぞつもりてふちとなりぬる",
+		second_verse_card: "こひそつもりてふちとなりぬる",
 		kimariji: "つく"
 	},
 	{
 		id: "14",
 		name: "Kawara no Sadaijin",
-		first_verse: "みちのくのしのぶもじずりたれゆえに",
+		first_verse: "みちのくのしのぶもぢずりたれゆゑに",
 		second_verse_raw: "みだれそめにしわれならなくに",
 		second_verse_card: "みたれそめにしわれならなくに",
 		kimariji: "みち"
@@ -122,86 +122,86 @@ poems = Poem.create([
 		id: "15",
 		name: "Koko Tenno",
 		first_verse: "きみがためはるののにいでてわかなつむ",
-		second_verse_raw: "わがころもでにゆきわふりつつ",
-		second_verse_card: "わかころもてにゆきわふりつつ",
+		second_verse_raw: "わがころもでにゆきはふりつつ",
+		second_verse_card: "わかころもてにゆきはふりつつ",
 		kimariji: "きみがためは"
 	},
 	{
 		id: "16",
 		name: "Chunagon Yukihira",
-		first_verse: "たちわかれいなばのやまのみねにおる",
-		second_verse_raw: "まつとしきかばいまかえりこん",
-		second_verse_card: "まつとしきかはいまかえりこん",
+		first_verse: "たちわかれいなばのやまのみねにおふる",
+		second_verse_raw: "まつとしきかばいまかへりこむ",
+		second_verse_card: "まつとしきかはいまかへりこむ",
 		kimariji: "たち"
 	},
 	{
 		id: "17",
 		name: "Ariwara no Narihira Ason",
-		first_verse: "ちはやぶるかみよもきかずたつたがわ",
-		second_verse_raw: "からくれないにみずくくるとわ",
-		second_verse_card: "からくれないにみすくくるとわ",
+		first_verse: "ちはやぶるかみよもきかずたつたがは",
+		second_verse_raw: "からくれなゐにみづくくるとは",
+		second_verse_card: "からくれなゐにみつくくるとは",
 		kimariji: "ちは"
 	},
 	{
 		id: "18",
 		name: "Fujiwara no Toshiyuki Ason",
-		first_verse: "すみのえのきしによるなみよるさえや",
-		second_verse_raw: "ゆめのかよいじひとめよくらん",
-		second_verse_card: "ゆめのかよいしひとめよくらん",
+		first_verse: "すみのえのきしによるなみよるさへや",
+		second_verse_raw: "ゆめのかよひぢひとめよくらむ",
+		second_verse_card: "ゆめのかよひちひとめよくらむ",
 		kimariji: "す"
 	},
 	{
 		id: "19",
 		name: "Ise",
-		first_verse: "なにわがたみじかきあしのふしのまも",
-		second_verse_raw: "あわでこのよおすぐしてよとや",
-		second_verse_card: "あわてこのよおすくしてよとや",
-		kimariji: "なにわが"
+		first_verse: "なにはがたみじかきあしのふしのまも",
+		second_verse_raw: "あはでこのよをすぐしてよとや",
+		second_verse_card: "あはてこのよをすくしてよとや",
+		kimariji: "なにはが"
 	},
 	{
 		id: "20",
 		name: "Motoyoshi Shinno",
-		first_verse: "わびぬればいまはたおなじなにわなる",
-		second_verse_raw: "みおつくしてもあわんとぞおもう",
-		second_verse_card: "みおつくしてもあわんとそおもう",
+		first_verse: "わびぬればいまはたおなじなにはなる",
+		second_verse_raw: "みをつくしてもあはむとぞおもふ",
+		second_verse_card: "みをつくしてもあはむとそおもふ",
 		kimariji: "わび"
 	},
 	{
 		id: "21",
 		name: "Sosei Hoshi",
-		first_verse: "いまこんといいしばかりにながつきの",
-		second_verse_raw: "ありあけのつきおまちいでつるかな",
-		second_verse_card: "ありあけのつきおまちいてつるかな",
+		first_verse: "いまこむといひしばかりにながつきの",
+		second_verse_raw: "ありあけのつきをまちいでつるかな",
+		second_verse_card: "ありあけのつきをまちてつるかな",
 		kimariji: "いまこ"
 	},
 	{
 		id: "22",
 		name: "Fun'ya no Yasuhide",
-		first_verse: "ふくからにあきのくさきのしおるれば",
-		second_verse_raw: "むべやまかぜおあらしというらん",
-		second_verse_card: "むへやまかせおあらしというらん",
+		first_verse: "ふくからにあきのくさきのしをるれば",
+		second_verse_raw: "むべやまかぜをあらしといふらむ",
+		second_verse_card: "むへやまかせをあらしといふらむ",
 		kimariji: "ふ"
 	},
 	{
 		id: "23",
 		name: "Oe no Chisato",
-		first_verse: "つきみればちじにものこそかなしけれ",
-		second_verse_raw: "わがみひとつのあきにわあらねど",
-		second_verse_card: "わかみひとつのあきにわあらねと",
+		first_verse: "つきみればちぢにものこそかなしけれ",
+		second_verse_raw: "わがみひとつのあきにはあらねど",
+		second_verse_card: "わかみひとつのあきにはあらねと",
 		kimariji: "つき"
 	},
 	{
 		id: "24",
 		name: "Kan Ke",
-		first_verse: "このたびわぬさもとりあえずたむけやま",
-		second_verse_raw: "もみじのにしきかみのまにまに",
-		second_verse_card: "もみしのにしきかみのまにまに",
+		first_verse: "このたびはぬさもとりあへずたむけやま",
+		second_verse_raw: "もみぢのにしきかみのまにまに",
+		second_verse_card: "もみちのにしきかみのまにまに",
 		kimariji: "この"
 	},
 	{
 		id: "25",
 		name: "Sanjo Udaijin",
-		first_verse: "なにしおわばおさかやまのさねかずら",
+		first_verse: "なにしおはばあふさかやまのさねかづら",
 		second_verse_raw: "ひとにしられでくるよしもがな",
 		second_verse_card: "ひとにしられてくるよしもかな",
 		kimariji: "なにし"
@@ -209,41 +209,41 @@ poems = Poem.create([
 	{
 		id: "26",
 		name: "Teishin Ko",
-		first_verse: "おぐらやまみねのもみじばこころあらば",
-		second_verse_raw: "いまひとたびのみゆきまたなん",
-		second_verse_card: "いまひとたひのみゆきまたなん",
-		kimariji: "おぐ"
+		first_verse: "をぐらやまみねのもみぢばこころあらば",
+		second_verse_raw: "いまひとたびのみゆきまたなむ",
+		second_verse_card: "いまひとたひのみゆきまたなむ",
+		kimariji: "を"
 	},
 	{
 		id: "27",
 		name: "Chunagon Kanesuke",
-		first_verse: "みかのはらわきてながるるいずみがわ",
-		second_verse_raw: "いつみきとてかこいしかるらん",
-		second_verse_card: "いつみきとてかこいしかるらん",
+		first_verse: "みかのはらわきてながるるいづみがは",
+		second_verse_raw: "いつみきとてかこひしかるらむ",
+		second_verse_card: "いつみきとてかこひしかるらむ",
 		kimariji: "みかの"
 	},
 	{
 		id: "28",
 		name: "Minamoto no Muneyuki Ason",
-		first_verse: "やまざとわふゆぞさびしさまさりける",
-		second_verse_raw: "ひとめもくさもかれぬとおもえば",
-		second_verse_card: "ひとめもくさもかれぬとおもえは",
+		first_verse: "やまざとはふゆぞさびしさまさりける",
+		second_verse_raw: "ひとめもくさもかれぬとおもへば",
+		second_verse_card: "ひとめもくさもかれぬとおもへは",
 		kimariji: "やまざ"
 	},
 	{
 		id: "29",
 		name: "Oshikochi no Mitsune",
-		first_verse: "こころあてにおらばやおらんはつしもの",
-		second_verse_raw: "おきまどわせるしらぎくのはな",
-		second_verse_card: "おきまとわせるしらきくのはな",
+		first_verse: "こころあてにをらばやをらむはつしもの",
+		second_verse_raw: "おきまどはせるしらぎくのはな",
+		second_verse_card: "おきまとはせるしらきくのはな",
 		kimariji: "こころあ"
 	},
 	{
 		id: "30",
 		name: "Mibu no Tadamine",
 		first_verse: "ありあけのつれなくみえしわかれより",
-		second_verse_raw: "あかつきばかりうきものわなし",
-		second_verse_card: "あかつきはかりうきものわなし",
+		second_verse_raw: "あかつきばかりうきものはなし",
+		second_verse_card: "あかつきはかりうきものはなし",
 		kimariji: "ありあ"
 	},
 	{
@@ -257,23 +257,23 @@ poems = Poem.create([
 	{
 		id: "32",
 		name: "Harumichi no Tsuraki",
-		first_verse: "やまかわにかぜのかけたるしがらみわ",
-		second_verse_raw: "ながれもあえぬもみじなりけり",
-		second_verse_card: "なかれもあえぬもみしなりけり",
-		kimariji: "やまか"
+		first_verse: "やまがはにかぜのかけたるしがらみは",
+		second_verse_raw: "ながれもあへぬもみぢなりけり",
+		second_verse_card: "なかれもあへぬもみちなりけり",
+		kimariji: "やまが"
 	},
 	{
 		id: "33",
 		name: "Ki no Tomonori",
 		first_verse: "ひさかたのひかりのどけきはるのひに",
-		second_verse_raw: "しずごころなくはなのちるらん",
-		second_verse_card: "しすこころなくはなのちるらん",
+		second_verse_raw: "しづごころなくはなのちるらむ",
+		second_verse_card: "しつこころなくはなのちるらむ",
 		kimariji: "ひさ"
 	},
 	{
 		id: "34",
 		name: "Fujiwara no Okikaze",
-		first_verse: "たれおかもしるひとにせんたかさごの",
+		first_verse: "たれをかもしるひとにせむたかさごの",
 		second_verse_raw: "まつもむかしのともならなくに",
 		second_verse_card: "まつもむかしのともならなくに",
 		kimariji: "たれ"
@@ -281,23 +281,23 @@ poems = Poem.create([
 	{
 		id: "35",
 		name: "Ki no Tsurayuki",
-		first_verse: "ひとわいさこころもしらずふるさとわ",
-		second_verse_raw: "はなぞむかしのかににおいける",
-		second_verse_card: "はなそむかしのかににおいける",
-		kimariji: "ひとわ"
+		first_verse: "ひとはいさこころもしらずふるさとは",
+		second_verse_raw: "はなぞむかしのかににほひける",
+		second_verse_card: "はなそむかしのかににほひける",
+		kimariji: "ひとは"
 	},
 	{
 		id: "36",
 		name: "Kiyohara no Fukayabu",
-		first_verse: "なつのよわまだよいながらあけぬるお",
-		second_verse_raw: "くものいずこにつきやどるらん",
-		second_verse_card: "くものいすこにつきやとるらん",
+		first_verse: "なつのよはまだよひながらあけぬるを",
+		second_verse_raw: "くものいづこにつきやどるらむ",
+		second_verse_card: "くものいつこにつきやとるらむ",
 		kimariji: "なつ"
 	},
 	{
 		id: "37",
 		name: "Fun'ya no Asayasu",
-		first_verse: "しらつゆおかぜのふきしくあきののわ",
+		first_verse: "しらつゆにかぜのふきしくあきののは",
 		second_verse_raw: "つらぬきとめぬたまぞちりける",
 		second_verse_card: "つらぬきとめぬたまそちりける",
 		kimariji: "しら"
@@ -305,231 +305,231 @@ poems = Poem.create([
 	{
 		id: "38",
 		name: "Ukon",
-		first_verse: "わすらるるみおばおもわずちかいてし",
-		second_verse_raw: "ひとのいのちのおしくもあるかな",
-		second_verse_card: "ひとのいのちのおしくもあるかな",
+		first_verse: "わすらるるみをばおもはずちかひてし",
+		second_verse_raw: "ひとのいのちのをしくもあるかな",
+		second_verse_card: "ひとのいのちのをしくもあるかな",
 		kimariji: "わすら"
 	},
 	{
 		id: "39",
 		name: "Sangi Hitoshi",
-		first_verse: "あさじうのおののしのはらしのぶれど",
-		second_verse_raw: "あまりてなどかひとのこいしき",
-		second_verse_card: "あまりてなとかひとのこいしき",
-		kimariji: "あさじ"
+		first_verse: "あさぢふのをののしのはらしのぶれど",
+		second_verse_raw: "あまりてなどかひとのこひしき",
+		second_verse_card: "あまりてなとかひとのこひしき",
+		kimariji: "あさぢ"
 	},
 	{
 		id: "40",
 		name: "Taira no Kanemori",
-		first_verse: "しのぶれどいろにいでにけりわがこいわ",
-		second_verse_raw: "ものやおもうとひとのとうまで",
-		second_verse_card: "ものやおもうとひとのとうまて",
+		first_verse: "しのぶれどいろにいでにけりわがこひは",
+		second_verse_raw: "ものやおもふとひとのとふまで",
+		second_verse_card: "ものやおもふとひとのとふまて",
 		kimariji: "しの"
 	},
 	{
 		id: "41",
 		name: "Mibu no Tadami",
-		first_verse: "こいすちょわがなわまだきたちにけり",
-		second_verse_raw: "ひとしれずこそおもいそめしか",
-		second_verse_card: "ひとしれすこそおもいそめしか",
-		kimariji: "こい"
+		first_verse: "こひすてふわがなはまだきたちにけり",
+		second_verse_raw: "ひとしれずこそおもひそめしか",
+		second_verse_card: "ひとしれすこそおもひそめしか",
+		kimariji: "こひ"
 	},
 	{
 		id: "42",
 		name: "Kiyohara no Motosuke",
-		first_verse: "ちぎりきなかたみにそでおしぼりつつ",
-		second_verse_raw: "すえのまつやまなみこさじとわ",
-		second_verse_card: "すえのまつやまなみこさしとわ",
+		first_verse: "ちぎりきなかたみにそでをしぼりつつ",
+		second_verse_raw: "すゑのまつやまなみこさじとは",
+		second_verse_card: "すゑのまつやまなみこさしとは",
 		kimariji: "ちぎりき"
 	},
 	{
 		id: "43",
 		name: "Gon Chunagon Atsutada",
-		first_verse: "あいみてののちのこころにくらぶれば",
-		second_verse_raw: "むかしわものおおもわざりけり",
-		second_verse_card: "むかしわものおおもわさりけり",
-		kimariji: "あい"
+		first_verse: "あひみてののちのこころにくらぶれば",
+		second_verse_raw: "むかしはものをおもはざりけり",
+		second_verse_card: "むかしはものをおもはさりけり",
+		kimariji: "あひ"
 	},
 	{
 		id: "44",
 		name: "Chunagon Asatada",
-		first_verse: "あうことのたえてしなくわなかなかに",
-		second_verse_raw: "ひとおもみおもうらみざらまし",
-		second_verse_card: "ひとおもみおもうらみさらまし",
-		kimariji: "あう"
+		first_verse: "あふことのたえてしなくはなかなかに",
+		second_verse_raw: "ひとをもみをもうらみざらまし",
+		second_verse_card: "ひとをもみをもうらみさらまし",
+		kimariji: "あふ"
 	},
 	{
 		id: "45",
 		name: "Kentoku Ko",
-		first_verse: "あわれともいうべきひとわおもおえで",
-		second_verse_raw: "みのいたずらになりぬべきかな",
-		second_verse_card: "みのいたすらになりぬへきかな",
-		kimariji: "あわれ"
+		first_verse: "あはれともいふべき人は思ほえで",
+		second_verse_raw: "身のいたづらになりぬべきかな",
+		second_verse_card: "身のいたつらになりぬへきかな",
+		kimariji: "あはれ"
 	},
 	{
 		id: "46",
 		name: "Sone no Yoshitada",
-		first_verse: "ゆらのとおわたるふなびとかじおたえ",
-		second_verse_raw: "ゆくえもしらぬこいのみちかな",
-		second_verse_card: "ゆくえもしらぬこいのみちかな",
+		first_verse: "ゆらのとをわたるふなびとかぢをたえ",
+		second_verse_raw: "ゆくへもしらぬこひのみちかな",
+		second_verse_card: "ゆくへもしらぬこひのみちかな",
 		kimariji: "ゆら"
 	},
 	{
 		id: "47",
 		name: "Egyo Hoshi",
-		first_verse: "やえむぐらしげれるやどのさびしきに",
-		second_verse_raw: "ひとこそみえねあきわきにけり",
-		second_verse_card: "ひとこそみえねあきわきにけり",
-		kimariji: "やえ"
+		first_verse: "やへむぐらしげれるやどのさびしきに",
+		second_verse_raw: "ひとこそみえねあきはきにけり",
+		second_verse_card: "ひとこそみえねあきはきにけり",
+		kimariji: "やへ"
 	},
 	{
 		id: "48",
 		name: "Minamoto no Shigeyuki",
-		first_verse: "かぜおいたみいわうつなみのおのれのみ",
-		second_verse_raw: "くだけてものおおもうころかな",
-		second_verse_card: "くたけてものおおもうころかな",
-		kimariji: "かぜお"
+		first_verse: "かぜをいたみいはうつなみのおのれのみ",
+		second_verse_raw: "くだけてものをおもふころかな",
+		second_verse_card: "くたけてものをおもふころかな",
+		kimariji: "かぜを"
 	},
 	{
 		id: "49",
 		name: "Onakatomi no Yoshinobu Ason",
-		first_verse: "みかきもりえじのたくひのよるわもえ",
-		second_verse_raw: "ひるわきえつつものおこそおもえ",
-		second_verse_card: "ひるわきえつつものおこそおもえ",
+		first_verse: "みかきもりゑじのたくひのよるはもえ",
+		second_verse_raw: "ひるはきえつつものをこそおもへ",
+		second_verse_card: "ひるはきえつつものをこそおもへ",
 		kimariji: "みかき"
 	},
 	{
 		id: "50",
 		name: "Fujiwara no Yoshitaka",
-		first_verse: "きみがためおしからざりしいのちさえ",
-		second_verse_raw: "ながくもがなとおもいけるかな",
-		second_verse_card: "なかくもかなとおもいけるかな",
-		kimariji: "きみがためお"
+		first_verse: "きみがためをしからざりしいのちさへ",
+		second_verse_raw: "ながくもがなとおもひけるかな",
+		second_verse_card: "なかくもかなとおもひけるかな",
+		kimariji: "きみがためを"
 	},
 	{
 		id: "51",
 		name: "Fujiwara no Sanekata Ason",
-		first_verse: "かくとだにえやわいぶきのさしもぐさ",
-		second_verse_raw: "さしもしらじなもゆるおもいお",
-		second_verse_card: "さしもしらしなもゆるおもいお",
+		first_verse: "かくとだにえやはいぶきのさしもぐさ",
+		second_verse_raw: "さしもしらじなもゆるおもひを",
+		second_verse_card: "さしもしらしなもゆるおもひを",
 		kimariji: "かく"
 	},
 	{
 		id: "52",
 		name: "Fujiwara no Michinobu Ason",
-		first_verse: "あけぬればくるるものとわしりながら",
-		second_verse_raw: "なおうらめしきあさぼらけかな",
-		second_verse_card: "なおうらめしきあさほらけかな",
+		first_verse: "あけぬればくるるものとはしりながら",
+		second_verse_raw: "なほうらめしきあさぼらけかな",
+		second_verse_card: "なほうらめしきあさほらけかな",
 		kimariji: "あけ"
 	},
 	{
 		id: "53",
 		name: "Udaisho Michitsuna no Haha",
-		first_verse: "なげきつつひとりぬるよのあくるまわ",
-		second_verse_raw: "いかにひさしきものとかわしる",
-		second_verse_card: "いかにひさしきものとかわしる",
+		first_verse: "なげきつつひとりぬるよのあくるまは",
+		second_verse_raw: "いかにひさしきものとかはしる",
+		second_verse_card: "いかにひさしきものとかはしる",
 		kimariji: "なげき"
 	},
 	{
 		id: "54",
 		name: "Gido Sanshi no Haha",
-		first_verse: "わすれじのゆくすえまでわかたければ",
-		second_verse_raw: "きょおかぎりのいのちともがな",
-		second_verse_card: "きょおかきりのいのちともかな",
+		first_verse: "わすれじのゆくすゑまではかたければ",
+		second_verse_raw: "けふをかぎりのいのちともがな",
+		second_verse_card: "けふをかきりのいのちともかな",
 		kimariji: "わすれ"
 	},
 	{
 		id: "55",
 		name: "Dainagon Kinto",
-		first_verse: "たきのおとわたえてひさしくなりぬれど",
-		second_verse_raw: "なこそながれてなおきこえけれ",
-		second_verse_card: "なこそなかれてなおきこえけれ",
+		first_verse: "たきのおとはたえてひさしくなりぬれど",
+		second_verse_raw: "なこそながれてなほきこえけれ",
+		second_verse_card: "なこそなかれてなほきこえけれ",
 		kimariji: "たき"
 	},
 	{
 		id: "56",
 		name: "Izumi Shikibu",
-		first_verse: "あらざらんこのよのほかのおもいでに",
-		second_verse_raw: "いまひとたびのあうこともがな",
-		second_verse_card: "いまひとたひのあうこともかな",
+		first_verse: "あらざらむこのよのほかのおもひでに",
+		second_verse_raw: "いまひとたびのあふこともがな",
+		second_verse_card: "いまひとたひのあふこともかな",
 		kimariji: "あらざ"
 	},
 	{
 		id: "57",
 		name: "Murasaki Shikibu",
-		first_verse: "めぐりあいてみしやそれともわかぬまに",
-		second_verse_raw: "くもがくれにしよわのつきかげ",
-		second_verse_card: "くもかくれにしよわのつきかけ",
+		first_verse: "めぐりあひてみしやそれともわかぬまに",
+		second_verse_raw: "くもがくれにしよはのつきかな",
+		second_verse_card: "くもかくれにしよはのつきかな",
 		kimariji: "め"
 	},
 	{
 		id: "58",
 		name: "Daini no Sanmi",
-		first_verse: "ありまやまいなのささわらかぜふけば",
-		second_verse_raw: "いでそよひとおわすれやわする",
-		second_verse_card: "いてそよひとおわすれやわする",
+		first_verse: "ありまやまゐなのささはらかぜふけば",
+		second_verse_raw: "いでそよひとをわすれやはする",
+		second_verse_card: "いてそよひとをわすれやはする",
 		kimariji: "ありま"
 	},
 	{
 		id: "59",
 		name: "Akazome Emon",
-		first_verse: "やすらわでねなましものおさよふけて",
-		second_verse_raw: "かたぶくまでのつきおみしかな",
-		second_verse_card: "かたふくまてのつきおみしかな",
+		first_verse: "やすらはでねなましものをさよふけて",
+		second_verse_raw: "かたぶくまでのつきをみしかな",
+		second_verse_card: "かたふくまてのつきをみしかな",
 		kimariji: "やす"
 	},
 	{
 		id: "60",
 		name: "Koshikibu no Naishi",
-		first_verse: "おえやまいくののみちのとければ",
+		first_verse: "おほえやまいくののみちのとほければ",
 		second_verse_raw: "まだふみもみずあまのはしだて",
 		second_verse_card: "またふみもみすあまのはしたて",
-		kimariji: "おえ"
+		kimariji: "おほえ"
 	},
 	{
 		id: "61",
 		name: "Ise no Osuke",
-		first_verse: "いにしえのならのみやこのやえざくら",
-		second_verse_raw: "きょここのえににおいぬるかな",
-		second_verse_card: "きょここのえににおいぬるかな",
+		first_verse: "いにしへのならのみやこのやへざくら",
+		second_verse_raw: "けふここのへににほひぬるかな",
+		second_verse_card: "けふここのへににほひぬるかな",
 		kimariji: "いに"
 	},
 	{
 		id: "62",
 		name: "Sei Shonagon",
-		first_verse: "よおこめてとりのそらねわはかるとも",
-		second_verse_raw: "よにおさかのせきわゆるさじ",
-		second_verse_card: "よにおさかのせきわゆるさし",
-		kimariji: "よお"
+		first_verse: "よをこめてとりのそらねははかるとも",
+		second_verse_raw: "よにあふさかのせきはゆるさじ",
+		second_verse_card: "よにあふさかのせきはゆるさし",
+		kimariji: "よを"
 	},
 	{
 		id: "63",
 		name: "Sakyo no Daibu Michimasa",
-		first_verse: "いまわただおもいたえなんとばかりを",
-		second_verse_raw: "ひとずてならでいうよしもがな",
-		second_verse_card: "ひとすてならていうよしもかな",
-		kimariji: "いまわ"
+		first_verse: "いまはただおもひたえなむとばかりを",
+		second_verse_raw: "ひとづてならでいふよしもがな",
+		second_verse_card: "ひとつてならていふよしもかな",
+		kimariji: "いまは"
 	},
 	{
 		id: "64",
 		name: "GonChunagon Sadayori",
-		first_verse: "あさぼらけうじのかわぎりたえだえに",
-		second_verse_raw: "あらわれわたるぜぜのあじろぎ",
-		second_verse_card: "あらわれわたるせせのあしろき",
+		first_verse: "あさぼらけうぢのかはぎりたえだえに",
+		second_verse_raw: "あらはれわたるせぜのあじろぎ",
+		second_verse_card: "あらはれわたるせせのあしろき",
 		kimariji: "あさぼらけう"
 	},
 	{
 		id: "65",
 		name: "Sagami",
-		first_verse: "うらみわびほさぬそでだにあるものお",
-		second_verse_raw: "こいにくちなんなこそおしけれ",
-		second_verse_card: "こいにくちなんなこそおしけれ",
+		first_verse: "うらみわびほさぬそでだにあるものを",
+		second_verse_raw: "こひにくちなむなこそをしけれ",
+		second_verse_card: "こひにくちなむなこそをしけれ",
 		kimariji: "うら"
 	},
 	{
 		id: "66",
 		name: "Daisojo Gyoson",
-		first_verse: "もろともにあわれとおもえやまざくら",
+		first_verse: "もろともにあはれとおもへやまざくら",
 		second_verse_raw: "はなよりほかにしるひともなし",
 		second_verse_card: "はなよりほかにしるひともなし",
 		kimariji: "もろ"
@@ -538,46 +538,46 @@ poems = Poem.create([
 		id: "67",
 		name: "Suo no Naishi",
 		first_verse: "はるのよのゆめばかりなるたまくらに",
-		second_verse_raw: "かいなくたたんなこそおしけれ",
-		second_verse_card: "かいなくたたんなこそおしけれ",
+		second_verse_raw: "かひなくたたむなこそをしけれ",
+		second_verse_card: "かひなくたたむなこそをしけれ",
 		kimariji: "はるの"
 	},
 	{
 		id: "68",
 		name: "Sanjo In",
-		first_verse: "こころにもあらでうきよにながらえば",
-		second_verse_raw: "こいしかるべきよわのつきかな",
-		second_verse_card: "こいしかるへきよわのつきかな",
+		first_verse: "こころにもあらでうきよにながらへば",
+		second_verse_raw: "こひしかるべきよはのつきかな",
+		second_verse_card: "こひしかるへきよはのつきかな",
 		kimariji: "こころに"
 	},
 	{
 		id: "69",
 		name: "Noin Hoshi",
-		first_verse: "あらしふくみむろのやまのもみじばわ",
-		second_verse_raw: "たつたのかわのにしきなりけり",
-		second_verse_card: "たつたのかわのにしきなりけり",
+		first_verse: "あらしふくみむろのやまのもみぢばは",
+		second_verse_raw: "たつたのかはのにしきなりけり",
+		second_verse_card: "たつたのかはのにしきなりけり",
 		kimariji: "あらし"
 	},
 	{
 		id: "70",
 		name: "Ryosen Hoshi",
-		first_verse: "さびしさにやどおたちいでてながむれば",
-		second_verse_raw: "いずこもおなじあきのゆぐれ",
-		second_verse_card: "いすこもおなしあきのゆくれ",
+		first_verse: "さびしさにやどをたちいでてながむれば",
+		second_verse_raw: "いづこもおなじあきのゆふぐれ",
+		second_verse_card: "いつこもおなしあきのゆふくれ",
 		kimariji: "さ"
 	},
 	{
 		id: "71",
 		name: "Dainagon Tsunenobu",
-		first_verse: "ゆさればかどたのいなばおとずれて",
+		first_verse: "ゆふさればかどたのいなばおとづれて",
 		second_verse_raw: "あしのまろやにあきかぜぞふく",
 		second_verse_card: "あしのまろやにあきかせそふく",
-		kimariji: "ゆさ"
+		kimariji: "ゆふ"
 	},
 	{
 		id: "72",
 		name: "Yushi Naishinno-ke no Kii",
-		first_verse: "おとにきくたかしのはまのあだなみわ",
+		first_verse: "おとにきくたかしのはまのあだなみは",
 		second_verse_raw: "かけじやそでのぬれもこそすれ",
 		second_verse_card: "かけしやそてのぬれもこそすれ",
 		kimariji: "おと"
@@ -585,71 +585,71 @@ poems = Poem.create([
 	{
 		id: "73",
 		name: "GonChunagon Masafusa",
-		first_verse: "たかさごのおのえのさくらさきにけり",
-		second_verse_raw: "とやまのかすみたたずもあらなん",
-		second_verse_card: "とやまのかすみたたすもあらなん",
+		first_verse: "たかさごのをのへのさくらさきにけり",
+		second_verse_raw: "とやまのかすみたたずもあらなむ",
+		second_verse_card: "とやまのかすみたたすもあらなむ",
 		kimariji: "たか"
 	},
 	{
 		id: "74",
 		name: "Minamoto no Toshiyori Ason",
-		first_verse: "うかりけるひとおはつせのやまおろしよ",
-		second_verse_raw: "はげしかれとわいのらぬものお",
-		second_verse_card: "はけしかれとわいのらぬものお",
+		first_verse: "うかりけるひとをはつせのやまおろしよ",
+		second_verse_raw: "はげしかれとはいのらぬものを",
+		second_verse_card: "はけしかれとはいのらぬものを",
 		kimariji: "うか"
 	},
 	{
 		id: "75",
 		name: "Fujiwara no Mototoshi",
-		first_verse: "ちぎりおきしさせもがつゆおいのちにて",
-		second_verse_raw: "あわれことしのあきもいぬめり",
-		second_verse_card: "あわれことしのあきもいぬめり",
+		first_verse: "ちぎりおきしさせもがつゆをいのちにて",
+		second_verse_raw: "あはれことしのあきもいぬめり",
+		second_verse_card: "あはれことしのあきもいぬめり",
 		kimariji: "ちぎりお"
 	},
 	{
 		id: "76",
 		name: "Hoshoji no Nyudo Kanpaku Dajodaijin",
 		first_verse: "わたのはらこぎいでてみればひさかたの",
-		second_verse_raw: "くもいにまよおおきつしらなみ",
-		second_verse_card: "くもいにまよおおきつしらなみ",
+		second_verse_raw: "くもゐにまがふおきつしらなみ",
+		second_verse_card: "くもゐにまかふおきつしらなみ",
 		kimariji: "わたのはらこ"
 	},
 	{
 		id: "77",
 		name: "Sutoku In",
-		first_verse: "せおはやみいわにせかるるたきがわの",
-		second_verse_raw: "われてもすえにあわんとぞおもう",
-		second_verse_card: "われてもすえにあわんとそおもう",
+		first_verse: "せをはやみいはにせかるるたきがはの",
+		second_verse_raw: "われてもすゑにあはむとぞおもふ",
+		second_verse_card: "われてもすゑにあはむとそおもふ",
 		kimariji: "せ"
 	},
 	{
 		id: "78",
 		name: "Minamoto no Kanemasa",
-		first_verse: "あわじしまかようちどりのなくこえに",
+		first_verse: "あはぢしまかよふちどりのなくこゑに",
 		second_verse_raw: "いくよねざめぬすまのせきもり",
 		second_verse_card: "いくよねさめぬすまのせきもり",
-		kimariji: "あわじ"
+		kimariji: "あはぢ"
 	},
 	{
 		id: "79",
 		name: "Sakyo no Daibu Akisuke",
 		first_verse: "あきかぜにたなびくくものたえまより",
-		second_verse_raw: "もれいずるつきのかげのさやけさ",
-		second_verse_card: "もれいするつきのかけのさやけさ",
+		second_verse_raw: "もれいづるつきのかげのさやけさ",
+		second_verse_card: "もれいつるつきのかけのさやけさ",
 		kimariji: "あきか"
 	},
 	{
 		id: "80",
 		name: "Taiken Moin no Horikawa",
-		first_verse: "ながからんこころもしらずくろかみの",
-		second_verse_raw: "みだれてけさわものおこそおもえ",
-		second_verse_card: "みたれてけさわものおこそおもえ",
+		first_verse: "ながからむこころもしらずくろかみの",
+		second_verse_raw: "みだれてけさはものをこそおもへ",
+		second_verse_card: "みたれてけさはものをこそおもへ",
 		kimariji: "ながか"
 	},
 	{
 		id: "81",
 		name: "Go Tokudaiji no Sadaijin",
-		first_verse: "ほととぎすなきつるかたおながむれば",
+		first_verse: "ほととぎすなきつるかたをながむれば",
 		second_verse_raw: "ただありあけのつきぞのこれる",
 		second_verse_card: "たたありあけのつきそのこれる",
 		kimariji: "ほ"
@@ -657,15 +657,15 @@ poems = Poem.create([
 	{
 		id: "82",
 		name: "Doin Hoshi",
-		first_verse: "おもいわびさてもいのちわあるものお",
-		second_verse_raw: "うきにたえぬわなみだなりけり",
-		second_verse_card: "うきにたえぬわなみたなりけり",
+		first_verse: "おもひわびさてもいのちはあるものを",
+		second_verse_raw: "うきにたへぬはなみだなりけり",
+		second_verse_card: "うきにたへぬはなみたなりけり",
 		kimariji: "おも"
 	},
 	{
 		id: "83",
 		name: "Kotaigogu no Daibu Toshinari",
-		first_verse: "よのなかよみちこそなけれおもいいる",
+		first_verse: "よのなかよみちこそなけれおもひいる",
 		second_verse_raw: "やまのおくにもしかぞなくなる",
 		second_verse_card: "やまのおくにもしかそなくなる",
 		kimariji: "よのなかよ"
@@ -673,47 +673,47 @@ poems = Poem.create([
 	{
 		id: "84",
 		name: "Fujiwara no Kiyosuke Ason",
-		first_verse: "ながらえばまたこのごろやしのばれん",
-		second_verse_raw: "うしとみしよぞいまわこいしき",
-		second_verse_card: "うしとみしよそいまわこいしき",
+		first_verse: "ながらへばまたこのごろやしのばれむ",
+		second_verse_raw: "うしとみしよぞいまはこひしき",
+		second_verse_card: "うしとみしよそいまはこひしき",
 		kimariji: "ながら"
 	},
 	{
 		id: "85",
 		name: "Shun'e Hoshi",
-		first_verse: "よもすがらものおもうころわあけやらぬ",
-		second_verse_raw: "ねやのひまさえつれなかりけり",
-		second_verse_card: "ねやのひまさえつれなかりけり",
+		first_verse: "よもすがらものおもふころはあけやらで",
+		second_verse_raw: "ねやのひまさへつれなかりけり",
+		second_verse_card: "ねやのひまさへつれなかりけり",
 		kimariji: "よも"
 	},
 	{
 		id: "86",
 		name: "Saigyo Hoshi",
-		first_verse: "なげけとてつきやわものおおもわする",
-		second_verse_raw: "かこちがおなるわがなみだかな",
-		second_verse_card: "かこちかおなるわかなみたかな",
+		first_verse: "なげけとてつきやはものをおもはする",
+		second_verse_raw: "かこちがほなるわがなみだかな",
+		second_verse_card: "かこちかほなるわかなみたかな",
 		kimariji: "なげけ"
 	},
 	{
 		id: "87",
 		name: "Jakuren Hoshi",
 		first_verse: "むらさめのつゆもまだひぬまきのはに",
-		second_verse_raw: "きりたちのぼるあきのゆぐれ",
-		second_verse_card: "きりたちのほるあきのゆくれ",
+		second_verse_raw: "きりたちのぼるあきのゆふぐれ",
+		second_verse_card: "きりたちのほるあきのゆふくれ",
 		kimariji: "む"
 	},
 	{
 		id: "88",
 		name: "Koka Moin no Betto",
-		first_verse: "なにわえのあしのかりねのひとよゆえ",
-		second_verse_raw: "みおつくしてやこいわたるべき",
-		second_verse_card: "みおつくしてやこいわたるへき",
-		kimariji: "なにわえ"
+		first_verse: "なにはえのあしのかりねのひとよゆゑ",
+		second_verse_raw: "みをつくしてやこひわたるべき",
+		second_verse_card: "みをつくしてやこひわたるへき",
+		kimariji: "なにはえ"
 	},
 	{
 		id: "89",
 		name: "Shokushi Naishinno",
-		first_verse: "たまのおよたえなばたえねながらえば",
+		first_verse: "たまのをよたえなばたえねながらへば",
 		second_verse_raw: "しのぶることのよわりもぞする",
 		second_verse_card: "しのふることのよわりもそする",
 		kimariji: "たま"
@@ -721,23 +721,23 @@ poems = Poem.create([
 	{
 		id: "90",
 		name: "Inpu Moin no Taifu",
-		first_verse: "みせばやなおじまのあまのそでだにも",
-		second_verse_raw: "ぬれにぞぬれしいろわかわらず",
-		second_verse_card: "ぬれにそぬれしいろわかわらす",
+		first_verse: "みせばやなをじまのあまのそでだにも",
+		second_verse_raw: "ぬれにぞぬれしいろはかはらず",
+		second_verse_card: "ぬれにそぬれしいろはかはらす",
 		kimariji: "みせ"
 	},
 	{
 		id: "91",
 		name: "Go Kyogoku no Sessho Dajodaijin",
 		first_verse: "きりぎりすなくやしもよのさむしろに",
-		second_verse_raw: "ころもかたしきひとりかもねん",
-		second_verse_card: "ころもかたしきひとりかもねん",
+		second_verse_raw: "ころもかたしきひとりかもねむ",
+		second_verse_card: "ころもかたしきひとりかもねむ",
 		kimariji: "きり"
 	},
 	{
 		id: "92",
 		name: "Nijo In no Sanuki",
-		first_verse: "わがそでわしおひにみえぬおきのいしの",
+		first_verse: "わがそではしほひにみえぬおきのいしの",
 		second_verse_raw: "ひとこそしらねかわくまもなし",
 		second_verse_card: "ひとこそしらねかわくまもなし",
 		kimariji: "わがそ"
@@ -745,10 +745,10 @@ poems = Poem.create([
 	{
 		id: "93",
 		name: "Kamakura no Udaijin",
-		first_verse: "よのなかわつねにもがもななぎさこぐ",
-		second_verse_raw: "あまのおぶねのつなでかなしも",
-		second_verse_card: "あまのおふねのつなてかなしも",
-		kimariji: "よのなかわ"
+		first_verse: "よのなかはつねにもがもななぎさこぐ",
+		second_verse_raw: "あまのをぶねのつなでかなしも",
+		second_verse_card: "あまのをふねのつなてかなしも",
+		kimariji: "よのなかは"
 	},
 	{
 		id: "94",
@@ -761,31 +761,31 @@ poems = Poem.create([
 	{
 		id: "95",
 		name: "Saki no Daisojo Jien",
-		first_verse: "おけなくうきよのたみにおうかな",
+		first_verse: "おほけなくうきよのたみにおほふかな",
 		second_verse_raw: "わがたつそまにすみぞめのそで",
 		second_verse_card: "わかたつそまにすみそめのそて",
-		kimariji: "おけ"
+		kimariji: "おほけ"
 	},
 	{
 		id: "96",
 		name: "Nyudo Saki no Dajodaijin",
-		first_verse: "はなさそうあらしのにわのゆきならで",
-		second_verse_raw: "ふりゆくものわわがみなりけり",
-		second_verse_card: "ふりゆくものわわかみなりけり",
+		first_verse: "はなさそふあらしのにはのゆきならで",
+		second_verse_raw: "ふりゆくものはわがみなりけり",
+		second_verse_card: "ふりゆくものはわかみなりけり",
 		kimariji: "はなさ"
 	},
 	{
 		id: "97",
 		name: "GonChunagon Sadaie",
-		first_verse: "こぬひとおまつほのうらのゆなぎに",
-		second_verse_raw: "やくやもしおのみもこがれつつ",
-		second_verse_card: "やくやもしおのみもこかれつつ",
+		first_verse: "こぬひとをまつほのうらのゆふなぎに",
+		second_verse_raw: "やくやもしほのみもこがれつつ",
+		second_verse_card: "やくやもしほのみもこかれつつ",
 		kimariji: "こぬ"
 	},
 	{
 		id: "98",
 		name: "Junii Ietaka",
-		first_verse: "かぜそよぐならのおがわのゆぐれわ",
+		first_verse: "かぜそよぐならのをがはのゆふぐれは",
 		second_verse_raw: "みそぎぞなつのしるしなりける",
 		second_verse_card: "みそきそなつのしるしなりける",
 		kimariji: "かぜそ"
@@ -793,17 +793,17 @@ poems = Poem.create([
 	{
 		id: "99",
 		name: "Gotoba In",
-		first_verse: "ひともおしひともうらめしあじきなく",
-		second_verse_raw: "よおおもうゆえにものおもうみわ",
-		second_verse_card: "よおおもうゆえにものおもうみわ",
+		first_verse: "ひともをしひともうらめしあぢきなく",
+		second_verse_raw: "よをおもふゆゑにものおもふみは",
+		second_verse_card: "よをおもふゆゑにものおもふみは",
 		kimariji: "ひとも"
 	},
 	{
 		id: "100",
 		name: "Juntoku In",
 		first_verse: "ももしきやふるきのきばのしのぶにも",
-		second_verse_raw: "なおあまりあるむかしなりけり",
-		second_verse_card: "なおあまりあるむかしなりけり",
+		second_verse_raw: "なほあまりあるむかしなりけり",
+		second_verse_card: "なほあまりあるむかしなりけり",
 		kimariji: "もも"
 	}
 ]);
