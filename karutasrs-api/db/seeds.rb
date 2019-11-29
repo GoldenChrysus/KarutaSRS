@@ -12,6 +12,7 @@ poems = Poem.create([
 		first_verse: "あきのたのかりほのいほのとまをあらみ",
 		second_verse_raw: "わがころもではつゆにぬれつつ",
 		second_verse_card: "わかころもてはつゆにぬれつつ",
+		second_verse_answer: "わかころもては",
 		kimariji: "あきの"
 	},
 	{
@@ -20,6 +21,7 @@ poems = Poem.create([
 		first_verse: "はるすぎてなつきにけらししろたへの",
 		second_verse_raw: "ころもほすてふあまのかぐやま",
 		second_verse_card: "ころもほすてふあまのかくやま",
+		second_verse_answer: "ころもほ",
 		kimariji: "はるす"
 	},
 	{
@@ -28,6 +30,7 @@ poems = Poem.create([
 		first_verse: "あしびきのやまどりのをのしだりをの",
 		second_verse_raw: "ながながしよをひとりかもねむ",
 		second_verse_card: "なかなかしよをひとりかもねむ",
+		second_verse_answer: "なかな",
 		kimariji: "あし"
 	},
 	{
@@ -36,6 +39,7 @@ poems = Poem.create([
 		first_verse: "たごのうらにうちいでてみればしろたへの",
 		second_verse_raw: "ふじのたかねにゆきはふりつつ",
 		second_verse_card: "ふしのたかねにゆきはふりつつ",
+		second_verse_answer: "ふし",
 		kimariji: "たご"
 	},
 	{
@@ -44,6 +48,7 @@ poems = Poem.create([
 		first_verse: "おくやまにもみぢふみわけなくしかの",
 		second_verse_raw: "こゑきくときぞあきはかなしき",
 		second_verse_card: "こゑきくときそあきはかなしき",
+		second_verse_answer: "こゑ",
 		kimariji: "おく"
 	},
 	{
@@ -52,6 +57,7 @@ poems = Poem.create([
 		first_verse: "かささぎのわたせるはしにおくしもの",
 		second_verse_raw: "しろきをみればよぞふけにける",
 		second_verse_card: "しろきをみれはよそふけにける",
+		second_verse_answer: "しろ",
 		kimariji: "かさ"
 	},
 	{
@@ -60,6 +66,7 @@ poems = Poem.create([
 		first_verse: "あまのはらふりさけみればかすがなる",
 		second_verse_raw: "みかさのやまにいでしつきかも",
 		second_verse_card: "みかさのやまにいてしつきかも",
+		second_verse_answer: "みか",
 		kimariji: "あまの"
 	},
 	{
@@ -68,6 +75,7 @@ poems = Poem.create([
 		first_verse: "わがいほはみやこのたつみしかぞすむ",
 		second_verse_raw: "よをうぢやまとひとはいふなり",
 		second_verse_card: "よをうちやまとひとはいふなり",
+		second_verse_answer: "よをう",
 		kimariji: "わがい"
 	},
 	{
@@ -76,6 +84,7 @@ poems = Poem.create([
 		first_verse: "はなのいろはうつりにけりないたづらに",
 		second_verse_raw: "わがみよにふるながめせしまに",
 		second_verse_card: "わかみよにふるなかめせしまに",
+		second_verse_answer: "わかみよ",
 		kimariji: "はなの"
 	},
 	{
@@ -84,6 +93,7 @@ poems = Poem.create([
 		first_verse: "これやこのゆくもかへるもわかれては",
 		second_verse_raw: "しるもしらぬもあふさかのせき",
 		second_verse_card: "しるもしらぬもあふさかのせき",
+		second_verse_answer: "しる",
 		kimariji: "これ"
 	},
 	{
@@ -92,6 +102,7 @@ poems = Poem.create([
 		first_verse: "わたのはらやそしまかけてこぎいでぬと",
 		second_verse_raw: "ひとにはつげよあまのつりぶね",
 		second_verse_card: "ひとにはつけよあまのつりふね",
+		second_verse_answer: "ひとには",
 		kimariji: "わたのはらや"
 	},
 	{
@@ -100,6 +111,7 @@ poems = Poem.create([
 		first_verse: "あまつかぜくものかよひぢふきとぢよ",
 		second_verse_raw: "をとめのすがたしばしとどめむ",
 		second_verse_card: "をとめのすかたしはしととめむ",
+		second_verse_answer: "を",
 		kimariji: "あまつ"
 	},
 	{
@@ -108,6 +120,7 @@ poems = Poem.create([
 		first_verse: "つくばねのみねよりおつるみなのがは",
 		second_verse_raw: "こひぞつもりてふちとなりぬる",
 		second_verse_card: "こひそつもりてふちとなりぬる",
+		second_verse_answer: "こひそ",
 		kimariji: "つく"
 	},
 	{
@@ -116,6 +129,7 @@ poems = Poem.create([
 		first_verse: "みちのくのしのぶもぢずりたれゆゑに",
 		second_verse_raw: "みだれそめにしわれならなくに",
 		second_verse_card: "みたれそめにしわれならなくに",
+		second_verse_answer: "みたれそ",
 		kimariji: "みち"
 	},
 	{
@@ -124,6 +138,7 @@ poems = Poem.create([
 		first_verse: "きみがためはるののにいでてわかなつむ",
 		second_verse_raw: "わがころもでにゆきはふりつつ",
 		second_verse_card: "わかころもてにゆきはふりつつ",
+		second_verse_answer: "わかころもてに",
 		kimariji: "きみがためは"
 	},
 	{
@@ -132,6 +147,7 @@ poems = Poem.create([
 		first_verse: "たちわかれいなばのやまのみねにおふる",
 		second_verse_raw: "まつとしきかばいまかへりこむ",
 		second_verse_card: "まつとしきかはいまかへりこむ",
+		second_verse_answer: "まつと",
 		kimariji: "たち"
 	},
 	{
@@ -140,6 +156,7 @@ poems = Poem.create([
 		first_verse: "ちはやぶるかみよもきかずたつたがは",
 		second_verse_raw: "からくれなゐにみづくくるとは",
 		second_verse_card: "からくれなゐにみつくくるとは",
+		second_verse_answer: "から",
 		kimariji: "ちは"
 	},
 	{
@@ -148,6 +165,7 @@ poems = Poem.create([
 		first_verse: "すみのえのきしによるなみよるさへや",
 		second_verse_raw: "ゆめのかよひぢひとめよくらむ",
 		second_verse_card: "ゆめのかよひちひとめよくらむ",
+		second_verse_answer: "ゆめ",
 		kimariji: "す"
 	},
 	{
@@ -156,6 +174,7 @@ poems = Poem.create([
 		first_verse: "なにはがたみじかきあしのふしのまも",
 		second_verse_raw: "あはでこのよをすぐしてよとや",
 		second_verse_card: "あはてこのよをすくしてよとや",
+		second_verse_answer: "あはて",
 		kimariji: "なにはが"
 	},
 	{
@@ -164,6 +183,7 @@ poems = Poem.create([
 		first_verse: "わびぬればいまはたおなじなにはなる",
 		second_verse_raw: "みをつくしてもあはむとぞおもふ",
 		second_verse_card: "みをつくしてもあはむとそおもふ",
+		second_verse_answer: "みをつくしても",
 		kimariji: "わび"
 	},
 	{
@@ -172,6 +192,7 @@ poems = Poem.create([
 		first_verse: "いまこむといひしばかりにながつきの",
 		second_verse_raw: "ありあけのつきをまちいでつるかな",
 		second_verse_card: "ありあけのつきをまちてつるかな",
+		second_verse_answer: "あり",
 		kimariji: "いまこ"
 	},
 	{
@@ -180,6 +201,7 @@ poems = Poem.create([
 		first_verse: "ふくからにあきのくさきのしをるれば",
 		second_verse_raw: "むべやまかぜをあらしといふらむ",
 		second_verse_card: "むへやまかせをあらしといふらむ",
+		second_verse_answer: "むへ",
 		kimariji: "ふ"
 	},
 	{
@@ -188,6 +210,7 @@ poems = Poem.create([
 		first_verse: "つきみればちぢにものこそかなしけれ",
 		second_verse_raw: "わがみひとつのあきにはあらねど",
 		second_verse_card: "わかみひとつのあきにはあらねと",
+		second_verse_answer: "わかみひ",
 		kimariji: "つき"
 	},
 	{
@@ -196,6 +219,7 @@ poems = Poem.create([
 		first_verse: "このたびはぬさもとりあへずたむけやま",
 		second_verse_raw: "もみぢのにしきかみのまにまに",
 		second_verse_card: "もみちのにしきかみのまにまに",
+		second_verse_answer: "もみ",
 		kimariji: "この"
 	},
 	{
@@ -204,6 +228,7 @@ poems = Poem.create([
 		first_verse: "なにしおはばあふさかやまのさねかづら",
 		second_verse_raw: "ひとにしられでくるよしもがな",
 		second_verse_card: "ひとにしられてくるよしもかな",
+		second_verse_answer: "ひとにし",
 		kimariji: "なにし"
 	},
 	{
@@ -212,6 +237,7 @@ poems = Poem.create([
 		first_verse: "をぐらやまみねのもみぢばこころあらば",
 		second_verse_raw: "いまひとたびのみゆきまたなむ",
 		second_verse_card: "いまひとたひのみゆきまたなむ",
+		second_verse_answer: "いまひとたひのみ",
 		kimariji: "をぐ"
 	},
 	{
@@ -220,6 +246,7 @@ poems = Poem.create([
 		first_verse: "みかのはらわきてながるるいづみがは",
 		second_verse_raw: "いつみきとてかこひしかるらむ",
 		second_verse_card: "いつみきとてかこひしかるらむ",
+		second_verse_answer: "いつみ",
 		kimariji: "みかの"
 	},
 	{
@@ -228,6 +255,7 @@ poems = Poem.create([
 		first_verse: "やまざとはふゆぞさびしさまさりける",
 		second_verse_raw: "ひとめもくさもかれぬとおもへば",
 		second_verse_card: "ひとめもくさもかれぬとおもへは",
+		second_verse_answer: "ひとめ",
 		kimariji: "やまざ"
 	},
 	{
@@ -236,6 +264,7 @@ poems = Poem.create([
 		first_verse: "こころあてにをらばやをらむはつしもの",
 		second_verse_raw: "おきまどはせるしらぎくのはな",
 		second_verse_card: "おきまとはせるしらきくのはな",
+		second_verse_answer: "お",
 		kimariji: "こころあ"
 	},
 	{
@@ -244,6 +273,7 @@ poems = Poem.create([
 		first_verse: "ありあけのつれなくみえしわかれより",
 		second_verse_raw: "あかつきばかりうきものはなし",
 		second_verse_card: "あかつきはかりうきものはなし",
+		second_verse_answer: "あか",
 		kimariji: "ありあ"
 	},
 	{
@@ -252,6 +282,7 @@ poems = Poem.create([
 		first_verse: "あさぼらけありあけのつきとみるまでに",
 		second_verse_raw: "よしののさとにふれるしらゆき",
 		second_verse_card: "よしののさとにふれるしらゆき",
+		second_verse_answer: "よし",
 		kimariji: "あさぼらけあ"
 	},
 	{
@@ -260,6 +291,7 @@ poems = Poem.create([
 		first_verse: "やまがはにかぜのかけたるしがらみは",
 		second_verse_raw: "ながれもあへぬもみぢなりけり",
 		second_verse_card: "なかれもあへぬもみちなりけり",
+		second_verse_answer: "なかれ",
 		kimariji: "やまが"
 	},
 	{
@@ -268,6 +300,7 @@ poems = Poem.create([
 		first_verse: "ひさかたのひかりのどけきはるのひに",
 		second_verse_raw: "しづごころなくはなのちるらむ",
 		second_verse_card: "しつこころなくはなのちるらむ",
+		second_verse_answer: "しつ",
 		kimariji: "ひさ"
 	},
 	{
@@ -276,6 +309,7 @@ poems = Poem.create([
 		first_verse: "たれをかもしるひとにせむたかさごの",
 		second_verse_raw: "まつもむかしのともならなくに",
 		second_verse_card: "まつもむかしのともならなくに",
+		second_verse_answer: "まつも",
 		kimariji: "たれ"
 	},
 	{
@@ -284,6 +318,7 @@ poems = Poem.create([
 		first_verse: "ひとはいさこころもしらずふるさとは",
 		second_verse_raw: "はなぞむかしのかににほひける",
 		second_verse_card: "はなそむかしのかににほひける",
+		second_verse_answer: "はなそ",
 		kimariji: "ひとは"
 	},
 	{
@@ -292,6 +327,7 @@ poems = Poem.create([
 		first_verse: "なつのよはまだよひながらあけぬるを",
 		second_verse_raw: "くものいづこにつきやどるらむ",
 		second_verse_card: "くものいつこにつきやとるらむ",
+		second_verse_answer: "くもの",
 		kimariji: "なつ"
 	},
 	{
@@ -300,6 +336,7 @@ poems = Poem.create([
 		first_verse: "しらつゆにかぜのふきしくあきののは",
 		second_verse_raw: "つらぬきとめぬたまぞちりける",
 		second_verse_card: "つらぬきとめぬたまそちりける",
+		second_verse_answer: "つ",
 		kimariji: "しら"
 	},
 	{
@@ -308,6 +345,7 @@ poems = Poem.create([
 		first_verse: "わすらるるみをばおもはずちかひてし",
 		second_verse_raw: "ひとのいのちのをしくもあるかな",
 		second_verse_card: "ひとのいのちのをしくもあるかな",
+		second_verse_answer: "ひとの",
 		kimariji: "わすら"
 	},
 	{
@@ -316,6 +354,7 @@ poems = Poem.create([
 		first_verse: "あさぢふのをののしのはらしのぶれど",
 		second_verse_raw: "あまりてなどかひとのこひしき",
 		second_verse_card: "あまりてなとかひとのこひしき",
+		second_verse_answer: "あまり",
 		kimariji: "あさぢ"
 	},
 	{
@@ -324,6 +363,7 @@ poems = Poem.create([
 		first_verse: "しのぶれどいろにいでにけりわがこひは",
 		second_verse_raw: "ものやおもふとひとのとふまで",
 		second_verse_card: "ものやおもふとひとのとふまて",
+		second_verse_answer: "もの",
 		kimariji: "しの"
 	},
 	{
@@ -332,6 +372,7 @@ poems = Poem.create([
 		first_verse: "こひすてふわがなはまだきたちにけり",
 		second_verse_raw: "ひとしれずこそおもひそめしか",
 		second_verse_card: "ひとしれすこそおもひそめしか",
+		second_verse_answer: "ひとし",
 		kimariji: "こひ"
 	},
 	{
@@ -340,6 +381,7 @@ poems = Poem.create([
 		first_verse: "ちぎりきなかたみにそでをしぼりつつ",
 		second_verse_raw: "すゑのまつやまなみこさじとは",
 		second_verse_card: "すゑのまつやまなみこさしとは",
+		second_verse_answer: "す",
 		kimariji: "ちぎりき"
 	},
 	{
@@ -348,6 +390,7 @@ poems = Poem.create([
 		first_verse: "あひみてののちのこころにくらぶれば",
 		second_verse_raw: "むかしはものをおもはざりけり",
 		second_verse_card: "むかしはものをおもはさりけり",
+		second_verse_answer: "むか",
 		kimariji: "あひ"
 	},
 	{
@@ -356,6 +399,7 @@ poems = Poem.create([
 		first_verse: "あふことのたえてしなくはなかなかに",
 		second_verse_raw: "ひとをもみをもうらみざらまし",
 		second_verse_card: "ひとをもみをもうらみさらまし",
+		second_verse_answer: "ひとを",
 		kimariji: "あふ"
 	},
 	{
@@ -364,6 +408,7 @@ poems = Poem.create([
 		first_verse: "あはれともいふべき人は思ほえで",
 		second_verse_raw: "身のいたづらになりぬべきかな",
 		second_verse_card: "身のいたつらになりぬへきかな",
+		second_verse_answer: "身",
 		kimariji: "あはれ"
 	},
 	{
@@ -372,6 +417,7 @@ poems = Poem.create([
 		first_verse: "ゆらのとをわたるふなびとかぢをたえ",
 		second_verse_raw: "ゆくへもしらぬこひのみちかな",
 		second_verse_card: "ゆくへもしらぬこひのみちかな",
+		second_verse_answer: "ゆく",
 		kimariji: "ゆら"
 	},
 	{
@@ -380,6 +426,7 @@ poems = Poem.create([
 		first_verse: "やへむぐらしげれるやどのさびしきに",
 		second_verse_raw: "ひとこそみえねあきはきにけり",
 		second_verse_card: "ひとこそみえねあきはきにけり",
+		second_verse_answer: "ひとこそみ",
 		kimariji: "やへ"
 	},
 	{
@@ -388,6 +435,7 @@ poems = Poem.create([
 		first_verse: "かぜをいたみいはうつなみのおのれのみ",
 		second_verse_raw: "くだけてものをおもふころかな",
 		second_verse_card: "くたけてものをおもふころかな",
+		second_verse_answer: "くた",
 		kimariji: "かぜを"
 	},
 	{
@@ -396,6 +444,7 @@ poems = Poem.create([
 		first_verse: "みかきもりゑじのたくひのよるはもえ",
 		second_verse_raw: "ひるはきえつつものをこそおもへ",
 		second_verse_card: "ひるはきえつつものをこそおもへ",
+		second_verse_answer: "ひる",
 		kimariji: "みかき"
 	},
 	{
@@ -404,6 +453,7 @@ poems = Poem.create([
 		first_verse: "きみがためをしからざりしいのちさへ",
 		second_verse_raw: "ながくもがなとおもひけるかな",
 		second_verse_card: "なかくもかなとおもひけるかな",
+		second_verse_answer: "なかく",
 		kimariji: "きみがためを"
 	},
 	{
@@ -412,6 +462,7 @@ poems = Poem.create([
 		first_verse: "かくとだにえやはいぶきのさしもぐさ",
 		second_verse_raw: "さしもしらじなもゆるおもひを",
 		second_verse_card: "さしもしらしなもゆるおもひを",
+		second_verse_answer: "さ",
 		kimariji: "かく"
 	},
 	{
@@ -420,6 +471,7 @@ poems = Poem.create([
 		first_verse: "あけぬればくるるものとはしりながら",
 		second_verse_raw: "なほうらめしきあさぼらけかな",
 		second_verse_card: "なほうらめしきあさほらけかな",
+		second_verse_answer: "なほう",
 		kimariji: "あけ"
 	},
 	{
@@ -428,6 +480,7 @@ poems = Poem.create([
 		first_verse: "なげきつつひとりぬるよのあくるまは",
 		second_verse_raw: "いかにひさしきものとかはしる",
 		second_verse_card: "いかにひさしきものとかはしる",
+		second_verse_answer: "いか",
 		kimariji: "なげき"
 	},
 	{
@@ -436,6 +489,7 @@ poems = Poem.create([
 		first_verse: "わすれじのゆくすゑまではかたければ",
 		second_verse_raw: "けふをかぎりのいのちともがな",
 		second_verse_card: "けふをかきりのいのちともかな",
+		second_verse_answer: "けふを",
 		kimariji: "わすれ"
 	},
 	{
@@ -444,6 +498,7 @@ poems = Poem.create([
 		first_verse: "たきのおとはたえてひさしくなりぬれど",
 		second_verse_raw: "なこそながれてなほきこえけれ",
 		second_verse_card: "なこそなかれてなほきこえけれ",
+		second_verse_answer: "なこ",
 		kimariji: "たき"
 	},
 	{
@@ -452,6 +507,7 @@ poems = Poem.create([
 		first_verse: "あらざらむこのよのほかのおもひでに",
 		second_verse_raw: "いまひとたびのあふこともがな",
 		second_verse_card: "いまひとたひのあふこともかな",
+		second_verse_answer: "いまひとたひのあ",
 		kimariji: "あらざ"
 	},
 	{
@@ -460,6 +516,7 @@ poems = Poem.create([
 		first_verse: "めぐりあひてみしやそれともわかぬまに",
 		second_verse_raw: "くもがくれにしよはのつきかな",
 		second_verse_card: "くもかくれにしよはのつきかな",
+		second_verse_answer: "くもか",
 		kimariji: "め"
 	},
 	{
@@ -468,6 +525,7 @@ poems = Poem.create([
 		first_verse: "ありまやまゐなのささはらかぜふけば",
 		second_verse_raw: "いでそよひとをわすれやはする",
 		second_verse_card: "いてそよひとをわすれやはする",
+		second_verse_answer: "いて",
 		kimariji: "ありま"
 	},
 	{
@@ -476,6 +534,7 @@ poems = Poem.create([
 		first_verse: "やすらはでねなましものをさよふけて",
 		second_verse_raw: "かたぶくまでのつきをみしかな",
 		second_verse_card: "かたふくまてのつきをみしかな",
+		second_verse_answer: "かた",
 		kimariji: "やす"
 	},
 	{
@@ -484,6 +543,7 @@ poems = Poem.create([
 		first_verse: "おほえやまいくののみちのとほければ",
 		second_verse_raw: "まだふみもみずあまのはしだて",
 		second_verse_card: "またふみもみすあまのはしたて",
+		second_verse_answer: "また",
 		kimariji: "おほえ"
 	},
 	{
@@ -492,6 +552,7 @@ poems = Poem.create([
 		first_verse: "いにしへのならのみやこのやへざくら",
 		second_verse_raw: "けふここのへににほひぬるかな",
 		second_verse_card: "けふここのへににほひぬるかな",
+		second_verse_answer: "けふこ",
 		kimariji: "いに"
 	},
 	{
@@ -500,6 +561,7 @@ poems = Poem.create([
 		first_verse: "よをこめてとりのそらねははかるとも",
 		second_verse_raw: "よにあふさかのせきはゆるさじ",
 		second_verse_card: "よにあふさかのせきはゆるさし",
+		second_verse_answer: "よに",
 		kimariji: "よを"
 	},
 	{
@@ -508,6 +570,7 @@ poems = Poem.create([
 		first_verse: "いまはただおもひたえなむとばかりを",
 		second_verse_raw: "ひとづてならでいふよしもがな",
 		second_verse_card: "ひとつてならていふよしもかな",
+		second_verse_answer: "ひとつ",
 		kimariji: "いまは"
 	},
 	{
@@ -516,6 +579,7 @@ poems = Poem.create([
 		first_verse: "あさぼらけうぢのかはぎりたえだえに",
 		second_verse_raw: "あらはれわたるせぜのあじろぎ",
 		second_verse_card: "あらはれわたるせせのあしろき",
+		second_verse_answer: "あら",
 		kimariji: "あさぼらけう"
 	},
 	{
@@ -524,6 +588,7 @@ poems = Poem.create([
 		first_verse: "うらみわびほさぬそでだにあるものを",
 		second_verse_raw: "こひにくちなむなこそをしけれ",
 		second_verse_card: "こひにくちなむなこそをしけれ",
+		second_verse_answer: "こひに",
 		kimariji: "うら"
 	},
 	{
@@ -532,6 +597,7 @@ poems = Poem.create([
 		first_verse: "もろともにあはれとおもへやまざくら",
 		second_verse_raw: "はなよりほかにしるひともなし",
 		second_verse_card: "はなよりほかにしるひともなし",
+		second_verse_answer: "はなよ",
 		kimariji: "もろ"
 	},
 	{
@@ -540,6 +606,7 @@ poems = Poem.create([
 		first_verse: "はるのよのゆめばかりなるたまくらに",
 		second_verse_raw: "かひなくたたむなこそをしけれ",
 		second_verse_card: "かひなくたたむなこそをしけれ",
+		second_verse_answer: "かひ",
 		kimariji: "はるの"
 	},
 	{
@@ -548,6 +615,7 @@ poems = Poem.create([
 		first_verse: "こころにもあらでうきよにながらへば",
 		second_verse_raw: "こひしかるべきよはのつきかな",
 		second_verse_card: "こひしかるへきよはのつきかな",
+		second_verse_answer: "こひし",
 		kimariji: "こころに"
 	},
 	{
@@ -556,6 +624,7 @@ poems = Poem.create([
 		first_verse: "あらしふくみむろのやまのもみぢばは",
 		second_verse_raw: "たつたのかはのにしきなりけり",
 		second_verse_card: "たつたのかはのにしきなりけり",
+		second_verse_answer: "たつ",
 		kimariji: "あらし"
 	},
 	{
@@ -564,6 +633,7 @@ poems = Poem.create([
 		first_verse: "さびしさにやどをたちいでてながむれば",
 		second_verse_raw: "いづこもおなじあきのゆふぐれ",
 		second_verse_card: "いつこもおなしあきのゆふくれ",
+		second_verse_answer: "いつこ",
 		kimariji: "さ"
 	},
 	{
@@ -572,6 +642,7 @@ poems = Poem.create([
 		first_verse: "ゆふさればかどたのいなばおとづれて",
 		second_verse_raw: "あしのまろやにあきかぜぞふく",
 		second_verse_card: "あしのまろやにあきかせそふく",
+		second_verse_answer: "あし",
 		kimariji: "ゆふ"
 	},
 	{
@@ -580,6 +651,7 @@ poems = Poem.create([
 		first_verse: "おとにきくたかしのはまのあだなみは",
 		second_verse_raw: "かけじやそでのぬれもこそすれ",
 		second_verse_card: "かけしやそてのぬれもこそすれ",
+		second_verse_answer: "かけ",
 		kimariji: "おと"
 	},
 	{
@@ -588,6 +660,7 @@ poems = Poem.create([
 		first_verse: "たかさごのをのへのさくらさきにけり",
 		second_verse_raw: "とやまのかすみたたずもあらなむ",
 		second_verse_card: "とやまのかすみたたすもあらなむ",
+		second_verse_answer: "と",
 		kimariji: "たか"
 	},
 	{
@@ -596,6 +669,7 @@ poems = Poem.create([
 		first_verse: "うかりけるひとをはつせのやまおろしよ",
 		second_verse_raw: "はげしかれとはいのらぬものを",
 		second_verse_card: "はけしかれとはいのらぬものを",
+		second_verse_answer: "はけ",
 		kimariji: "うか"
 	},
 	{
@@ -604,6 +678,7 @@ poems = Poem.create([
 		first_verse: "ちぎりおきしさせもがつゆをいのちにて",
 		second_verse_raw: "あはれことしのあきもいぬめり",
 		second_verse_card: "あはれことしのあきもいぬめり",
+		second_verse_answer: "あはれ",
 		kimariji: "ちぎりお"
 	},
 	{
@@ -612,6 +687,7 @@ poems = Poem.create([
 		first_verse: "わたのはらこぎいでてみればひさかたの",
 		second_verse_raw: "くもゐにまがふおきつしらなみ",
 		second_verse_card: "くもゐにまかふおきつしらなみ",
+		second_verse_answer: "くもゐ",
 		kimariji: "わたのはらこ"
 	},
 	{
@@ -620,6 +696,7 @@ poems = Poem.create([
 		first_verse: "せをはやみいはにせかるるたきがはの",
 		second_verse_raw: "われてもすゑにあはむとぞおもふ",
 		second_verse_card: "われてもすゑにあはむとそおもふ",
+		second_verse_answer: "われ",
 		kimariji: "せ"
 	},
 	{
@@ -628,6 +705,7 @@ poems = Poem.create([
 		first_verse: "あはぢしまかよふちどりのなくこゑに",
 		second_verse_raw: "いくよねざめぬすまのせきもり",
 		second_verse_card: "いくよねさめぬすまのせきもり",
+		second_verse_answer: "いく",
 		kimariji: "あはぢ"
 	},
 	{
@@ -636,6 +714,7 @@ poems = Poem.create([
 		first_verse: "あきかぜにたなびくくものたえまより",
 		second_verse_raw: "もれいづるつきのかげのさやけさ",
 		second_verse_card: "もれいつるつきのかけのさやけさ",
+		second_verse_answer: "もれ",
 		kimariji: "あきか"
 	},
 	{
@@ -644,6 +723,7 @@ poems = Poem.create([
 		first_verse: "ながからむこころもしらずくろかみの",
 		second_verse_raw: "みだれてけさはものをこそおもへ",
 		second_verse_card: "みたれてけさはものをこそおもへ",
+		second_verse_answer: "みたれて",
 		kimariji: "ながか"
 	},
 	{
@@ -652,6 +732,7 @@ poems = Poem.create([
 		first_verse: "ほととぎすなきつるかたをながむれば",
 		second_verse_raw: "ただありあけのつきぞのこれる",
 		second_verse_card: "たたありあけのつきそのこれる",
+		second_verse_answer: "たた",
 		kimariji: "ほ"
 	},
 	{
@@ -660,6 +741,7 @@ poems = Poem.create([
 		first_verse: "おもひわびさてもいのちはあるものを",
 		second_verse_raw: "うきにたへぬはなみだなりけり",
 		second_verse_card: "うきにたへぬはなみたなりけり",
+		second_verse_answer: "うき",
 		kimariji: "おも"
 	},
 	{
@@ -668,6 +750,7 @@ poems = Poem.create([
 		first_verse: "よのなかよみちこそなけれおもひいる",
 		second_verse_raw: "やまのおくにもしかぞなくなる",
 		second_verse_card: "やまのおくにもしかそなくなる",
+		second_verse_answer: "やま",
 		kimariji: "よのなかよ"
 	},
 	{
@@ -676,6 +759,7 @@ poems = Poem.create([
 		first_verse: "ながらへばまたこのごろやしのばれむ",
 		second_verse_raw: "うしとみしよぞいまはこひしき",
 		second_verse_card: "うしとみしよそいまはこひしき",
+		second_verse_answer: "うし",
 		kimariji: "ながら"
 	},
 	{
@@ -684,6 +768,7 @@ poems = Poem.create([
 		first_verse: "よもすがらものおもふころはあけやらで",
 		second_verse_raw: "ねやのひまさへつれなかりけり",
 		second_verse_card: "ねやのひまさへつれなかりけり",
+		second_verse_answer: "ね",
 		kimariji: "よも"
 	},
 	{
@@ -692,6 +777,7 @@ poems = Poem.create([
 		first_verse: "なげけとてつきやはものをおもはする",
 		second_verse_raw: "かこちがほなるわがなみだかな",
 		second_verse_card: "かこちかほなるわかなみたかな",
+		second_verse_answer: "かこ",
 		kimariji: "なげけ"
 	},
 	{
@@ -700,6 +786,7 @@ poems = Poem.create([
 		first_verse: "むらさめのつゆもまだひぬまきのはに",
 		second_verse_raw: "きりたちのぼるあきのゆふぐれ",
 		second_verse_card: "きりたちのほるあきのゆふくれ",
+		second_verse_answer: "き",
 		kimariji: "む"
 	},
 	{
@@ -708,6 +795,7 @@ poems = Poem.create([
 		first_verse: "なにはえのあしのかりねのひとよゆゑ",
 		second_verse_raw: "みをつくしてやこひわたるべき",
 		second_verse_card: "みをつくしてやこひわたるへき",
+		second_verse_answer: "みをつくしてや",
 		kimariji: "なにはえ"
 	},
 	{
@@ -716,6 +804,7 @@ poems = Poem.create([
 		first_verse: "たまのをよたえなばたえねながらへば",
 		second_verse_raw: "しのぶることのよわりもぞする",
 		second_verse_card: "しのふることのよわりもそする",
+		second_verse_answer: "しの",
 		kimariji: "たま"
 	},
 	{
@@ -724,6 +813,7 @@ poems = Poem.create([
 		first_verse: "みせばやなをじまのあまのそでだにも",
 		second_verse_raw: "ぬれにぞぬれしいろはかはらず",
 		second_verse_card: "ぬれにそぬれしいろはかはらす",
+		second_verse_answer: "ぬ",
 		kimariji: "みせ"
 	},
 	{
@@ -732,6 +822,7 @@ poems = Poem.create([
 		first_verse: "きりぎりすなくやしもよのさむしろに",
 		second_verse_raw: "ころもかたしきひとりかもねむ",
 		second_verse_card: "ころもかたしきひとりかもねむ",
+		second_verse_answer: "ころもか",
 		kimariji: "きり"
 	},
 	{
@@ -740,6 +831,7 @@ poems = Poem.create([
 		first_verse: "わがそではしほひにみえぬおきのいしの",
 		second_verse_raw: "ひとこそしらねかわくまもなし",
 		second_verse_card: "ひとこそしらねかわくまもなし",
+		second_verse_answer: "ひとこそし",
 		kimariji: "わがそ"
 	},
 	{
@@ -748,6 +840,7 @@ poems = Poem.create([
 		first_verse: "よのなかはつねにもがもななぎさこぐ",
 		second_verse_raw: "あまのをぶねのつなでかなしも",
 		second_verse_card: "あまのをふねのつなてかなしも",
+		second_verse_answer: "あまの",
 		kimariji: "よのなかは"
 	},
 	{
@@ -756,6 +849,7 @@ poems = Poem.create([
 		first_verse: "みよしののやまのあきかぜさよふけて",
 		second_verse_raw: "ふるさとさむくころもうつなり",
 		second_verse_card: "ふるさとさむくころもうつなり",
+		second_verse_answer: "ふる",
 		kimariji: "みよ"
 	},
 	{
@@ -764,6 +858,7 @@ poems = Poem.create([
 		first_verse: "おほけなくうきよのたみにおほふかな",
 		second_verse_raw: "わがたつそまにすみぞめのそで",
 		second_verse_card: "わかたつそまにすみそめのそて",
+		second_verse_answer: "わかた",
 		kimariji: "おほけ"
 	},
 	{
@@ -772,6 +867,7 @@ poems = Poem.create([
 		first_verse: "はなさそふあらしのにはのゆきならで",
 		second_verse_raw: "ふりゆくものはわがみなりけり",
 		second_verse_card: "ふりゆくものはわかみなりけり",
+		second_verse_answer: "ふり",
 		kimariji: "はなさ"
 	},
 	{
@@ -780,6 +876,7 @@ poems = Poem.create([
 		first_verse: "こぬひとをまつほのうらのゆふなぎに",
 		second_verse_raw: "やくやもしほのみもこがれつつ",
 		second_verse_card: "やくやもしほのみもこかれつつ",
+		second_verse_answer: "やく",
 		kimariji: "こぬ"
 	},
 	{
@@ -788,6 +885,7 @@ poems = Poem.create([
 		first_verse: "かぜそよぐならのをがはのゆふぐれは",
 		second_verse_raw: "みそぎぞなつのしるしなりける",
 		second_verse_card: "みそきそなつのしるしなりける",
+		second_verse_answer: "みそ",
 		kimariji: "かぜそ"
 	},
 	{
@@ -796,6 +894,7 @@ poems = Poem.create([
 		first_verse: "ひともをしひともうらめしあぢきなく",
 		second_verse_raw: "よをおもふゆゑにものおもふみは",
 		second_verse_card: "よをおもふゆゑにものおもふみは",
+		second_verse_answer: "よをお",
 		kimariji: "ひとも"
 	},
 	{
@@ -804,6 +903,7 @@ poems = Poem.create([
 		first_verse: "ももしきやふるきのきばのしのぶにも",
 		second_verse_raw: "なほあまりあるむかしなりけり",
 		second_verse_card: "なほあまりあるむかしなりけり",
+		second_verse_answer: "なほあ",
 		kimariji: "もも"
 	}
 ]);

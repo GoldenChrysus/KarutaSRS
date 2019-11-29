@@ -3,6 +3,7 @@ class Poem < ApplicationRecord
 	validates :first_verse, presence: true
 	validates :second_verse_raw, presence: true
 	validates :second_verse_card, presence: true
+	validates :second_verse_answer, presence: true
 	validates :kimariji, presence: true
 
 	# Relationships

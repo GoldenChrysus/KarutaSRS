@@ -9,5 +9,6 @@ RSpec.describe Poem, type: :model do
   it { should validate_presence_of(:first_verse) }
   it { should validate_presence_of(:second_verse_raw) }
   it { should validate_presence_of(:second_verse_card) }
+  it { should validate_presence_of(:second_verse_answer) }
   it { should validate_presence_of(:kimariji) }
 end
