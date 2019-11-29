@@ -212,7 +212,7 @@ poems = Poem.create([
 		first_verse: "をぐらやまみねのもみぢばこころあらば",
 		second_verse_raw: "いまひとたびのみゆきまたなむ",
 		second_verse_card: "いまひとたひのみゆきまたなむ",
-		kimariji: "を"
+		kimariji: "をぐ"
 	},
 	{
 		id: "27",
