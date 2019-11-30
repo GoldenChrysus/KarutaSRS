@@ -7,5 +7,4 @@ RSpec.describe User, type: :model do
   # ensure relevant columns are present before saving
   it { should validate_presence_of(:email) }
   it { should validate_presence_of(:password) }
-  it { should validate_presence_of(:bearer) }
 end
