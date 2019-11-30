@@ -2,7 +2,7 @@ module Api
 	class UserResource < JSONAPI::Resource
 		attributes :email, :bearer
 
-		has_many :learned_item
+		has_many :learned_items
 
 		filters :email
 

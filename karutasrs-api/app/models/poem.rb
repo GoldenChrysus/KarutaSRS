@@ -7,5 +7,5 @@ class Poem < ApplicationRecord
 	validates :kimariji, presence: true
 
 	# Relationships
-	has_many :learned_item
+	has_many :learned_items
 end

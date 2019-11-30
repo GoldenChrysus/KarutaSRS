@@ -4,7 +4,7 @@ class User < ApplicationRecord
 	validates :bearer, presence: true, uniqueness: true
 
 	# Relationships
-	has_many :learned_item
+	has_many :learned_items
 
 	# Callbacks
 	before_validation :create_bearer, on: :create
