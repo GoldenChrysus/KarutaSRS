@@ -24,11 +24,13 @@ module Api
 				:success => false
 			}
 
-			if (current_level === 9)
+			if (current_level === 9 || Time.now < item.next_review)
 				result[:errors].push("This item cannot be reviewed.")
 				render json: FormatJsonResult.call(data: result).result, status: 406
 				return
 			end
+
+			return
 
 			if (wrong_answers === 0)
 				new_level = current_level + 1
