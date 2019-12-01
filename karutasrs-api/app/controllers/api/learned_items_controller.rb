@@ -24,18 +24,18 @@ module Api
 				:success => false
 			}
 
+			if (current_level === 9)
+				result[:errors].push("This item cannot be reviewed.")
+				render json: FormatJsonResult.call(data: result).result, status: 406
+				return
+			end
+
 			if (wrong_answers === 0)
 				new_level = current_level + 1
 			elsif (current_level > 1)
 				penalty    = (current_level >= 5) ? 2 : 1
 				adjustment = ((wrong_answers / 2).to_f).ceil
 				new_level  = [current_level - (adjustment * penalty), 1].max
-			end
-
-			if (level_map[new_level] === nil)
-				result[:errors].push("This item cannot be reviewed.")
-				render json: FormatJsonResult.call(data: result).result, status: 406
-				return
 			end
 
 			map_item = level_map[new_level].split(" ")
