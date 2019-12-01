@@ -30,8 +30,6 @@ module Api
 				return
 			end
 
-			return
-
 			if (wrong_answers === 0)
 				new_level = current_level + 1
 			elsif (current_level > 1)
