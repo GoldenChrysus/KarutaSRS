@@ -34,7 +34,7 @@ module Api
 
 			if (level_map[new_level] === nil)
 				result[:errors].push("This item cannot be reviewed.")
-				render json: FormatJsonResult.call(data: result).result
+				render json: FormatJsonResult.call(data: result).result, status: 406
 				return
 			end
 
@@ -52,7 +52,7 @@ module Api
 				render json: FormatJsonResult.call(data: item).result
 			rescue e
 				result[:errors].push(e.message)
-				render json: FormatJsonResult.call(data: result).result
+				render json: FormatJsonResult.call(data: result).result, status: 500
 			end
 		end
 	end

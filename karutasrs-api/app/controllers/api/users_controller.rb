@@ -13,7 +13,7 @@ module Api
 				.includes(:poem)
 				.to_json(:include => :poem)
 
-			render json: FormatJsonResult.call(data: items).result, status: 200
+			render json: FormatJsonResult.call(data: items).result
 		end
 	end
 end
