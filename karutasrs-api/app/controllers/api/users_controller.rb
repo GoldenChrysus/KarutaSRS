@@ -4,7 +4,8 @@ module Api
 			items = JSON.parse LearnedItem
 				.where(
 					"user_id = :user_id AND
-					next_review <= CURRENT_TIMESTAMP",
+					next_review <= CURRENT_TIMESTAMP AND
+					level <= 8",
 					{
 						:user_id => params[:id]
 					}
