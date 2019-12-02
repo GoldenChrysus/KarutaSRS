@@ -11,6 +11,13 @@ class ApplicationController < JSONAPI::ResourceController
 	end
 
 	def render_not_found_response(exception)
-		render json: { error: exception.message }, status: :not_found
+		data = {
+			:title  => "Record not found",
+			:detail => "The #{exception.model} identified by #{model.id} could not be found",
+			:code   => :not_found,
+			:status => :not_found
+		}
+
+		render json: { errors : [data] }, status: :not_found
 	end
 end
