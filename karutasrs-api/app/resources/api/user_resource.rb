@@ -1,6 +1,6 @@
 module Api
 	class UserResource < JSONAPI::Resource
-		attributes :email, :bearer
+		attributes :email, :bearer, :review_queue_length
 
 		has_many :learned_items
 

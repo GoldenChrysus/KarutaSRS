@@ -50,7 +50,7 @@ module Api
 			begin
 				item.save
 				render json: FormatJsonResult.call(data: item).result
-			rescue e
+			rescue StandardError => e
 				result[:errors].push(e.message)
 				render json: FormatJsonResult.call(data: result).result, status: 500
 			end

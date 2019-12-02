@@ -1,17 +1,15 @@
 module Api
 	class UsersController < ApplicationController
 		def review_queue
-			items = JSON.parse LearnedItem
-				.where(
-					"user_id = :user_id AND
-					next_review <= CURRENT_TIMESTAMP AND
-					level <= 8",
-					{
-						:user_id => params[:id]
-					}
-				)
-				.includes(:poem)
-				.to_json(:include => :poem)
+			user = nil
+
+			begin
+				user = User.find(params[:id])
+			rescue StandardError => e
+				# do nothing
+			end
+
+			items = (user != nil) ? user.review_queue : []
 
 			render json: FormatJsonResult.call(data: items).result
 		end
