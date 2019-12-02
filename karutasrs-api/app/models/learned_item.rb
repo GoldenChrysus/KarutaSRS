@@ -50,7 +50,7 @@ class LearnedItem < ApplicationRecord
 		end
 
 		self.level       = new_level
-		self.next_review = self.get_next_review_date(new_level)
+		self.next_review = get_next_review_date(new_level)
 
 		begin
 			self.save
@@ -70,7 +70,7 @@ class LearnedItem < ApplicationRecord
 
 	private
 		def get_next_review_date(level)
-			map_item = self::LevelMap[level].split(" ")
+			map_item = self.class::LevelMap[level].split(" ")
 
 			advance[map_item[1].to_sym] = map_item[0].to_i
 
@@ -79,6 +79,6 @@ class LearnedItem < ApplicationRecord
 
 		def set_initial_data
 			self.level       = 1
-			self.next_review = self.get_next_review_date(self.level)
+			self.next_review = get_next_review_date(self.level)
 		end
 end
