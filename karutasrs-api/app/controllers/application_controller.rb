@@ -18,6 +18,6 @@ class ApplicationController < JSONAPI::ResourceController
 			:status => :not_found
 		}
 
-		render json: { errors : [data] }, status: :not_found
+		render json: { errors : Array.new.push(data) }, status: :not_found
 	end
 end
