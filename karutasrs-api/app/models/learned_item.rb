@@ -24,11 +24,6 @@ class LearnedItem < ApplicationRecord
 	before_validation :set_initial_data, on: :create
 
 	def complete_review(wrong_answers)
-		advance       = {}
-		item_id       = params[:id]
-		parsed_data   = JSON.parse(request.raw_post)
-		wrong_answers = parsed_data["wrong_answers"]
-		item          = LearnedItem.find(item_id)
 		current_level = self.level
 		new_level     = 1
 		return_data   = {
