@@ -35,10 +35,7 @@ class LearnedItem < ApplicationRecord
 		}
 
 		if (current_level === 9 || Time.now < self.next_review)
-			return_data[:status] = 406
-
-			return_data[:result][:errors].push("This item cannot be reviewed.")
-			return return_data
+			raise ApiErrors::LearnedItemError::CannotBeReviewed.new
 		end
 
 		if (wrong_answers === 0)

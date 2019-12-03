@@ -5,6 +5,7 @@ class ApplicationController < JSONAPI::ResourceController
 
 	rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 	rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+	rescue_from ApiErrors::BaseError, with: :render_api_error
 
 	def render_unprocessable_entity_response(exception)
 		render json: exception.record.errors, status: :unprocessable_entity
@@ -19,5 +20,9 @@ class ApplicationController < JSONAPI::ResourceController
 		}
 
 		render json: { errors: Array.new.push(data) }, status: :not_found
+	end
+
+	def render_api_error(exception)
+		render json: { errors: Array.new.push(exception.data) }, status: exception.code
 	end
 end
