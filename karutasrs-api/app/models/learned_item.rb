@@ -42,12 +42,8 @@ class LearnedItem < ApplicationRecord
 		self.level       = new_level
 		self.next_review = get_next_review_date(new_level)
 
-		begin
-			self.save
-			return self
-		rescue StandardError => e
-			raise ApiErrors::BaseError.new("Server error", e.message, 500)
-		end
+		self.save
+		return self
 	end
 
 	private
