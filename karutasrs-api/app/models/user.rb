@@ -39,7 +39,8 @@ class User < ApplicationRecord
 				)"
 		sql    = ActiveRecord::Base.sanitize_sql([sql, params].flatten)
 		res    = ActiveRecord::Base.connection.execute(sql).map{|row| row["id"]}
-		poems  = Poem.find(res)
+		
+		return Poem.find(res)
 	end
 
 	def lesson_queue_length
