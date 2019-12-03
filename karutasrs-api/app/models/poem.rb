@@ -1,4 +1,5 @@
 class Poem < ApplicationRecord
+	# Validation
 	validates :name, presence: true
 	validates :first_verse, presence: true
 	validates :second_verse_raw, presence: true

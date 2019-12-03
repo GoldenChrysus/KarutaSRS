@@ -1,4 +1,5 @@
 class LearnedItem < ApplicationRecord
+	# Class constants
 	LevelMap = {
 		1 => "4 hours",
 		2 => "8 hours",
@@ -11,6 +12,7 @@ class LearnedItem < ApplicationRecord
 		9 => "99 years"
 	}
 
+	# Validation
 	validates :level, presence: true
 	validates :next_review, presence: true
 	validates :user, presence: true
