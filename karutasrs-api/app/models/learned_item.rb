@@ -48,6 +48,7 @@ class LearnedItem < ApplicationRecord
 
 	private
 		def get_next_review_date(level)
+			advance  = {}
 			map_item = self.class::LevelMap[level].split(" ")
 
 			advance[map_item[1].to_sym] = map_item[0].to_i
