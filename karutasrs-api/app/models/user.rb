@@ -37,10 +37,8 @@ class User < ApplicationRecord
 						i2.user_id = :user_id AND
 						i2.created_at > :cutoff_time
 				)"
-		sql    = ActiveRecord::Base.sanitize_sql([sql, params].flatten)
-		res    = ActiveRecord::Base.connection.execute(sql).map{|row| row["id"]}
-		
-		return Poem.find(res)
+
+		return Poem.where("id IN (#{sql})", params)
 	end
 
 	def lesson_queue_length
