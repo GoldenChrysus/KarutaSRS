@@ -1,16 +1,10 @@
 module ApiErrors
 	class LearnedItemError < ApiErrors::BaseError
 		class CannotBeReviewed < ApiErrors::LearnedItemError
-			def title
-				"Cannot be reviewed"
-			end
-
-			def detail
-				"This item cannot be reviewed yet"
-			end
-
-			def code
-				406
+			def initialize
+				@title  = "Cannot be reviewed"
+				@detail = "This item cannot be reviewed yet"
+				@code   = 406
 			end
 		end
 	end

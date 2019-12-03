@@ -26,13 +26,6 @@ class LearnedItem < ApplicationRecord
 	def complete_review(wrong_answers)
 		current_level = self.level
 		new_level     = 1
-		return_data   = {
-			:status => 200,
-			:result => {
-				:errors  => Array.new,
-				:success => false
-			}
-		}
 
 		if (current_level === 9 || Time.now < self.next_review)
 			raise ApiErrors::LearnedItemError::CannotBeReviewed.new
@@ -51,17 +44,9 @@ class LearnedItem < ApplicationRecord
 
 		begin
 			self.save
-			
-			return_data[:result] = self
-
-			return_data[:result][:success] = true
-
-			return return_data
+			return self
 		rescue StandardError => e
-			return_data[:status] = 500
-
-			return_data[:result][:errors].push(e.message)
-			return return_data
+			raise ApiErrors::BaseError.new("Server error", e.message, 500)
 		end
 	end
 

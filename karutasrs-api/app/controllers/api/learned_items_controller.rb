@@ -7,7 +7,7 @@ module Api
 			item          = LearnedItem.find(item_id)
 			result        = item.complete_review(wrong_answers)
 
-			render json: FormatJsonResult.call(data: result[:result]).result, status: result[:status]
+			render json: FormatJsonResult.call(data: result).result
 		end
 	end
 end
