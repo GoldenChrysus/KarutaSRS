@@ -17,17 +17,18 @@ class ApplicationController < JSONAPI::ResourceController
 
 	def handle_standard_error(exception)
 		class_name = exception.class.to_s
+		error      = nil
 
 		if (class_name[0..8] === "ApiErrors")
-			self.render_api_error(exception)
-		elsif (class_name === "ActiveRecord::RecordNotFound")
-			error = ApiErrors::BaseError.new("Record not found", "The #{exception.model} identified by #{exception.id} could not be found", 404)
+			return self.render_api_error(exception)
+		end
 
-			self.render_api_error(error)
+		if (class_name === "ActiveRecord::RecordNotFound")
+			error = ApiErrors::BaseError.new("Record not found", "The #{exception.model} identified by #{exception.id} could not be found", 404)
 		else
 			error = ApiErrors::BaseError.new("Server error", exception.message, 500)
-
-			self.render_api_error(error)
 		end
+
+		self.render_api_error(error)
 	end
 end
