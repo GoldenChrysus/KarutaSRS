@@ -1,5 +1,5 @@
 import Model from '@ember-data/model';
-import { attr } from "@ember-data/model";
+import { attr, hasMany } from "@ember-data/model";
 
 export default class PoemModel extends Model {
 	@attr name;
@@ -8,4 +8,6 @@ export default class PoemModel extends Model {
 	@attr second_verse_card;
 	@attr second_verse_answer;
 	@attr kimariji;
+
+	@hasMany("learned-item") learned_items;
 }

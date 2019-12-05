@@ -13,6 +13,12 @@ export default Route.extend(ApplicationRouteMixin, {
 	async model() {
 		let poems = await this.store.findAll("poem");
 
+		poems.forEach(async (poem) => {
+			let items = await poem.learned_items;
+
+			console.log(items);
+		});
+
 		console.log(this.session);
 
 		return {
