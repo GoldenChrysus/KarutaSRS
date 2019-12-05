@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+	root to: proc { [404, {}, ["Not found."]] }
+
 	namespace "api" do
 		get "users/:id/review-queue", to: "users#review_queue"
 		get "users/:id/lesson-queue", to: "users#lesson_queue"
