@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = function(environment) {
 	let ENV = {
@@ -20,8 +20,6 @@ module.exports = function(environment) {
 		APP: {
 			// Here you can pass flags/options to your application instance
 			// when it is created
-			name     : "Karuta SRS",
-			api_host : "http://localhost:3000/api"
 		},
 
 		"ember-simple-auth" : {

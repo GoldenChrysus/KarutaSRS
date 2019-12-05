@@ -4,9 +4,13 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
 	let app = new EmberApp(defaults, {
-		lessOptions: {
-			paths: [
-				'semantic/'
+		yamlConfig  : {
+			fileNames                 : ["config.yml"],
+			warnAboutNonexistingFiles : true
+		},
+		lessOptions : {
+			paths : [
+				"semantic/"
 			]
 		}
 	});
