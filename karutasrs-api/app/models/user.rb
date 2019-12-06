@@ -70,14 +70,18 @@ class User < ApplicationRecord
 		return !!user
 	end
 
+	def self.hash_value(value)
+		return Digest::SHA256.hexdigest(value)
+	end
+
 	private
 		def create_bearer
 			while (!self.bearer || self.class.bearer_exists?(self.bearer))
-				self.bearer = Digest::SHA256.hexdigest(SecureRandom.uuid)
+				self.bearer = self.class.hash_value(SecureRandom.uuid)
 			end
 		end
 
 		def hash_password
-			self.password = Digest::SHA256.hexdigest(self.password)
+			self.password = self.class.hash_value(self.password)
 		end
 end
