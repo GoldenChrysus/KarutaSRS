@@ -1,5 +1,12 @@
 <div class="ui left aligned segment" {{did-insert this.didInsert}}>
 	<h4 class="ui dividing header">Login to {{title}}</h4>
+	{{#if login_error}}
+		<div class="ajax-response" data-for="login-form">
+			<div class="ui error message">
+				<i class="remove icon"></i>Login failed. Please try again.
+			</div>
+		</div>
+	{{/if}}
 	<form class="ui form" name="login-form" id="login-form" {{action "login" on="submit"}}>
 		<div class="field">
 			<div class="ui icon input">
@@ -17,11 +24,4 @@
 			<input type="submit" name="register" class="ui button" value="Register" {{action "register" on="click"}}>
 		</div>
 	</form>
-	{{#if login_error}}
-		<div class="ajax-response" data-for="login-form">
-			<div class="ui error message">
-				<i class="remove icon"></i>Login failed. Please try again.
-			</div>
-		</div>
-	{{/if}}
 </div>

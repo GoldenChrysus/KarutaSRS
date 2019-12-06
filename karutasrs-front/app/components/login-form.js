@@ -6,6 +6,7 @@ import config from "../config/environment";
 export default Component.extend({
 	title   : config.name,
 	session : service(),
+	store   : service("store"),
 
 	didInsert(element) {
 		$(element).find("#login-form").form({
@@ -49,12 +50,28 @@ export default Component.extend({
 					// transition
 				})
 				.catch(() => {
-					this.login_error = true;
+					this.set("login_error", true);
 				});
 		},
 
-		register() {
-			console.log("register");
+		async register() {
+			console.log(this.email);
+			console.log(this.password);
+			let user = await this.store.createRecord(
+				"user",
+				{
+					email    : this.email,
+					password : this.password
+				}
+			);
+
+			user.save()
+				.then(() => {
+					// transition
+				})
+				.catch(() => {
+					this.set("login_error", true);
+				});
 		}
 	}
 });
