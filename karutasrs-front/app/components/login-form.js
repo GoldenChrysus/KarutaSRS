@@ -51,6 +51,10 @@ export default Component.extend({
 				.catch(() => {
 					this.login_error = true;
 				});
+		},
+
+		register() {
+			console.log("register");
 		}
 	}
 });

@@ -12,9 +12,9 @@
 			</div>
 		</div>
 		<div class="ui buttons">
-			<input type="submit" name="login" class="ui primary button" value="Login">
+			<input type="submit" name="submit" class="ui primary button" value="Login" {{action "login" on="click"}}>
 			<div class="or"></div>
-			<input type="submit" name="register" class="ui button" value="Register">
+			<input type="submit" name="register" class="ui button" value="Register" {{action "register" on="click"}}>
 		</div>
 	</form>
 	{{#if login_error}}
