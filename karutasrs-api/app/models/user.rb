@@ -9,6 +9,7 @@ class User < ApplicationRecord
 
 	# Callbacks
 	before_validation :create_bearer, on: :create
+	after_validation :hash_password, on: :create
 
 	def lesson_queue
 		params = {
@@ -74,5 +75,9 @@ class User < ApplicationRecord
 			while (!self.bearer || self.class.bearer_exists?(self.bearer))
 				self.bearer = Digest::SHA256.hexdigest(SecureRandom.uuid)
 			end
+		end
+
+		def hash_password
+			self.password = Digest::SHA256.hexdigest(self.password)
 		end
 end
