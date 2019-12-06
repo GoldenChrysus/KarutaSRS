@@ -11,7 +11,11 @@
 				{{input value=password type="password" placeholder="Password" name="password"}} <i class="lock icon"></i>
 			</div>
 		</div>
-		<input type="submit" name="submit" class="ui primary button" value="Login">
+		<div class="ui buttons">
+			<input type="submit" name="login" class="ui primary button" value="Login">
+			<div class="or"></div>
+			<input type="submit" name="register" class="ui button" value="Register">
+		</div>
 	</form>
 	{{#if login_error}}
 		<div class="ajax-response" data-for="login-form">
