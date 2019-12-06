@@ -1,33 +1,23 @@
-<div id="login-container" class="ui middle aligned grid child" {{did-insert this.didInsert}}>
-	<div class="column">
-		<div class="ui center aligned page grid">
-			<div class="sixteen wide tablet eight wide computer column">
-				<div class="ui left aligned segment">
-					<h4 class="ui dividing header">Login to {{title}}</h4>
-					<form class="ui form" name="login-form" id="login-form" {{action "login" on="submit"}}>
-						<div class="field">
-							<label>Email</label>
-							<div class="ui icon input">
-								{{input value=email placeholder="LDAP Email" name="email"}} <i class="user icon"></i>
-							</div>
-						</div>
-						<div class="field">
-							<label>Password</label>
-							<div class="ui icon input">
-								{{input value=password type="password" placeholder="LDAP Password" name="password"}} <i class="lock icon"></i>
-							</div>
-						</div>
-						<input type="submit" name="submit" class="ui primary button" value="Login">
-					</form>
-					{{#if login_error}}
-						<div class="ajax-response" data-for="login-form">
-							<div class="ui error message">
-								<i class="remove icon"></i>Login failed. Please try again.
-							</div>
-						</div>
-					{{/if}}
-				</div>
+<div class="ui left aligned segment" {{did-insert this.didInsert}}>
+	<h4 class="ui dividing header">Login to {{title}}</h4>
+	<form class="ui form" name="login-form" id="login-form" {{action "login" on="submit"}}>
+		<div class="field">
+			<div class="ui icon input">
+				{{input value=email placeholder="Email" name="email"}} <i class="user icon"></i>
 			</div>
 		</div>
-	</div>
+		<div class="field">
+			<div class="ui icon input">
+				{{input value=password type="password" placeholder="Password" name="password"}} <i class="lock icon"></i>
+			</div>
+		</div>
+		<input type="submit" name="submit" class="ui primary button" value="Login">
+	</form>
+	{{#if login_error}}
+		<div class="ajax-response" data-for="login-form">
+			<div class="ui error message">
+				<i class="remove icon"></i>Login failed. Please try again.
+			</div>
+		</div>
+	{{/if}}
 </div>
