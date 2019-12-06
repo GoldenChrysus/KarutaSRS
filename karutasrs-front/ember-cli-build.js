@@ -1,6 +1,8 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const Funnel = require("broccoli-funnel");
+const MergeTrees = require("broccoli-merge-trees");
 
 module.exports = function(defaults) {
 	let app = new EmberApp(defaults, {
@@ -15,6 +17,15 @@ module.exports = function(defaults) {
 		}
 	});
 
+	app.import("node_modules/semantic-ui/dist/semantic.min.js");
+
+	let semantic_css = Funnel(
+		"semantic/themes",
+		{
+			destDir : "themes"
+		}
+	);
+
 	// Use `app.import` to add additional libraries to the generated
 	// output files.
 	//
@@ -28,5 +39,5 @@ module.exports = function(defaults) {
 	// please specify an object with the list of modules as keys
 	// along with the exports of each module as its value.
 
-	return app.toTree();
+	return MergeTrees([semantic_css, app.toTree()]);
 };

@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "@ember/edition-utils": "^1.1.1",
+    "@ember/jquery": "^1.1.0",
     "@ember/optional-features": "^1.0.0",
+    "@ember/render-modifiers": "^1.0.2",
     "@glimmer/component": "^1.0.0-beta.1",
     "babel-eslint": "^10.0.2",
     "broccoli-asset-rev": "^3.0.0",
@@ -47,11 +49,16 @@
     "eslint": "^6.1.0",
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",
+    "jquery": "^3.4.1",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.9.0"
   },
   "engines": {
     "node": "8.* || >= 10.*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "broccoli-funnel": "^3.0.0",
+    "broccoli-merge-trees": "^4.0.0",
+    "semantic-ui": "^2.4.2"
+  }
 }

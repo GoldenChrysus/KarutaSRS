@@ -16,7 +16,7 @@ export default Route.extend(ApplicationRouteMixin, {
 		poems.forEach(async (poem) => {
 			let items = await poem.learned_items;
 
-			console.log(items);
+			// console.log(items);
 		});
 
 		console.log(this.session);
