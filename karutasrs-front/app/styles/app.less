@@ -1,5 +1,16 @@
 @import "semantic";
 
+/* https://css-tricks.com/books/volume-i/scale-typography-screen-size/ */
+html, body {
+	font-size: calc(14px + (42 - 14) * ((100vw - 1920px) / (4096 - 1920)));
+}
+
+@media screen and (max-width: 1919px) {
+	html, body {
+		font-size: 14px;
+	}
+}
+
 @import "components/login-form";
 @import "components/lesson";
 @import "components/grabber-card";
