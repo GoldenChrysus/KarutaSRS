@@ -10,7 +10,6 @@ export default class GrabberCardComponent extends Component {
 	text   = this.args.text;
 	answer = this.args.answer;
 	type   = this.args.type;
-	user   = this.args.user;
 
 	get char_array() {
 		let chars_array  = this.text.split("");

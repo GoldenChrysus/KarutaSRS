@@ -6,9 +6,12 @@ export default Route.extend(AuthenticatedRouteMixin, {
 	store : service(),
 
 	async model() {
+		let user  = await this.store.findRecord("user", 1);
+		let queue = await user.lesson_queue;
+
 		return {
-			user : await this.store.findRecord("user", 1),
-			poem : await this.store.findRecord("poem", 17)
+			user  : user,
+			queue : queue.data
 		}
 	}
 });

@@ -1,4 +1,4 @@
-<div class="ui centered grid lesson">
+<div class="ui centered grid lesson" ...attributes>
 	<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet fifteen wide mobile column">
 		<h1>{{this.poem.name}}</h1>
 
@@ -22,6 +22,6 @@
 		</div>
 	</div>
 	<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet fifteen wide mobile column">
-		<GrabberCard @user={{this.user}} @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" class="large"/>
+		<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" class="large"/>
 	</div>
 </div>
