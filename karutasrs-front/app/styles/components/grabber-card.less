@@ -20,6 +20,12 @@
 	width: 33.3333333333%;
 	height: 20%;
 	text-align: center;
+	transition: opacity 0.50s ease-in-out;
+	opacity: 0;
+}
+
+.grabber-card-outer > .grabber-card-inner > .character.active {
+	opacity: 1;
 }
 
 .grabber-card-outer > .grabber-card-inner > .character > p {
