@@ -1,7 +1,6 @@
 import Component from "@glimmer/component";
 import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
-import { inject as service } from "@ember/service";
 
 export default class GrabberCardComponent extends Component {
 	@tracked height;
@@ -12,7 +11,6 @@ export default class GrabberCardComponent extends Component {
 	answer = this.args.answer;
 	type   = this.args.type;
 	user   = this.args.user;
-	store  = service();
 
 	get char_array() {
 		let chars_array  = this.text.split("");
@@ -49,12 +47,14 @@ export default class GrabberCardComponent extends Component {
 	}
 
 	@action
-	didInsert() {
+	async didInsert() {
 		this.setHeight();
 
 		$(window).on("resize", () => {
 			this.setHeight();
 		});
+
+		console.log(await this.user.lesson_queue);
 	}
 
 	setHeight() {
