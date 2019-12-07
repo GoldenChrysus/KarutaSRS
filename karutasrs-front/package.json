@@ -41,6 +41,7 @@
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^4.4.1",
+    "ember-ref-modifier": "^0.1.3",
     "ember-resolver": "^6.0.0",
     "ember-simple-auth": "^2.1.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/beta/shas/1d9d6be0773b5f79beb8981da04ad23b972c2fc8.tgz",
