@@ -1,5 +1,5 @@
 <div class="lesson-carousel" key="lesson-carousel">
-	<Lesson key="lesson-one" @poem={{get this.queue 0}} {{ref this "lesson-one"}}/>
+	<Lesson key="lesson-one" @poem={{get this.queue this.current_lesson}} {{ref this "lesson-one"}}/>
 
 	{{#if this.multiple_lessons}}
 		<Lesson key="lesson-two" @poem={{get this.queue 1}} class="slide-right" {{ref this "lesson-two"}}/>
