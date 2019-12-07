@@ -1,0 +1,27 @@
+<div class="ui stackable two column centered grid lesson">
+	<div class="four wide column">
+		<h1>{{this.poem.name}}</h1>
+
+		<p>Audio player here.</p>
+
+		<p>Maybe some background info here?</p>
+
+		<div class="ui segment">
+			<h4 class="ui header">First Verse</h4>
+			{{this.poem.first_verse}}
+		</div>
+
+		<div class="ui segment">
+			<h4 class="ui header">Kimariji</h4>
+			{{this.poem.kimariji}}
+		</div>
+
+		<div class="ui segment">
+			<h4 class="ui header">Second Verse Key Characters</h4>
+			{{this.poem.second_verse_answer}}
+		</div>
+	</div>
+	<div class="four wide column">
+		<GrabberCard @user={{this.user}} @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" class="large"/>
+	</div>
+</div>

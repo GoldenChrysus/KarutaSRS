@@ -1,0 +1,18 @@
+.lesson {
+	transition: all 0.5s ease-in-out;
+}
+
+/* Simulate a carousel by using two Lesson components and swapping sides of the screen as needed;
+ * the bypass class is needed to move the component to the other side of the screen without the user seeing the transition
+ */
+.lesson.bypass {
+	transition: none;
+}
+
+.slide-left {
+	transform: translateX(-100%);
+}
+
+.slide-right {
+	transform: translateX(100%);
+}

@@ -7,7 +7,8 @@ export default Route.extend(AuthenticatedRouteMixin, {
 
 	async model() {
 		return {
-			user : await this.store.findRecord("user", 1)
+			user : await this.store.findRecord("user", 1),
+			poem : await this.store.findRecord("poem", 17)
 		}
 	}
 });
