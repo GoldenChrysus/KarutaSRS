@@ -47,14 +47,12 @@ export default class GrabberCardComponent extends Component {
 	}
 
 	@action
-	async didInsert() {
+	didInsert() {
 		this.setHeight();
 
 		$(window).on("resize", () => {
 			this.setHeight();
 		});
-
-		console.log(await this.user.lesson_queue);
 	}
 
 	setHeight() {
