@@ -1,3 +1,7 @@
 <div class="grabber-card-outer" style="width: {{this.width}}; height: {{this.height}}px;" {{ref this "outer"}} {{did-insert this.didInsert}}>
-	<div class="grabber-card-inner">text</div>
+	<div class="grabber-card-inner">
+		{{#each this.char_array as |char|}}
+			{{grabber-card/grabber-card-character char=char}}
+		{{/each}}
+	</div>
 </div>
