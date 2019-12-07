@@ -7,20 +7,38 @@ export default class GrabberCardComponent extends Component {
 
 	@tracked width = this.args.width || "444px";
 
-	text = this.args.text;
+	text   = this.args.text;
+	answer = this.args.answer;
+	type   = this.args.type;
 
 	get char_array() {
-		let chars  = this.text.split("");
-		let result = [];
-		let data   = [
-			chars.slice(10, 15), // left column characters
-			chars.slice(5, 10), // middle column characters
-			chars.slice(0, 5) // right column characters
+		let chars_array  = this.text.split("");
+		let answer_array = (this.answer) ? this.answer.split("") : [];
+		let char_data    = [];
+
+		if (chars_array.length < 15) {
+			for (let i = chars_array.length; i < 15; i++) {
+				chars_array.push("");
+			}
+		}
+
+		for (let i in chars_array) {
+			char_data.push({
+				char      : chars_array[i],
+				is_answer : (chars_array[i] === answer_array[i])
+			});
+		}
+
+		let result      = [];
+		let column_data = [
+			char_data.slice(10, 15), // left column characters
+			char_data.slice(5, 10), // middle column characters
+			char_data.slice(0, 5) // right column characters
 		];
 
 		for (let i = 0; i < 5; i++) {
-			for (let tmp_chars of data) {
-				result.push(tmp_chars[i] || "");
+			for (let tmp_chars of column_data) {
+				result.push(tmp_chars[i] || {});
 			}
 		}
 
