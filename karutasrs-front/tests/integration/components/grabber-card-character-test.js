@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | grabber-card-character', function(hooks) {
+module('Integration | Component | grabber-card::character', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<GrabberCardCharacter />`);
+    await render(hbs`<GrabberCard::Character />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <GrabberCardCharacter>
+      <GrabberCard::Character>
         template block text
-      </GrabberCardCharacter>
+      </GrabberCard::Character>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
