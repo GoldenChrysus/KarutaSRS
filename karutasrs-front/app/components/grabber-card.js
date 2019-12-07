@@ -10,9 +10,9 @@ export default class GrabberCardComponent extends Component {
 	text = this.args.text;
 
 	get char_array() {
-		let chars        = this.text.split("");
-		let result       = [];
-		let data         = [
+		let chars  = this.text.split("");
+		let result = [];
+		let data   = [
 			chars.slice(10, 15), // left column characters
 			chars.slice(5, 10), // middle column characters
 			chars.slice(0, 5) // right column characters
