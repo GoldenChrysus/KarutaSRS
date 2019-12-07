@@ -31,8 +31,6 @@ export default class GrabberCardComponent extends Component {
 	didInsert() {
 		this.height = this.calculateHeight($(this.outer).width());
 
-		let some = this.char_array;
-
 		$(window).on("resize", () => {
 			this.height = this.calculateHeight($(this.outer).width());
 		});
