@@ -19,6 +19,15 @@
 		<h4 class="ui header">Second Verse Key Characters</h4>
 		{{this.poem.second_verse_answer}}
 	</div>
+
+	{{#if this.archaic_warnings.length}}
+		<div class="ui segment archaic">
+			<h4 class="ui header">Archaic Characters</h4>
+			{{#each this.archaic_warnings as |warning|}}
+				<div>{{warning}}</div>
+			{{/each}}
+		</div>
+	{{/if}}
 </div>
 <div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile column">
 	<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" @large=true/>

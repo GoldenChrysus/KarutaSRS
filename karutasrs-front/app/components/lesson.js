@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { tracked } from "@glimmer/tracking";
+import { computed } from "@ember/object";
 
 export default Component.extend({
 	classNames        : [
@@ -11,7 +11,19 @@ export default Component.extend({
 	classNameBindings : [
 		"slideRight"
 	],
+	slideRight        : "",
+	poem              : {},
+	archaic_warnings  : computed("poem", function() {
+		let warnings = [];
 
-	slideRight : "",
-	poem       : {}
+		if ((this.poem.first_verse + this.poem.second_verse_card).includes("ゑ")) {
+			warnings.push("ゑ can be written as 'e'.");
+		}
+
+		if ((this.poem.first_verse + this.poem.second_verse_card).includes("ゐ")) {
+			warnings.push("ゐ can be written as 'i' or 'wi'.");
+		}
+
+		return warnings;
+	})
 });

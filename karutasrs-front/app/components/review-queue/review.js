@@ -31,7 +31,7 @@ export default Component.extend({
 		bindWanaKana(
 			this.input_element,
 			{
-				IMEMode: "toHiragana",
+				IMEMode         : "toHiragana",
 				useObsoleteKana : true
 			}
 		);
