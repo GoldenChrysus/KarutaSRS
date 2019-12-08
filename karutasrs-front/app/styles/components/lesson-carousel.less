@@ -7,6 +7,12 @@
 	position: relative;
 }
 
-.lesson-carousel .steps.ordered > .step::before {
+.lesson-carousel > .selector > .steps.ordered > .step::before {
 	font-size: 2em;
+}
+
+@media screen and (max-width: @tabletBreakpoint - 1) {
+	.lesson-carousel > .selector {
+		display: none !important;
+	}
 }
