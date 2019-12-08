@@ -1,6 +1,6 @@
-<div class="ui mini steps">
+<div class="ui ordered mini steps" {{ref this "steps"}} {{did-insert this.didInsert}}>
 	{{#each this.queue as |poem index|}}
-		<div class="link step {{if (eq this.current_lesson index) 'active' ''}}" {{on "click" (fn this.changeLesson index)}}>
+		<div class="link step {{if (eq this.current_lesson index) 'active' ''}} {{if poem.completed 'completed'}}" {{on "click" (fn this.changeLesson index)}} data-poem="{{index}}" key="selector-poem-{{index}}">
 			<div class="content">
 				<div class="title">{{poem.kimariji}}</div>
 			</div>
