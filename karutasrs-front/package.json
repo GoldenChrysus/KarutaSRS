@@ -46,6 +46,7 @@
     "ember-simple-auth": "^2.1.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/beta/shas/1d9d6be0773b5f79beb8981da04ad23b972c2fc8.tgz",
     "ember-template-lint": "^1.5.0",
+    "ember-truth-helpers": "^2.1.0",
     "ember-welcome-page": "^4.0.0",
     "eslint": "^6.1.0",
     "eslint-plugin-ember": "^7.1.0",

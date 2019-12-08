@@ -1,6 +1,17 @@
-import Component from '@glimmer/component';
+import Component from '@ember/component';
 import { tracked } from "@glimmer/tracking";
 
-export default class LessonComponent extends Component {
-	@tracked poem = this.args.poem;
-}
+export default Component.extend({
+	classNames        : [
+		"ui",
+		"centered",
+		"grid",
+		"lesson"
+	],
+	classNameBindings : [
+		"slideRight"
+	],
+
+	slideRight : "",
+	poem       : {}
+});

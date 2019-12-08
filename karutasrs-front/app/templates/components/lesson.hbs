@@ -1,27 +1,25 @@
-<div class="ui centered grid lesson" ...attributes>
-	<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet fifteen wide mobile column">
-		<h1>{{this.poem.name}}</h1>
+<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet fifteen wide mobile column">
+	<h1>{{this.poem.name}}</h1>
 
-		<p>Audio player here.</p>
+	<p>Audio player here.</p>
 
-		<p>Maybe some background info here?</p>
+	<p>Maybe some background info here?</p>
 
-		<div class="ui segment">
-			<h4 class="ui header">First Verse</h4>
-			{{this.poem.first_verse}}
-		</div>
-
-		<div class="ui segment">
-			<h4 class="ui header">Kimariji</h4>
-			{{this.poem.kimariji}}
-		</div>
-
-		<div class="ui segment">
-			<h4 class="ui header">Second Verse Key Characters</h4>
-			{{this.poem.second_verse_answer}}
-		</div>
+	<div class="ui segment">
+		<h4 class="ui header">First Verse</h4>
+		{{this.poem.first_verse}}
 	</div>
-	<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet fifteen wide mobile column">
-		<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" class="large"/>
+
+	<div class="ui segment">
+		<h4 class="ui header">Kimariji</h4>
+		{{this.poem.kimariji}}
 	</div>
+
+	<div class="ui segment">
+		<h4 class="ui header">Second Verse Key Characters</h4>
+		{{this.poem.second_verse_answer}}
+	</div>
+</div>
+<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet fifteen wide mobile column">
+	<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" class="large"/>
 </div>

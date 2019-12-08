@@ -1,0 +1,9 @@
+<div class="ui mini steps">
+	{{#each this.queue as |poem index|}}
+		<div class="link step {{if (eq this.current_lesson index) 'active' ''}}" {{on "click" (fn this.changeLesson index)}}>
+			<div class="content">
+				<div class="title">{{poem.kimariji}}</div>
+			</div>
+		</div>
+	{{/each}}
+</div>

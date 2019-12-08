@@ -2,7 +2,7 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.lesson-carousel > .lesson {
+.lesson-carousel > .lessons > .lesson {
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -14,14 +14,14 @@
 /* Simulate a carousel by using two Lesson components and swapping sides of the screen as needed;
  * the bypass class is needed to move the component to the other side of the screen without the user seeing the transition
  */
-.lesson.bypass {
-	transition: none;
+.lesson-carousel > .lessons > .lesson.bypass {
+	transition: none !important;
 }
 
-.lesson.slide-left {
+.lesson-carousel > .lessons > .lesson.slide-left {
 	transform: translateX(-150%);
 }
 
-.lesson.slide-right {
+.lesson-carousel > .lessons > .lesson.slide-right {
 	transform: translateX(100%);
 }
