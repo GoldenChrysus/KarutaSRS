@@ -15,6 +15,6 @@ Router.map(function() {
       this.route("index", {path : "/", resetNamespace : true});
 
       this.route("dashboard");
-      this.route("review", { path : "/review/:id" });
+      this.route("review", { path : "/review/:type" });
     });
 });

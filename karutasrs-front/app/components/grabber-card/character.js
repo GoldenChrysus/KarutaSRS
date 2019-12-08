@@ -1,23 +1,31 @@
-import Component from '@glimmer/component';
-import { tracked } from "@glimmer/tracking";
+import Component from '@ember/component';
+import { action, computed } from "@ember/object";
 
-export default class GrabberCardCharacterComponent extends Component {
-	@tracked char = this.args.char;
-
-	is_answer   = this.args.is_answer;
-	is_learning = (this.args.type === "learn");
-
-	get classes() {
-		let classes = [];
-
-		if (this.is_answer && this.is_learning) {
-			classes.push("learn");
-		}
-
-		if (this.char) {
-			classes.push("active");
-		}
-
-		return classes.join(" ");
-	}
-}
+export default Component.extend({
+	classNames        : [
+		"character"
+	],
+	classNameBindings : [
+		"char:active",
+		"validation",
+		"learning"
+	],
+	index             : 0,
+	char              : "",
+	validate          : false,
+	is_answer         : false,
+	is_correct        : false,
+	is_learning       : computed("type", function() {
+		return (this.type === "learn");
+	}),
+	validation        : computed("validate", "is_correct", function() {
+		return (this.validate)
+			? ((this.is_correct)
+				? "correct"
+				: "incorrect")
+			: "";
+	}),
+	learning          : computed("is_answer", "is_learning", function() {
+		return (this.is_answer && this.is_learning) ? "learn" : "";
+	}),
+});

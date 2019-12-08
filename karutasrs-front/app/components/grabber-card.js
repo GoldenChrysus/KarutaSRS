@@ -8,14 +8,20 @@ export default Component.extend({
 	classNameBindings : [
 		"large:large"
 	],
+	attributeBindings : [
+		"key:key"
+	],
 	height            : 0,
 	width             : "444px",
 	text              : "",
+	card              : "",
 	answer            : "",
 	type              : "",
+	validate          : false,
 	char_array        : computed("text", "answer", function() {
 		let chars_array  = this.text.split("");
 		let answer_array = (this.answer) ? this.answer.split("") : [];
+		let card_array   = (this.card) ? this.card.split("") : [];
 		let char_data    = [];
 
 		if (chars_array.length < 15) {
@@ -26,8 +32,9 @@ export default Component.extend({
 
 		for (let i in chars_array) {
 			char_data.push({
-				char      : chars_array[i],
-				is_answer : (chars_array[i] === answer_array[i])
+				char       : chars_array[i],
+				is_correct : (chars_array[i] === card_array[i] || chars_array[i] === answer_array[i]),
+				is_answer  : (i < answer_array.length)
 			});
 		}
 

@@ -54,7 +54,8 @@
     "jquery": "^3.4.1",
     "loader.js": "^4.7.0",
     "localforage": "^1.7.3",
-    "qunit-dom": "^0.9.0"
+    "qunit-dom": "^0.9.0",
+    "wanakana": "^4.0.2"
   },
   "engines": {
     "node": "8.* || >= 10.*"

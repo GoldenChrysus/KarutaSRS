@@ -1,0 +1,26 @@
+.review > .grid > .row:first-of-type {
+	padding-bottom: 0;
+}
+
+.review .input > input {
+	transition: background-color 0.1s ease-in;
+	text-align: center;
+	font-weight: bold;
+}
+
+.review .input.disabled {
+	opacity: 1 !important;
+}
+
+.review .input.disabled > input {
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+.review .input.correct > input {
+	background: #88cc00 !important;
+}
+
+.review .input.incorrect > input {
+	background: #336633 !important;
+}
