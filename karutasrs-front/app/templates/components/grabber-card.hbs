@@ -1,5 +1,5 @@
 <div class="grabber-card-inner" key="grabber-card-inner">
-	{{#each this.char_array as |char_item index|}}
+	{{#each this.char_array key="grabber-card-characters" as |char_item index|}}
 		<GrabberCard::Character key="grabber-char-{{index}}" @index={{index}} @char={{char_item.char}} @is_answer={{char_item.is_answer}} @is_correct={{char_item.is_correct}} @validate={{this.validate}} @type={{this.type}}/>
 	{{/each}}
 </div>
