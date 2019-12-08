@@ -36,6 +36,7 @@ export default Component.extend({
 			}
 		);
 		this.focusInput();
+		$(this.element).find(".accordion").accordion();
 	},
 
 	focusInput() {

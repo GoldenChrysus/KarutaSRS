@@ -26,5 +26,20 @@
 				</div>
 			</div>
 		{{/if}}
+		{{#if this.answered}}
+			<div class="row">
+				<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile column">
+					<div class="ui styled fluid accordion">
+						<div class="title">
+							<i class="dropdown icon"></i>
+							Item Info
+						</div>
+						<div class="content">
+							<Lesson key="review-lesson" @poem={{this.poem}} @stacked=true/>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{/if}}
 	</div>
 </div>

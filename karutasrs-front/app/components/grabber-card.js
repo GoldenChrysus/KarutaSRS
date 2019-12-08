@@ -68,7 +68,12 @@ export default Component.extend({
 	},
 
 	setHeight() {
-		$(this.element).css("height", this.calculateHeight($(this.element).width()));
+		let $element = $(this.element);
+
+		// If not visible, the card is in an accordion, so get the width of the nearest visible parent to get the width of this card
+		let width = ($element.is(":visible")) ? $element.width() : $element.parentsUntil(":visible").last().width();
+
+		$element.css("height", this.calculateHeight(width));
 	},
 
 	calculateHeight(width) {

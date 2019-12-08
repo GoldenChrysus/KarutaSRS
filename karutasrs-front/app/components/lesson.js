@@ -13,6 +13,7 @@ export default Component.extend({
 	],
 	slideRight        : "",
 	poem              : {},
+	stacked           : false,
 	archaic_warnings  : computed("poem", function() {
 		let warnings = [];
 
