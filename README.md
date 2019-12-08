@@ -19,13 +19,13 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ Show button to lesson review when complete
 - ❌ Review component
   - ☑️ Hiragana input below grabber
-  - ❌ Randomize review queue
-    - ❌ User's overall queue should be split into segments to ensure related items are fairly close together
-      - ❌ Each review queue segment should be a continuous 20 items for 10 poems (i.e. grabber and kimariji for each poem)
-      - ❌ After an item leaves the queue (due to correct answer), another poem from the total queue should be added to the segment
-      - ❌ Repeat until total queue is empty or user ends the session
-    - ❌ A review consists of a kimariji review and a grabber review
-    - ❌ Each review portion should also be randomized
+  - ☑️ Randomize review queue
+    - ☑️ User's overall queue should be split into segments to ensure related items are fairly close together
+      - ☑️ Each review queue segment should be a continuous 20 items for 10 poems (i.e. grabber and kimariji for each poem)
+      - ☑️ After an item leaves the queue (due to correct answer), another poem from the total queue should be added to the segment
+      - ☑️ Repeat until total queue is empty or user ends the session
+    - ☑️ A review consists of a kimariji review and a grabber review
+    - ☑️ Each review portion should also be randomized
   - ☑️ Prompt for kimariji
     - ☑️ Show complete grabber card (but no highlighting)
     - ☑️ Kimariji portion of review is complete if entered characters exactly match kimariji
@@ -34,5 +34,5 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ Highlight right/wrong characters after user presses enter
     - ☑️ Grabber portion of review is complete as long as key characters are correct (even if other characters are wrong)
   - ❌ Track when review is complete
-    - ❌ For lesson reviews, create a learned item when the review is complete
+    - ☑️ For lesson reviews, create a learned item when the review is complete
     - ❌ For regular reviews, post the number of wrong answers to API to update the learned item
