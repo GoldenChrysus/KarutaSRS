@@ -1,7 +1,7 @@
 # KarutaSRS
 Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu or the one hundred poets/poems used in kyogi karuta.
 
-## To-Do
+## To-Do List
 - ☑️ Grabber card component
   - ☑️ Highlight grabber key characters based on state (learning: blue, review correct: lime green, review incorrect: light red)
   - ☑️ Fade in characters when character is added (for typing answers in review)
@@ -19,6 +19,7 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ Show button to lesson review when complete
 - ❌ Review component
   - ☑️ Hiragana input below grabber
+  - ❌ Play reading audio for grabber reviews
   - ☑️ Randomize review queue
     - ☑️ User's overall queue should be split into segments to ensure related items are fairly close together
       - ☑️ Each review queue segment should be a continuous 20 items for 10 poems (i.e. grabber and kimariji for each poem)
@@ -33,6 +34,6 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ Empty grabber card that fills out (or removes) characters as the user types their answer
     - ☑️ Highlight right/wrong characters after user presses enter
     - ☑️ Grabber portion of review is complete as long as key characters are correct (even if other characters are wrong)
-  - ❌ Track when review is complete
+  - ☑️ Track when review is complete
     - ☑️ For lesson reviews, create a learned item when the review is complete
-    - ❌ For regular reviews, post the number of wrong answers to API to update the learned item
+    - ☑️ For regular reviews, post the number of wrong answers to API to update the learned item
