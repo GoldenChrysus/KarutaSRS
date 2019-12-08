@@ -61,10 +61,10 @@ export default Component.extend({
 	didInsertElement() {
 		$(this.element).css("width", this.width);
 		this.setHeight();
+	},
 
-		$(window).on("resize", () => {
-			this.setHeight();
-		});
+	didRender() {
+		$(window).on("resize", this.setHeight.bind(this));
 	},
 
 	setHeight() {
@@ -72,6 +72,11 @@ export default Component.extend({
 
 		// If not visible, the card is in an accordion, so get the width of the nearest visible parent to get the width of this card
 		let width = ($element.is(":visible")) ? $element.width() : $element.parentsUntil(":visible").last().width();
+
+		if (!width) {
+			$(window).off("resize", this.setHeight.bind(this));
+			return;
+		}
 
 		$element.css("height", this.calculateHeight(width));
 	},

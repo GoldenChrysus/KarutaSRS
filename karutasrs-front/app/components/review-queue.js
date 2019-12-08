@@ -1,6 +1,7 @@
 import Component from "@ember/component";
 import { inject as service } from "@ember/service";
 import localForage from "localforage";
+import config from "../config/environment";
 
 export default Component.extend({
 	store               : service(),
@@ -38,7 +39,7 @@ export default Component.extend({
 			return;
 		}
 
-		let poem = (this.type === "lessons") ? item : {};
+		let poem = (this.type === "lessons") ? item : item.poem;
 
 		for (let review_type of ["grabber", "kimariji"]) {
 			this.chunk.push({
@@ -75,6 +76,12 @@ export default Component.extend({
 				this.answers[id][this.current_type] = true;
 			}
 
+			if (correct) {
+				delete this.chunk[this.current_chunk_index];
+			}
+
+			this.chunk = this.chunk.filter((val) => val);
+
 			if (this.answers[id].kimariji && this.answers[id].grabber) {
 				if (this.type === "lessons") {
 					let learned_item = this.store.createRecord(
@@ -88,17 +95,23 @@ export default Component.extend({
 					delete this.queue[id];
 					await localForage.setItem("lesson-review-queue", JSON.stringify(this.queue));
 					await learned_item.save();
+				} else {
+					let request = {
+						url         : `${config.api_host}/learned-items/${this.queue[id].id}/complete-review`,
+						type        : "POST",
+						contentType : "application/json",
+						data        : JSON.stringify({
+							wrong_answers : this.answers[id].wrong
+						})
+					};
+					let result  = await $.ajax(request);
+
+					delete this.queue[id];
 				}
 
 				this.pushItemToChunk(this.last_pushed_index + 1);
 				this.last_pushed_index++;
 			}
-
-			if (correct) {
-				delete this.chunk[this.current_chunk_index];
-			}
-
-			this.chunk = this.chunk.filter((val) => val);
 
 			if (this.chunk.length) {
 				this.setActiveReview();

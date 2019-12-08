@@ -10,8 +10,9 @@ export default class AuthenticatedReviewRoute extends Route {
 		if (type === "lessons") {
 			queue = await localForage.getItem("lesson-review-queue");
 			queue = JSON.parse(queue).filter((val) => val);
-		} else {
-			// to implement
+		} else if (type === "reviews") {
+			queue = await user.review_queue;
+			queue = queue.data;
 		}
 
 		return {
