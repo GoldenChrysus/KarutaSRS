@@ -16,7 +16,7 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
   - ☑️ Sliding lesson components
   - ❌ Lesson selector component
     - ☑️ Indicate complete lesson
-    - ❌ Show button to lesson review when complete
+    - ☑️ Show button to lesson review when complete
 - ❌ Review component
   - ❌ Hiragana input below grabber
   - ❌ Randomize review queue
