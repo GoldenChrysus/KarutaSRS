@@ -4,10 +4,8 @@ import { action } from "@ember/object";
 
 export default class LessonCarouselSelectorComponent extends Component {
 	@tracked current_lesson = 0;
-
-	@tracked queue = this.args.queue;
-
-	completed = [];
+	@tracked queue          = this.args.queue;
+	@tracked completed      = [];
 
 	@action
 	didInsert() {
@@ -23,14 +21,17 @@ export default class LessonCarouselSelectorComponent extends Component {
 	}
 
 	updateCompletion(index) {
-		let queue = JSON.parse(JSON.stringify(this.queue));
+		let queue     = JSON.parse(JSON.stringify(this.queue));
+		let completed = JSON.parse(JSON.stringify(this.completed));
 		
 		queue[index].completed = true;
 
 		this.queue = queue;
 
-		if (!this.completed.includes(index)) {
-			this.completed.push(index);
+		if (!completed.includes(index)) {
+			completed.push(index);
+
+			this.completed = completed;
 		}
 	}
 }

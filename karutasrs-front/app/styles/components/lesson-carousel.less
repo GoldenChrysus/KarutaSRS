@@ -11,8 +11,35 @@
 	font-size: 2em;
 }
 
+.lesson-carousel > .selector > .steps > .review {
+	background-color: @green;
+	color: #fff;
+}
+
+.lesson-carousel > .selector > .steps > .review:hover {
+	background-color: @greenHover;
+}
+
+.lesson-carousel > .selector > .steps > .review:focus {
+	background-color: @greenFocus;
+}
+
+.lesson-carousel > .selector > .steps > .review:active {
+	background-color: @greenDown;
+}
+
+.lesson-carousel > .selector > .steps > .review:before {
+	content: none;
+}
+
+@media screen and (min-width: @tabletBreakpoint) {
+	.lesson-carousel > .selector > .mobile.review {
+		display: none;
+	}
+}
+
 @media screen and (max-width: @tabletBreakpoint - 1) {
-	.lesson-carousel > .selector {
+	.lesson-carousel > .selector > .steps {
 		display: none !important;
 	}
 }

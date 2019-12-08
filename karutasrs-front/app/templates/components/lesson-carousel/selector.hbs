@@ -6,4 +6,10 @@
 			</div>
 		</div>
 	{{/each}}
+	{{#if (eq this.queue.length this.completed.length)}}
+		<button class="ui green button step review">Go To Review</button>
+	{{/if}}
 </div>
+{{#if (eq this.queue.length this.completed.length)}}
+	<button class="ui green button mobile review">Go To Review</button>
+{{/if}}
