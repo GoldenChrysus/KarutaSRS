@@ -5,6 +5,7 @@ import { bind as bindWanaKana, isKana } from "wanakana"
 export default Component.extend({
 	validate     : false,
 	type         : "",
+	item_id      : 0,
 	poem         : {},
 	user_input   : "",
 	is_correct   : false,
@@ -104,7 +105,7 @@ export default Component.extend({
 		},
 
 		completeReview() {
-			/* Add logic to push completion up to review queue component */
+			this.onComplete(this.is_correct);
 			this.resetComponent();
 		}
 	}
