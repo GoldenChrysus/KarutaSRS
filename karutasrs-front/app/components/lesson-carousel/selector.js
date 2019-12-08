@@ -1,8 +1,12 @@
 import Component from '@glimmer/component';
 import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
+import { inject as service } from "@ember/service";
+import localForage from "localforage";
 
 export default class LessonCarouselSelectorComponent extends Component {
+	@service router;
+
 	@tracked current_lesson = 0;
 	@tracked queue          = this.args.queue;
 	@tracked completed      = [];
@@ -18,6 +22,15 @@ export default class LessonCarouselSelectorComponent extends Component {
 
 		this.updateCompletion(index);
 		this.args.onChange(index);
+	}
+
+	@action
+	async saveAndTransition() {
+		let queue = JSON.stringify(this.queue);
+
+		await localForage.setItem("lesson-review-queue", queue);
+
+		this.router.transitionTo("authenticated.review", "lessons");
 	}
 
 	updateCompletion(index) {

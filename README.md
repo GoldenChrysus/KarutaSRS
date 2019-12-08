@@ -12,9 +12,9 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ Second verse key characters
     - ❌ Reading audio
     - ❌ Poem background info
-- ❌ Lesson carousel component
+- ☑️ Lesson carousel component
   - ☑️ Sliding lesson components
-  - ❌ Lesson selector component
+  - ☑️ Lesson selector component
     - ☑️ Indicate complete lesson
     - ☑️ Show button to lesson review when complete
 - ❌ Review component
