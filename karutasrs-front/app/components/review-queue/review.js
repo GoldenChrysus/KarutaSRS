@@ -31,7 +31,8 @@ export default Component.extend({
 		bindWanaKana(
 			this.input_element,
 			{
-				IMEMode: "toHiragana"
+				IMEMode: "toHiragana",
+				useObsoleteKana : true
 			}
 		);
 		this.focusInput();
@@ -99,6 +100,16 @@ export default Component.extend({
 
 			if (val === this.user_input) {
 				return;
+			}
+
+			let last_index       = val.length - 1;
+			let last_char        = val[last_index];
+			let answer_last_char = (this.type === "grabber") ? this.poem.second_verse_card[last_index] : this.poem.kimariji[last_index];
+
+			if ((last_char === "え" && answer_last_char === "ゑ") || (last_char === "い" && answer_last_char === "ゐ")) {
+				val = val.substring(0, last_index) + answer_last_char;
+
+				$(this.input_element).val(val);
 			}
 
 			this.set("user_input", val);
