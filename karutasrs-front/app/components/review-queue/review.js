@@ -3,17 +3,27 @@ import { action, computed } from "@ember/object";
 import { bind as bindWanaKana, isKana } from "wanakana"
 
 export default Component.extend({
-	validate      : false,
-	type          : "",
-	poem          : {},
-	user_input    : "",
-	is_correct    : false,
-	answered      : 0,
-	grabber_text  : computed("type", "second_verse_card", "user_input", function() {
+	validate     : false,
+	type         : "",
+	poem         : {},
+	user_input   : "",
+	is_correct   : false,
+	answered     : 0,
+	grabber_text : computed("type", "second_verse_card", "user_input", function() {
 		return (this.type === "grabber") ? this.user_input || "" : this.poem.second_verse_card;
 	}),
-	input_element  : computed("element", function() {
+	input_element : computed("element", function() {
 		return $(this.element).find("input")[0]
+	}),
+	input_classes : computed("is_correct", "answered", function() {
+		let classes = [];
+
+		if (this.answered) {
+			classes.push("disabled");
+			classes.push((this.is_correct) ? "correct" : "incorrect");
+		}
+
+		return classes.join(" ");
 	}),
 
 	didRender() {
@@ -43,7 +53,7 @@ export default Component.extend({
 			return;
 		}
 
-		this.answered = true;
+		this.set("answered", true);
 
 		if (this.type === "grabber") {
 			this.set("validate", true);
@@ -58,12 +68,7 @@ export default Component.extend({
 			this.set("is_correct", input === answer);
 		}
 
-		$(this.input_element)
-			.attr("disabled", true)
-			.closest(".input")
-			.toggleClass("incorrect", !this.is_correct)
-			.toggleClass("correct", this.is_correct)
-			.toggleClass("disabled", true);
+		$(this.input_element).attr("disabled", true);
 	},
 
 	actions : {

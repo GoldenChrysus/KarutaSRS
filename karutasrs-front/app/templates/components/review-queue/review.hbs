@@ -1,16 +1,25 @@
 <div class="review" key="review">
 	<div class="ui one column centered grid">
-		<div class="row">
+		<div class="row no-bottom-padding">
 			<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile column">
 				<GrabberCard @width="100%" @text="{{this.grabber_text}}" @answer="{{this.poem.second_verse_answer}}" @card="{{this.poem.second_verse_card}}" @type="review" @large=true @validate={{this.validate}} key="review-grabber" @key="review-grabber"/>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row no-bottom-padding">
 			<div class="four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile column">
-				<div class="ui huge fluid input">
+				<div class="ui huge fluid icon input {{this.input_classes}}">
 					<input type="text" placeholder="{{if (eq this.type 'grabber') 'Second verse key characters' 'Kimariji'}}" onKeyUp={{action "handleInput"}} onChange={{action "handleInput"}}>
+
+					{{#if this.answered}}
+						<i class="arrow right link icon"></i>
+					{{/if}}
 				</div>
 			</div>
 		</div>
+		{{#if (eq this.type 'grabber')}}
+			<div class="row">
+				{{this.poem.first_verse}}
+			</div>
+		{{/if}}
 	</div>
 </div>
