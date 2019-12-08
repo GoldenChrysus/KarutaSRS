@@ -8,7 +8,7 @@ export default Component.extend({
 	poem         : {},
 	user_input   : "",
 	is_correct   : false,
-	answered     : 0,
+	answered     : false,
 	grabber_text : computed("type", "second_verse_card", "user_input", function() {
 		return (this.type === "grabber") ? this.user_input || "" : this.poem.second_verse_card;
 	}),
@@ -71,6 +71,17 @@ export default Component.extend({
 		$(this.input_element).attr("disabled", true);
 	},
 
+	resetComponent() {
+		this.set("validate", false);
+		this.set("user_input", "");
+		this.set("is_correct", false);
+		this.set("answered", false);
+		$(this.input_element)
+			.attr("disabled", false)
+			.val("");
+		this.focusInput();
+	},
+
 	actions : {
 		handleInput(e) {
 			if (e.keyCode === 13) {
@@ -90,6 +101,11 @@ export default Component.extend({
 			}
 
 			this.set("user_input", val);
+		},
+
+		completeReview() {
+			/* Add logic to push completion up to review queue component */
+			this.resetComponent();
 		}
 	}
 });
