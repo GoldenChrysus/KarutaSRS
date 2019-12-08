@@ -46,9 +46,9 @@ poems = Poem.create([
 		id: "5",
 		name: "Sarumaru Dayu",
 		first_verse: "おくやまにもみぢふみわけなくしかの",
-		second_verse_raw: "こえきくときぞあきはかなしき",
-		second_verse_card: "こえきくときそあきはかなしき",
-		second_verse_answer: "こえ",
+		second_verse_raw: "こゑきくときぞあきはかなしき",
+		second_verse_card: "こゑきくときそあきはかなしき",
+		second_verse_answer: "こゑ",
 		kimariji: "おく"
 	},
 	{
@@ -126,7 +126,7 @@ poems = Poem.create([
 	{
 		id: "14",
 		name: "Kawara no Sadaijin",
-		first_verse: "みちのくのしのぶもぢずりたれゆえに",
+		first_verse: "みちのくのしのぶもぢずりたれゆゑに",
 		second_verse_raw: "みだれそめにしわれならなくに",
 		second_verse_card: "みたれそめにしわれならなくに",
 		second_verse_answer: "みたれそ",
@@ -379,8 +379,8 @@ poems = Poem.create([
 		id: "42",
 		name: "Kiyohara no Motosuke",
 		first_verse: "ちぎりきなかたみにそでをしぼりつつ",
-		second_verse_raw: "すえのまつやまなみこさじとは",
-		second_verse_card: "すえのまつやまなみこさしとは",
+		second_verse_raw: "すゑのまつやまなみこさじとは",
+		second_verse_card: "すゑのまつやまなみこさしとは",
 		second_verse_answer: "す",
 		kimariji: "ちぎりき"
 	},
@@ -441,7 +441,7 @@ poems = Poem.create([
 	{
 		id: "49",
 		name: "Onakatomi no Yoshinobu Ason",
-		first_verse: "みかきもりえじのたくひのよるはもえ",
+		first_verse: "みかきもりゑじのたくひのよるはもえ",
 		second_verse_raw: "ひるはきえつつものをこそおもへ",
 		second_verse_card: "ひるはきえつつものをこそおもへ",
 		second_verse_answer: "ひる",
@@ -486,7 +486,7 @@ poems = Poem.create([
 	{
 		id: "54",
 		name: "Gido Sanshi no Haha",
-		first_verse: "わすれじのゆくすえまではかたければ",
+		first_verse: "わすれじのゆくすゑまではかたければ",
 		second_verse_raw: "けふをかぎりのいのちともがな",
 		second_verse_card: "けふをかきりのいのちともかな",
 		second_verse_answer: "けふを",
@@ -694,15 +694,15 @@ poems = Poem.create([
 		id: "77",
 		name: "Sutoku In",
 		first_verse: "せをはやみいはにせかるるたきがはの",
-		second_verse_raw: "われてもすえにあはむとぞおもふ",
-		second_verse_card: "われてもすえにあはむとそおもふ",
+		second_verse_raw: "われてもすゑにあはむとぞおもふ",
+		second_verse_card: "われてもすゑにあはむとそおもふ",
 		second_verse_answer: "われ",
 		kimariji: "せ"
 	},
 	{
 		id: "78",
 		name: "Minamoto no Kanemasa",
-		first_verse: "あはぢしまかよふちどりのなくこえに",
+		first_verse: "あはぢしまかよふちどりのなくこゑに",
 		second_verse_raw: "いくよねざめぬすまのせきもり",
 		second_verse_card: "いくよねさめぬすまのせきもり",
 		second_verse_answer: "いく",
@@ -792,7 +792,7 @@ poems = Poem.create([
 	{
 		id: "88",
 		name: "Koka Moin no Betto",
-		first_verse: "なにはえのあしのかりねのひとよゆえ",
+		first_verse: "なにはえのあしのかりねのひとよゆゑ",
 		second_verse_raw: "みをつくしてやこひわたるべき",
 		second_verse_card: "みをつくしてやこひわたるへき",
 		second_verse_answer: "みをつくしてや",
@@ -892,8 +892,8 @@ poems = Poem.create([
 		id: "99",
 		name: "Gotoba In",
 		first_verse: "ひともをしひともうらめしあぢきなく",
-		second_verse_raw: "よをおもふゆえにものおもふみは",
-		second_verse_card: "よをおもふゆえにものおもふみは",
+		second_verse_raw: "よをおもふゆゑにものおもふみは",
+		second_verse_card: "よをおもふゆゑにものおもふみは",
 		second_verse_answer: "よをお",
 		kimariji: "ひとも"
 	},
