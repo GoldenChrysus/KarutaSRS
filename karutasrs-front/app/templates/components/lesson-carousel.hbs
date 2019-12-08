@@ -1,12 +1,10 @@
-<div class="lesson-carousel" key="lesson-carousel">
-	<div class="ui center aligned container">
-		<LessonCarousel::Selector @queue={{this.queue}} @onChange={{action "changeLesson"}}/>
-	</div>
-	<div class="lessons" key="lesson-carousel-lessons">
-		<Lesson key="lesson-one" @poem={{this.lesson_one_poem}} {{ref this "lesson_one"}}/>
+<div class="ui center aligned container">
+	<LessonCarousel::Selector @queue={{this.queue}} @onChange={{action "changeLesson"}}/>
+</div>
+<div class="lessons" key="lesson-carousel-lessons">
+	<Lesson key="lesson-one" @poem={{this.lesson_one_poem}} {{ref this "lesson_one"}}/>
 
-		{{#if this.multiple_lessons}}
-			<Lesson key="lesson-two" @poem={{this.lesson_two_poem}} @slideRight="slide-right" {{ref this "lesson_two"}}/>
-		{{/if}}
-	</div>
+	{{#if this.multiple_lessons}}
+		<Lesson key="lesson-two" @poem={{this.lesson_two_poem}} @slideRight="slide-right" {{ref this "lesson_two"}}/>
+	{{/if}}
 </div>

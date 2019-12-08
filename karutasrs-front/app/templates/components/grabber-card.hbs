@@ -1,7 +1,5 @@
-<div class="grabber-card-outer" ...attributes style="width: {{this.width}}; height: {{this.height}}px;" {{ref this "outer"}} {{did-insert this.didInsert}}>
-	<div class="grabber-card-inner">
-		{{#each this.char_array as |char_item index|}}
-			<GrabberCard::Character key="grabber-char-{{index}}" @char={{char_item.char}} @is_answer={{char_item.is_answer}} @type={{this.type}}/>
-		{{/each}}
-	</div>
+<div class="grabber-card-inner">
+	{{#each this.char_array as |char_item index|}}
+		<GrabberCard::Character key="grabber-char-{{index}}" @char={{char_item.char}} @is_answer={{char_item.is_answer}} @type={{this.type}}/>
+	{{/each}}
 </div>

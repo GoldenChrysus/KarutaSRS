@@ -1,17 +1,19 @@
-import Component from "@glimmer/component";
-import { tracked } from "@glimmer/tracking";
-import { action } from "@ember/object";
+import Component from "@ember/component";
+import { action, computed } from "@ember/object";
 
-export default class GrabberCardComponent extends Component {
-	@tracked height;
-
-	@tracked width = this.args.width || "444px";
-
-	text   = this.args.text;
-	answer = this.args.answer;
-	type   = this.args.type;
-
-	get char_array() {
+export default Component.extend({
+	classNames        : [
+		"grabber-card-outer"
+	],
+	classNameBindings : [
+		"large:large"
+	],
+	height            : 0,
+	width             : "444px",
+	text              : "",
+	answer            : "",
+	type              : "",
+	char_array        : computed("text", "answer", function() {
 		let chars_array  = this.text.split("");
 		let answer_array = (this.answer) ? this.answer.split("") : [];
 		let char_data    = [];
@@ -43,20 +45,24 @@ export default class GrabberCardComponent extends Component {
 		}
 
 		return result;
-	}
+	}),
 
-	@action
-	didInsert() {
+	init() {
+		this._super(...arguments);
+	},
+
+	didInsertElement() {
+		$(this.element).css("width", this.width);
 		this.setHeight();
 
 		$(window).on("resize", () => {
 			this.setHeight();
 		});
-	}
+	},
 
 	setHeight() {
-		this.height = this.calculateHeight($(this.outer).width());
-	}
+		$(this.element).css("height", this.calculateHeight($(this.element).width()));
+	},
 
 	calculateHeight(width) {
 		let unit_match = String(width).match(/[^\d\.]+/g);
@@ -71,6 +77,6 @@ export default class GrabberCardComponent extends Component {
 			height = `${height}${unit_match[0]}`;
 		}
 
-		return height;
+		return `${height}px`;
 	}
-}
+});

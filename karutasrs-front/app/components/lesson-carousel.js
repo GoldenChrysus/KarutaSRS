@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import { action } from "@ember/object";
 
 export default Component.extend({
+	classNames           : ["lesson-carousel"],
 	lesson_one_poem      : null,
 	lesson_two_poem      : null,
 	lesson_one_index     : 0,
@@ -21,6 +22,10 @@ export default Component.extend({
 
 	actions: {
 		async changeLesson(index) {
+			if (index === this.current_lesson_index) {
+				return;
+			}
+
 			let new_lesson_elem  = (this.current_lesson_elem === "lesson_one") ? "lesson_two" : "lesson_one";
 			let new_lesson_index = `${new_lesson_elem}_index`;
 			let new_lesson_poem  = `${new_lesson_elem}_poem`;
@@ -32,37 +37,23 @@ export default Component.extend({
 				this.set(new_lesson_poem, this.queue[index]);
 			}
 
-			if (index > this.current_lesson_index) {
-				if ($new_lesson_elem.hasClass("slide-left")) {
-					$new_lesson_elem.addClass("bypass");
+			let new_slide = (index > this.current_lesson_index) ? "slide-left" : "slide-right";
+			let old_slide = (index > this.current_lesson_index) ? "slide-right" : "slide-left";
 
-					$new_lesson_elem
-						.removeClass("slide-left")
-						.addClass("slide-right");
+			if ($new_lesson_elem.hasClass(new_slide)) {
+				$new_lesson_elem.addClass("bypass");
 
-					$new_lesson_elem[0].offsetHeight; // Force DOM reflow to update the transforms without triggering transitions
+				$new_lesson_elem
+					.removeClass(new_slide)
+					.addClass(old_slide);
 
-					$new_lesson_elem.removeClass("bypass");
-				}
+				$new_lesson_elem[0].offsetHeight; // Force DOM reflow to update the transforms without triggering transitions
 
-				$current_lesson_elem.addClass("slide-left");
-				$new_lesson_elem.removeClass("slide-right");
-			} else {
-				if ($new_lesson_elem.hasClass("slide-right")) {
-					$new_lesson_elem.addClass("bypass");
-
-					$new_lesson_elem
-						.removeClass("slide-right")
-						.addClass("slide-left");
-
-					$new_lesson_elem[0].offsetHeight; // Force DOM reflow to update the transforms without triggering transitions
-
-					$new_lesson_elem.removeClass("bypass");
-				}
-
-				$current_lesson_elem.addClass("slide-right");
-				$new_lesson_elem.removeClass("slide-left");
+				$new_lesson_elem.removeClass("bypass");
 			}
+
+			$current_lesson_elem.addClass(new_slide);
+			$new_lesson_elem.removeClass(old_slide);
 
 			this.current_lesson_elem  = new_lesson_elem;
 			this.current_lesson_index = index;
