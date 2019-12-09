@@ -10,16 +10,16 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ First verse
     - ☑️ Kimariji
     - ☑️ Second verse key characters
-    - ❌ Reading audio
+    - ☑️ Reading audio
     - ❌ Poem background info
 - ☑️ Lesson carousel component
   - ☑️ Sliding lesson components
   - ☑️ Lesson selector component
     - ☑️ Indicate complete lesson
     - ☑️ Show button to lesson review when complete
-- ❌ Review component
+- ☑️ Review component
   - ☑️ Hiragana input below grabber
-  - ❌ Play reading audio for grabber reviews
+  - ☑️ Play reading audio for grabber reviews
   - ☑️ Randomize review queue
     - ☑️ User's overall queue should be split into segments to ensure related items are fairly close together
       - ☑️ Each review queue segment should be a continuous 20 items for 10 poems (i.e. grabber and kimariji for each poem)
