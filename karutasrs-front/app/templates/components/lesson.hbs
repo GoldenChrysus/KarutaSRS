@@ -1,9 +1,7 @@
 <div class="{{if (eq this.stacked 'true') 'sixteen wide' 'four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile'}} column">
 	<h1>{{this.poem.name}}</h1>
 
-	<audio controls>
-		<source src="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
-	</audio>
+	<AudioPlayer @url="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
 
 	<p>Maybe some background info here?</p>
 

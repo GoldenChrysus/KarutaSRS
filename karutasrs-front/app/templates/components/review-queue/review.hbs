@@ -23,9 +23,7 @@
 						<h4 class="ui header">First Verse</h4>
 						{{this.poem.first_verse}}
 					</div>
-					<audio autoplay="true" controls>
-						<source src="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
-					</audio>
+					<AudioPlayer @autoplay=true @url="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
 				</div>
 			</div>
 		{{/if}}

@@ -27,6 +27,18 @@ export default Component.extend({
 		return classes.join(" ");
 	}),
 
+	init() {
+		this._super(...arguments);
+
+		this.addObserver("poem", this, () => {
+			let audio = $(this.element).find("audio")[0];
+
+			if (audio) {
+				audio.load();
+			}
+		});
+	},
+
 	didRender() {
 		bindWanaKana(
 			this.input_element,
