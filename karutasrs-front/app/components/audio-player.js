@@ -4,10 +4,12 @@ export default Component.extend({
 	tagName           : "audio",
 	attributeBindings : [
 		"controls",
-		"volume"
+		"volume",
+		"controlslist"
 	],
-	autoplay : false,
-	controls : true,
+	controlslist      : "nodownload",
+	autoplay          : false,
+	controls          : true,
 
 	init() {
 		this._super(...arguments);
