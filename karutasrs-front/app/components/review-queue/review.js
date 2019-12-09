@@ -72,10 +72,11 @@ export default Component.extend({
 		}
 
 		$(this.input_element).attr("disabled", true);
+		this.completeReview();
 
 		$(document).on("keypress", (e) => {
 			if (e.keyCode === 13) {
-				return this.completeReview();
+				return this.triggerNextReview();
 			}
 		});
 	},
@@ -92,9 +93,13 @@ export default Component.extend({
 	},
 
 	completeReview() {
-		$(document).off("keypress");
 		this.onComplete(this.is_correct);
+	},
+
+	triggerNextReview() {
+		$(document).off("keypress");
 		this.resetComponent();
+		this.toNext();
 	},
 
 	actions : {
@@ -128,8 +133,8 @@ export default Component.extend({
 			this.set("user_input", val);
 		},
 
-		completeReview() {
-			this.completeReview();
+		triggerNextReview() {
+			this.triggerNextReview();
 		}
 	}
 });

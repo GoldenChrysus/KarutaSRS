@@ -13,9 +13,21 @@ export default Component.extend({
 	current_chunk_index : 0,
 	user                : {},
 
-	init() {
+	async init() {
 		this._super(...arguments);
 		this.chunkQueue();
+
+		let saved_answers = await localForage.getItem(`review-queue-answers-${this.type}`);
+
+		if (saved_answers) {
+			try {
+				this.answers = JSON.parse(saved_answers);
+			} catch (e) {
+				this.answers = {};
+			}
+		}
+
+		console.log(this.answers);
 	},
 
 	chunkQueue() {
@@ -60,10 +72,11 @@ export default Component.extend({
 
 	actions : {
 		async completeReview(correct) {
-			let id = this.current_id;
+			let id      = this.current_id;
+			let item_id = this.queue[id].id;
 
-			if (!this.answers[id]) {
-				this.answers[id] = {
+			if (!this.answers[item_id]) {
+				this.answers[item_id] = {
 					"wrong"    : 0,
 					"kimariji" : false,
 					"grabber"  : false
@@ -71,9 +84,9 @@ export default Component.extend({
 			}
 
 			if (!correct) {
-				this.answers[id].wrong++;
+				this.answers[item_id].wrong++;
 			} else {
-				this.answers[id][this.current_type] = true;
+				this.answers[item_id][this.current_type] = true;
 			}
 
 			if (correct) {
@@ -82,13 +95,13 @@ export default Component.extend({
 
 			this.chunk = this.chunk.filter((val) => val);
 
-			if (this.answers[id].kimariji && this.answers[id].grabber) {
+			if (this.answers[item_id].kimariji && this.answers[item_id].grabber) {
 				if (this.type === "lessons") {
 					let learned_item = this.store.createRecord(
 						"learned-item",
 						{
 							user : this.user,
-							poem : await this.store.findRecord("poem", this.queue[id].id)
+							poem : await this.store.findRecord("poem", item_id)
 						}
 					);
 
@@ -97,7 +110,7 @@ export default Component.extend({
 					await learned_item.save();
 				} else {
 					let request = {
-						url         : `${config.api_host}/learned-items/${this.queue[id].id}/complete-review`,
+						url         : `${config.api_host}/learned-items/${item_id}/complete-review`,
 						type        : "POST",
 						contentType : "application/json",
 						data        : JSON.stringify({
@@ -111,8 +124,13 @@ export default Component.extend({
 
 				this.pushItemToChunk(this.last_pushed_index + 1);
 				this.last_pushed_index++;
+				delete this.answers[item_id];
 			}
 
+			await localForage.setItem(`review-queue-answers-${this.type}`, JSON.stringify(this.answers));
+		},
+
+		triggerNextReview() {
 			if (this.chunk.length) {
 				this.setActiveReview();
 			} else {

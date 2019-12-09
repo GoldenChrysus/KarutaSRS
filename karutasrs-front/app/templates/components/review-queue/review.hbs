@@ -11,7 +11,7 @@
 					<input type="text" maxlength="17" placeholder="{{if (eq this.type 'grabber') 'Second verse key characters' 'Kimariji'}}" onKeyUp={{action "handleInput"}} onChange={{action "handleInput"}}>
 
 					{{#if this.answered}}
-						<i class="arrow right link icon" {{action "completeReview" on="click"}}></i>
+						<i class="arrow right link icon" {{action "triggerNextReview" on="click"}}></i>
 					{{/if}}
 				</div>
 			</div>
@@ -23,6 +23,9 @@
 						<h4 class="ui header">First Verse</h4>
 						{{this.poem.first_verse}}
 					</div>
+					<audio autoplay="true" controls>
+						<source src="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
+					</audio>
 				</div>
 			</div>
 		{{/if}}

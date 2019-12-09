@@ -20,6 +20,10 @@ export default class LessonCarouselSelectorComponent extends Component {
 	changeLesson(index) {
 		this.current_lesson = index;
 
+		document.querySelectorAll("audio").forEach((audio) => {
+			audio.pause();
+		});
+
 		this.updateCompletion(index);
 		this.args.onChange(index);
 	}

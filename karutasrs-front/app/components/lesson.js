@@ -26,5 +26,9 @@ export default Component.extend({
 		}
 
 		return warnings;
-	})
+	}),
+
+	didRender() {
+		$(this.element).find("audio")[0].load();
+	}
 });
