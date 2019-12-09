@@ -36,7 +36,12 @@ export default Component.extend({
 			}
 		);
 		this.focusInput();
-		$(this.element).find(".accordion").accordion();
+		$(this.element).find(".accordion")
+			.accordion({
+				onClosing : function() {
+					this.find("audio")[0].pause();
+				}
+			});
 	},
 
 	focusInput() {
