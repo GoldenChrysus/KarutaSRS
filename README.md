@@ -1,4 +1,4 @@
-# KarutaSRS
+# Karuta SRS
 Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu or the one hundred poets/poems used in kyogi karuta.
 
 ## To-Do List
@@ -40,7 +40,7 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
 - ❌ Session and security
   - ☑️ User is assigned a bearer token upon creation
   - ❌ Relevant user data (id, bearer) should be stored as session data when ember-simple-auth completes
-  - ❌ All calls to the API should included the current user's bearer in the header
+  - ❌ All calls to the API should include the current user's bearer in the header
     - ❌ API call should be rejected if the relevant user for the called item does not match the bearer provided
       - ❌ Calls to learned-items should be rejected if the owner of the learned item doesn't match the provided bearer
       - ❌ Calls to users should be rejected if the fetched user's bearer doesn't match the provided bearer
