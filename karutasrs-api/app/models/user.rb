@@ -28,6 +28,10 @@ class User < ApplicationRecord
 				i.user_id = :user_id
 			WHERE
 				i.id IS NULL
+			ORDER BY
+				LENGTH(p.kimariji) ASC,
+				LENGTH(p.second_verse_answer) ASC,
+				p.id ASC
 			LIMIT
 				5 - (
 					SELECT
