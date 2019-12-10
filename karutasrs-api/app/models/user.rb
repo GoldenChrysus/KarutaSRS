@@ -30,8 +30,7 @@ class User < ApplicationRecord
 				i.id IS NULL
 			ORDER BY
 				LENGTH(p.kimariji) ASC,
-				LENGTH(p.second_verse_answer) ASC,
-				p.id ASC
+				LENGTH(p.second_verse_answer) ASC
 			LIMIT
 				5 - (
 					SELECT
@@ -43,7 +42,9 @@ class User < ApplicationRecord
 						i2.created_at > :cutoff_time
 				)"
 
-		return Poem.where("id IN (#{sql})", params)
+		return Poem
+			.where("id IN (#{sql})", params)
+			.order("LENGTH(kimariji)", "LENGTH(second_verse_answer)", :id)
 	end
 
 	def lesson_queue_length
