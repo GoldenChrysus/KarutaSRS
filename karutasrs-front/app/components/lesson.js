@@ -1,7 +1,9 @@
 import Component from '@ember/component';
 import { computed } from "@ember/object";
+import { inject as service } from "@ember/service";
 
 export default Component.extend({
+	poem_serv         : service("poem"),
 	classNames        : [
 		"ui",
 		"centered",
@@ -14,6 +16,9 @@ export default Component.extend({
 	slideRight        : "",
 	poem              : {},
 	stacked           : false,
+	first_verse       : computed("poem", function() {
+		return this.poem_serv.formatFirstVerse(this.poem.first_verse);
+	}),
 	archaic_warnings  : computed("poem", function() {
 		let warnings = [];
 

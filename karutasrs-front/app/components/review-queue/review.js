@@ -1,8 +1,10 @@
 import Component from '@ember/component';
 import { action, computed } from "@ember/object";
 import { bind as bindWanaKana, isKana } from "wanakana"
+import { inject as service } from "@ember/service";
 
 export default Component.extend({
+	poem_serv    : service("poem"),
 	validate     : false,
 	type         : "",
 	item_id      : 0,
@@ -25,6 +27,9 @@ export default Component.extend({
 		}
 
 		return classes.join(" ");
+	}),
+	first_verse   : computed("poem", function() {
+		return this.poem_serv.formatFirstVerse(this.poem.first_verse);
 	}),
 
 	init() {
