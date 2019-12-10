@@ -1,2 +1,5 @@
-<!-- <ReviewQueue @queue={{@model.queue}} @type={{@model.type}} @user={{@model.user}}/> -->
-got here
+{{#if model.queue.length}}
+	<ReviewQueue @queue={{@model.queue}} @type={{@model.type}} @user={{@model.user}}/>
+{{else}}
+	<div>No reviews.</div>
+{{/if}}

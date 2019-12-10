@@ -3,14 +3,15 @@ import { inject as service } from "@ember/service";
 import config from "../config/environment";
 
 export default class ApplicationAdapter extends JSONAPIAdapter {
-	host    = config.api_host;
-	session = service();
+	@service session;
+
+	host = config.api_host;
 
 	init() {
 		this._super(...arguments);
 
 		let session = this.session;
-		let token   = (session.isAuthenticated) ? session.data.authenticated.data.user.bearer : "";
+		let token   = ""; //(session.isAuthenticated) ? session.data.authenticated.data.user.bearer : "";
 
 		this.set(
 			"headers",

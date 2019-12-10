@@ -16,5 +16,6 @@ Router.map(function() {
 
       this.route("dashboard");
       this.route("review", { path : "/review/:type" });
+      this.route("lesson", { path : "/lesson/:type" });
     });
 });

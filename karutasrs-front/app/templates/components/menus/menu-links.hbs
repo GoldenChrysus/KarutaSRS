@@ -1,0 +1,15 @@
+{{#if this.top}}
+	<a class="mobile icon item" {{action this.openSidebar on="click"}}>
+		<i class="bars icon"></i>
+	</a>
+{{/if}}
+
+<LinkTo @route="authenticated.lesson" @model="list" class="item">
+	<div class="ui label">5</div>
+	Lessons
+</LinkTo>
+
+<LinkTo @route="authenticated.review" @model="list" class="item">
+	<div class="ui label">3</div>
+	Reviews
+</LinkTo>
