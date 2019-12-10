@@ -407,8 +407,8 @@ poems = Poem.create([
 		name: "Kentoku Ko",
 		first_verse: "あはれとも|いふべき人は|思ほえで",
 		second_verse_raw: "身のいたづらになりぬべきかな",
-		second_verse_card: "身のいたつらになりぬへきかな",
-		second_verse_answer: "身",
+		second_verse_card: "みのいたつらになりぬへきかな",
+		second_verse_answer: "みの",
 		kimariji: "あはれ"
 	},
 	{
