@@ -1,0 +1,27 @@
+<div id="top-menu" class="ui secondary icon menu">
+	<a class="mobile icon item" {{action this.openSidebar on="click"}}>
+		<i class="bars icon"></i>
+	</a>
+
+	<!-- <LinkTo @route="authenticated.lessons" class="item">
+		<div class="ui label">5</div>
+		Lessons
+	</LinkTo> -->
+
+	<LinkTo @route="authenticated.review" @model="reviews" class="item">
+		<div class="ui label">3</div>
+		Reviews
+	</LinkTo>
+</div>
+
+<div id="side-menu" class="ui sidebar vertical labeled menu" {{ref this "sidebar"}} {{did-insert this.initSidebar}}>
+	<!-- <LinkTo @route="authenticated.lessons" class="item">
+		<div class="ui label">5</div>
+		Lessons
+	</LinkTo> -->
+
+	<LinkTo @route="authenticated.review" @model="reviews" class="item">
+		<div class="ui label">3</div>
+		Reviews
+	</LinkTo>
+</div>
