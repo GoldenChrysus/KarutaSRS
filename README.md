@@ -44,4 +44,4 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ❌ API call should be rejected if the relevant user for the called item does not match the bearer provided
       - ❌ Calls to learned-items should be rejected if the owner of the learned item doesn't match the provided bearer
       - ❌ Calls to users should be rejected if the fetched user's bearer doesn't match the provided bearer
-        - ❌ Also applies to custom controller methods such as those that build the lesson/review queues
+        - ❌ Also applies to custom controller methods such as those that build the lesson/review queues; these need an AJAX prefilter as the calls are not routed through Ember's adapter
