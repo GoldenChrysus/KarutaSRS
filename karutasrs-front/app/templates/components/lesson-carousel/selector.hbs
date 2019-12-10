@@ -1,3 +1,6 @@
+<div class="lesson-indicator">
+	Lesson {{sum this.current_lesson 1}}/{{this.queue.length}}
+</div>
 <div class="ui ordered mini steps" {{ref this "steps"}} {{did-insert this.didInsert}}>
 	{{#each this.queue as |poem index|}}
 		<div class="link step {{if (eq this.current_lesson index) 'active' ''}} {{if poem.completed 'completed'}}" {{on "click" (fn this.changeLesson index)}} data-poem="{{index}}" key="selector-poem-{{index}}">

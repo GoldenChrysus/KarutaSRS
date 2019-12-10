@@ -32,6 +32,13 @@
 	content: none;
 }
 
+.lesson-carousel > .selector > .lesson-indicator {
+	display: none;
+	background: lightgray;
+	padding: 0.5em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (min-width: @tabletBreakpoint) {
 	.lesson-carousel > .selector > .mobile.review {
 		display: none;
@@ -46,5 +53,12 @@
 
 	.lesson-carousel > .selector > .steps {
 		display: none !important;
+	}
+
+	.lesson-carousel > .selector > .lesson-indicator {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }
