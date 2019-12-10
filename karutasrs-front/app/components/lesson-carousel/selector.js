@@ -15,8 +15,9 @@ export default class LessonCarouselSelectorComponent extends Component {
 	didInsert() {
 		this.updateCompletion(this.current_lesson);
 		$(this.steps).closest(".lesson-carousel").swipe({
-			allowPageScroll : "vertical",
-			swipe           : (e, direction) => {
+			allowPageScroll       : "vertical",
+			fallbackToMouseEvents : false,
+			swipe                 : (e, direction) => {
 				if (["up", "down"].includes(direction)) {
 					return true;
 				}
