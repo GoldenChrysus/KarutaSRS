@@ -29,6 +29,7 @@ class User < ApplicationRecord
 			WHERE
 				i.id IS NULL
 			ORDER BY
+				(LENGTH(p.kimariji) + LENGTH(p.second_verse_answer)) ASC,
 				LENGTH(p.kimariji) ASC,
 				LENGTH(p.second_verse_answer) ASC
 			LIMIT
