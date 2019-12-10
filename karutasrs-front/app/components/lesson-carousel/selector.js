@@ -14,6 +14,32 @@ export default class LessonCarouselSelectorComponent extends Component {
 	@action
 	didInsert() {
 		this.updateCompletion(this.current_lesson);
+		$(this.steps).closest(".lesson-carousel").swipe({
+			allowPageScroll : "vertical",
+			swipe           : (e, direction) => {
+				if (["up", "down"].includes(direction)) {
+					return true;
+				}
+
+				let new_index;
+
+				let max_index = this.queue.length - 1;
+
+				switch(direction) {
+					case "left":
+						new_index = (this.current_lesson === max_index) ? 0 : this.current_lesson + 1;
+
+						break;
+
+					case "right":
+						new_index = (this.current_lesson === 0) ? max_index : this.current_lesson - 1;
+
+						break;
+				}
+
+				this.changeLesson(new_index);
+			}
+		});
 	}
 
 	@action
