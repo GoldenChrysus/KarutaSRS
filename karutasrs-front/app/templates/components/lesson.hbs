@@ -6,28 +6,22 @@
 	<p>Maybe some background info here?</p>
 
 	<div class="ui segment">
-		<h4 class="ui header">First Verse</h4>
-		{{{this.first_verse}}}
-	</div>
+		<div class="ui gray ribbon label">First Verse</div>
+		<p>{{{this.first_verse}}}</p>
 
-	<div class="ui segment">
-		<h4 class="ui header">Kimariji</h4>
-		{{this.poem.kimariji}}
-	</div>
+		<div class="ui red ribbon label">Kimariji</div>
+		<p>{{{this.poem.kimariji}}}</p>
 
-	<div class="ui segment">
-		<h4 class="ui header">Second Verse Key Characters</h4>
-		{{this.poem.second_verse_answer}}
-	</div>
+		<div class="ui blue ribbon label">Second Verse Key Characters</div>
+		<p>{{{this.poem.second_verse_answer}}}</p>
 
-	{{#if this.archaic_warnings.length}}
-		<div class="ui segment archaic">
-			<h4 class="ui header">Archaic Characters</h4>
+		{{#if this.archaic_warnings.length}}
+			<div class="ui orange ribbon label">Archaic Characters</div>
 			{{#each this.archaic_warnings as |warning|}}
-				<div>{{warning}}</div>
+				<p>{{warning}}</p>
 			{{/each}}
-		</div>
-	{{/if}}
+		{{/if}}
+	</div>
 </div>
 <div class="{{this.classes}} column">
 	<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" @size={{this.grabber_size}}/>

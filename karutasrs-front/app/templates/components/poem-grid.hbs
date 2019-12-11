@@ -1,0 +1,18 @@
+<div class="ui grid">
+	{{#each this.poems as |poem|}}
+		<div class="four wide widescreen four wide large screen eight wide computer eight wide tablet eight wide mobile column">
+			<div class="ui segment">
+				<h3><LinkTo @route="authenticated.poems.show" @model={{poem.id}}>Poem {{poem.id}}</LinkTo></h3>
+				
+				<div class="ui gray ribbon label">Poet</div>
+				<p>{{poem.name}}</p>
+
+				<div class="ui red ribbon label">Kimariji</div>
+				<p>{{poem.kimariji}}</p>
+
+				<div class="ui blue ribbon label">Second Verse Key Characters</div>
+				<p>{{poem.second_verse_answer}}</p>
+			</div>
+		</div>
+	{{/each}}
+</div>

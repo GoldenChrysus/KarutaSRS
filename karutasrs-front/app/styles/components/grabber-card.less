@@ -45,6 +45,10 @@
 	font-size: 4.00vw;
 }
 
+.grabber-card-outer.small > .grabber-card-inner > .character > p {
+	font-size: 1.00vw;
+}
+
 .grabber-card-outer > .grabber-card-inner > .character.learn > p {
 	color: @blue;
 }
@@ -57,8 +61,15 @@
 	color: @lightRed;
 }
 
+@media screen and (max-width: @widescreenMonitorBreakpoint - 1) {
+	.grabber-card-outer.small > .grabber-card-inner > .character > p {
+		font-size: 2.00vw;
+	}
+}
+
 @media screen and (max-width: @largeMonitorBreakpoint - 1) {
-	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p {
+	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p,
+	.grabber-card-outer.small > .grabber-card-inner > .character > p {
 		font-size: 8.50vw !important;
 	}
 
@@ -71,5 +82,11 @@
 	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p,
 	.grabber-card-outer.large > .grabber-card-inner > .character > p {
 		font-size: 16.625vw !important;
+	}
+}
+
+@media screen and (max-width: @tabletBreakpoint - 1) {
+	.grabber-card-outer.small > .grabber-card-inner > .character > p {
+		font-size: 7.40vw !important;
 	}
 }
