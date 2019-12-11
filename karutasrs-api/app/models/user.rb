@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+	attribute :review_queue_length
+	attribute :lesson_queue_length
+
 	# Validation
 	validates :email, presence: true, uniqueness: true
 	validates :password, presence: true
@@ -78,6 +81,24 @@ class User < ApplicationRecord
 
 	def self.hash_value(value)
 		return Digest::SHA256.hexdigest(value)
+	end
+
+	def self.login(email, password)
+		hashed_password = self.hash_value(password)
+		user            = self
+			.where({
+				:email    => email,
+				:password => hashed_password
+			})
+			.first
+
+		if (!user)
+			raise ApiErrors::AuthenticationError::LoginFailed.new
+		end
+
+		user.password = nil
+
+		return user
 	end
 
 	private

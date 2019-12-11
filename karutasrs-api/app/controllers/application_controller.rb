@@ -3,6 +3,8 @@ class ApplicationController < JSONAPI::ResourceController
 
 	protect_from_forgery with: :null_session
 
+	before_action :authenticate_request
+
 	rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 	rescue_from ApiErrors::BaseError, with: :render_api_error
 	rescue_from StandardError, with: :handle_standard_error
@@ -31,4 +33,18 @@ class ApplicationController < JSONAPI::ResourceController
 
 		self.render_api_error(error)
 	end
+
+	private
+		def authenticate_request
+			bearer = ParseBearerToken.call(data: request.headers).bearer
+
+			@current_user = (bearer) ? User.where({ bearer: bearer }).first : false
+			@authorized   = !!@current_user
+
+			unless @authorized
+				raise ApiErrors::AuthenticationError::Unauthorized.new
+			end
+
+			session[:current_user] = @current_user
+		end
 end
