@@ -11,7 +11,7 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
 		this._super(...arguments);
 
 		let session = this.session;
-		let token   = ""; //(session.isAuthenticated) ? session.data.authenticated.data.user.bearer : "";
+		let token   = (session.isAuthenticated) ? session.data.authenticated.user.bearer : "";
 
 		this.set(
 			"headers",

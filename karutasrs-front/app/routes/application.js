@@ -3,7 +3,8 @@ import ApplicationRouteMixin from "ember-simple-auth/mixins/application-route-mi
 import { inject as service } from "@ember/service";
 
 export default Route.extend(ApplicationRouteMixin, {
-	session : service(),
+	session   : service(),
+	prefilter : service("ajax-prefilter"),
 
 	async sessionAuthenticated() {
 		this._super(...arguments);
@@ -19,9 +20,9 @@ export default Route.extend(ApplicationRouteMixin, {
 			// console.log(items);
 		}); */
 
-		let user = await this.store.findRecord("user", 1);
+		// let user = await this.store.findRecord("user", 1);
 
-		console.log(this.session);
+		this.prefilter.injectBearer();
 
 		return {
 			// poems : poems
