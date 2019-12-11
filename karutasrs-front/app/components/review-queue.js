@@ -5,6 +5,7 @@ import config from "../config/environment";
 
 export default Component.extend({
 	store               : service(),
+	router              : service("router"),
 	queue               : [],
 	type                : "",
 	chunk               : [],
@@ -141,7 +142,7 @@ export default Component.extend({
 			if (this.chunk.length) {
 				this.setActiveReview();
 			} else {
-				// exit review session
+				this.router.transitionTo("authenticated.review", "list");
 			}
 		}
 	}

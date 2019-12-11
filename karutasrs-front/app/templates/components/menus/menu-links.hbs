@@ -4,12 +4,22 @@
 	</a>
 {{/if}}
 
-<LinkTo @route="authenticated.lesson" @model="list" class="item">
-	<div class="ui label">{{this.lesson_queue_length}}</div>
-	Lessons
-</LinkTo>
+{{#if this.session.isAuthenticated}}
+	<LinkTo @route="authenticated.dashboard" class="item">
+		Dashboard
+	</LinkTo>
 
-<LinkTo @route="authenticated.review" @model="list" class="item">
-	<div class="ui label">{{this.review_queue_length}}</div>
-	Reviews
-</LinkTo>
+	<LinkTo @route="authenticated.lesson" @model="list" class="item">
+		<div class="ui label">{{this.lesson_queue_length}}</div>
+		Lessons
+	</LinkTo>
+
+	<LinkTo @route="authenticated.review" @model="list" class="item">
+		<div class="ui label">{{this.review_queue_length}}</div>
+		Reviews
+	</LinkTo>
+{{else}}
+	<LinkTo @route="login" class="item">
+		Login
+	</LinkTo>
+{{/if}}

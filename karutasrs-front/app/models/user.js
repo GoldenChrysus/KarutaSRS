@@ -6,6 +6,8 @@ export default class UserModel extends Model {
 	@attr email;
 	@attr password;
 	@attr bearer;
+	@attr lesson_queue_length;
+	@attr review_queue_length;
 
 	@hasMany("learned-item") learned_items;
 

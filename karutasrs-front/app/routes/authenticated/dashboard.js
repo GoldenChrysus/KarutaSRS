@@ -3,7 +3,7 @@ import AuthenticatedRouteMixin from "ember-simple-auth/mixins/authenticated-rout
 import { inject as service } from "@ember/service";
 
 export default Route.extend(AuthenticatedRouteMixin, {
-	store : service(),
+	store : service("store"),
 
 	async model() {
 		let user  = await this.store.findRecord("user", 1);

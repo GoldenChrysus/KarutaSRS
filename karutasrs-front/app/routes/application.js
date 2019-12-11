@@ -5,6 +5,7 @@ import { inject as service } from "@ember/service";
 export default Route.extend(ApplicationRouteMixin, {
 	session   : service(),
 	prefilter : service("ajax-prefilter"),
+	user      : service("current-user"),
 
 	async sessionAuthenticated() {
 		this._super(...arguments);
@@ -23,6 +24,7 @@ export default Route.extend(ApplicationRouteMixin, {
 		// let user = await this.store.findRecord("user", 1);
 
 		this.prefilter.injectBearer();
+		await this.user.getUser();
 
 		return {
 			// poems : poems
