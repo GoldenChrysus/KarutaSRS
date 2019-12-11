@@ -1,4 +1,4 @@
-<div class="{{if (eq this.stacked 'true') 'sixteen wide' 'four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile'}} column">
+<div class="{{this.classes}} column">
 	<h1>{{this.poem.name}}</h1>
 
 	<AudioPlayer @url="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
@@ -29,6 +29,6 @@
 		</div>
 	{{/if}}
 </div>
-<div class="{{if (eq this.stacked 'true') 'sixteen wide' 'four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile'}} column">
-	<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" @large=true/>
+<div class="{{this.classes}} column">
+	<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" @size={{this.grabber_size}}/>
 </div>

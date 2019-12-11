@@ -61,7 +61,7 @@ export default class LessonCarouselSelectorComponent extends Component {
 
 		await localForage.setItem("lesson-review-queue", queue);
 
-		this.router.transitionTo("authenticated.review", "lessons");
+		this.router.transitionTo("authenticated.reviews.queue", "lessons");
 	}
 
 	updateCompletion(index) {

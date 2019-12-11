@@ -6,7 +6,7 @@ export default Component.extend({
 		"grabber-card-outer"
 	],
 	classNameBindings : [
-		"large:large"
+		"size"
 	],
 	attributeBindings : [
 		"key:key"

@@ -142,7 +142,7 @@ export default Component.extend({
 			if (this.chunk.length) {
 				this.setActiveReview();
 			} else {
-				this.router.transitionTo("authenticated.review", "list");
+				this.router.transitionTo("authenticated.reviews");
 			}
 		}
 	}

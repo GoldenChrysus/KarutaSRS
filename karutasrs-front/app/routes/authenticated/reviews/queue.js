@@ -1,7 +1,6 @@
 import Route from '@ember/routing/route';
-import localForage from "localforage";
 
-export default class AuthenticatedReviewRoute extends Route {
+export default class AuthenticatedReviewsQueueRoute extends Route {
 	async model(params) {
 		let type  = params.type;
 		let queue = [];

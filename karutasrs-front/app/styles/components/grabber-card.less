@@ -1,5 +1,5 @@
 .grabber-card-outer {
-	background: #336633;
+	background: @red;
 	margin: 0 auto;
 }
 
@@ -37,29 +37,38 @@
 	font-weight: bold;
 }
 
+.grabber-card-outer.extra-large > .grabber-card-inner > .character > p {
+	font-size: 5.50vw;
+}
+
 .grabber-card-outer.large > .grabber-card-inner > .character > p {
 	font-size: 4.00vw;
 }
 
 .grabber-card-outer > .grabber-card-inner > .character.learn > p {
-	color: #8a8aff;
+	color: @blue;
 }
 
 .grabber-card-outer > .grabber-card-inner > .character.correct > p {
-	color: #88cc00;
+	color: @green;
 }
 
 .grabber-card-outer > .grabber-card-inner > .character.incorrect > p {
-	color: #ff8989;
+	color: @lightRed;
 }
 
 @media screen and (max-width: @largeMonitorBreakpoint - 1) {
+	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p {
+		font-size: 8.50vw !important;
+	}
+
 	.grabber-card-outer.large > .grabber-card-inner > .character > p {
 		font-size: 14.00vw !important;
 	}
 }
 
 @media screen and (max-width: @computerBreakpoint - 1) {
+	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p,
 	.grabber-card-outer.large > .grabber-card-inner > .character > p {
 		font-size: 16.625vw !important;
 	}
