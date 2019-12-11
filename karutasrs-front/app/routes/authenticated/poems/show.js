@@ -1,6 +1,7 @@
 import Route from '@ember/routing/route';
+import AuthenticatedRouteMixin from "ember-simple-auth/mixins/authenticated-route-mixin";
 
-export default class AuthenticatedPoemsShowRoute extends Route {
+export default Route.extend(AuthenticatedRouteMixin, {
 	async model(params) {
 		let poem = await this.store.findRecord("poem", params["id"]);
 
@@ -8,4 +9,4 @@ export default class AuthenticatedPoemsShowRoute extends Route {
 			poem : poem
 		}
 	}
-}
+});

@@ -7,9 +7,15 @@ export default Route.extend(AuthenticatedRouteMixin, {
 
 	async model() {
 		let user  = await this.user_serv.getUser();
+		let queue = [];
+
+		if (user) {
+			queue = await user.lesson_queue;
+		}
 
 		return {
-			user : user
+			user  : user,
+			queue : queue.data
 		}
 	}
 });

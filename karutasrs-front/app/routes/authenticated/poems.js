@@ -1,4 +1,5 @@
 import Route from '@ember/routing/route';
+import AuthenticatedRouteMixin from "ember-simple-auth/mixins/authenticated-route-mixin";
 
-export default class AuthenticatedPoemsRoute extends Route {
-}
+export default Route.extend(AuthenticatedRouteMixin, {
+});

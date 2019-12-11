@@ -1,6 +1,7 @@
 import Route from '@ember/routing/route';
+import AuthenticatedRouteMixin from "ember-simple-auth/mixins/authenticated-route-mixin";
 
-export default class AuthenticatedReviewsQueueRoute extends Route {
+export default Route.extend(AuthenticatedRouteMixin, {
 	async model(params) {
 		let type  = params.type;
 		let queue = [];
@@ -42,6 +43,6 @@ export default class AuthenticatedReviewsQueueRoute extends Route {
 			queue : queue,
 			type  : type,
 			user  : user
-		};
+		}
 	}
-}
+});
