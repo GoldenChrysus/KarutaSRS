@@ -1,4 +1,9 @@
-#top-menu > .item > .label {
+#top-menu > .logo {
+	padding: 0;
+	margin: 0;
+}
+
+#top-menu > .menu > .item > .label {
 	margin-left: 0;
 	margin-right: 1em;
 }
@@ -8,13 +13,13 @@
 		display: none;
 	}
 
-	#top-menu > .item.mobile {
+	#top-menu > .menu > .item.mobile {
 		display: none;
 	}
 }
 
 @media screen and (max-width: @tabletBreakpoint - 1) {
-	#top-menu > .item:not(.mobile) {
+	#top-menu > .menu > .item:not(.mobile) {
 		display: none;
 	}
 }

@@ -8,8 +8,8 @@ export default Component.extend({
 	session : service(),
 	store   : service("store"),
 
-	didInsert(element) {
-		$(element).find("#login-form").form({
+	didRender() {
+		$(this.element).find("#login-form").form({
 			inline : true,
 			fields : {
 				email    : {
