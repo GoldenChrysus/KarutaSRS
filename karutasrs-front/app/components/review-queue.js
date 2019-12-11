@@ -27,7 +27,10 @@ export default Component.extend({
 			}
 		}
 
+		console.log("Answers:");
 		console.log(this.answers);
+		console.log("Queue:");
+		console.log(this.queue);
 	},
 
 	chunkQueue() {
@@ -65,6 +68,9 @@ export default Component.extend({
 	setActiveReview() {
 		this.current_chunk_index = Math.floor(Math.random() * Math.floor(this.chunk.length - 1));
 
+		console.log("Chunk:");
+		console.log(this.chunk);
+
 		this.set("current_poem", this.chunk[this.current_chunk_index].poem);
 		this.set("current_type", this.chunk[this.current_chunk_index].type);
 		this.set("current_id", this.chunk[this.current_chunk_index].id);
@@ -72,6 +78,10 @@ export default Component.extend({
 
 	actions : {
 		async completeReview(correct) {
+			console.log("Current ID:");
+			console.log(this.current_id);
+			console.log("Queue:");
+			console.log(this.queue);
 			let id      = this.current_id;
 			let item_id = this.queue[id].id;
 
@@ -105,7 +115,6 @@ export default Component.extend({
 						}
 					);
 
-					delete this.queue[id];
 					await localForage.setItem("lesson-review-queue", JSON.stringify(this.queue));
 					await learned_item.save();
 				} else {
@@ -114,12 +123,10 @@ export default Component.extend({
 						type        : "POST",
 						contentType : "application/json",
 						data        : JSON.stringify({
-							wrong_answers : this.answers[id].wrong
+							wrong_answers : this.answers[item_id].wrong
 						})
 					};
 					let result  = await $.ajax(request);
-
-					delete this.queue[id];
 				}
 
 				this.pushItemToChunk(this.last_pushed_index + 1);
