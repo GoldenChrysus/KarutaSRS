@@ -12,7 +12,7 @@
 
 .lesson-carousel > .lessons > .lesson {
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: 0;
 	margin-top: 0 !important;
 	left: 50%;
@@ -27,11 +27,13 @@
 }
 
 .lesson-carousel > .lessons > .lesson.slide-left {
-	transform: translateX(-150%);
+	transform: translateX(-200%);
+	position: absolute;
 }
 
 .lesson-carousel > .lessons > .lesson.slide-right {
-	transform: translateX(100%);
+	transform: translateX(150%);
+	position: absolute;
 }
 
 @media screen and (max-width: @computerBreakpoint - 1) {

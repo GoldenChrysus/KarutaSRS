@@ -41,7 +41,7 @@ export default Component.extend({
 
 		switch (this.type) {
 			case "carousel":
-				return "four wide widescreen four wide large screen six wide computer fifteen wide tablet sixteen wide mobile";
+				return "six wide widescreen six wide large screen eight wide computer sixteen wide tablet sixteen wide mobile";
 
 			case "standalone":
 				return "eight wide widescreen eight wide large screen eight wide computer sixteen wide tablet sixteen wide mobile";
