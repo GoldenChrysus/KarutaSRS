@@ -18,6 +18,10 @@
 		<div class="ui label">{{this.review_queue_length}}</div>
 		Reviews
 	</LinkTo>
+
+	<LinkTo @route="authenticated.poems" class="item">
+		Poems
+	</LinkTo>
 {{else}}
 	<LinkTo @route="login" class="item">
 		Login
