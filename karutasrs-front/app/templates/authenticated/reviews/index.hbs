@@ -1,1 +1,7 @@
-Reviews index.
+<PageHeader @title="Poem Reviews">
+	{{#if @model.review_queue_length}}
+		<LinkTo @route="authenticated.reviews.queue" @model="reviews">
+			<button class="ui blue button">Begin Review</button>
+		</LinkTo>
+	{{/if}}
+</PageHeader>
