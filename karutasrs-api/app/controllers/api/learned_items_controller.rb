@@ -18,6 +18,22 @@ module Api
 			raise ApiErrors::AuthenticationError::Unauthorized.new
 		end
 
+		def create
+			tmp_params = {
+				:id => 0
+			}
+
+			if (params[:data] && params[:data][:relationships] && params[:data][:relationships] && params[:data][:relationships][:user][:data])
+				tmp_params[:id] = params[:data][:relationships][:user][:data][:id]
+			end
+
+			unless UserPolicy.new(session[:current_user], tmp_params).show?
+				raise ApiErrors::AuthenticationError::Unauthorized.new
+			end
+
+			process_request
+		end
+
 		def show
 			unless LearnedItemPolicy.new(session[:current_user], params).show?
 				raise ApiErrors::AuthenticationError::Unauthorized.new
