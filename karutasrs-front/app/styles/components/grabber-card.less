@@ -37,16 +37,20 @@
 	font-weight: bold;
 }
 
-.grabber-card-outer.extra-large > .grabber-card-inner > .character > p {
-	font-size: 5.50vw;
+.grabber-card-outer.standalone-poem > .grabber-card-inner > .character > p {
+	font-size: 6.20vw;
 }
 
-.grabber-card-outer.large > .grabber-card-inner > .character > p {
-	font-size: 4.50vw;
+.grabber-card-outer.standalone-lesson > .grabber-card-inner > .character > p {
+	font-size: 4.46vw;
 }
 
-.grabber-card-outer.small > .grabber-card-inner > .character > p {
-	font-size: 1.00vw;
+.grabber-card-outer.review > .grabber-card-inner > .character > p {
+	font-size: 4.57vw;
+}
+
+.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
+	font-size: 4.26vw;
 }
 
 .grabber-card-outer > .grabber-card-inner > .character.learn > p {
@@ -62,31 +66,43 @@
 }
 
 @media screen and (max-width: @widescreenMonitorBreakpoint - 1) {
-	.grabber-card-outer.small > .grabber-card-inner > .character > p {
-		font-size: 2.00vw;
-	}
 }
 
 @media screen and (max-width: @largeMonitorBreakpoint - 1) {
-	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p,
-	.grabber-card-outer.small > .grabber-card-inner > .character > p {
-		font-size: 8.50vw !important;
+	.grabber-card-outer.standalone-poem > .grabber-card-inner > .character > p {
+		font-size: 9.91vw !important;
 	}
 
-	.grabber-card-outer.large > .grabber-card-inner > .character > p {
-		font-size: 9.50vw !important;
+	.grabber-card-outer.standalone-lesson > .grabber-card-inner > .character > p {
+		font-size: 9.65vw !important;
+	}
+
+	.grabber-card-outer.review > .grabber-card-inner > .character > p {
+		font-size: 20.32vw;
+	}
+
+	.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
+		font-size: 19.83vw;
 	}
 }
 
 @media screen and (max-width: @computerBreakpoint - 1) {
-	.grabber-card-outer.extra-large > .grabber-card-inner > .character > p,
-	.grabber-card-outer.large > .grabber-card-inner > .character > p {
-		font-size: 16.625vw !important;
+	.grabber-card-outer.standalone-poem > .grabber-card-inner > .character > p {
+		font-size: 19.50vw !important;
+	}
+
+	.grabber-card-outer.standalone-lesson > .grabber-card-inner > .character > p {
+		font-size: 17.17vw !important;
+	}
+
+	.grabber-card-outer.review > .grabber-card-inner > .character > p {
+		font-size: 19.12vw;
+	}
+
+	.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
+		font-size: 18.40vw;
 	}
 }
 
 @media screen and (max-width: @tabletBreakpoint - 1) {
-	.grabber-card-outer.small > .grabber-card-inner > .character > p {
-		font-size: 7.40vw !important;
-	}
 }

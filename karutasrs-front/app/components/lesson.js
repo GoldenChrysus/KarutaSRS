@@ -33,7 +33,7 @@ export default Component.extend({
 		return warnings;
 	}),
 	type              : "carousel",
-	grabber_size      : "large",
+	grabber_size      : "standalone-lesson",
 	classes           : computed("stacked", function() {
 		if (this.stacked) {
 			return "sixteen wide";

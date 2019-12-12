@@ -7,6 +7,8 @@ export default Component.extend({
 	user                : {},
 	top                 : false,
 	openSidebar         : false,
+	lessons             : 0,
+	reviews             : 0,
 	lesson_queue_length : computed("user", function() {
 		return this.user.lesson_queue_length || 0;
 	}),

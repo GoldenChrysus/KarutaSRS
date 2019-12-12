@@ -18,13 +18,13 @@ export default Route.extend(ApplicationRouteMixin, {
 		return {};
 	},
 
-	resetControllerData() {
-		this.controllerFor("application").send("loadData");
+	async resetControllerData() {
+		await this.controllerFor("application").send("loadData");
 	},
 
 	actions : {
-		didTransition() {
-			this.resetControllerData();
+		async didTransition() {
+			await this.resetControllerData();
 		}
 	}
 });

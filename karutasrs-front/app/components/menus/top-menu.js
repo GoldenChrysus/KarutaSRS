@@ -11,9 +11,11 @@ export default Component.extend({
 		"menu"
 	],
 	user       : {},
+	lessons    : 0,
+	reviews    : 0,
 	actions    : {
 		openSidebar() {
-			$(document).find("#side-menu").sidebar("toggle");
+			$(document).find("body > .sidebar").sidebar("toggle");
 		}
 	}
 })

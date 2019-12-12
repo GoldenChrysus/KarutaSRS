@@ -67,7 +67,7 @@ export default Component.extend({
 	},
 
 	setActiveReview() {
-		this.current_chunk_index = Math.floor(Math.random() * Math.floor(this.chunk.length - 1));
+		this.current_chunk_index = Math.floor(Math.random() * this.chunk.length);
 
 		console.log("Chunk:");
 		console.log(this.chunk);
