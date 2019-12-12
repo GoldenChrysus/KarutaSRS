@@ -12,13 +12,7 @@ export default class CurrentUserService extends Service {
 
 		let id = this.session.data.authenticated.user.id;
 
-		return await this.store.findRecord(
-			"user",
-			id,
-			{
-				backgroundReload : false
-			}
-		);
+		return await this.store.findRecord("user", id);
 	}
 
 	peekUser() {

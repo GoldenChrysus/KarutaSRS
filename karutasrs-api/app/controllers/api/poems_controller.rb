@@ -1,7 +1,8 @@
 module Api
 	class PoemsController < ApplicationController
 		def index
-			raise ApiErrors::AuthenticationError::Unauthorized.new
+			process_request
+			# raise ApiErrors::AuthenticationError::Unauthorized.new
 		end
 
 		def show

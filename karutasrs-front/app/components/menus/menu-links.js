@@ -1,23 +1,29 @@
-import Component from '@glimmer/component';
-import { action } from "@ember/object";
+import Component from '@ember/component';
+import { computed } from "@ember/object";
 import { inject as service } from "@ember/service";
 
-export default class MenusMenuLinksComponent extends Component {
-	@service session;
-	@service current_user;
+export default Component.extend({
+	session             : service(),
+	user                : {},
+	top                 : false,
+	openSidebar         : false,
+	lesson_queue_length : computed("user", function() {
+		return this.user.lesson_queue_length || 0;
+	}),
+	review_queue_length : computed("user", function() {
+		return this.user.review_queue_length || 0;
+	}),
 
-	top         = this.args.top;
-	openSidebar = this.args.openSidebar;
+	didInsertElement() {
+		if (this.top) {
+			return;
+		}
 
-	get lesson_queue_length() {
-		let user = this.current_user.peekUser();
-
-		return user.lesson_queue_length || 0;
+		$(this.element).sidebar({
+			mobileTransition: "overlay"
+		});
+		$(this.element).on("click", ".item", () => {
+			$(this.element).sidebar("toggle");
+		});
 	}
-
-	get review_queue_length() {
-		let user = this.current_user.peekUser();
-
-		return user.review_queue_length || 0;
-	}
-}
+});

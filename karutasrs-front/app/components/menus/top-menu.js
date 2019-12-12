@@ -1,9 +1,19 @@
-import Component from '@glimmer/component';
+import Component from '@ember/component';
+import { tracked } from '@glimmer/tracking';
 import { action } from "@ember/object";
 
-export default class MenusTopMenuComponent extends Component {
-	@action
-	openSidebar() {
-		$(document).find("#side-menu").sidebar("toggle");
+export default Component.extend({
+	elementId  : "top-menu",
+	classNames : [
+		"ui",
+		"secondary",
+		"icon",
+		"menu"
+	],
+	user       : {},
+	actions    : {
+		openSidebar() {
+			$(document).find("#side-menu").sidebar("toggle");
+		}
 	}
-}
+})

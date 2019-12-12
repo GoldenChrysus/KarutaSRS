@@ -1,3 +1,1 @@
-<div id="side-menu" class="ui sidebar vertical labeled menu" {{ref this "sidebar"}} {{did-insert this.initSidebar}}>
-	<Menus::MenuLinks/>
-</div>
+<Menus::MenuLinks @user={{this.user}} @elementId="side-menu" @classNames="ui sidebar vertical labeled menu"/>

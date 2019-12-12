@@ -13,21 +13,18 @@ export default Route.extend(ApplicationRouteMixin, {
 	},
 
 	async model() {
-		// let poems = await this.store.findAll("poem");
-
-		/* poems.forEach(async (poem) => {
-			let items = await poem.learned_items;
-
-			// console.log(items);
-		}); */
-
-		// let user = await this.store.findRecord("user", 1);
-
 		this.prefilter.injectBearer();
-		await this.user.getUser();
 
-		return {
-			// poems : poems
-		};
+		return {};
+	},
+
+	resetControllerData() {
+		this.controllerFor("application").send("loadData");
+	},
+
+	actions : {
+		didTransition() {
+			this.resetControllerData();
+		}
 	}
 });
