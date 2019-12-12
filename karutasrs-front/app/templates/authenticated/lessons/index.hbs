@@ -1,4 +1,10 @@
-<h2>Available Lessons</h2>
+<PageHeader @title="Upcoming Lessons">
+	{{#if @model.poems}}
+		<LinkTo @route="authenticated.lessons.queue">
+			<button class="ui blue button">Begin Lessons</button>
+		</LinkTo>
+	{{/if}}
+</PageHeader>
 {{#if @model.poems}}
 	<PoemGrid @poems={{@model.poems}}/>
 {{else}}
