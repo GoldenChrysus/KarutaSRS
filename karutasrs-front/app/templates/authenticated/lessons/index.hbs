@@ -1,1 +1,6 @@
-Lessons index.
+<h2>Available Lessons</h2>
+{{#if @model.poems}}
+	<PoemGrid @poems={{@model.poems}}/>
+{{else}}
+	<p>Nothing available right now. Check back tomorrrow!</p>
+{{/if}}

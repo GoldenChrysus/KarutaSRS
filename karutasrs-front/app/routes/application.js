@@ -14,6 +14,7 @@ export default Route.extend(ApplicationRouteMixin, {
 
 	async model() {
 		this.prefilter.injectBearer();
+		await this.user.getUser();
 
 		return {};
 	},
