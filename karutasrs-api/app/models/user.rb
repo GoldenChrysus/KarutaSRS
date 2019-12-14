@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-	attribute :review_queue_length
-	attribute :lesson_queue_length
+	# Attributes
+	attr_accessor :review_queue_length
+	attr_accessor :lesson_queue_length
 
 	# Validation
 	validates :email, presence: true, uniqueness: true
