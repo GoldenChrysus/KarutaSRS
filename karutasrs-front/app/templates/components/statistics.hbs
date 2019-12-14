@@ -14,15 +14,15 @@
 		{{#if (eq this.type 'review')}}
 			<div class="ui five statistics">
 				<div class="statistic">
-					<div class="value">341</div>
+					<div class="value">{{this.total_reviews}}</div>
 					<div class="label">Total Reviews</div>
 				</div>
 				<div class="statistic">
-					<div class="value">83%</div>
+					<div class="value">{{this.kimariji_correct_rate}}</div>
 					<div class="label">Kimariji Correct</div>
 				</div>
 				<div class="statistic">
-					<div class="value">92%</div>
+					<div class="value">{{this.second_verse_correct_rate}}</div>
 					<div class="label">2nd Verse Correct</div>
 				</div>
 				<div class="statistic">
@@ -40,30 +40,12 @@
 			</h4>
 
 			<div class="ui six statistics">
-				<div class="statistic">
-					<div class="value">92%</div>
-					<div class="label">One</div>
-				</div>
-				<div class="statistic">
-					<div class="value">87%</div>
-					<div class="label">Two</div>
-				</div>
-				<div class="statistic">
-					<div class="value">83%</div>
-					<div class="label">Three</div>
-				</div>
-				<div class="statistic">
-					<div class="value">71%</div>
-					<div class="label">Four</div>
-				</div>
-				<div class="statistic">
-					<div class="value">65%</div>
-					<div class="label">Five</div>
-				</div>
-				<div class="statistic">
-					<div class="value">61%</div>
-					<div class="label">Six</div>
-				</div>
+				{{#each this.kimariji_performance as |data|}}
+					<div class="statistic">
+						<div class="value">{{data.value}}</div>
+						<div class="label">{{data.label}}</div>
+					</div>
+				{{/each}}
 			</div>
 
 			<h4 class="ui horizontal divider header">
@@ -71,34 +53,12 @@
 			</h4>
 
 			<div class="ui seven statistics">
-				<div class="statistic">
-					<div class="value">92%</div>
-					<div class="label">One</div>
-				</div>
-				<div class="statistic">
-					<div class="value">87%</div>
-					<div class="label">Two</div>
-				</div>
-				<div class="statistic">
-					<div class="value">83%</div>
-					<div class="label">Three</div>
-				</div>
-				<div class="statistic">
-					<div class="value">71%</div>
-					<div class="label">Four</div>
-				</div>
-				<div class="statistic">
-					<div class="value">65%</div>
-					<div class="label">Five</div>
-				</div>
-				<div class="statistic">
-					<div class="value">61%</div>
-					<div class="label">Seven</div>
-				</div>
-				<div class="statistic">
-					<div class="value">61%</div>
-					<div class="label">Eight</div>
-				</div>
+				{{#each this.second_verse_performance as |data|}}
+					<div class="statistic">
+						<div class="value">{{data.value}}</div>
+						<div class="label">{{data.label}}</div>
+					</div>
+				{{/each}}
 			</div>
 		{{else}}
 			<div class="ui three statistics">

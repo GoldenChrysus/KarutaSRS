@@ -27,12 +27,8 @@ module Api
 				raise ApiErrors::AuthenticationError::Unauthorized.new
 			end
 
-			puts "PARAM START"
-			puts params
-			puts "PARAM END"
-
 			user  = User.find(params[:id])
-			stats = user.dashboard_stats
+			stats = (params[:type] === "review") ? user.review_stats : user.dashboard_stats
 
 			render json: FormatJsonResult.call(data: stats).result
 		end

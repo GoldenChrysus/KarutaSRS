@@ -7,13 +7,22 @@ import moment from "moment";
 export default class StatisticsComponent extends Component {
 	@service current_user;
 
-	@tracked loading        = true;
+	@tracked loading = true;
+
+	// Dashboard
 	@tracked next_review    = "N/A";
 	@tracked poems_by_level = {};
 	@tracked poems_learned  = 0;
 	@tracked poems_mastered = 0;
 	@tracked best_poems     = [];
 	@tracked worst_poems    = [];
+
+	// Review
+	@tracked total_reviews             = 0;
+	@tracked kimariji_correct_rate     = "N/A";
+	@tracked second_verse_correct_rate = "N/A";
+	@tracked kimariji_performance      = [];
+	@tracked second_verse_performance  = [];
 
 	type = this.args.type || "dashboard";
 
@@ -23,9 +32,13 @@ export default class StatisticsComponent extends Component {
 
 		data = data.data;
 
-		if (this.type === "dashboard") {
+		if (this.type === "review") {
+			this.processReviewData(data);
+		} else {
 			this.processDashboardData(data);
 		}
+
+		this.loading = false;
 	}
 
 	processDashboardData(data) {
@@ -95,12 +108,88 @@ export default class StatisticsComponent extends Component {
 		});
 
 		this.worst_poems = this.formatPoemPercents(data.worst_poems);
-		this.loading     = false;
+	}
+
+	processReviewData(data) {
+		let performance = {
+			kimariji     : {
+				1 : {
+					value : "N/A",
+					label : "One",
+				},
+				2 : {
+					value : "N/A",
+					label : "Two",
+				},
+				3 : {
+					value : "N/A",
+					label : "Three",
+				},
+				4 : {
+					value : "N/A",
+					label : "Four",
+				},
+				5 : {
+					value : "N/A",
+					label : "Five",
+				},
+				6 : {
+					value : "N/A",
+					label : "Six",
+				}
+			},
+			second_verse : {
+				1 : {
+					value : "N/A",
+					label : "One",
+				},
+				2 : {
+					value : "N/A",
+					label : "Two",
+				},
+				3 : {
+					value : "N/A",
+					label : "Three",
+				},
+				4 : {
+					value : "N/A",
+					label : "Four",
+				},
+				5 : {
+					value : "N/A",
+					label : "Five",
+				},
+				7 : {
+					value : "N/A",
+					label : "Seven",
+				},
+				8 : {
+					value : "N/A",
+					label : "Eight",
+				}
+			}
+		};
+
+		for (let item_type of ["kimariji", "second_verse"]) {
+			for (let record of data[`performance_by_${item_type}`]) {
+				performance[item_type][record.length].value = this.formatPercent(record[`success_${item_type}_percent`]);
+			}
+
+			this[`${item_type}_performance`] = Object.values(performance[item_type]);
+		}
+
+		this.total_reviews             = data.total_reviews;
+		this.kimariji_correct_rate     = (data.kimariji_correct_rate !== false) ? this.formatPercent(data.kimariji_correct_rate) : "N/A";
+		this.second_verse_correct_rate = (data.second_verse_correct_rate !== false) ? this.formatPercent(data.second_verse_correct_rate) : "N/A";
+	}
+
+	formatPercent(number) {
+		return (+number * 100).toFixed(0) + "%"
 	}
 
 	formatPoemPercents(poems) {
 		for (let i = 0; i < poems.length; i++) {
-			poems[i].success_percent = (poems[i].success_percent * 100).toFixed(0) + "%";
+			poems[i].success_percent = this.formatPercent(poems[i].success_percent);
 		}
 
 		return poems;

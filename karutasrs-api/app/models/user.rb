@@ -94,7 +94,7 @@ class User < ApplicationRecord
 					1 - (
 						CAST(SUM(r.wrong_total) AS NUMERIC) /
 						(
-							SUM(r.wrong_total) + COUNT(1)
+							SUM(r.wrong_total) + (COUNT(1) * 2)
 						)
 					)
 				) AS success_percent
@@ -118,8 +118,6 @@ class User < ApplicationRecord
 				4 DESC"
 		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
 		res = ActiveRecord::Base.connection.exec_query(sql)
-
-		puts res
 
 		data[:best_poems]  = res[0..5]
 		data[:worst_poems] = res[-5..-1]
@@ -152,6 +150,133 @@ class User < ApplicationRecord
 		res = ActiveRecord::Base.connection.exec_query(sql)
 
 		data[:next_review] = (res.length) ? res[0]["next_time"] : false
+
+		return data
+	end
+
+	def review_stats
+		data   = {
+			:total_reviews               => 0,
+			:kimariji_correct_rate       => 0,
+			:second_verse_correct_rate   => 0,
+			:performance_by_kimariji     => [],
+			:performance_by_second_verse => []
+		}
+		params = {
+			:id => self.id
+		}
+
+		# Total reviews
+		sql =
+			"SELECT
+				COUNT(1) AS total_reviews
+			FROM
+				reviews r
+			JOIN
+				learned_items l
+			ON
+				l.id = r.learned_item_id
+			WHERE
+				l.user_id = :id"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		data[:total_reviews] = (res.length) ? res[0]["total_reviews"] : 0
+
+		# Kimariji and 2nd verse correct %'s
+		sql =
+			"SELECT
+				(
+					1 - (
+						CAST(SUM(r.wrong_kimariji) AS NUMERIC) /
+						(
+							SUM(r.wrong_kimariji) + COUNT(1)
+						)
+					)
+				) AS success_kimariji_percent,
+				(
+					1 - (
+						CAST(SUM(r.wrong_second_verse_answer) AS NUMERIC) /
+						(
+							SUM(r.wrong_second_verse_answer) + COUNT(1)
+						)
+					)
+				) AS success_second_verse_percent
+			FROM
+				reviews r
+			JOIN
+				learned_items l
+			ON
+				l.id = r.learned_item_id
+			WHERE
+				l.user_id = :id"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		data[:kimariji_correct_rate]     = (res.length) ? res[0]["success_kimariji_percent"] : false
+		data[:second_verse_correct_rate] = (res.length) ? res[0]["success_second_verse_percent"] : false
+
+		# Performance by kimariji length
+		sql =
+			"SELECT
+				LENGTH(p.kimariji) AS length,
+				(
+					1 - (
+						CAST(SUM(r.wrong_kimariji) AS NUMERIC) /
+						(
+							SUM(r.wrong_kimariji) + COUNT(1)
+						)
+					)
+				) AS success_kimariji_percent
+			FROM
+				reviews r
+			JOIN
+				learned_items l
+			ON
+				l.id = r.learned_item_id
+			JOIN
+				poems p
+			ON
+				p.id = l.poem_id
+			GROUP BY
+				1
+			ORDER BY
+				1 ASC"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		data[:performance_by_kimariji] = res
+
+		# Performance by 2nd verse answer length
+		sql =
+			"SELECT
+				LENGTH(p.second_verse_answer) AS length,
+				(
+					1 - (
+						CAST(SUM(r.wrong_second_verse_answer) AS NUMERIC) /
+						(
+							SUM(r.wrong_second_verse_answer) + COUNT(1)
+						)
+					)
+				) AS success_second_verse_percent
+			FROM
+				reviews r
+			JOIN
+				learned_items l
+			ON
+				l.id = r.learned_item_id
+			JOIN
+				poems p
+			ON
+				p.id = l.poem_id
+			GROUP BY
+				1
+			ORDER BY
+				1 ASC"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		data[:performance_by_second_verse] = res
 
 		return data
 	end

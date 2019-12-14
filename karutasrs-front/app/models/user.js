@@ -34,4 +34,12 @@ export default class UserModel extends Model {
 			});
 		})();
 	}
+
+	get review_stats() {
+		return (async () => {
+			return await $.get({
+				url : `${config.api_host}/users/${this.id}/stats?type=review`
+			});
+		})();
+	}
 }
