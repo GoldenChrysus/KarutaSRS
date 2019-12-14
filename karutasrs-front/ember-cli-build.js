@@ -12,15 +12,15 @@ module.exports = function(defaults) {
 		},
 		lessOptions : {
 			paths : [
-				"semantic/"
+				"fomantic/"
 			]
 		}
 	});
 
-	app.import("node_modules/semantic-ui/dist/semantic.min.js");
+	app.import("node_modules/fomantic-ui/dist/semantic.min.js");
 
 	let semantic_css = Funnel(
-		"semantic/themes",
+		"fomantic/themes",
 		{
 			destDir : "themes"
 		}
