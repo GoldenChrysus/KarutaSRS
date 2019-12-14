@@ -6,6 +6,32 @@ export default Route.extend(ApplicationRouteMixin, {
 	session   : service(),
 	prefilter : service("ajax-prefilter"),
 	user      : service("current-user"),
+	router    : service("router"),
+
+	getLatestHour() {
+		// Get time in seconds
+		let time = (new Date()).getTime() / 1000;
+
+		// Convert seconds to hours, then round down (floor) to latest hour
+		return Math.floor(time / 60 / 60);
+	},
+
+	init() {
+		this._super(...arguments);
+
+		this.router.on("routeDidChange", (transition) => {
+			if (!transition.from) {
+				return;
+			}
+
+			let latest_hour = this.getLatestHour();
+
+			if (transition.from.name === "authenticated.reviews.queue" || latest_hour > +localStorage.getItem("latest_user_refresh")) {
+				localStorage.setItem("latest_user_refresh", latest_hour);
+				this.refresh();
+			}
+		});
+	},
 
 	async sessionAuthenticated() {
 		this._super(...arguments);
@@ -14,9 +40,12 @@ export default Route.extend(ApplicationRouteMixin, {
 
 	async model() {
 		this.prefilter.injectBearer();
-		await this.user.getUser();
 
-		return {};
+		let user = await this.user.getUser();
+
+		return {
+			user : user
+		};
 	},
 
 	async resetControllerData() {
@@ -25,7 +54,7 @@ export default Route.extend(ApplicationRouteMixin, {
 
 	actions : {
 		async didTransition() {
-			await this.resetControllerData();
+			// await this.resetControllerData();
 		}
 	}
 });

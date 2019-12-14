@@ -9,10 +9,10 @@ export default Component.extend({
 	openSidebar         : false,
 	lessons             : 0,
 	reviews             : 0,
-	lesson_queue_length : computed("user", function() {
+	lesson_queue_length : computed("user.lesson_queue_length", function() {
 		return this.user.lesson_queue_length || 0;
 	}),
-	review_queue_length : computed("user", function() {
+	review_queue_length : computed("user.review_queue_length", function() {
 		return this.user.review_queue_length || 0;
 	}),
 

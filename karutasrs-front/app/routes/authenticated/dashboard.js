@@ -5,11 +5,6 @@ import { inject as service } from "@ember/service";
 export default Route.extend(AuthenticatedRouteMixin, {
 	user_serv : service("current-user"),
 
-	async model() {
-		let user  = await this.user_serv.getUser();
-
-		return {
-			user : user
-		}
+	model() {
 	}
 });
