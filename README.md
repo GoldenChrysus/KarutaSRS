@@ -46,17 +46,17 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ❌ Calls to users should be rejected if the fetched user's bearer doesn't match the provided bearer
       - ❌ Also applies to custom controller methods such as those that build the lesson/review queues; these need an AJAX prefilter as the calls are not routed through Ember's adapter
 - ❌ User stats
-  - ❌ Dashboard stats
-    - ❌ Next review time
-    - ❌ Number of items per level
-    - ❌ Best items (by correct answer rate)
-    - ❌ Worst items (by incorrect answer rate)
+  - ☑️ Dashboard stats
+    - ☑️ Next review time
+    - ☑️ Number of items per level
+    - ☑️ Best items (by correct answer rate)
+    - ☑️ Worst items (by incorrect answer rate)
   - ❌ Review index stats
-    - ❌ Total number of reviews completed (1 poem = 1 review)
-    - ❌ Kimariji correct/incorrect percent
-    - ❌ 2nd verse correct/incorrect percent
-    - ❌ Performance (correct answer rate) by kimariji length
-    - ❌ Performance ("") by 2nd verse answer length
+    - ☑️ Total number of reviews completed (1 poem = 1 review)
+    - ☑️ Kimariji correct/incorrect percent
+    - ☑️ 2nd verse correct/incorrect percent
+    - ☑️ Performance (correct answer rate) by kimariji length
+    - ☑️ Performance ("") by 2nd verse answer length
     - ❌ Average correct response delay
     - ❌ Average response delay
     - ❌ Ability to select time range
