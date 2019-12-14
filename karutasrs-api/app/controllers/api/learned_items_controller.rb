@@ -5,11 +5,10 @@ module Api
 				raise ApiErrors::AuthenticationError::Unauthorized.new
 			end
 
-			item_id       = params[:id]
-			parsed_data   = JSON.parse(request.raw_post)
-			wrong_answers = parsed_data["wrong_answers"]
-			item          = LearnedItem.find(item_id)
-			result        = item.complete_review(wrong_answers)
+			item_id     = params[:id]
+			parsed_data = JSON.parse(request.raw_post)
+			item        = LearnedItem.find(item_id)
+			result      = item.complete_review(parsed_data)
 
 			render json: FormatJsonResult.call(data: result).result
 		end

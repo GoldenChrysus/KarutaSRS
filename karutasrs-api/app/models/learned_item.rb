@@ -25,7 +25,8 @@ class LearnedItem < ApplicationRecord
 	# Callbacks
 	before_validation :set_initial_data, on: :create
 
-	def complete_review(wrong_answers)
+	def complete_review(data)
+		wrong_answers = data["wrong_answers"]
 		current_level = self.level
 		new_level     = 1
 
@@ -45,6 +46,15 @@ class LearnedItem < ApplicationRecord
 		self.next_review = get_next_review_date(new_level)
 
 		self.save
+
+		review_data = {
+			:learned_item              => self,
+			:wrong_total               => wrong_answers,
+			:wrong_kimariji            => data["wrong_kimariji"],
+			:wrong_second_verse_answer => data["wrong_grabber"]
+		}
+
+		Review.create(review_data)
 		return self
 	end
 

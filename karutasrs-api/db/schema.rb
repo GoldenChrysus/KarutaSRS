@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_29_203152) do
+ActiveRecord::Schema.define(version: 2019_12_14_023726) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,16 @@ ActiveRecord::Schema.define(version: 2019_11_29_203152) do
     t.string "second_verse_answer", null: false
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.bigint "learned_item_id", null: false
+    t.integer "wrong_total"
+    t.integer "wrong_kimariji"
+    t.integer "wrong_second_verse_answer"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["learned_item_id"], name: "index_reviews_on_learned_item_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "password", null: false
@@ -47,4 +57,5 @@ ActiveRecord::Schema.define(version: 2019_11_29_203152) do
 
   add_foreign_key "learned_items", "poems"
   add_foreign_key "learned_items", "users"
+  add_foreign_key "reviews", "learned_items"
 end
