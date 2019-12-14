@@ -119,7 +119,7 @@ class User < ApplicationRecord
 		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
 		res = ActiveRecord::Base.connection.exec_query(sql)
 
-		data[:best_poems]  = res[0..5]
+		data[:best_poems]  = res[0..4]
 		data[:worst_poems] = res[-5..-1]
 
 		# Poems by level
