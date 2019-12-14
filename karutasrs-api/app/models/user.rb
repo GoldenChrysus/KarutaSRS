@@ -73,6 +73,89 @@ class User < ApplicationRecord
 		return self.review_queue.length
 	end
 
+	def dashboard_stats
+		data   = {
+			:next_review    => "",
+			:poems_by_level => 0,
+			:worst_poems    => [],
+			:best_poems     => []
+		}
+		params = {
+			:id => self.id
+		}
+
+		# Item correct %'s
+		sql =
+			"SELECT
+				l.poem_id,
+				p.kimariji,
+				p.second_verse_answer,
+				(
+					1 - (
+						CAST(SUM(r.wrong_total) AS NUMERIC) /
+						(
+							SUM(r.wrong_total) + COUNT(1)
+						)
+					)
+				) AS success_percent
+			FROM
+				reviews r
+			JOIN
+				learned_items l
+			ON
+				l.id = r.learned_item_id
+			JOIN
+				poems p
+			ON
+				p.id = l.poem_id
+			WHERE
+				l.user_id = :id
+			GROUP BY
+				l.poem_id,
+				p.kimariji,
+				p.second_verse_answer
+			ORDER BY
+				4 DESC"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		puts res
+
+		data[:best_poems]  = res[0..5]
+		data[:worst_poems] = res[-5..-1]
+
+		# Poems by level
+		sql =
+			"SELECT
+				level,
+				COUNT(1) AS count
+			FROM
+				learned_items
+			WHERE
+				user_id = :id
+			GROUP BY
+				level"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		data[:poems_by_level] = res
+
+		# Next review
+		sql =
+			"SELECT
+				MIN(next_review) AS next_time
+			FROM
+				learned_items
+			WHERE
+				user_id = :id"
+		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
+		res = ActiveRecord::Base.connection.exec_query(sql)
+
+		data[:next_review] = (res.length) ? res[0]["next_time"] : false
+
+		return data
+	end
+
 	def self.bearer_exists?(bearer)
 		user = self.where({ bearer: bearer }).first
 

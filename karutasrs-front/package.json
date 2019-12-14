@@ -63,6 +63,7 @@
   "dependencies": {
     "broccoli-funnel": "^3.0.0",
     "broccoli-merge-trees": "^4.0.0",
+    "moment": "^2.24.0",
     "semantic-ui": "^2.4.2"
   }
 }

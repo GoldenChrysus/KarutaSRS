@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 	namespace "api" do
 		get "users/:id/review-queue", to: "users#review_queue"
 		get "users/:id/lesson-queue", to: "users#lesson_queue"
+		get "users/:id/stats", to: "users#stats"
 		post "learned-items/:id/complete-review", to: "learned_items#complete_review"
 		post "sessions/authenticate", to: "sessions#authenticate"
 

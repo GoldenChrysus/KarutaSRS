@@ -1,5 +1,11 @@
-<div class="ui grid">
+<div class="ui grid" {{did-insert this.didInsert}}>
 	<div class="sixteen wide column">
+		{{#if this.loading}}
+			<div class="ui inverted dimmer active">
+				<div class="ui loader"></div>
+			</div>
+		{{/if}}
+
 		<h4 class="ui horizontal divider header">
 			<i class="bar chart icon"></i>
 			Your Statistics
@@ -97,15 +103,15 @@
 		{{else}}
 			<div class="ui three statistics">
 				<div class="statistic">
-					<div class="value">10:00 pm</div>
+					<div class="value">{{this.next_review}}</div>
 					<div class="label">Next Review</div>
 				</div>
 				<div class="statistic">
-					<div class="value">41</div>
+					<div class="value">{{this.poems_learned}}</div>
 					<div class="label">Poems Learned</div>
 				</div>
 				<div class="statistic">
-					<div class="value">0</div>
+					<div class="value">{{this.poems_mastered}}</div>
 					<div class="label">Poems Mastered</div>
 				</div>
 			</div>
@@ -115,42 +121,12 @@
 			</h4>
 
 			<div class="ui nine statistics">
-				<div class="statistic">
-					<div class="value">3</div>
-					<div class="label">One</div>
-				</div>
-				<div class="statistic">
-					<div class="value">5</div>
-					<div class="label">Two</div>
-				</div>
-				<div class="statistic">
-					<div class="value">6</div>
-					<div class="label">Three</div>
-				</div>
-				<div class="statistic">
-					<div class="value">11</div>
-					<div class="label">Four</div>
-				</div>
-				<div class="statistic">
-					<div class="value">15</div>
-					<div class="label">Five</div>
-				</div>
-				<div class="statistic">
-					<div class="value">1</div>
-					<div class="label">Six</div>
-				</div>
-				<div class="statistic">
-					<div class="value">0</div>
-					<div class="label">Seven</div>
-				</div>
-				<div class="statistic">
-					<div class="value">0</div>
-					<div class="label">Eight</div>
-				</div>
-				<div class="statistic">
-					<div class="value">0</div>
-					<div class="label">Nine</div>
-				</div>
+				{{#each this.poems_by_level as |data|}}
+					<div class="statistic">
+						<div class="value">{{data.value}}</div>
+						<div class="label">{{data.label}}</div>
+					</div>
+				{{/each}}
 			</div>
 
 			<h4 class="ui horizontal divider header">
@@ -162,7 +138,7 @@
 					<table class="ui unstackable table">
 						<thead>
 							<tr>
-								<th colspan="4">Best Items</th>
+								<th colspan="4">Best Poems</th>
 							</tr>
 							<tr>
 								<th>#</th>
@@ -172,24 +148,14 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td><LinkTo @route="authenticated.poems.show" @model=1 class="header">Poem 1</LinkTo></td>
-								<td>あきの</td>
-								<td>わかころもては</td>
-								<td>98%</td>
-							</tr>
-							<tr>
-								<td><LinkTo @route="authenticated.poems.show" @model=15 class="header">Poem 15</LinkTo></td>
-								<td>きみがためは</td>
-								<td>わかころもてに</td>
-								<td>96%</td>
-							</tr>
-							<tr>
-								<td><LinkTo @route="authenticated.poems.show" @model=9 class="header">Poem 9</LinkTo></td>
-								<td>はなの</td>
-								<td>わかみよ</td>
-								<td>92%</td>
-							</tr>
+							{{#each this.best_poems as |poem|}}
+								<tr>
+									<td><LinkTo @route="authenticated.poems.show" @model={{poem.poem_id}} class="header">Poem {{poem.poem_id}}</LinkTo></td>
+									<td>{{poem.kimariji}}</td>
+									<td>{{poem.second_verse_answer}}</td>
+									<td>{{poem.success_percent}}</td>
+								</tr>
+							{{/each}}
 						</tbody>
 					</table>
 				</div>
@@ -197,7 +163,7 @@
 					<table class="ui unstackable table">
 						<thead>
 							<tr>
-								<th colspan="4">Worst Items</th>
+								<th colspan="4">Worst Poems</th>
 							</tr>
 							<tr>
 								<th>#</th>
@@ -207,24 +173,14 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td><LinkTo @route="authenticated.poems.show" @model=19 class="header">Poem 19</LinkTo></td>
-								<td>なにはが</td>
-								<td>あはて</td>
-								<td>54%</td>
-							</tr>
-							<tr>
-								<td><LinkTo @route="authenticated.poems.show" @model=56 class="header">Poem 56</LinkTo></td>
-								<td>あらざ</td>
-								<td>いまひとたひのあ</td>
-								<td>56%</td>
-							</tr>
-							<tr>
-								<td><LinkTo @route="authenticated.poems.show" @model=9 class="header">Poem 76</LinkTo></td>
-								<td>わたのはらこ</td>
-								<td>くもゐ</td>
-								<td>57%</td>
-							</tr>
+							{{#each this.worst_poems as |poem|}}
+								<tr>
+									<td><LinkTo @route="authenticated.poems.show" @model={{poem.poem_id}} class="header">Poem {{poem.poem_id}}</LinkTo></td>
+									<td>{{poem.kimariji}}</td>
+									<td>{{poem.second_verse_answer}}</td>
+									<td>{{poem.success_percent}}</td>
+								</tr>
+							{{/each}}
 						</tbody>
 					</table>
 				</div>

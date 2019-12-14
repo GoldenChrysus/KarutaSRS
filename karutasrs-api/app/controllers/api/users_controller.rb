@@ -22,6 +22,21 @@ module Api
 			render json: FormatJsonResult.call(data: items).result
 		end
 
+		def stats
+			unless UserPolicy.new(session[:current_user], params).show?
+				raise ApiErrors::AuthenticationError::Unauthorized.new
+			end
+
+			puts "PARAM START"
+			puts params
+			puts "PARAM END"
+
+			user  = User.find(params[:id])
+			stats = user.dashboard_stats
+
+			render json: FormatJsonResult.call(data: stats).result
+		end
+
 		def index
 			raise ApiErrors::AuthenticationError::Unauthorized.new
 		end
