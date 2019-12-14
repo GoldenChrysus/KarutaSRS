@@ -8,14 +8,6 @@ export default Route.extend(ApplicationRouteMixin, {
 	user      : service("current-user"),
 	router    : service("router"),
 
-	getLatestHour() {
-		// Get time in seconds
-		let time = (new Date()).getTime() / 1000;
-
-		// Convert seconds to hours, then round down (floor) to latest hour
-		return Math.floor(time / 60 / 60);
-	},
-
 	init() {
 		this._super(...arguments);
 
@@ -33,6 +25,14 @@ export default Route.extend(ApplicationRouteMixin, {
 		});
 	},
 
+	getLatestHour() {
+		// Get time in seconds
+		let time = (new Date()).getTime() / 1000;
+
+		// Convert seconds to hours, then round down (floor) to latest hour
+		return Math.floor(time / 60 / 60);
+	},
+
 	async sessionAuthenticated() {
 		this._super(...arguments);
 		this.refresh();
@@ -46,15 +46,5 @@ export default Route.extend(ApplicationRouteMixin, {
 		return {
 			user : user
 		};
-	},
-
-	async resetControllerData() {
-		await this.controllerFor("application").send("loadData");
-	},
-
-	actions : {
-		async didTransition() {
-			// await this.resetControllerData();
-		}
 	}
 });

@@ -11,8 +11,6 @@ export default Component.extend({
 		"menu"
 	],
 	user       : {},
-	lessons    : 0,
-	reviews    : 0,
 	actions    : {
 		openSidebar() {
 			$(document).find("body > .sidebar").sidebar("toggle");
