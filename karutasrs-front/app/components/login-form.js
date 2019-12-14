@@ -4,9 +4,11 @@ import { inject as service } from "@ember/service";
 import config from "../config/environment";
 
 export default Component.extend({
-	title   : config.name,
-	session : service(),
-	store   : service("store"),
+	title         : config.name,
+	session       : service(),
+	store         : service("store"),
+	login_error   : false,
+	login_message : "",
 
 	didRender() {
 		$(this.element).find("#login-form").form({
@@ -38,9 +40,17 @@ export default Component.extend({
 		});
 	},
 
+	formIsValid() {
+		return $(this.element).find("#login-form").form("validate form");
+	},
+
 	actions : {
 		login() {
-			this.login_error = false;
+			this.set("login_error", false);
+
+			if (!this.formIsValid()) {
+				return false;
+			}
 
 			let email    = this.email;
 			let password = this.password;
@@ -51,12 +61,17 @@ export default Component.extend({
 				})
 				.catch(() => {
 					this.set("login_error", true);
+					this.set("login_message", "Login failed. Please try again.");
 				});
 		},
 
 		async register() {
-			console.log(this.email);
-			console.log(this.password);
+			this.set("login_error", false);
+
+			if (!this.formIsValid()) {
+				return false;
+			}
+
 			let user = await this.store.createRecord(
 				"user",
 				{
@@ -71,6 +86,7 @@ export default Component.extend({
 				})
 				.catch(() => {
 					this.set("login_error", true);
+					this.set("login_message", "Registration failed. Do you already have an account?");
 				});
 		}
 	}

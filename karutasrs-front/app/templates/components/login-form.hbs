@@ -3,7 +3,8 @@
 	{{#if login_error}}
 		<div class="ajax-response" data-for="login-form">
 			<div class="ui error message">
-				<i class="remove icon"></i>Login failed. Please try again.
+				<i class="remove icon"></i>
+				{{this.login_message}}
 			</div>
 		</div>
 	{{/if}}
@@ -19,7 +20,7 @@
 			</div>
 		</div>
 		<div class="ui buttons">
-			<input type="submit" name="submit" class="ui primary button" value="Login" {{action "login" on="click"}}>
+			<input type="submit" name="submit" class="ui blue button" value="Login" {{action "login" on="click"}}>
 			<div class="or"></div>
 			<input type="submit" name="register" class="ui button" value="Register" {{action "register" on="click"}}>
 		</div>
