@@ -238,6 +238,8 @@ class User < ApplicationRecord
 				poems p
 			ON
 				p.id = l.poem_id
+			WHERE
+				l.user_id = :id
 			GROUP BY
 				1
 			ORDER BY
@@ -269,6 +271,8 @@ class User < ApplicationRecord
 				poems p
 			ON
 				p.id = l.poem_id
+			WHERE
+				l.user_id = :id
 			GROUP BY
 				1
 			ORDER BY
