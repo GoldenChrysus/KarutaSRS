@@ -88,14 +88,19 @@ export default Component.extend({
 
 			if (!this.answers[item_id]) {
 				this.answers[item_id] = {
-					"wrong"    : 0,
+					"wrong"    : {
+						wrong_answers  : 0,
+						wrong_kimariji : 0,
+						wrong_grabber  : 0
+					},
 					"kimariji" : false,
 					"grabber"  : false
 				};
 			}
 
 			if (!correct) {
-				this.answers[item_id].wrong++;
+				this.answers[item_id].wrong.wrong_answers++;
+				this.answers[item_id].wrong[`wrong_${this.current_type}`]++;
 			} else {
 				this.answers[item_id][this.current_type] = true;
 			}
@@ -123,9 +128,7 @@ export default Component.extend({
 						url         : `${config.api_host}/learned-items/${item_id}/complete-review`,
 						type        : "POST",
 						contentType : "application/json",
-						data        : JSON.stringify({
-							wrong_answers : this.answers[item_id].wrong
-						})
+						data        : JSON.stringify(this.answers[item_id].wrong)
 					};
 					let result  = await $.ajax(request);
 				}
