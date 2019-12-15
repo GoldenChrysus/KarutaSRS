@@ -17,7 +17,7 @@ export default Component.extend({
 
 		this.set("lesson_one_poem", this.queue[0]);
 		this.set("lesson_two_poem", this.queue[1]);
-		this.set("multiple_lessons", (this.queue.length > 0));
+		this.set("multiple_lessons", (this.queue.length > 1));
 	},
 
 	actions: {
