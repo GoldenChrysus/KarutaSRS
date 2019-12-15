@@ -16,7 +16,7 @@ export default Component.extend({
 	is_answer         : false,
 	is_correct        : false,
 	is_learning       : computed("type", function() {
-		return (this.type === "learn");
+		return (["learn", "demo"].includes(this.type));
 	}),
 	validation        : computed("validate", "is_correct", function() {
 		return (this.validate)

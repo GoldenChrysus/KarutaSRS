@@ -1,3 +1,4 @@
+/* Semantic/Fomantic base */
 @import "fomantic/semantic";
 
 /* https://css-tricks.com/books/volume-i/scale-typography-screen-size/ */
@@ -11,10 +12,14 @@ html, body {
 	}
 }
 
+/* Semantic/Fomantic variables */
 @import "fomantic/themes/default/globals/site.variables";
 
+/* Global styles */
 @import "global";
 @import "fonts";
+
+/* Component styles */
 @import "components/top-menu";
 @import "components/side-menu";
 @import "components/page-header";
@@ -25,3 +30,6 @@ html, body {
 @import "components/grabber-card";
 @import "components/audio-player";
 @import "components/statistics";
+
+/* Page styles */
+@import "index";

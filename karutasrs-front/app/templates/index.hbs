@@ -1,2 +1,32 @@
-Index template
-{{outlet}}
+<div class="ui stackable middle aligned grid features">
+	<div class="row">
+		<div class="eight wide center aligned column">
+			<h1>Memorize the Ogura Hyakunin Isshu</h1>
+			<p>Easily learn the key items for every poem</p>
+			<p>Our memorization system focuses on the key characters for the first and second verses</p>
+		</div>
+		<div class="eight wide column poems">
+			<PoemGrid @poems={{@model.poems}}/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="eight wide column">
+			<GrabberCard @width="49%" @text="{{@model.grabber_one.second_verse_card}}" @answer="{{@model.grabber_one.second_verse_answer}}" @type="demo" @size="demo"/>
+			<GrabberCard @width="49%" @text="{{@model.grabber_two.second_verse_card}}" @answer="{{@model.grabber_two.second_verse_answer}}" @type="demo" @size="demo"/>
+		</div>
+		<div class="eight wide center aligned column">
+			<h1>Interactive grabber cards</h1>
+			<p>Visualize what the cards will look like during a game</p>
+			<p>Cards reflect what you type during memorization reviews and mark correct/incorrect characters</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="eight wide center aligned column">
+			<h1>High quality readings</h1>
+			<p>Study each and every sound with recordings of a Class A reader</p>
+		</div>
+		<div class="eight wide column">
+			<AudioPlayer @url="/assets/audio/poem-readings/poem-{{@model.audio_poem}}.mp3"/>
+		</div>
+	</div>
+</div>

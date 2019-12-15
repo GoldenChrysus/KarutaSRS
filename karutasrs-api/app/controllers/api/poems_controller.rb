@@ -1,5 +1,7 @@
 module Api
 	class PoemsController < ApplicationController
+		skip_before_action :authenticate_request, only: [:index]
+
 		def index
 			unless (!params[:include] || PoemPolicy.new(session[:current_user], params).show_relationship?)
 				raise ApiErrors::AuthenticationError::Unauthorized.new

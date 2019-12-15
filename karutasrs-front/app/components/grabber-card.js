@@ -56,6 +56,24 @@ export default Component.extend({
 
 	init() {
 		this._super(...arguments);
+
+		if (this.type === "demo") {
+			this.backup_text   = this.text;
+			this.current_index = 0;
+
+			this.set("text", "");
+
+			this.interval = setInterval(
+				() => {
+					this.set("text", this.backup_text.slice(0, ++this.current_index));
+
+					if (this.current_index === this.backup_text.length) {
+						clearInterval(this.interval);
+					}
+				},
+				1000
+			);
+		}
 	},
 
 	didInsertElement() {

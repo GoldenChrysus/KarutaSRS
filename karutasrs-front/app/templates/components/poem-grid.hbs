@@ -1,6 +1,6 @@
 <div class="ui grid">
 	{{#each this.poems as |poem|}}
-		<div class="four wide widescreen four wide large screen eight wide computer eight wide tablet eight wide mobile column">
+		<div class="{{this.classes}}">
 			<div class="ui segment">
 				<h3><LinkTo @route="authenticated.poems.show" @model={{poem.id}}>Poem {{poem.id}}</LinkTo></h3>
 				

@@ -53,7 +53,12 @@
 	font-size: 4.26vw;
 }
 
-.grabber-card-outer > .grabber-card-inner > .character.learn > p {
+.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+	font-size: 2.90vw;
+}
+
+.grabber-card-outer > .grabber-card-inner > .character.learn > p,
+.grabber-card-outer > .grabber-card-inner > .character.demo > p {
 	color: @blue;
 }
 
@@ -84,6 +89,10 @@
 	.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
 		font-size: 19.83vw;
 	}
+
+	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+		font-size: 4.50vw;
+	}
 }
 
 @media screen and (max-width: @computerBreakpoint - 1) {
@@ -102,7 +111,14 @@
 	.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
 		font-size: 18.40vw;
 	}
+
+	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+		font-size: 4.40vw;
+	}
 }
 
 @media screen and (max-width: @tabletBreakpoint - 1) {
+	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+		font-size: 8.50vw;
+	}
 }

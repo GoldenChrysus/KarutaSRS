@@ -1,0 +1,29 @@
+.features > .row > .center.aligned.column > p {
+	font-size: 1.3em;
+}
+
+.features > .row > .column > .grabber-card-outer:first-of-type {
+	float: left;
+}
+
+.features > .row > .column > .grabber-card-outer:last-of-type {
+	float: right;
+}
+
+.features > .row > .column > audio {
+	width: 100%;
+}
+
+@media screen and (max-width: @tabletBreakpoint - 1) {
+	.features > .row > .center.aligned.column {
+		order: 1;
+	}
+
+	.features > .row > .column:not(.center):not(.aligned) {
+		order: 2;
+	}
+
+	.features > .row > .column.poems > .grid > .column:last-of-type {
+		display: none;
+	}
+}

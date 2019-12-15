@@ -22,6 +22,22 @@ body.pushable {
 	background-color: @blue !important;
 }
 
+.logo {
+	padding: 0 !important;
+	margin: 0 !important;
+	display: block !important;
+	font-weight: normal !important;
+}
+
+.logo > .hiragana {
+	letter-spacing: -4px;
+	font-size: 1.2em;
+}
+
+.logo > span:not(.hiragana) {
+	font-size: 0.9em;
+}
+
 @media screen and (max-width: @tabletBreakpoint - 1) {
 	#pusher > .row:first-of-type {
 		padding-top: 0;
