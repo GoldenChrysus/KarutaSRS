@@ -166,10 +166,11 @@ export default Component.extend({
 			await localForage.setItem(`review-queue-answers-${this.type}`, JSON.stringify(this.answers));
 		},
 
-		triggerNextReview() {
+		async triggerNextReview() {
 			if (this.chunk.length) {
 				this.setActiveReview();
 			} else {
+				await localForage.setItem(`review-queue-answers-${this.type}`, JSON.stringify({}));
 				this.router.transitionTo("authenticated.reviews");
 			}
 		}
