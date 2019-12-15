@@ -2,9 +2,17 @@
 	padding-bottom: 0 !important;
 }
 
+.page-header + p {
+	margin-top: 1em;
+}
+
 @media screen and (max-width: @tabletBreakpoint - 1) {
 	.column > .page-header.stackable.grid > .column:not(.row) {
 		text-align: center !important;
 		padding-bottom: 0 !important;
+	}
+
+	.page-header + p {
+		margin-top: 0;
 	}
 }
