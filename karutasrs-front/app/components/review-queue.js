@@ -16,6 +16,9 @@ export default Component.extend({
 
 	async init() {
 		this._super(...arguments);
+
+		this.chunk = [];
+
 		this.chunkQueue();
 
 		let saved_answers = await localForage.getItem(`review-queue-answers-${this.type}`);
