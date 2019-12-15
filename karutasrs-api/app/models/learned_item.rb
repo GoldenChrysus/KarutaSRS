@@ -51,7 +51,9 @@ class LearnedItem < ApplicationRecord
 			:learned_item              => self,
 			:wrong_total               => wrong_answers,
 			:wrong_kimariji            => data["wrong_kimariji"],
-			:wrong_second_verse_answer => data["wrong_grabber"]
+			:wrong_second_verse_answer => data["wrong_grabber"],
+			:average_correct_time      => data["avg_correct_time"].to_f.round,
+			:average_total_time        => data["avg_total_time"].to_f.round
 		}
 
 		Review.create(review_data)

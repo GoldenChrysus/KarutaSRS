@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_14_023726) do
+ActiveRecord::Schema.define(version: 2019_12_15_231031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 2019_12_14_023726) do
     t.integer "wrong_second_verse_answer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "average_correct_time", default: 0, null: false
+    t.integer "average_total_time", default: 0, null: false
     t.index ["learned_item_id"], name: "index_reviews_on_learned_item_id"
   end
 

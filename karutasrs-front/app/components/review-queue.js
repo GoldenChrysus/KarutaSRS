@@ -58,9 +58,14 @@ export default Component.extend({
 			return;
 		}
 
-		let poem = (this.type === "lessons") ? item : item.poem;
+		let poem    = (this.type === "lessons") ? item : item.poem;
+		let item_id = item.id;
 
 		for (let review_type of ["grabber", "kimariji"]) {
+			if (this.answers[item_id]) {
+				this.answers[item_id][review_type] = false;
+			}
+
 			this.chunk.push({
 				type : review_type,
 				poem : poem,
@@ -81,32 +86,45 @@ export default Component.extend({
 	},
 
 	actions : {
-		async completeReview(correct) {
-			console.log("Current ID:");
-			console.log(this.current_id);
+		async completeReview(correct, time_elapsed) {
 			console.log("Queue:");
 			console.log(this.queue);
+
 			let id      = this.current_id;
 			let item_id = this.queue[id].id;
 
 			if (!this.answers[item_id]) {
 				this.answers[item_id] = {
-					"wrong"    : {
+					correct  : 0,
+					timings  : {
+						total   : 0,
+						correct : 0
+					},
+					wrong    : {
 						wrong_answers  : 0,
 						wrong_kimariji : 0,
 						wrong_grabber  : 0
 					},
-					"kimariji" : false,
-					"grabber"  : false
+					kimariji : false,
+					grabber  : false
 				};
 			}
+
+			this.answers[item_id].timings.total += time_elapsed;
 
 			if (!correct) {
 				this.answers[item_id].wrong.wrong_answers++;
 				this.answers[item_id].wrong[`wrong_${this.current_type}`]++;
 			} else {
+				this.answers[item_id].correct++;
+
 				this.answers[item_id][this.current_type] = true;
+
+				this.answers[item_id].timings.correct += time_elapsed;
 			}
+
+			console.log("Answers:");
+			console.log(this.answers);
 
 			if (correct) {
 				delete this.chunk[this.current_chunk_index];
@@ -127,11 +145,15 @@ export default Component.extend({
 					await localForage.setItem("lesson-review-queue", JSON.stringify(this.queue));
 					await learned_item.save();
 				} else {
+					let timings = {
+						avg_total_time   : this.answers[item_id].timings.total / (this.answers[item_id].correct + this.answers[item_id].wrong.wrong_answers),
+						avg_correct_time : this.answers[item_id].timings.correct / this.answers[item_id].correct
+					};
 					let request = {
 						url         : `${config.api_host}/learned-items/${item_id}/complete-review`,
 						type        : "POST",
 						contentType : "application/json",
-						data        : JSON.stringify(this.answers[item_id].wrong)
+						data        : JSON.stringify(Object.assign({}, this.answers[item_id].wrong, timings))
 					};
 					let result  = await $.ajax(request);
 				}

@@ -35,6 +35,8 @@ export default Component.extend({
 	init() {
 		this._super(...arguments);
 
+		this.start_time = (new Date()).getTime();
+
 		this.addObserver("poem", this, () => {
 			let audio = $(this.element).find("audio")[0];
 
@@ -82,6 +84,8 @@ export default Component.extend({
 			return;
 		}
 
+		this.time_elapsed = (new Date()).getTime() - this.start_time;
+
 		this.set("answered", true);
 
 		if (this.type === "grabber") {
@@ -116,10 +120,12 @@ export default Component.extend({
 			.attr("disabled", false)
 			.val("");
 		this.focusInput();
+
+		this.start_time = (new Date()).getTime();
 	},
 
 	completeReview() {
-		this.onComplete(this.is_correct);
+		this.onComplete(this.is_correct, this.time_elapsed);
 	},
 
 	triggerNextReview() {
