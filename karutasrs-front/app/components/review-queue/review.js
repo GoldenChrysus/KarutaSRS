@@ -40,6 +40,10 @@ export default Component.extend({
 
 			if (audio) {
 				audio.load();
+
+				if (this.type === "grabber") {
+					audio.play();
+				}
 			}
 		});
 	},
