@@ -22,6 +22,11 @@ body.pushable {
 	background-color: @blue !important;
 }
 
+.ui.green.label,
+.ui.green.button:not(:hover):not(:active):not(:focus) {
+	background-color: @green !important;
+}
+
 .logo {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -31,11 +36,11 @@ body.pushable {
 
 .logo > .hiragana {
 	letter-spacing: -4px;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 .logo > span:not(.hiragana) {
-	font-size: 0.9em;
+	font-size: 1.1em;
 }
 
 @media screen and (max-width: @tabletBreakpoint - 1) {

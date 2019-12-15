@@ -85,6 +85,12 @@ export default Component.extend({
 		$(window).on("resize", this.setHeight.bind(this));
 	},
 
+	willDestroyElement() {
+		if (this.interval) {
+			clearInterval(this.interval);
+		}
+	},
+
 	setHeight() {
 		let $element = $(this.element);
 
