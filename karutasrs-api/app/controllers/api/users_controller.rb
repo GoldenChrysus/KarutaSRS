@@ -1,5 +1,7 @@
 module Api
 	class UsersController < ApplicationController
+		skip_before_action :authenticate_request, only: [:create]
+
 		def review_queue
 			unless UserPolicy.new(session[:current_user], params).show?
 				raise ApiErrors::AuthenticationError::Unauthorized.new

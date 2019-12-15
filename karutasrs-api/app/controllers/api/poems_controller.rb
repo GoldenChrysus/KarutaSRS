@@ -16,8 +16,16 @@ module Api
 			process_request
 		end
 
+		def create
+			unless PoemPolicy.new(session[:current_user], params).destroy?
+				raise ApiErrors::AuthenticationError::Unauthorized.new
+			end
+
+			process_request
+		end
+
 		def update
-			unless PoemPolicy.new(session[:current_user], params).show?
+			unless PoemPolicy.new(session[:current_user], params).destroy?
 				raise ApiErrors::AuthenticationError::Unauthorized.new
 			end
 

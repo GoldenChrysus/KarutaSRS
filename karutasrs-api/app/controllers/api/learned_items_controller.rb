@@ -42,7 +42,7 @@ module Api
 		end
 
 		def update
-			unless LearnedItemPolicy.new(session[:current_user], params).show?
+			unless LearnedItemPolicy.new(session[:current_user], params).destroy?
 				raise ApiErrors::AuthenticationError::Unauthorized.new
 			end
 

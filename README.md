@@ -39,12 +39,14 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ For regular reviews, post the number of wrong answers to API to update the learned item
 - ❌ Session and security
   - ☑️ User is assigned a bearer token upon creation
-  - ☑️ Relevant user data (id, bearer) should be stored as session data when ember-simple-auth completes
+  - ❌ Relevant user data (id, bearer) should be stored as session data when ember-simple-auth completes, and user should redirect to dashboard
+    - ☑️ When user logs in
+    - ❌ When user registers
   - ☑️ All calls to the API should include the current user's bearer in the header
-  - ❌ API call should be rejected if the relevant user for the called item does not match the bearer provided
-    - ❌ Calls to learned-items should be rejected if the owner of the learned item doesn't match the provided bearer
-    - ❌ Calls to users should be rejected if the fetched user's bearer doesn't match the provided bearer
-      - ❌ Also applies to custom controller methods such as those that build the lesson/review queues; these need an AJAX prefilter as the calls are not routed through Ember's adapter
+  - ☑️ API call should be rejected if the relevant user for the called item does not match the bearer provided
+    - ☑️ Calls to learned-items should be rejected if the owner of the learned item doesn't match the provided bearer
+    - ☑️ Calls to users should be rejected if the fetched user's bearer doesn't match the provided bearer
+      - ☑️ Also applies to custom controller methods such as those that build the lesson/review queues; these need an AJAX prefilter as the calls are not routed through Ember's adapter
 - ❌ User stats
   - ☑️ Dashboard stats
     - ☑️ Next review time

@@ -13,8 +13,7 @@ module Api
 		# Attribute controls
 		def self.updatable_fields(context)
 			# Bearer may never be updated
-			# super - [:bearer]
-			super
+			super - [:bearer]
 		end
 	end
 end

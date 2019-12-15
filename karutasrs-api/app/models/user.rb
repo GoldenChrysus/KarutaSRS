@@ -121,7 +121,10 @@ class User < ApplicationRecord
 		res = ActiveRecord::Base.connection.exec_query(sql)
 
 		data[:best_poems]  = res[0..4]
-		data[:worst_poems] = res[-5..-1]
+
+		reverse_index = (res.length > 5) ? -5 : res.length * -1
+
+		data[:worst_poems] = res[reverse_index..-1]
 
 		# Poems by level
 		sql =
