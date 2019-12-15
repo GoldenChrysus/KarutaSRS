@@ -3,7 +3,7 @@ module Api
 		skip_before_action :authenticate_request, only: [:index]
 
 		def index
-			unless (!params[:include] || PoemPolicy.new(session[:current_user], params).show_relationship?)
+			unless (!params[:include])
 				raise ApiErrors::AuthenticationError::Unauthorized.new
 			end
 
