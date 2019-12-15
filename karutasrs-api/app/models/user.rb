@@ -170,10 +170,12 @@ class User < ApplicationRecord
 			:id => self.id
 		}
 
-		# Total reviews
+		# Total reviews and average times
 		sql =
 			"SELECT
-				COUNT(1) AS total_reviews
+				COUNT(1) AS total_reviews,
+				SUM(average_total_time) / COUNT(1) AS average_total_time,
+				SUM(average_correct_time) / COUNT(1) AS average_correct_time
 			FROM
 				reviews r
 			JOIN
@@ -185,7 +187,9 @@ class User < ApplicationRecord
 		sql = ActiveRecord::Base.sanitize_sql_array([sql, params].flatten)
 		res = ActiveRecord::Base.connection.exec_query(sql)
 
-		data[:total_reviews] = (res.length) ? res[0]["total_reviews"] : 0
+		data[:total_reviews]        = (res.length) ? res[0]["total_reviews"] : 0
+		data[:average_total_time]   = (res.length) ? res[0]["average_total_time"] : 0
+		data[:average_correct_time] = (res.length) ? res[0]["average_correct_time"] : 0
 
 		# Kimariji and 2nd verse correct %'s
 		sql =
