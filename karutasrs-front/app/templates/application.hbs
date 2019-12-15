@@ -1,13 +1,16 @@
 <Menus::MenuLinks @user={{@model.user}} @classNames="ui sidebar vertical labeled menu"/>
-<div id="pusher" class="ui grid one centered column pusher">
-	<div class="row">
-		<div class="ten wide widescreen twelve wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
-			<Menus::TopMenu @user={{@model.user}}/>
+<div id="pusher" class="pusher">
+	<div class="ui grid one centered column">
+		<div class="row">
+			<div class="ten wide widescreen twelve wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
+				<Menus::TopMenu @user={{@model.user}}/>
+			</div>
+		</div>
+		<div id="main-row" class="row">
+			<div id="main-column" class="ten wide widescreen twelve wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
+				{{outlet}}
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="ten wide widescreen twelve wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
-			{{outlet}}
-		</div>
-	</div>
+	<Footer/>
 </div>
