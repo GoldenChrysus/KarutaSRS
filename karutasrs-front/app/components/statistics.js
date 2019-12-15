@@ -23,6 +23,8 @@ export default class StatisticsComponent extends Component {
 	@tracked second_verse_correct_rate = "N/A";
 	@tracked kimariji_performance      = [];
 	@tracked second_verse_performance  = [];
+	@tracked average_correct_time      = 0;
+	@tracked average_total_time        = 0;
 
 	type = this.args.type || "dashboard";
 
@@ -181,6 +183,8 @@ export default class StatisticsComponent extends Component {
 		this.total_reviews             = data.total_reviews;
 		this.kimariji_correct_rate     = (data.kimariji_correct_rate !== false) ? this.formatPercent(data.kimariji_correct_rate) : "N/A";
 		this.second_verse_correct_rate = (data.second_verse_correct_rate !== false) ? this.formatPercent(data.second_verse_correct_rate) : "N/A";
+		this.average_correct_time      = this.formatResponseTime(data.average_correct_time);
+		this.average_total_time        = this.formatResponseTime(data.average_total_time);
 	}
 
 	formatPercent(number) {
@@ -193,6 +197,21 @@ export default class StatisticsComponent extends Component {
 		}
 
 		return poems;
+	}
+
+	formatResponseTime(time) {
+		let unit      = "ms";
+		let precision = 0;
+
+		if (time > 1000) {
+			time     /= 1000;
+			unit      = "s";
+			precision = 2;
+		}
+
+		time = time.toFixed(precision);
+
+		return `${time} ${unit}`;
 	}
 
 	calculateNextReview(date) {
