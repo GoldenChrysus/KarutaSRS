@@ -46,5 +46,10 @@ export default Route.extend(ApplicationRouteMixin, {
 		return {
 			user : user
 		};
+	},
+
+	actions : {
+		error(e) {
+		}
 	}
 });
