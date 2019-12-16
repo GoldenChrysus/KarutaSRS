@@ -4,7 +4,7 @@ module Api
 
 		def index
 			unless (!params[:include])
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -12,7 +12,7 @@ module Api
 
 		def show
 			unless PoemPolicy.new(session[:current_user], params).show?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -20,7 +20,7 @@ module Api
 
 		def create
 			unless PoemPolicy.new(session[:current_user], params).destroy?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -28,7 +28,7 @@ module Api
 
 		def update
 			unless PoemPolicy.new(session[:current_user], params).destroy?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -36,7 +36,7 @@ module Api
 
 		def destroy
 			unless PoemPolicy.new(session[:current_user], params).destroy?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -44,7 +44,7 @@ module Api
 
 		def show_relationship
 			unless PoemPolicy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -52,7 +52,7 @@ module Api
 
 		def create_relationship
 			unless PoemPolicy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -60,7 +60,7 @@ module Api
 
 		def destroy_relationship
 			unless PoemPolicy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -70,7 +70,7 @@ module Api
 			policy = GetRelatedResourcePolicy.call(data: params).policy
 
 			unless policy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -80,7 +80,7 @@ module Api
 			policy = GetRelatedResourcePolicy.call(data: params).policy
 
 			unless policy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -90,7 +90,7 @@ module Api
 			policy = GetRelatedResourcePolicy.call(data: params).policy
 
 			unless policy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request

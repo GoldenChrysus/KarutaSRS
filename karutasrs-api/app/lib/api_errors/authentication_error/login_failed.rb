@@ -4,7 +4,7 @@ module ApiErrors
 			def initialize
 				@title  = "Login failed"
 				@detail = "The email or password was incorrect"
-				@code   = 403
+				@code   = 401
 			end
 		end
 	end

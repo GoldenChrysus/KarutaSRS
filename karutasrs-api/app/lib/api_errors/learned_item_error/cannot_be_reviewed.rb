@@ -4,7 +4,7 @@ module ApiErrors
 			def initialize
 				@title  = "Cannot be reviewed"
 				@detail = "This item cannot be reviewed yet"
-				@code   = 406
+				@code   = 409
 			end
 		end
 	end

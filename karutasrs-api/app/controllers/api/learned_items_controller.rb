@@ -2,7 +2,7 @@ module Api
 	class LearnedItemsController < ApplicationController
 		def complete_review
 			unless LearnedItemPolicy.new(session[:current_user], params).show?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			item_id     = params[:id]
@@ -14,7 +14,7 @@ module Api
 		end
 
 		def index
-			raise ApiErrors::AuthenticationError::Unauthorized.new
+			raise ApiErrors::AccessError::Forbidden.new
 		end
 
 		def create
@@ -27,7 +27,7 @@ module Api
 			end
 
 			unless UserPolicy.new(session[:current_user], tmp_params).show?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -35,7 +35,7 @@ module Api
 
 		def show
 			unless LearnedItemPolicy.new(session[:current_user], params).show?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -43,7 +43,7 @@ module Api
 
 		def update
 			unless LearnedItemPolicy.new(session[:current_user], params).destroy?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -51,7 +51,7 @@ module Api
 
 		def destroy
 			unless LearnedItemPolicy.new(session[:current_user], params).destroy?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -59,7 +59,7 @@ module Api
 
 		def show_relationship
 			unless LearnedItemPolicy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -67,7 +67,7 @@ module Api
 
 		def create_relationship
 			unless LearnedItemPolicy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -75,7 +75,7 @@ module Api
 
 		def destroy_relationship
 			unless LearnedItemPolicy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -85,7 +85,7 @@ module Api
 			policy = GetRelatedResourcePolicy.call(data: params).policy
 
 			unless policy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -95,7 +95,7 @@ module Api
 			policy = GetRelatedResourcePolicy.call(data: params).policy
 
 			unless policy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
@@ -105,7 +105,7 @@ module Api
 			policy = GetRelatedResourcePolicy.call(data: params).policy
 
 			unless policy.new(session[:current_user], params).show_relationship?
-				raise ApiErrors::AuthenticationError::Unauthorized.new
+				raise ApiErrors::AccessError::Forbidden.new
 			end
 
 			process_request
