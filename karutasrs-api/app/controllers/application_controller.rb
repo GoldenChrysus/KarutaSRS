@@ -14,7 +14,7 @@ class ApplicationController < JSONAPI::ResourceController
 	end
 
 	def render_api_error(exception)
-		render json: { errors: Array.new.push(exception.data) }, status: exception.code
+		render json: { errors: Array.new.push(exception.data) }, status: exception.status
 	end
 
 	def handle_standard_error(exception)

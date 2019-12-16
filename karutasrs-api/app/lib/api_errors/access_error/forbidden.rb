@@ -4,7 +4,8 @@ module ApiErrors
 			def initialize
 				@title  = "Forbidden"
 				@detail = "This action is forbidden"
-				@code   = 403
+				@code   = 201
+				@status = 403
 			end
 		end
 	end
