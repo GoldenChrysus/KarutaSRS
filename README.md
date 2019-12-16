@@ -59,7 +59,7 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
     - ☑️ 2nd verse correct/incorrect percent
     - ☑️ Performance (correct answer rate) by kimariji length
     - ☑️ Performance ("") by 2nd verse answer length
-    - ❌ Average correct response delay
-    - ❌ Average response delay
+    - ☑️ Average correct response delay
+    - ☑️ Average response delay
     - ❌ Ability to select time range
       - ❌ Unlimited time range will show correct answer rate over time
