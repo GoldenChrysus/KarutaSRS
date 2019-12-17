@@ -36,18 +36,6 @@ export default Component.extend({
 		this._super(...arguments);
 
 		this.start_time = (new Date()).getTime();
-
-		this.addObserver("poem", this, () => {
-			let audio = $(this.element).find("audio")[0];
-
-			if (audio) {
-				audio.load();
-
-				if (this.type === "grabber") {
-					audio.play();
-				}
-			}
-		});
 	},
 
 	didRender() {
@@ -59,6 +47,21 @@ export default Component.extend({
 			}
 		);
 		this.focusInput();
+
+		if (this.audio_eligible) {
+			this.audio_eligible = false;
+
+			let audio = $(this.element).find("audio")[0];
+
+			if (audio) {
+				audio.load();
+
+				if (this.type === "grabber") {
+					audio.play();
+				}
+			}
+		}
+
 		$(this.element).find(".accordion")
 			.accordion({
 				onClosing : function() {
@@ -121,7 +124,8 @@ export default Component.extend({
 			.val("");
 		this.focusInput();
 
-		this.start_time = (new Date()).getTime();
+		this.audio_eligible = true;
+		this.start_time     = (new Date()).getTime();
 	},
 
 	completeReview() {
