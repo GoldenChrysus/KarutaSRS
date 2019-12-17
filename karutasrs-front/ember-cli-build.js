@@ -1,7 +1,7 @@
 'use strict';
 
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const Funnel = require("broccoli-funnel");
+const EmberApp   = require('ember-cli/lib/broccoli/ember-app');
+const Funnel     = require("broccoli-funnel");
 const MergeTrees = require("broccoli-merge-trees");
 
 module.exports = function(defaults) {
@@ -9,20 +9,16 @@ module.exports = function(defaults) {
 		yamlConfig  : {
 			fileNames                 : ["config.yml"],
 			warnAboutNonexistingFiles : true
-		},
-		lessOptions : {
-			paths : [
-				"fomantic/"
-			]
 		}
 	});
 
 	app.import("node_modules/fomantic-ui/dist/semantic.min.js");
 
 	let semantic_css = Funnel(
-		"fomantic/themes",
+		"fomantic/dist/themes",
 		{
-			destDir : "themes"
+			destDir : "assets/themes",
+			include : ["**"]
 		}
 	);
 
@@ -39,5 +35,5 @@ module.exports = function(defaults) {
 	// please specify an object with the list of modules as keys
 	// along with the exports of each module as its value.
 
-	return MergeTrees([semantic_css, app.toTree()]);
+	return MergeTrees([app.toTree(), semantic_css]);
 };
