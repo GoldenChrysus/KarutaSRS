@@ -12,6 +12,7 @@ export default Component.extend({
 	user_input   : "",
 	is_correct   : false,
 	answered     : false,
+	resetting    : true,
 	grabber_text : computed("type", "second_verse_card", "user_input", function() {
 		return (this.type === "grabber") ? this.user_input || "" : this.poem.second_verse_card;
 	}),
@@ -32,24 +33,20 @@ export default Component.extend({
 		return this.poem_serv.formatFirstVerse(this.poem.first_verse);
 	}),
 
-	init() {
-		this._super(...arguments);
-
-		this.start_time = (new Date()).getTime();
-	},
-
 	didRender() {
-		bindWanaKana(
-			this.input_element,
-			{
-				IMEMode         : "toHiragana",
-				useObsoleteKana : true
-			}
-		);
-		this.focusInput();
+		if (this.resetting) {
+			this.resetting = false;
 
-		if (this.audio_eligible) {
-			this.audio_eligible = false;
+			bindWanaKana(
+				this.input_element,
+				{
+					IMEMode         : "toHiragana",
+					useObsoleteKana : true
+				}
+			);
+			this.focusInput();
+
+			this.start_time = (new Date()).getTime();
 
 			let audio = $(this.element).find("audio")[0];
 
@@ -122,10 +119,8 @@ export default Component.extend({
 		$(this.input_element)
 			.attr("disabled", false)
 			.val("");
-		this.focusInput();
 
-		this.audio_eligible = true;
-		this.start_time     = (new Date()).getTime();
+		this.resetting = true;
 	},
 
 	completeReview() {
