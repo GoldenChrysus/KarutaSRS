@@ -82,9 +82,21 @@ export default Component.extend({
 
 			user.save()
 				.then(() => {
-					// transition
+					let data = {
+						success : true,
+						user    : Object.assign({}, user.toJSON(), {id : user.id})
+					};
+
+					this.session.authenticate("authenticator:simple", data)	
+						.then(() => {
+							// transition
+						})
+						.catch((e) => {
+							this.set("login_error", true);
+							this.set("login_message", "Authentication failed. Please try reloading the page.");
+						});
 				})
-				.catch(() => {
+				.catch((e) => {
 					this.set("login_error", true);
 					this.set("login_message", "Registration failed. Do you already have an account?");
 				});

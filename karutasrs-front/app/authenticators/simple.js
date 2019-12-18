@@ -8,18 +8,28 @@ export default class SimpleAuthenticator extends Base {
 
 	authenticate(email, password) {
 		return new Promise((resolve, reject) => {
+			if (typeof arguments[0] === "object" && arguments[0] !== null) {
+				if (arguments[0].success) {
+					resolve(arguments[0]);
+				} else {
+					reject(arguments[0]);
+				}
+
+				return;
+			}
+
 			$.ajax({
 				url         : config.api_host + "/sessions/authenticate",
 				type        : "POST",
 				contentType : "application/json",
 				data        : JSON.stringify({
-					email    : email || "",
-					password : password || "",
+					email    : arguments[0] || "",
+					password : arguments[1] || "",
 				})
 			})
 			.then((response) => {
 				if (!response.data.success) {
-					reject(response);
+					reject(response.data);
 					return;
 				}
 

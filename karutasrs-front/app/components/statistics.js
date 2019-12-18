@@ -188,7 +188,7 @@ export default class StatisticsComponent extends Component {
 	}
 
 	formatPercent(number) {
-		return (+number * 100).toFixed(0) + "%"
+		return (number === null) ? "N/A" : (+number * 100).toFixed(0) + "%"
 	}
 
 	formatPoemPercents(poems) {
@@ -200,6 +200,10 @@ export default class StatisticsComponent extends Component {
 	}
 
 	formatResponseTime(time) {
+		if (!time) {
+			return "N/A";
+		}
+
 		let unit      = "ms";
 		let precision = 0;
 

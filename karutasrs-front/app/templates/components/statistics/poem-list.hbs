@@ -1,0 +1,26 @@
+<thead>
+	<tr>
+		<th colspan="4">{{this.title}}</th>
+	</tr>
+	<tr>
+		<th>#</th>
+		<th>Kimariji</th>
+		<th>2nd Verse Key</th>
+		<th>%</th>
+	</tr>
+</thead>
+<tbody>
+	{{#if (eq this.poems.length 0)}}
+		<tr>
+			<td colspan="4">No poems yet...</td>
+		</tr>
+	{{/if}}
+	{{#each this.poems as |poem|}}
+		<tr>
+			<td><LinkTo @route="authenticated.poems.show" @model={{poem.poem_id}} class="header">Poem {{poem.poem_id}}</LinkTo></td>
+			<td>{{poem.kimariji}}</td>
+			<td>{{poem.second_verse_answer}}</td>
+			<td>{{poem.success_percent}}</td>
+		</tr>
+	{{/each}}
+</tbody>

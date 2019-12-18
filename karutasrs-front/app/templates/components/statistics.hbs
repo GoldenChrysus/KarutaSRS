@@ -95,54 +95,10 @@
 
 			<div class="ui stackable centered grid">
 				<div class="eight wide column">
-					<table class="ui unstackable table">
-						<thead>
-							<tr>
-								<th colspan="4">Best Poems</th>
-							</tr>
-							<tr>
-								<th>#</th>
-								<th>Kimariji</th>
-								<th>2nd Verse Key</th>
-								<th>%</th>
-							</tr>
-						</thead>
-						<tbody>
-							{{#each this.best_poems as |poem|}}
-								<tr>
-									<td><LinkTo @route="authenticated.poems.show" @model={{poem.poem_id}} class="header">Poem {{poem.poem_id}}</LinkTo></td>
-									<td>{{poem.kimariji}}</td>
-									<td>{{poem.second_verse_answer}}</td>
-									<td>{{poem.success_percent}}</td>
-								</tr>
-							{{/each}}
-						</tbody>
-					</table>
+					<Statistics::PoemList @title="Best Poems" @poems={{this.best_poems}}/>
 				</div>
 				<div class="eight wide column">
-					<table class="ui unstackable table">
-						<thead>
-							<tr>
-								<th colspan="4">Worst Poems</th>
-							</tr>
-							<tr>
-								<th>#</th>
-								<th>Kimariji</th>
-								<th>2nd Verse Key</th>
-								<th>%</th>
-							</tr>
-						</thead>
-						<tbody>
-							{{#each this.worst_poems as |poem|}}
-								<tr>
-									<td><LinkTo @route="authenticated.poems.show" @model={{poem.poem_id}} class="header">Poem {{poem.poem_id}}</LinkTo></td>
-									<td>{{poem.kimariji}}</td>
-									<td>{{poem.second_verse_answer}}</td>
-									<td>{{poem.success_percent}}</td>
-								</tr>
-							{{/each}}
-						</tbody>
-					</table>
+					<Statistics::PoemList @title="Worst Poems" @poems={{this.worst_poems}}/>
 				</div>
 			</div>
 		{{/if}}
