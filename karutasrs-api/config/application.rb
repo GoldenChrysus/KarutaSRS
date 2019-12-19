@@ -8,10 +8,21 @@ Bundler.require(*Rails.groups)
 
 module KarutasrsApi
 	class Application < Rails::Application
-		config.middleware.insert_before 0, Rack::Cors, :debug => true, :logger => (-> { Rails.logger }) do
-			allow do
-				origins '*'
-				resource '*', headers: :any, methods: :any
+		if (Rails.env.development? || Rails.env.test?)
+			config.middleware.insert_before 0, Rack::Cors, :debug => true, :logger => (-> { Rails.logger }) do
+				allow do
+					origins '*'
+					resource '*', headers: :any, methods: :any
+				end
+			end
+		end
+
+		if Rails.env.production?
+			config.middleware.insert_before 0, Rack::Cors do
+				allow do
+					origins 'localhost'
+					resource '*', headers: :any, methods: :any
+				end
 			end
 		end
 
