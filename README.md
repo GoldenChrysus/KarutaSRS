@@ -5,13 +5,14 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
 - ☑️ Grabber card component
   - ☑️ Highlight grabber key characters based on state (learning: blue, review correct: lime green, review incorrect: light red)
   - ☑️ Fade in characters when character is added (for typing answers in review)
-- ❌ Lesson component
+- ☑️ Lesson component
   - ☑️ Info grid (poem info and grabber card)
     - ☑️ First verse
     - ☑️ Kimariji
     - ☑️ 2nd verse key characters
     - ☑️ Reading audio
-    - ❌ Poem background info
+    - ☑️ Poem background info
+    - ☑️ Poem translations
 - ☑️ Lesson carousel component
   - ☑️ Sliding lesson components
   - ☑️ Lesson selector component
