@@ -24,5 +24,6 @@ Router.map(function() {
 		this.route("poems", { path : "/poems" }, function() {
 			this.route("show", { path : "/:id" });
 		});
+		this.route("guide");
 	});
 });
