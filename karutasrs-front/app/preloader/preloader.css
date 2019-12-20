@@ -1,0 +1,48 @@
+.fade .preloader {
+  opacity: 0;
+}
+
+.preloader {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.preloader .circle {
+  width: 60px;
+  height: 60px;
+  background: #414C6D;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.preloader .half-circle {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 60px;
+  background: #262C3B;
+  border-radius: 30px 0 0 30px;
+  transform-origin: 30px 0;
+  animation: flip 0.75s linear infinite;
+  -moz-animation: flip 0.75s linear infinite;
+  -webkit-animation: flip 0.75s linear infinite;
+}
+
+@keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(180deg); }
+}
+@-moz-keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(180deg); }
+}
+@-webkit-keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(180deg); }
+}

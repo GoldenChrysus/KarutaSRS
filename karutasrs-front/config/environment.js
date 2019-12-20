@@ -18,40 +18,15 @@ module.exports = function(environment) {
 		},
 
 		APP: {
-			// Here you can pass flags/options to your application instance
-			// when it is created
+			preloader: {
+				loadedClass : "disappear",
+				removeDelay : 250
+			}
 		},
 
 		"ember-simple-auth" : {
 			routeAfterAuthentication    : "authenticated.dashboard",
 			routeIfAlreadyAuthenticated : "authenticated.dashboard"
-		},
-
-		pace: {
-			// addon-specific options to configure theme
-			theme: 'loading-bar',
-			color: 'silver',
-			
-			// pace-specific options
-			// learn more on http://github.hubspot.com/pace/#configuration
-			//           and https://github.com/HubSpot/pace/blob/master/pace.coffee#L1-L72
-			catchupTime: 50,
-			initialRate: .01,
-			minTime: 100,
-			ghostTime: 50,
-			maxProgressPerFrame: 20,
-			easeFactor: 1.25,
-			startOnPageLoad: true,
-			restartOnPushState: false,
-			restartOnRequestAfter: false,
-			target: 'body',
-			elements: {
-				checkInterval: 100,
-				selectors: ['body', '.ember-view']
-			},
-			document: false,
-			eventLag: false,
-			ajax: false
 		}
 	};
 
