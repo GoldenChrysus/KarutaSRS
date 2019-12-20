@@ -6,10 +6,16 @@ export default Route.extend(AuthenticatedRouteMixin, {
 	user_serv : service("current-user"),
 
 	model() {
+		let model = {
+			new_account : false
+		};
+
 		if (this.session.data.new_account) {
 			this.session.set("data.new_account", false);
 
-			// show new account modal
+			model.new_account = true;
 		}
+
+		return model;
 	}
 });
