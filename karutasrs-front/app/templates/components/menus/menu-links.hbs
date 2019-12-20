@@ -23,12 +23,12 @@
 		Poems
 	</LinkTo>
 {{else}}
-	<LinkTo @route="login" class="item">
+	<LinkTo @route="auth" @model="login" class="item">
 		Login
 	</LinkTo>
 
 	<div class="register item">
-		<LinkTo @route="login" @query={{hash mode="register"}} class="ui green button">
+		<LinkTo @route="auth" @model="register" class="ui green button">
 			Sign Up
 		</LinkTo>
 	</div>

@@ -9,6 +9,7 @@ export default Component.extend({
 	store         : service("store"),
 	login_error   : false,
 	login_message : "",
+	type          : "login",
 
 	didRender() {
 		$(this.element).find("#login-form").form({
@@ -33,6 +34,19 @@ export default Component.extend({
 						{
 							type   : "empty",
 							prompt : "Enter your password."
+						}
+					]
+				},
+				confirm_password : {
+					identifier : "confirm_password",
+					rules      : [
+						{
+							type   : "empty",
+							prompt : "Confirm your password."
+						},
+						{
+							type   : "match[password]",
+							prompt : "Passwords must match."
 						}
 					]
 				}

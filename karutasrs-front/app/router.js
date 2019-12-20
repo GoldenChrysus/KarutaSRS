@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-	this.route("login");
+	this.route("auth", {path: "/auth/:type"});
 	this.route("authenticated", { path : "/" }, function() {
 		// Index is not an authenticated route. However, having it at "/" and also having the authenticated routes at "/" causes issues with doing the authenticated redirects.
 		// We could fix this by either not namespacing the authenticated routes or by nesting the index route here. The latter was chosen. This way, authenticated routes are clearly identifiable
