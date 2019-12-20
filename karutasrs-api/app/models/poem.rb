@@ -11,4 +11,13 @@ class Poem < ApplicationRecord
 
 	# Relationships
 	has_many :learned_items
+
+	def self.update_or_create(objects)
+		objects.each do |attributes|
+			poem = self.find_or_initialize_by(id: attributes[:id])
+
+			poem.assign_attributes(attributes)
+			poem.save
+		end
+	end
 end
