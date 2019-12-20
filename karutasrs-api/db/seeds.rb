@@ -13,7 +13,9 @@ poems = Poem.create([
 		second_verse_raw: "わがころもではつゆにぬれつつ",
 		second_verse_card: "わかころもてはつゆにぬれつつ",
 		second_verse_answer: "わかころもては",
-		kimariji: "あきの"
+		kimariji: "あきの",
+		translation: "Coarse the rush-mat roof|Sheltering the harvest-hut|Of the autumn rice-field;|And my sleeves are growing wet|With the moisture dripping through.",
+		background: "[\"This waka comes from the <em>Gosen wakash\u016b<\/em> (Later Selection of Waka) anthology of 951; it is based on an original found in the eighth-century <em>Man'y\u014dsh\u016b<\/em> (Collection for Ten Thousand Generations). Since the <em>Man'y\u014dsh\u016b<\/em> version is said to be by an anonymous hand, the attribution to Tenji (r. 668-671) is thought to be spurious. However, one of the defining structural features of the <em>Hyakunin isshu<\/em> is the fact that Teika chose to begin and end the collection with pairs of poems by emperors who were parent and child. From this perspective, the conventional attribution to Tenji allows Teika to invoke a time when a strong moral bond joined sovereign and subject (Tenji was responsible for instituting the Taika Reforms, leading to a strong centralized government). Likewise, Poem&nbsp;2 can be seen as an affirmation of cultural identity and tradition in early Japanese history. The final two poems in the collection, by contrast -- composed by contemporary rulers -- are colored by a sense of decline in imperial prestige and even discord between soveriegn and subject. This contrast is often held to reflect a characteristically medieval viewpoint to which Teika wanted to give expression.\",\"The &quot;autumn fields&quot; mentioned in the translation are, of course, rice fields at harvest time, and a watchman is necessary to keep the ripening rice from being ravaged by scavenging birds and animals. In real life, one would hardly find such work very poetic. Thanks to the emperor's empathetic willingness to place himself in that position, however, the tone is as elegant as it is desolate, and it is presumably this combination that appealed to Teika. The first three lines establish a setting that gives rise to the situation described in the last two.\"]"
 	},
 	{
 		id: "2",
@@ -22,7 +24,9 @@ poems = Poem.create([
 		second_verse_raw: "ころもほすてふあまのかぐやま",
 		second_verse_card: "ころもほすてふあまのかくやま",
 		second_verse_answer: "ころもほ",
-		kimariji: "はるす"
+		kimariji: "はるす",
+		translation: "The spring has passed|And the summer come again;|For the silk-white robes,|So they say, are spread to dry|On the \"Mount of Heaven's Perfume.\"",
+		background: "[\"The immediate source is the <em>Shin kokin wakash\u016b<\/em> (New Collection of Ancient and Modern Japanese Poetry, 1205), or <em>Shinkokinsh\u016b<\/em>. Like the previous poem, however, it is based on an original that appears in the<em> Man'y\u014dsh\u016b<\/em> and was spuriously attributed to an early Japanese sovereign. Jit\u014d was Tenji's daughter and the wife of Emperor Temmu (r. 673-686); she ruled in her own right as the (supposed) forty-first <em>tenn\u014d<\/em> from 690 to 697. Mount Kagu is located slightly to the southeast of the ancient Fujiwara-ky\u014d capital in Nara (capital from 694 to 710).\",\"The poem is a relatively simple one in which the poet, upon observing white robes laid out for airing, makes use of hearsay to evoke traditional Japanese social customs and mythical associations (a Mount Kagu also supposedly existed on the High Plain of Heaven, the home of the gods). It is worth noting, however, that traditional interpretations disagree as to whether the poet actually sees white robes or whether the robes are being used as a metaphor for, perhaps, a white summer mist (the &quot;they say&quot; opens up this possibility). The point to be kept in mind, here and elsewhere, is that many conventionally accepted interpretations of the waka in <em>Hyakunin isshu<\/em> in fact obscure such ambiguities, which may then be further obscured by translation.\",\"Poetic techniques include a <strong><em>makurakotoba<\/em><\/strong> (&quot;pillow word,&quot; a fixed epithet of five-syllables placed before certain expressions to enhance their evocative power or to modulate the rhythm) and <strong><em>taigen-dome<\/em><\/strong> (the use of a noun at the end of the poem to leave a feeling of grammatical incompleteness). The <strong><em>makurakotoba<\/em><\/strong> was one of the most common devices in Japanese poetry beginning from the time of the Man'y\u014dsh\u016b; <em><strong>taigen-dome<\/strong><\/em> is considered typical of<em> <\/em>early thirteenth-century aesthetic preferences.\"]"
 	},
 	{
 		id: "3",
@@ -31,7 +35,9 @@ poems = Poem.create([
 		second_verse_raw: "ながながしよをひとりかもねむ",
 		second_verse_card: "なかなかしよをひとりかもねむ",
 		second_verse_answer: "なかな",
-		kimariji: "あし"
+		kimariji: "あし",
+		translation: "Oh, the foot-drawn trail|Of the mountain-pheasant's tail|Drooped like down-curved branch!|Through this long, long-dragging night|Must I lie in bed alone?",
+		background: "[\"Taken from the <em>Sh\u016bi wakash\u016b<\/em> (Collection of Gleanings, 1005), where it is attributed to Kakinomoto no Hitomaro, who flourished from the late 7th to the early 8th century and is usually considered the greatest of the <em>Man'y\u014dsh\u016b<\/em> poets. Little is known of Hitomaro except that he was apparently a low-ranking government official. The attribution must be considered spurious, however, for in the <em>Man'y\u014dsh\u016b<\/em> itself, where the poem first appears, it is regarded as being by an anonymous hand.\",\"The poem neatly makes a comparison between the length of the tail on a mountain pheasant and the slow passage of time experienced by a lover who must sleep alone, and is based further on the fact that male and female copper pheasants do indeed sleep in separate locations. Poetic devices include the use of a <strong><em>makurakotoba<\/em><\/strong> (<em>ashibiki no<\/em>, here translated as &quot;steep&quot;), which itself appears within the larger device of a <strong> <em>jokotoba<\/em><\/strong> -- an &quot;introductory phrase&quot; of at least seven syllables that functions here as a link between the natural world (the tail on a copper pheasant) and human perception (the length of the night). Although conventional enough to be considered a standard poetic device, the <strong><em>jokotoba<\/em><\/strong> differs from the <strong><em>makurakotoba<\/em><\/strong> both in terms of length (in this waka, it spans the first three lines) and in point of conception since, as an original metaphor, it is the product of the poet's own imagination rather than having simply been chosen from among a pre-existing stock of epithets.\"]"
 	},
 	{
 		id: "4",
@@ -40,7 +46,9 @@ poems = Poem.create([
 		second_verse_raw: "ふじのたかねにゆきはふりつつ",
 		second_verse_card: "ふしのたかねにゆきはふりつつ",
 		second_verse_answer: "ふし",
-		kimariji: "たご"
+		kimariji: "たご",
+		translation: "When I take the path|To Tago's coast, I see|Perfect whiteness laid|On Mount Fuji's lofty peak|By the drift of falling snow.",
+		background: "[\"This waka, taken from the &quot;Winter&quot; section of the <em>Shinkokinsh\u016b<\/em>, is based on an original by Yamabe found in the <em>Man'y\u014dsh\u016b<\/em>. Yamabe, an eighth-century courtier whose dates are uncertain, was ranked by Ki no Tsurayuki -- in the preface to the <em>Kokinsh\u016b<\/em> -- with Kakinomoto no Hitomaro as one of the two best <em>Man'y\u014dsh\u016b <\/em>poets. He is represented in that collection by 13 <em>ch\u014dka<\/em> (long poems) and 37 <em>tanka<\/em> (short poems).\",\"Much of the appeal of the poem lies in the contrast between the sharp image of Fuji's snowy peak in the distance and the vague abstractness of Tago Bay (in present-day Shizuoka Prefecture) in the foreground. The contrast creates an impression of spatial depth which is thought to be in keeping with Yamabe's reputation as a &quot;visually depictive&quot; poet. However, since it would presumably be impossible to see snow falling at such a distance, a touch of fantasy is also involved. The expression <em>shirotae<\/em> is the same <strong><em>makurakotoba<\/em><\/strong> found in Poem&nbsp;2, above.\"]"
 	},
 	{
 		id: "5",
@@ -49,7 +57,9 @@ poems = Poem.create([
 		second_verse_raw: "こゑきくときぞあきはかなしき",
 		second_verse_card: "こゑきくときそあきはかなしき",
 		second_verse_answer: "こゑ",
-		kimariji: "おく"
+		kimariji: "おく",
+		translation: "In the mountain depths,|Treading through the crimson leaves,|The wandering stag calls.|When I hear the lonely cry,|Sad--how sad!--the autumn is.",
+		background: "[\"This poem appears in the &quot;Autumn&quot; section of the <em>Kokinsh\u016b<\/em>. Nothing is known of the supposed author, who has legendary status as a waka poet. In the <em>Kokinsh\u016b<\/em>, the poem is prefaced by a note stating that it was submitted as an entry in a poetry contest, indicating that already by the end of the eighth century court circles associated autumn with a feeling of sorrow, thus forming a marked contrast with the harvest festivities characteristic of rural life.\",\"The central interpretive problem is whether the subject of &quot;stride&quot; is the stag or the poet himself. Here it is assumed that a walk in the mountains is less characteristic of aristocratic life than listening to the call of the stag from a (more comfortable) distance. The interpolated meaning of the stag's call is based on a conventional poetic association.\"]"
 	},
 	{
 		id: "6",
@@ -58,7 +68,9 @@ poems = Poem.create([
 		second_verse_raw: "しろきをみればよぞふけにける",
 		second_verse_card: "しろきをみれはよそふけにける",
 		second_verse_answer: "しろ",
-		kimariji: "かさ"
+		kimariji: "かさ",
+		translation: "If I see that bridge|That is spanned by flights of magpies|Across the arc of heaven|Made white with a deep-laid frost,|Then the night is almost past.",
+		background: "[\"This waka appears in the &quot;Winter&quot; section of the <em>Shinkokinsh\u016b<\/em>. \u014ctomo no Yakamochi (718?-785), the son of \u014ctomo no Tabito, was one of the compilers of the <em>Man'y\u014dsh\u016b<\/em>. That anthology contains more poems by Yakamochi than by any other poet.\",\"The poem relies for its effect on an implied metaphor signaled by a pun on the word <em>hashi<\/em>, which, depending on the Chinese character used, can mean either &quot;bridge&quot; or &quot;(palace) staircase.&quot; In the former sense, the allusion is to the Chinese legend in which a bridge across the Milky Way is formed each year by magpies to allow the Herder to meet the Weaver (the Tanabata legend). In the latter interpretation (which is actually only conventional), the reference is to a staircase in the royal palace, no less &quot;lofty&quot; than the Milky Way by virtue of its association with the imperial court.\"]"
 	},
 	{
 		id: "7",
@@ -67,7 +79,9 @@ poems = Poem.create([
 		second_verse_raw: "みかさのやまにいでしつきかも",
 		second_verse_card: "みかさのやまにいてしつきかも",
 		second_verse_answer: "みか",
-		kimariji: "あまの"
+		kimariji: "あまの",
+		translation: "When I look up at|The wide-stretched plain of heaven,|Is the moon the same|That rose on Mount Mikasa|In the land of Kasuga?",
+		background: "[\"This waka first appears in the &quot;Travel&quot; section of the <em>Kokin wakash\u016b<\/em>. As a youth, Abe (698-770) was sent by the Nara court to study in China, where he spent 54 years (including a period as the Chinese governor-general of Vietnam) before dying in Chang'an. \",\"Said to have been composed before Abe made an abortive attempt to return to Japan, this relatively straightforward poem is conventionally held to reveal both the strength of Abe's affection for his homeland and a poignant awareness of the intervening years he spent in China. Two place names are mentioned: Kasuga and Mount Mikasa. The former refers to an area in present-day Nara between Nara Park and Kasuga Shrine; the latter is a mountain located to the back of the same shrine, between Mount Wakakusa and Mount Takamado. The ending particle <em>kamo<\/em> in the last line is characteristic of Nara-period usage (Abe's dates are 698-770), adding exclamatory force to what has been said.\"]"
 	},
 	{
 		id: "8",
@@ -76,7 +90,9 @@ poems = Poem.create([
 		second_verse_raw: "よをうぢやまとひとはいふなり",
 		second_verse_card: "よをうちやまとひとはいふなり",
 		second_verse_answer: "よをう",
-		kimariji: "わがい"
+		kimariji: "わがい",
+		translation: "My lowly hut is|Southeast from the capital.|Thus I choose to live.|And the world in which I live|Men have named a \"Mount of Gloom.\"",
+		background: "[\"This waka appears in the second (&quot;lower&quot;) &quot;Miscellaneous&quot; section of the <em>Kokinsh\u016b<\/em>. The poet (known as <em>Kisen H\u014dshi<\/em> in Japanese) flourished in the second half of the ninth century and is considered one of the traditional &quot;six immortals&quot; of waka poetry (<em>rokkasen<\/em>; so called because of their mention in the preface to the <em>Kokinsh\u016b<\/em>, although they are not praised unreservedly). Other than the fact that he was a priest on Mount Uji, however, nothing is known of his life (Mount Uji itself is now called Mount Kisen).\",\"The poem relies for its effect upon the use of the word <em>uji<\/em>, which on the one hand stands for the place name Uji (a popular spot for aristocratic villas in the Heian period, and the location of the exquisite Phoenix Hall at the By\u014dd\u014d-in Temple), and on the other is used as an adjective meaning &quot;disagreeable,&quot; &quot;unpleasant,&quot; or &quot;unfeeling.&quot; Such a word is known as a <em><strong>kakekotoba<\/strong><\/em>, or &quot;pivot word,&quot; one of the central devices of waka poetry from the time of the <em>Kokinsh\u016b<\/em> down to the present day. The pivot word serves to give the poem a double meaning by establishing an associative link between two linguistically unrelated homonyms, allowing the objective world of nature and the subjective sensibility of the poet to inform each other within the restrictive constraints imposed by the waka form (and not incidentally making concise translation very difficult indeed). Here the poet expresses a bemused consternation that people think his life at Uji is characterized by a feeling that the world is disagreeable, when in fact it is free of such concerns.\"]"
 	},
 	{
 		id: "9",
@@ -85,7 +101,9 @@ poems = Poem.create([
 		second_verse_raw: "わがみよにふるながめせしまに",
 		second_verse_card: "わかみよにふるなかめせしまに",
 		second_verse_answer: "わかみよ",
-		kimariji: "はなの"
+		kimariji: "はなの",
+		translation: "Color of the flower|Has already faded away,|While in idle thoughts|My life passes vainly by,|As I watch the long rains fall.",
+		background: "[\"This waka was taken from the &quot;Spring&quot; section of the <em>Kokinsh\u016b<\/em>. Ono no Komachi, who flourished in the second half of the ninth century, is the only woman classed among the traditional &quot;six immortals&quot; of waka poetry. She is supposed to have been an incomparable beauty, and many legends sprang up around her name.\",\"Two pivot words (<em>furu<\/em> and <em>nagamesu<\/em>, both in the last two lines) provide the key to interpretation here, one set of associations between the two resulting in the translation &quot;the long rains that fall in the world,&quot;&nbsp; the other joining &quot;growing old&quot;&nbsp; to &quot;gazing on the world in a reverie.&quot; The central image of the fading cherry blossoms is a conventional reference to the transience of human life. This conceit was already sufficiently established in Komachi's day for the reader to understand that &quot;flower&quot; (<em>hana<\/em>) referred specifically to cherry blossoms. Structurally, the poem is broken gramatically after the second line (a technique called <strong><em>ni-kugire<\/em><\/strong>) and makes use of <em><strong>t\u014dchi-h\u014d<\/strong><\/em> (&quot;grammatical inversion&quot;; the first two lines would normally follow the last three) to increase the dramatic effect.\"]"
 	},
 	{
 		id: "10",
@@ -94,7 +112,9 @@ poems = Poem.create([
 		second_verse_raw: "しるもしらぬもあふさかのせき",
 		second_verse_card: "しるもしらぬもあふさかのせき",
 		second_verse_answer: "しる",
-		kimariji: "これ"
+		kimariji: "これ",
+		translation: "Truly, this is where|Travelers who go or come|Over parting ways--|Friends or strangers--all must meet:|The gate of \"Meeting Hill.\"",
+		background: "[\"This poem appears in the first &quot;Miscellaneous&quot; section of the <em>Gosensh\u016b<\/em> (a section dating from 1089). The semi-legendary poet Semimaru may have been a blind musician of the second half of the ninth century -- possibly of royal birth and skilled in playing the <em>biwa<\/em> (Japanese lute) -- who lived as a recluse in a small hut near the \u014csaka Barrier.\",\"The rather artless poem, serving to introduce a famous historical spot, is constructed around three sets of oppositions: the one between &quot;come&quot; and &quot;go&quot;; the one between &quot;part&quot; and &quot;meet&quot; (the latter contained as wordplay within the &quot;\u014csaka&quot; of line 5); and the one between &quot;friends&quot; and &quot;strangers.&quot; The barrier thus serves as the locus of a variety of activities associated with travel, which in turn suggests (in medieval interpretations, at any rate) the idea that one meets in order to part, and then parts in order to meet again. The barrier itself was located on the boundary between the provinces of Yamashiro (present-day Kyoto) and \u014cmi (Shiga Prefecture), and once past it the traveler was in the &quot;east&quot; of the country. \u014csaka Barrier enjoyed a long life as an <em><strong>utamakura<\/strong><\/em> (a place name with poetic associations), and it was often used as a <em><strong>kakekotoba<\/strong><\/em> (pivot word) because of its phonetic overlap with the Japanese word for &quot;meet&quot; (<em>au<\/em> or <em>\u014d<\/em>).\"]"
 	},
 	{
 		id: "11",
@@ -103,7 +123,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとにはつげよあまのつりぶね",
 		second_verse_card: "ひとにはつけよあまのつりふね",
 		second_verse_answer: "ひとには",
-		kimariji: "わたのはらや"
+		kimariji: "わたのはらや",
+		translation: "Over the wide sea|Towards its many distant isles|My ship sets sail.|Will the fishing boats thronged here|Proclaim my journey to the world?",
+		background: "[\"This poem appears in the &quot;Travel&quot; section of the <em>Kokinsh\u016b<\/em>. The poet, Ono no Takamura (802-852), was a scholar of the first rank skilled in composing Chinese poetry. He was exiled to the island of Oki when (after two previously unsuccessful attempts) he refused to board an unsound ship that was supposed to carry him to China as a court envoy. This waka was supposedly composed at the time of his exile.\",\"The poem is meant to convey the loneliness and uncertainty of the exile first by reference to the contrast between the many islands of the Inland Sea and the solitary boat carrying the poet to Oki, and second by implying emotional intensity through the device of <em><strong> gijin-ka<\/strong><\/em> or <em><strong>gijin-h\u014d <\/strong><\/em>(personification), charging a nearby fishing boat with delivering the poet's message to his loved one (or, in an alternate interpretation, to all of his acquaintances back in the capital).\"]"
 	},
 	{
 		id: "12",
@@ -112,7 +134,9 @@ poems = Poem.create([
 		second_verse_raw: "をとめのすがたしばしとどめむ",
 		second_verse_card: "をとめのすかたしはしととめむ",
 		second_verse_answer: "を",
-		kimariji: "あまつ"
+		kimariji: "あまつ",
+		translation: "Let the winds of heaven|Blow through the paths among the clouds|And close their gates.|Then for a while I could detain|These messengers in maiden form.",
+		background: "[\"This waka comes from the first &quot;Miscellaneous&quot; section of the <em>Kokinsh\u016b<\/em>. The poet, a grandson of Emperor Kanmu whose lay name was Yoshimine no Munesada (816-890), took the tonsure after the death of Emperor Ninmy\u014d in 850. Along with Ono no Komachi (see Poem 9), Henj\u014d later became known as one of the &quot;six immortals &quot; (<em>rokkasen<\/em>) of classical Japanese poetry.\",\"In the <em>Kokinsh\u016b<\/em>, the waka is preceded by the heading &quot;Composed when watching the Gosechi dancers.&quot; The Gosechi dances were held in the Eleventh Month (of the lunar calendar) and were one of the highlights of the court's year (the dances figure prominently in <em>The Tale of Genji<\/em>, and the social tensions surrounding their selection are described by Murasaki Shikibu in her diary). The poet is so taken by the beauty of the dancers that he uses the conceit of their being celestial maidens to express the wish that the moment could be extended indefinitely. In Japanese, the major semantic break comes after the third line (a technique known as <em><strong>san-kugire<\/strong><\/em>), and the comparison of the Gosechi dancers to celestial maidens or angels illustrates the technique of <em><strong>mitate <\/strong><\/em> (&quot;likening&quot; or &quot;comparison&quot;). The translation alters the direct address of the Japanese to a somewhat more general command.\"]"
 	},
 	{
 		id: "13",
@@ -121,7 +145,9 @@ poems = Poem.create([
 		second_verse_raw: "こひぞつもりてふちとなりぬる",
 		second_verse_card: "こひそつもりてふちとなりぬる",
 		second_verse_answer: "こひそ",
-		kimariji: "つく"
+		kimariji: "つく",
+		translation: "From Tsukuba's peak|Falling waters have become|Mina's still, full flow:|So my love has grown to be|Like the river's quiet deeps.",
+		background: "[\"This poem was taken from the third &quot;Love&quot; section of the <em>Gosen wakash\u016b<\/em>, where a preface states that it was sent by Y\u014dzei (868-949; r. 876-884) to Princess Suishi, whom he later married. Y\u014dzei, the son of Emperor Seiwa (850-880; r. 858-876), abdicated at the age of 17 due to illness. \",\"The name &quot;Minano&quot; is composed of the Chinese characters for &quot;man&quot; and &quot;woman,&quot; a combination intentionally echoing the image of the twin peaks of Mount Tsukuba, which serves as the river's source. While it is unlikely that the poet ever actually saw Mount Tsukuba, which is located in Ibaraki Prefecture, the mountain was a popular topic in waka poetry, and the first three lines of this poem are considered to function as an introductory <em><strong>jokotoba<\/strong><\/em>. Although in translation the semantic connection is weakened, the comparison of the poet's ever deepening (and even somewhat melancholic) love to the course of the Minano River -- accomplished in the original by juxtaposing the single word &quot;love&quot; (<em>koi<\/em>) to the name of the river -- remains quite effective.\"]"
 	},
 	{
 		id: "14",
@@ -130,7 +156,9 @@ poems = Poem.create([
 		second_verse_raw: "みだれそめにしわれならなくに",
 		second_verse_card: "みたれそめにしわれならなくに",
 		second_verse_answer: "みたれそ",
-		kimariji: "みち"
+		kimariji: "みち",
+		translation: "Like Michinoku prints|Of the tangled leaves of ferns,|It is because of you|That I have become confused;|But my love for you remains.",
+		background: "[\"This waka comes from the fourth &quot;Love&quot; section of the <em>Kokinsh\u016b<\/em> and also appears in the first section of <em> The Tales of Ise<\/em>, where it is used to describe the feelings of a young man who accidentally catches sight of two beautiful sisters. The poet, Minamoto no T\u014dru (822-895), was a son of Emperor Saga. He was famed for his elegant lifestyle and went so far as to design his garden at his residence Kawara-no-In to evoke a salt-making scene at Matsushima (including the installation of a functioning salt furnace).\",\"Some rather dense wordplay surrounding the expression <em>shinobu-mojizuri<\/em> serves to give the original version a multilayered effect not easily conveyed in translation. &quot;Shinobu&quot; is first of all the name of a district in what is now Fukushima Prefecture; in classical times it was part of the Michinoku region occupying much of northeastern Honshu. The district produced a cloth that contained a scattered pattern produced by rubbing in a dye derived from the <em>shinobu<\/em> (hare's-foot) fern. In addition to both of these distinct meanings, <em>shinobu<\/em> is also a verb that means &quot;to conceal&quot; (along with connotations of &quot;to endure&quot; and, when written with a different Chinese character, &quot;to think longingly of&quot;). &quot;Concealed love&quot; is a major theme in waka poetry, and refers to a love nominally prohibited by social taboos such as rank or marriage. The conventional nature of this metaphor allows the first two lines of the waka to function as an introductory <em><strong>jokotoba<\/strong><\/em>. In lines 3 and 4, the frustrated poet rhetorically asks who is at fault for his&nbsp; emotional disarray, and the final line (a form of <em><strong>t\u014dchi-h\u014d<\/strong><\/em>, or grammatical inversion, which can be taken here as working in a way similar to dividing &quot;Whose fault is it but yours that...&quot; into two parts) fixes the blame on the woman. Other poetic techniques include <em><strong>yonku-dome<\/strong><\/em> (a grammatical and semantic break after the fourth line) and <em><strong>engo<\/strong><\/em>, &quot;related words&quot; that expand the imagery of the poem through a process of association, here referring in particular to <em>midare<\/em> (&quot;falling into disarray&quot;) and <em>-some<\/em> (&quot;to begin...,&quot; with the additional sense of &quot;to dye&quot;) as words associated with <em>mojisuri<\/em> (&quot;cloth with a scattered pattern&quot;).\"]"
 	},
 	{
 		id: "15",
@@ -139,7 +167,9 @@ poems = Poem.create([
 		second_verse_raw: "わがころもでにゆきはふりつつ",
 		second_verse_card: "わかころもてにゆきはふりつつ",
 		second_verse_answer: "わかころもてに",
-		kimariji: "きみがためは"
+		kimariji: "きみがためは",
+		translation: "It is for your sake|That I walk the fields in spring,|Gathering green herbs,|While my garment's hanging sleeves|Are speckled with falling snow.",
+		background: "[\"This waka was taken from the first &quot;Spring&quot; section of the <em>Kokinsh\u016b. <\/em>K\u014dk\u014d (830-887; r. 884-887) was the third son of the emperor Ninmy\u014d and succeeded Y\u014dzei to the throne. The preface to the poem in the <em>Kokinsh\u016b<\/em> states that it was composed while K\u014dk\u014d was still an imperial prince, to accompany a traditional New Year's gift of spring herbs.\",\"The pairing of snow with spring herbs creates a pleasing contrast of green and white in this otherwise straightforward poem. The direct reference to &quot;you&quot; in the first line can perhaps be said to add an extra note of intimacy, although the recipient could, of course, be either male or female. The syntax is quite regular, with semantic breaks also marking the rhythmic divisions.\"]"
 	},
 	{
 		id: "16",
@@ -148,7 +178,9 @@ poems = Poem.create([
 		second_verse_raw: "まつとしきかばいまかへりこむ",
 		second_verse_card: "まつとしきかはいまかへりこむ",
 		second_verse_answer: "まつと",
-		kimariji: "たち"
+		kimariji: "たち",
+		translation: "Though we are parted,|If on Mount Inaba's peak|I should hear the sound|Of the pine trees growing there,|I'll come back again to you.",
+		background: "[\"This comes from the &quot;Parting&quot; section of the <em>Kokinsh\u016b<\/em>. The poet, Ariwara no Yukihira (818-893), was the half-brother of Narihira (see below). The poem was composed as Yukihira was about to take up his post as governor of the province of Inaba (present-day Tottori Prefecture) in 855. Yukihira's later exile to Suma under Emperor Montoku provided the basis for the No play <em> Matsukaze<\/em>.\",\"The waka depends on a fairly tricky use of multiple<em><strong> kakekotoba<\/strong><\/em> (pivot words) for its meaning. <em>Inaba<\/em> refers to Inaba as both province and mountain and also serves as a verbal suffix meaning &quot;go,&quot; so that <em>tachiwakare Inaba<\/em> means something like &quot;part from you and go to the province of Inaba,&quot; while <em>Inaba no yama no mine <\/em>means &quot;the peak of Mount Inaba (where pine trees grow),&quot; requiring the reader to join the two thoughts in a way that combines both names with the idea of travel. Then there is <em>matsu<\/em>, meaning both the pines of Mount Inaba and the &quot;pining&quot; of those from whom the poet is taking leave. Because of the coincidence with the English &quot;pine,&quot; <em> matsu<\/em> is frequently used as a convenient example to illustrate how a pivot word might function in English. In this case, it might also be said to illustrate how stale the convention sometimes comes to seem.\"]"
 	},
 	{
 		id: "17",
@@ -157,7 +189,9 @@ poems = Poem.create([
 		second_verse_raw: "からくれなゐにみづくくるとは",
 		second_verse_card: "からくれなゐにみつくくるとは",
 		second_verse_answer: "から",
-		kimariji: "ちは"
+		kimariji: "ちは",
+		translation: "Even when the gods|Held sway in the ancient days,|I have never heard|That water gleamed with autumn red|As it does in Tatta's stream",
+		background: "[\"The source is the second &quot;Autumn&quot; section of the <em>Kokinsh\u016b<\/em>. Ariwara no Narihira (825-88), the grandson of the Heizei Emperor and half-brother to Yukihira (see above), was one of the &quot;six immortals&quot; of classical Japanese poetry and is traditionally regarded to be the model for the romantic episodes related in <em>The Tales of Ise<\/em>. \",\"The poem is a <strong><em>by\u014dbu-uta<\/em><\/strong>; that is, a waka based on (and inscribed onto) a painting on a decorative screen. The painting would have depicted the red leaves floating in the Tatsuta River, which flowed through an area famed for its autumn splendor, and the poem's conceit (as interpreted here) is to anthropomorphize the river -- a technique known as <em><strong>gijin-h\u014d<\/strong><\/em>. Grammatically, the first two lines&nbsp;would normally come after lines three to five&nbsp;(the final particle <em>to<\/em>&nbsp;is actually associated with the verb <em>kiku<\/em> used negatively in the second line). The poem thus also demonstrates the technique of <em><strong>t\u014dchi-h\u014d<\/strong><\/em> (grammatical inversion), a fact further reflected in the sentence-ending inflection of the negative particle <em>zu<\/em> (introducing a grammatical break like this at the end of the second line is known as <em><strong>ni-kugire<\/strong><\/em>). In addition, comparing the leaves to the shibori (tie-dyed) pattern of cloth illustrates the metaphorical\/allegorical technique of <strong><em>mitate<\/em><\/strong>. For me, the personification causes the effect to seem somewhat strained, although the comparison itself is evocative.\"]"
 	},
 	{
 		id: "18",
@@ -166,7 +200,9 @@ poems = Poem.create([
 		second_verse_raw: "ゆめのかよひぢひとめよくらむ",
 		second_verse_card: "ゆめのかよひちひとめよくらむ",
 		second_verse_answer: "ゆめ",
-		kimariji: "す"
+		kimariji: "す",
+		translation: "The waves are gathered|On the shore of Sumi Bay,|And in the gathered night,|When in dreams I go to you,|I hide from people's eyes.",
+		background: "[\"The source is the second &quot;Love&quot; section of the <em>Kokinsh\u016b<\/em>. The poet (?-901 or 907) served as governor of Inaba (currently eastern Tottori Prefecture), among other posts, and was known for his calligraphy as well as for his improvisatory waka on love and court life. \",\"The headnote to the poem in the <em>Kokinsh\u016b<\/em> indicates that it was composed for a poetry contest, possibly on an assigned topic.&nbsp;The poet assumes the persona of a woman who is frustrated by the inability, or failure, of her lover to visit her. Sumi-no-e, the shoreline of what is now the Sumiyoshi district of Osaka, was famous for its pines, and thus (because of the conventional doubling of meaning with &quot;wait&quot; -- see Poem 16, above) an appropriate image for fruitless waiting. The poem relies for its effect on the repetition of the word <em>yoru<\/em>, which means &quot;approach (the shore)&quot; in the first instance and &quot;night&quot; in the second (the first two lines constitute an &quot;introductory phrase,&quot; or <strong><em>jokotoba<\/em><\/strong>). The double duty performed in Japanese by the third line (which can be placed either with the first two or with the last two), together with the semantic gap between the fourth and fifth lines -- an implied but unstated equivalent to &quot;that he does not travel (the meeting path of dreams)&quot; -- makes concise translation surprisingly difficult. In any case, the third line adds a&nbsp;satisfying dose of emotional intensity to the otherwise conventional conception.\"]"
 	},
 	{
 		id: "19",
@@ -175,7 +211,9 @@ poems = Poem.create([
 		second_verse_raw: "あはでこのよをすぐしてよとや",
 		second_verse_card: "あはてこのよをすくしてよとや",
 		second_verse_answer: "あはて",
-		kimariji: "なにはが"
+		kimariji: "なにはが",
+		translation: "Even for a time|Short as a piece of the reeds|In Naniwa's marsh,|We must never meet again:|Is this what you are asking me?",
+		background: "[\"Taken from the first &quot;Love&quot; section of the <em>Shinkokinsh\u016b<\/em>. The poet (?877-?938) was the daughter of Fujiwara no Tsugukage, governor of Ise Province. Ise is considered a &quot;representative woman poet&quot; of her time, with the emphasis on a consuming passion taken to represent a particularly feminine point of view (it is still standard to classify women waka poets as <em>jory\u016b kajin<\/em>, as opposed to the nongendered <em>kajin<\/em>, which in practice is normally taken to refer to men. \",\"The reeds at Naniwa Bay, near present-day Osaka, were a popular image in classical Japanese poetry. Here, the first two lines of the Japanese function as a <strong><em>jokotoba<\/em><\/strong>, or &quot;introductory phrase,&quot; that Ise uses as the basis for constructing a metaphor that associates the short segments of the reeds with the possibility of a brief meeting with a (potential) lover. <em>Ma<\/em> is a pivot word (<strong><em>kakekotoba<\/em><\/strong>) that refers to a &quot;segment&quot; of a reed on the one hand and a &quot;brief period of time&quot; on the other -- the meaning of the poem shifts from the outwardly descriptive to the personally relevant at this point. The wordplay then goes even deeper because the Chinese character for <em>fushi<\/em> can also be read as <em>yo<\/em>. In the former case, the character refers to the knots in reeds, bamboo and other plants; in the latter, the reference is to the segments between the knots, so that from one standpoint, <em>fushi no ma<\/em> and <em>yo<\/em> mean exactly the same thing. Thus, a combination of &quot;related words&quot; (<strong><em>engo<\/em><\/strong>) -- reed, segment, knot -- interact with the other meaning of <em>yo<\/em> (&quot;world&quot; or &quot;life&quot;) to create a pleasing textural subtlety. \"]"
 	},
 	{
 		id: "20",
@@ -184,7 +222,9 @@ poems = Poem.create([
 		second_verse_raw: "みをつくしてもあはむとぞおもふ",
 		second_verse_card: "みをつくしてもあはむとそおもふ",
 		second_verse_answer: "みをつくしても",
-		kimariji: "わび"
+		kimariji: "わび",
+		translation: "In this dire distress|My life is meaningless.|So we must meet now,|Even though it costs my life|In the Bay of Naniwa.",
+		background: "[\"This is the fifth &quot;Love&quot; poem from the <em>Gosensh\u016b<\/em> collection (compiled in 960). Motoyoshi Shinn\u014d (890-943; <em>shinn\u014d<\/em> is the Japanese title given to an imperial prince) was the eldest son of Emperor Y\u014dzei (r. 876-884), and was renowned for his elegant taste and also for his philandering. The headnote to the poem in the <em>Gosensh\u016b<\/em> states that it was sent to Lady Ky\u014dgoku, a consort of Emperor Uda (r. 887-897), once Motoyoshi's affair with her had come to light.\",\"Cuckolding the emperor can be a serious matter (it is one of the major themes of <em>The Tale of Genji<\/em>), yet in the poem Motoyoshi tells the woman that he is willing to sacrifice everything to continue their relationship, revealing the sort of consuming passion more commonly associated with female poets in classical Japanese literature. The first two lines express the poet's awareness of having been placed in an untenable position, along with a grim what-have I-got-to-lose point of view. The next three lines complete the logic of the poem with the poet's assertion that he will meet the woman despite the heavy price he will have to pay (dividing a waka grammatically after the second line is a technique called <strong><em>ni-kugire<\/em><\/strong>). The main question from a reader's perspective may be whether <em>miotsukushi<\/em> (&quot;channel marker&quot;) serves as an effective <strong><em>kakekotoba<\/em><\/strong> (pivot word) to represent the poet's willingness to sacrifice his reputation for the woman. If it is taken merely as clever wordplay, it runs the risk of mitigating the emotional intensity of the poem on the one hand (how can someone who has the presence of mind to devise a clever pun be regarded as sincere?) or exaggerating it on the other (how much desperation can really be attributed to a channel marker?). Granted that the use of <em>miotsukushi<\/em>&nbsp; as a pivot word is hardly original, the image nevertheless seems an apt way to suggest the future course of the couple's relationship while simultaneously acknowledging the isolation and hardship that would result.\"]"
 	},
 	{
 		id: "21",
@@ -193,7 +233,9 @@ poems = Poem.create([
 		second_verse_raw: "ありあけのつきをまちいでつるかな",
 		second_verse_card: "ありあけのつきをまちてつるかな",
 		second_verse_answer: "あり",
-		kimariji: "いまこ"
+		kimariji: "いまこ",
+		translation: "Just because she said,|\"In a moment I will come,\"|I've awaited her|Until the moon of daybreak,|In the long month, has appeared.",
+		background: "[\"This poem is taken from the fourth &quot;Love&quot; section of the <em>Kokinsh\u016b<\/em>. The poet, whose lay name was Yoshimine no Harutoshi, was the son of Bishop Henj\u014d and is counted among the &quot;36 immortals&quot; (<em>Sanj\u016brokkasen<\/em>) of Heian poetry. He lived from the second half of the ninth century to the beginning of the 10th century.\",\"In this waka, a male poet is adopting the persona of a woman, resulting in a sort of verse by proxy (<strong><em>daiei<\/em><\/strong>). Under the pre-Meiji lunar calendar, the ninth month was called Nagatsuki (Long Month) because of the lengthening nights. Here the effect is to juxtapose the length of a late-autumn night with the deepening frustration and resentment of the forsaken narrator, who has in effect spent the night waiting to greet the early-morning moon -- a time when under different circumstances the woman's lover would instead be bidding a reluctant farewell. The compound verb <em>machiidetsuru<\/em> in the last line is something of a portmanteau word in that the subject of the first verb is the woman (&quot;I have waited&quot;), while the subject of the second verb is the moon (&quot;and it has appeared&quot;). <em>Ariake no tsuki<\/em> refers to a moon that rises late enough to remain visible in the early morning sky (during the second half of the lunar month). It should probably be assumed that the poet has been prompted to take note of the moon's presence rather than it being that the moon has suddenly revealed itself at the time of composition. For more information about the phases of the moon, see the Reference pages.\"]"
 	},
 	{
 		id: "22",
@@ -202,7 +244,9 @@ poems = Poem.create([
 		second_verse_raw: "むべやまかぜをあらしといふらむ",
 		second_verse_card: "むへやまかせをあらしといふらむ",
 		second_verse_answer: "むへ",
-		kimariji: "ふ"
+		kimariji: "ふ",
+		translation: "It is by its breath|That autumn's leaves of trees and grass|Are wasted and driven.|So they call this mountain wind|The wild one, the destroyer.",
+		background: "[\"The source is the second &quot;Autumn&quot; section of the <em>Kokinsh\u016b<\/em>. Although the poet is one of the &quot;six immortals&quot; (<em>Rokkasen<\/em>) mentioned in the Preface of the <em>Kokinsh\u016b<\/em>, little is known of him other than he flourished in the middle of the ninth century. His son, Fun'ya no Asahisa, is also represented in the <em>One Hundred Poems<\/em> collection.\",\"The meaning of the poem relies on visual and semantic wordplay that defies easy translation. The Japanese word <em>arashi<\/em> (&quot;storm&quot; or &quot;tempest&quot;) derives from a verb that means &quot;devastate&quot; or &quot;lay waste to.&quot; That verb would be normally be written with a specific Chinese character (\u8352, signifying &quot;violent&quot; or &quot;fierce&quot;). At the same time, the Chinese character used to write the noun <em>arashi<\/em> (<span class=\"jtext\">\u5d50<\/span>) is a combination of the ideographs for &quot;mountain&quot; and &quot;wind.&quot; The poet playfully refers to the word's etymology to make the point that the fierce autumn winds that blow off the mountains can be said to lay waste to the foliage of summer. It is a pretty slight verse.\"]"
 	},
 	{
 		id: "23",
@@ -211,7 +255,9 @@ poems = Poem.create([
 		second_verse_raw: "わがみひとつのあきにはあらねど",
 		second_verse_card: "わかみひとつのあきにはあらねと",
 		second_verse_answer: "わかみひ",
-		kimariji: "つき"
+		kimariji: "つき",
+		translation: "As I view the moon,|Many things come into my mind,|And my thoughts are sad;|Yet it's not for me alone,|That the autumn time has come.",
+		background: "[\"This waka was taken from the first &quot;Autumn&quot; section of the <em>Kokinsh\u016b<\/em>. The poet, who was active from the second half of the ninth century, was a nephew of Ariwara no Yukihira and Ariwara no Narihira.\",\"The sadness of autumn, now taken for granted as a typically Japanese sentiment, appears to have emerged as a poetic topic in the early Heian period under the influence of Chinese poetry. Here there is a witty (though not overly so) contrast made between the &quot;thousands&quot; of thoughts that beset the poet upon gazing at the autumn moon and the poet's realization that although he experiences these thoughts at the &quot;single&quot; or individual level, he is not alone in his feelings. It is an evocative way of dealing with the paradox of the conventionality of deeply personal feelings. The last two lines represent a grammatical inversion (<strong><em>t\u014dchi-h\u014d<\/em><\/strong>), a reversal that creates an ironic distance meliorating the conventional sadness of autumn.\"]"
 	},
 	{
 		id: "24",
@@ -220,7 +266,9 @@ poems = Poem.create([
 		second_verse_raw: "もみぢのにしきかみのまにまに",
 		second_verse_card: "もみちのにしきかみのまにまに",
 		second_verse_answer: "もみ",
-		kimariji: "この"
+		kimariji: "この",
+		translation: "At the present time,|Since I could bring no offering,|See Mount Tamuke!|Here are brocades of red leaves,|As a tribute to the gods.",
+		background: "[\"This waka comes from the &quot;Travel&quot; section of the <em>Kokinsh\u016b<\/em>. &quot;Kanke&quot; is a reference to Sugawara no Michizane (845-903), the famous Minister of the Right who died in exile in Kyushu and was later deified as the god of learning (Tenjin-sama). The headnote to the poem states that it was composed at the beginning of an imperial excursion to Nara by the retired Emperor Uda.\",\"Once translated, the meaning seems clear enough: the poet feels that the customary offering of cloth to the gods of travel at the beginning of an excursion would suffer by comparison to the richly colored autumn scenery, so he proposes instead to have the scenery itself serve as an offering. It does take a&nbsp; little thought, however, to connect the Japanese phrase<em> kami no ma ni ma ni<\/em> with main sense of the poem. Two poetic techniques are involved: the pivot word (<em><strong>kakekotoba<\/strong><\/em>) that plays on the meaning of <em>tabi<\/em> as both &quot;trip&quot; and &quot;this time&quot; (the latter rather freely rendered as &quot;as ... begins&quot;), and the metaphorical &quot;likening&quot; (<strong><em>mitate<\/em><\/strong>) of the colorful autumn eaves to rich brocade. Whether the metaphor should be considered evocative or pedantically witty is where opinion may differ. (For <em>tamukeyama<\/em>, I have followed the interpretation that takes the word as a generic term rather than as a place name; to translate <em>nusa<\/em> I have used what seems to be most representative type of cloth for this purpose.)\"]"
 	},
 	{
 		id: "25",
@@ -229,7 +277,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとにしられでくるよしもがな",
 		second_verse_card: "ひとにしられてくるよしもかな",
 		second_verse_answer: "ひとにし",
-		kimariji: "なにし"
+		kimariji: "なにし",
+		translation: "If your name is true,|Trailing vine of \"Meeting Hill,\"|Isn't there some way,|Hidden from people's gaze,|That you can draw her to my side?",
+		background: "[\"The poem is taken from the third &quot;Love&quot; section of the <em>Gosensh\u016b<\/em>. The Minister of the Right Sanj\u014d is a reference to Fujiwara no Sadakata (873-932), who had a residence in Sanj\u014d.\",\"Three pivot words (<em><strong>kakekotaba<\/strong><\/em>) are used to supply figurative connections between natural description and personal desire: the &quot;\u014c&quot; of &quot;\u014csaka&quot; conventionally corresponds to the verb <em>au<\/em> (pronounced &quot;ou&quot; and meaning &quot;meet&quot;); the <em>sane<\/em> of <em>sanekazura<\/em> plays on a homonym meaning &quot;sleep together&quot;; and <em>kuru<\/em> can be taken either as &quot;come&quot; or as &quot;reel toward&quot; (i.e., the poet's drawing the woman toward him as though teasing a vine from a tree). Further, <em>au<\/em> and <em>sane<\/em> are related words (<em><strong>engo<\/strong><\/em>), as are <em>kuru<\/em> and <em>sanekazura<\/em>. Apparently there is a need to keep secret the relationship between the poet and the woman he addresses. Thus, the poet wishes there were a means of meeting the woman without the knowledge of others, and the aptly named vine that grows on the aptly named mountain would seem to offer the best hope of doing so. The almost excessive wittiness of the conceit is largely offset by the desperate strength of the man's desire.\"]"
 	},
 	{
 		id: "26",
@@ -238,7 +288,9 @@ poems = Poem.create([
 		second_verse_raw: "いまひとたびのみゆきまたなむ",
 		second_verse_card: "いまひとたひのみゆきまたなむ",
 		second_verse_answer: "いまひとたひのみ",
-		kimariji: "をぐ"
+		kimariji: "をぐ",
+		translation: "If the maple leaves|On Ogura mountain|Could only have hearts,|They would longingly await|The emperor's pilgrimage.",
+		background: "[\"This poem is taken from the &quot;Miscellaneous Autumn&quot; section of the <em>Sh\u016bish\u016b<\/em> anthology of waka, which was completed at the beginning of the 11th century. Teishin-k\u014d was the posthumous name given to Fujiwara no Tadahira (880-949), who served as regent and chancellor during the reigns of Emperor Suzaku and Emperor Murakami and prepared the way for the peak of Fujiwara influence. \",\"The headnote to the poem in the <em>Sh\u016bishu<\/em> says it was composed by Tadahira during or after an excursion to Ogura by former Emperor Uda, who expressed his wish that Emperor Daigo might also enjoy the colorful autumn scenery.&nbsp; Mount Ogura was one of the most famous Heian locations for viewing autumn foliage, and the poet here addresses it directly (the technique of <em><strong>gijin-h\u014d<\/strong><\/em>, or personification). Technically speaking, the reading <em>miyuki<\/em> is used for two different combinations of Chinese characters. When written as <span class=\"jtext\">\u884c\u5e78<\/span>, the reference is to an excursion by the reigning emperor; as <span class=\"jtext\">\u5fa1\u5e78<\/span>, the reference is to an excursion by an abdicated or cloistered emperor or by one of the reigning emperor's close female relatives or consorts). The versions that appear in the headnote make it clear that the &quot;second,&quot; hoped-for excursion would be the one by the reigning emperor, Daigo. This can be considered a good example of the context provided by such headnotes, problematizing the tendency to read waka as &quot;discrete&quot; poems.\"]"
 	},
 	{
 		id: "27",
@@ -247,7 +299,9 @@ poems = Poem.create([
 		second_verse_raw: "いつみきとてかこひしかるらむ",
 		second_verse_card: "いつみきとてかこひしかるらむ",
 		second_verse_answer: "いつみ",
-		kimariji: "みかの"
+		kimariji: "みかの",
+		translation: "Over Mika's plain,|Gushing forth and flowing free,|Is Izumi's stream.|I do not know if we have met:|Why, then, do I long for her?",
+		background: "[\"This poem is taken from the first \"Love\" section of the <em>Shinkokinsh\u016b<\/em>. It was composed by Fujiwara no Kanesuke (877-933), the great-grandfather of Murasaki Shikibu\u00a0and an important 10th-century poet.\",\"The first three lines function as an introductory <em><strong>jokotoba<\/strong><\/em> centering on the Izumi River (now called the Kizu River) as it flows through the Mikano Plain in the ancient province of Yamashiro (in what is now Kyoto Prefecture). The word <em>wakite<\/em> is a <strong><em>kakekotoba<\/em><\/strong> that combines the sense of the river's dividing the plain with the image of the spring (<em>or izumi<\/em>) from which the river rises (it thus also functions as an <em><strong>engo<\/strong><\/em>, or word poetically associated with <em>izumi<\/em>). There is no explicit grammatical connection in Japanese between the first three lines and the last two, but the reader is probably justified in conflating the surge of the river with the surge of feeling in the poet.\u00a0\"]"
 	},
 	{
 		id: "28",
@@ -256,7 +310,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとめもくさもかれぬとおもへば",
 		second_verse_card: "ひとめもくさもかれぬとおもへは",
 		second_verse_answer: "ひとめ",
-		kimariji: "やまざ"
+		kimariji: "やまざ",
+		translation: "Winter loneliness|In a mountain village grows|Only deeper, when|Guests are gone, and leaves and grass|Are withered: troubling thoughts.",
+		background: "[\"This waka appears in the &quot;Winter&quot; section of the <em>Kokinsh\u016b<\/em>. Minamoto no Muneyuki&nbsp;(?-939), a grandson of Emperor K\u014dk\u014d, was frustrated in his attempts to advance within the Heian bureacracy.\",\"The poem is an example of the use of <em><strong>t\u014dchi-h\u014d<\/strong><\/em> (grammatical inversion) in which the last two lines form the reason for making the statement in the first three lines (creating a syntactic break after the third line of a waka is termed <em><strong>san-kugire<\/strong><\/em>). In addition, <em>karenu<\/em> is a <strong><em>kakekotoba<\/em><\/strong> that refers both to the deprivation of human company and to the withering of plants with the onset of winter. The effect is to produce a sense of discovery about the nature of life in isolation from the capital.\"]"
 	},
 	{
 		id: "29",
@@ -265,7 +321,9 @@ poems = Poem.create([
 		second_verse_raw: "おきまどはせるしらぎくのはな",
 		second_verse_card: "おきまとはせるしらきくのはな",
 		second_verse_answer: "お",
-		kimariji: "こころあ"
+		kimariji: "こころあ",
+		translation: "If it were my wish|To pick the white chrysanthemums,|Puzzled by the frost|Of the early autumn time,|I by chance might pluck the flower.",
+		background: "[\"This poem comes from the second &quot;Autumn&quot; section of the <em>Kokinsh\u016b<\/em>. The poet was a low-ranking bureaucrat who lived from the second half of the ninth century into the early tenth century; he was one of the compilers of the <em>Kokinsh\u016b<\/em> anthology.\",\"<em><strong>T\u014dchi-h\u014d<\/strong><\/em> (grammatical inversion) is employed again here, in this waka creating a break afer the second line (<strong><em>ni-kugire<\/em><\/strong>). The elegant confusion in the poet's mind serves to emphasize the whiteness of the mums, which have become virtually indistinguishable from each other and from the frost that camouflages them (the first frost of the year normally falls between late autumn and early winter).\"]"
 	},
 	{
 		id: "30",
@@ -274,7 +332,9 @@ poems = Poem.create([
 		second_verse_raw: "あかつきばかりうきものはなし",
 		second_verse_card: "あかつきはかりうきものはなし",
 		second_verse_answer: "あか",
-		kimariji: "ありあ"
+		kimariji: "ありあ",
+		translation: "Like the morning moon,|Cold, unpitying was my love.|And since we parted,|I dislike nothing so much|As the breaking light of day.",
+		background: "[\"This poem was taken from the third &quot;Love&quot; section of the <em>Kokinsh\u016b<\/em>. Mibu no Takamine (fl. ca. 900) was one of the compilers of that collection; his son composed poem 41 of the <em>One Hundred Poems<\/em>.\",\"This is a straightforward poem grammatically, although there is some question about whether the poet is lamenting the indifference of the moon or the cruelty of separation itself (or perhaps both). In any case, the lingering moon is a conventional symbol of the poet's reluctance to depart, and charging it with indifference lends an added touch of anguish regarding the poet's inability to repeat the tryst in the days that have followed. It should be noted that in classical Japanese, the word <em>akatsuki<\/em> does not refer to sunrise but to the period just before that, when the sky is still fairly dark.\"]"
 	},
 	{
 		id: "31",
@@ -283,7 +343,9 @@ poems = Poem.create([
 		second_verse_raw: "よしののさとにふれるしらゆき",
 		second_verse_card: "よしののさとにふれるしらゆき",
 		second_verse_answer: "よし",
-		kimariji: "あさぼらけあ"
+		kimariji: "あさぼらけあ",
+		translation: "At the break of day,|Just as though the morning moon|Lightened the dim scene,|Yoshino's village lay|In a haze of falling snow.",
+		background: "[\"The poem comes from the &quot;Winter&quot; section of the <em>Kokinsh\u016b<\/em>. The poet, who flourished in the early Heian period, was one of the &quot;thirty-six immortals&quot; of Japanese poetry, designated as such on the basis of their inclusion in a collection of their waka compiled by the mid-Heian courtier Fujiwara no Kint\u014d (966-1041).\",\"Yoshino was a mountainous district in Yamato, present-day Nara Prefecture. Despite -- or perhaps because of -- its distance from Kyoto, it was famous for its snow in winter and its cherry blossoms in spring. The poet reverses the more typical comparison of the moon to snow, making the snow the source of radiance. Since the snow is still falling, the suffused light resembles that cast by a lingering moon, a conceit that saves the poem from seeming perhaps merely witty. Ending the poem with a noun (&quot;white-snow&quot; rather than &quot;Yoshino&quot; in Japanese) is a technique known as <strong><em>taigen-dome<\/em><\/strong> (as long as a technique like inversion [<strong><em>t\u014dchi<\/em><\/strong><em><strong>-h\u014d<\/strong><\/em>]) is not the cause).\"]"
 	},
 	{
 		id: "32",
@@ -292,7 +354,9 @@ poems = Poem.create([
 		second_verse_raw: "ながれもあへぬもみぢなりけり",
 		second_verse_card: "なかれもあへぬもみちなりけり",
 		second_verse_answer: "なかれ",
-		kimariji: "やまが"
+		kimariji: "やまが",
+		translation: "In a mountain stream|There is a wattled barrier|Built by the busy wind.|Yet it's only maple leaves,|Powerless to flow away.",
+		background: "[\"This waka was taken from the second &quot;Autumn&quot; section of the <em>Kokinsh\u016b<\/em>. Nothing is known of the poet except that he died in 920, just before taking up his post as governor of Iki Province (the island of Iki off the northern coast of Kyushu).\",\"The poem combines the techniques of personification (<strong><em>gijin-h\u014d<\/em><\/strong>) and likening (<em><strong>mitate<\/strong><\/em>) to give the wind (or breeze) a tactile presence and to bring into clear focus the poet's realization that his initial impression was mistaken. In this way, one of the most conventional of Japanese poetic images -- autumn leaves floating in the water -- is presented with a freshness that enhances rather than trivializes it.\"]"
 	},
 	{
 		id: "33",
@@ -301,7 +365,9 @@ poems = Poem.create([
 		second_verse_raw: "しづごころなくはなのちるらむ",
 		second_verse_card: "しつこころなくはなのちるらむ",
 		second_verse_answer: "しつ",
-		kimariji: "ひさ"
+		kimariji: "ひさ",
+		translation: "In the peaceful light|Of the ever-shining sun|In the days of spring,|Why do the cherry's new-blown blooms|Scatter like restless thoughts?",
+		background: "[\"This waka originally appeared in the second &quot;Spring&quot; section of the <em>Kokinsh\u016b<\/em>. Ki no Tomonori (?-?905) was the cousin of Ki no Tsurayuki and one of the compilers of the <em>Kokinsh\u016b<\/em>, which contains 46 of his poems, more than any other poet except Tsurayuki himself and \u014cshik\u014dchi no Mitsune.\",\"The effect of the poem derives from the paradoxical contrast between the calm of a sunny spring day and the falling cherry blossoms: since there is no physical reason for the blossoms to be scattering from the trees, it must be because of their own restless feelings. Some readers may not find this contrast to be very convincing, but it might be taken to imply a sensitive awareness to the disjunction that can arise between inner feelings and outward surroundings, thus modifying or enhancing the conventional association of cherry blossoms with transience. In the past, the particle <em>ramu<\/em> (which is used to draw a conclusion based on observable phenomena) was often said in this poem to indicate a questioning as to the reason for the phenomenon (thus &quot;Why is it that the blossoms fall with unsettled hearts?&quot;). This interpretation, however, requires bridging a grammatical gap (through the use of a question word, for example) that is not explicitly bridged in the poem, and the earlier interpretation seems to have fallen out of favor. The two poetic techniques involved are personification (<em><strong>gijin-h\u014d<\/strong><\/em>, attributing unsettled feelings to cherry blossoms) and <strong><em>makurakotoba<\/em><\/strong> (<em>hisakata<\/em> being a &quot;pillow word&quot; conventionally used, for example, with atmospheric phenomena and heavenly objects). To actually translate a <em>makurakotoba<\/em>, as has been done here, entails the risk of making the quality too explicitly descriptive.\"]"
 	},
 	{
 		id: "34",
@@ -310,7 +376,9 @@ poems = Poem.create([
 		second_verse_raw: "まつもむかしのともならなくに",
 		second_verse_card: "まつもむかしのともならなくに",
 		second_verse_answer: "まつも",
-		kimariji: "たれ"
+		kimariji: "たれ",
+		translation: "Who is still alive|When I have grown so old|That I can call my friends?|Even Takasago's pines|No longer offer comfort.",
+		background: "[\"From the first &quot;Miscellaneous&quot; volume of the <em>Kokinsh\u016b<\/em>.&nbsp;Fujiwara no Okikaze (dates unknown) was an early Heian-period poet considered one of the &quot;thirty-six immortals&quot; of waka poetry. Apparently he was also a skilled court musician.\",\"The pines at Takasago (in present-day Hyogo Prefecture) were a conventional symbol of longevity. Here, however, the poet&nbsp;-- bereft of the friends of his youth -- cannot find cause to celebrate his own long life because even these famous pines cannot take the place of his lost friends. The reversal of the conventional felicitous association carries a powerful impact. Grammatically, the first two lines and the last three lines are reversed (the<strong> <em>t\u014dchi-h\u014d<\/em><\/strong> technique), with the latter serving to give the reason for the former&nbsp;(the same pattern is found in poem 14). Creating a semantic break in this way after the second line is known as <strong><em>ni-kugire<\/em><\/strong>.\"]"
 	},
 	{
 		id: "35",
@@ -319,7 +387,9 @@ poems = Poem.create([
 		second_verse_raw: "はなぞむかしのかににほひける",
 		second_verse_card: "はなそむかしのかににほひける",
 		second_verse_answer: "はなそ",
-		kimariji: "ひとは"
+		kimariji: "ひとは",
+		translation: "The depths of the hearts|Of humankind cannot be known.|But in my birthplace|The plum blossoms smell the same|As in the years gone by.",
+		background: "[\"This poem appears in the first &quot;Spring&quot; section of the <em>Kokinsh\u016b<\/em>. Ki no Tsurayuki (866?-945), chief compiler of this first imperially ordered collection of waka poetry, is one of the Heian period's most representative poets.\",\"In the <em>Kokinsh\u016b<\/em>, the poem carries a headnote stating that it was composed when Tsurayuki paid a visit to a lodging house at Hase Temple that he had frequented in the past and the proprietor chided him for his extended absence. The implication is that Tsurayuki meant to rebuke his host by observing that one can rely more on the constancy of the natural world than on the constancy of human feelings (that is, one cannot take a person's words to reveal what he or she truly feels, so Tsurayuki does not put much faith in the proprietor's sincerity). The blossoms, as usual in the Heian period, are plum blossoms; <em>furusato<\/em> here does not refer to the place of one's birth but rather a place in which one has previously lived (Tsurayuki was born in Kyoto). As in the previous poem, there is a grammatical break at the end of the second line -- the <strong><em>ni-kugire<\/em><\/strong> technique.\"]"
 	},
 	{
 		id: "36",
@@ -328,7 +398,9 @@ poems = Poem.create([
 		second_verse_raw: "くものいづこにつきやどるらむ",
 		second_verse_card: "くものいつこにつきやとるらむ",
 		second_verse_answer: "くもの",
-		kimariji: "なつ"
+		kimariji: "なつ",
+		translation: "In the summer night|The evening still seems present,|But the dawn is here.|To what region of the clouds|Has the wandering moon come home?",
+		background: "[\"This poem appears in the &ldquo;Summer&rdquo; section of the <em>Kokinsh\u016b<\/em>. The poet, who flourished from the end of the ninth century to the middle of the tenth, was the grandfather of Fujiwara no Motosuke and the great-grandfather of Minor Counselor Sh\u014dnagon.\",\"After a conventionally short summer night, one would expect to see the moon lingering in the early-morning sky (this would be the case in the second half of the lunar month). The poet, unable to distinguish the form of the moon in the brightening sky, adopts the conceit that the moon must have slipped behind the clouds. Note also the implication that the poet and his lover have been admiring the moon throughout the night, and that the time for parting has arrived much too soon. The technique being employed is <strong><em>gijin-h\u014d<\/em><\/strong> (personification).\"]"
 	},
 	{
 		id: "37",
@@ -337,7 +409,9 @@ poems = Poem.create([
 		second_verse_raw: "つらぬきとめぬたまぞちりける",
 		second_verse_card: "つらぬきとめぬたまそちりける",
 		second_verse_answer: "つ",
-		kimariji: "しら"
+		kimariji: "しら",
+		translation: "In the autumn fields|When the heedless wind blows by|Over the pure-white dew,|How the myriad unstrung gems|Are scattered everywhere around",
+		background: "[\"This poem appears in the middle (second) &ldquo;Autumn&rdquo; section of the <em>Gosensh\u016b<\/em>. Little is known of the poet -- who was active from the late ninth century to the early 10th century -- other than that he was the son of Fun&rsquo;ya no Yasuhide. \",\"The image of jewels or beads strung on a cord or thread was a common one in Heian waka. The cord might be used as a metaphor for life, for example, so that if the cord breaks and the beads scatter, the implication is that someone&rsquo;s life has ended. Here, the dewdrops on the plants in an autumn field are being compared to loose pearls that scatter before the strongly gusting wind (the technique of <strong><em>mitate<\/em><\/strong>). The visual scope and implied repetition can be said to invigorate what might otherwise be a rather conventional image.\"]"
 	},
 	{
 		id: "38",
@@ -346,7 +420,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとのいのちのをしくもあるかな",
 		second_verse_card: "ひとのいのちのをしくもあるかな",
 		second_verse_answer: "ひとの",
-		kimariji: "わすら"
+		kimariji: "わすら",
+		translation: "Though he forsook me,|For myself I do not care:|He made a promise,|And his life, who is forsworn,|Oh how pitiful that is.",
+		background: "[\"This poem appears in the fourth \u201cLove\u201d section of the <em>Gosensh\u016b<\/em>. It also appears in Section 84 of <em>Tales of Yamato<\/em> with a headnote explaining that it was composed by the poet after her lover had betrayed his sacred promise never to forget her. Ukon, whose dates are unknown, was the daughter of Fujiwara no Suetada (also read as &quot;Suenawa&quot;; d. 919) and served Onshi, the empress of Emperor Daigo (r. 897-930). She was active in the poetic circles of the court of Emperor Murakami (r. 946-967).\",\"The poem invokes the possibility of divine retribution for having broken a vow of love. The message can either be taken as pointed sarcasm or as a expression of genuine concern that the poet&rsquo;s lover has put his life at risk by breaking his sacred pledge -- or the ambivalence itself may be the point. A clear grammatical break after the second line signals the use of the <strong><em>ni-kugire<\/em><\/strong> technique. The translation (here and elsewhere) follows the literal meaning by translating <em>hito<\/em> in the third person, but given the context (it is a message intended to be read by that person), the use of &quot;you&quot; would also be justified.\"]"
 	},
 	{
 		id: "39",
@@ -355,7 +431,9 @@ poems = Poem.create([
 		second_verse_raw: "あまりてなどかひとのこひしき",
 		second_verse_card: "あまりてなとかひとのこひしき",
 		second_verse_answer: "あまり",
-		kimariji: "あさぢ"
+		kimariji: "あさぢ",
+		translation: "Bamboo growing|Among the tangled reeds|Like my hidden love:|But it is too much to bear|That I still love her so.",
+		background: "[\"This poem appears in the first &ldquo;Love&rdquo; section of <em>Gosensh\u016b<\/em>. Minamoto no Hitoshi (880-951; &ldquo;counselor&rdquo; was his court title) was a descendent of Emperor Saga (r. 809-823), but otherwise his life is obscure.\",\"The opening two phrases of the Japanese can be said to constitute a <strong><em>jokotoba<\/em><\/strong> introducing <em>shinobu<\/em> (conceal, endure), with the first three phrases as a whole unified phonetically by the repeated <em>no<\/em>. The semantic connection between a conventional <em>jokotoba<\/em> and the word or phrase it introduces is not always clear in classical poetry (wordplay often seems as important as meaning), but here there seems to be a suggestion that while the bamboo grass may not be easily distinguished visually from the other plants growing in the meadow, the fact that its leaves rustle in the slightest breeze can be expected to give it away. The suggested tension between concealment and revelation is explicitly related to love in the final two phrases, in which a rhetorical question signals the poet's consternation at being subject to feelings of love so powerful that they threaten to betray him.\"]"
 	},
 	{
 		id: "40",
@@ -364,7 +442,9 @@ poems = Poem.create([
 		second_verse_raw: "ものやおもふとひとのとふまで",
 		second_verse_card: "ものやおもふとひとのとふまて",
 		second_verse_answer: "もの",
-		kimariji: "しの"
+		kimariji: "しの",
+		translation: "Though I would hide it,|In my face it still appears--|My fond, secret love.|And now he questions me:|\"Is something bothering you?\"",
+		background: "[\"This poem appears in the first &ldquo;Love&rdquo; section of <em>Sh\u016bish\u016b<\/em> (compiled around 1006). Taira no Kanemori (? \u2013 990) was the son of the court noble Taira no Atsuyuki (?-910). He is considered a representative <em>Gosensh\u016b<\/em>-period (mid-10th-century) poet.\",\"The poet thinks he has been successfully concealing his feelings, but he realizes that others have grown suspicious because the expression on his face has been giving him away. The realization is highlighted by the use of inversion (<strong>t\u014dchih\u014d<\/strong>), with the last three phrases displaced from their proper grammatical position between the first two. This inversion is combined with the\u00a0skillful use of a second-phrase break (<strong>niku-gire<\/strong>), allowing the first two phrases to function as an independent unit, in effect effacing the grammatical displacement.\",\"This poem was matched against the next one (No. 41) in a famous poetry competition held at the court of Emperor Murakami in 960. Both were composed on the assigned topic of concealed love (<em>shinobu koi<\/em>). The story is that the judge had difficulty awarding the victory until the emperor was overheard to intone this one, which decided the final outcome.\"]"
 	},
 	{
 		id: "41",
@@ -373,7 +453,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとしれずこそおもひそめしか",
 		second_verse_card: "ひとしれすこそおもひそめしか",
 		second_verse_answer: "ひとし",
-		kimariji: "こひ"
+		kimariji: "こひ",
+		translation: "It is true I love,|But the rumor of my love|Had gone far and wide,|When people should not have known|That I had begun to love.",
+		background: "[]"
 	},
 	{
 		id: "42",
@@ -382,7 +464,9 @@ poems = Poem.create([
 		second_verse_raw: "すゑのまつやまなみこさじとは",
 		second_verse_card: "すゑのまつやまなみこさしとは",
 		second_verse_answer: "す",
-		kimariji: "ちぎりき"
+		kimariji: "ちぎりき",
+		translation: "Our sleeves were wet with tears|As pledges that our love--|Will last until|Over Sue's Mount of Pines|Ocean waves are breaking.",
+		background: "[]"
 	},
 	{
 		id: "43",
@@ -391,7 +475,9 @@ poems = Poem.create([
 		second_verse_raw: "むかしはものをおもはざりけり",
 		second_verse_card: "むかしはものをおもはさりけり",
 		second_verse_answer: "むか",
-		kimariji: "あひ"
+		kimariji: "あひ",
+		translation: "I have met my love.|When I compare this present|With feelings of the past,|My passion is now as if|I have never loved before.",
+		background: "[]"
 	},
 	{
 		id: "44",
@@ -400,7 +486,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとをもみをもうらみざらまし",
 		second_verse_card: "ひとをもみをもうらみさらまし",
 		second_verse_answer: "ひとを",
-		kimariji: "あふ"
+		kimariji: "あふ",
+		translation: "If it should happen|That we never met again,|I would not complain;|And I doubt that she or I|Would feel that we were left alone.",
+		background: "[]"
 	},
 	{
 		id: "45",
@@ -409,7 +497,9 @@ poems = Poem.create([
 		second_verse_raw: "身のいたづらになりぬべきかな",
 		second_verse_card: "みのいたつらになりぬへきかな",
 		second_verse_answer: "みの",
-		kimariji: "あはれ"
+		kimariji: "あはれ",
+		translation: "Surely there is none|Who will speak a pitying word|About my lost love.|Now my folly's fitting end|Is my own nothingness.",
+		background: "[]"
 	},
 	{
 		id: "46",
@@ -418,7 +508,9 @@ poems = Poem.create([
 		second_verse_raw: "ゆくへもしらぬこひのみちかな",
 		second_verse_card: "ゆくへもしらぬこひのみちかな",
 		second_verse_answer: "ゆく",
-		kimariji: "ゆら"
+		kimariji: "ゆら",
+		translation: "Like a mariner|Sailing over Yura's strait|With his rudder gone:|Where, over the deep of love,|The end lies, I do not know.",
+		background: "[]"
 	},
 	{
 		id: "47",
@@ -427,7 +519,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとこそみえねあきはきにけり",
 		second_verse_card: "ひとこそみえねあきはきにけり",
 		second_verse_answer: "ひとこそみ",
-		kimariji: "やへ"
+		kimariji: "やへ",
+		translation: "To the dim cottage|Overgrown with thick-leaved vines|In its loneliness|Comes the dreary autumn time:|But there no people come.",
+		background: "[]"
 	},
 	{
 		id: "48",
@@ -436,7 +530,9 @@ poems = Poem.create([
 		second_verse_raw: "くだけてものをおもふころかな",
 		second_verse_card: "くたけてものをおもふころかな",
 		second_verse_answer: "くた",
-		kimariji: "かぜを"
+		kimariji: "かぜを",
+		translation: "Like a driven wave,|Dashed by fierce winds on a rock,|So am I:  alone|And crushed upon the shore,|Remembering what has been.",
+		background: "[]"
 	},
 	{
 		id: "49",
@@ -445,7 +541,9 @@ poems = Poem.create([
 		second_verse_raw: "ひるはきえつつものをこそおもへ",
 		second_verse_card: "ひるはきえつつものをこそおもへ",
 		second_verse_answer: "ひる",
-		kimariji: "みかき"
+		kimariji: "みかき",
+		translation: "Like the guard's fires|Kept at the imperial gateway--|Burning through the night,|Dull in ashes through the day--|Is the love aglow in me.",
+		background: "[]"
 	},
 	{
 		id: "50",
@@ -454,7 +552,9 @@ poems = Poem.create([
 		second_verse_raw: "ながくもがなとおもひけるかな",
 		second_verse_card: "なかくもかなとおもひけるかな",
 		second_verse_answer: "なかく",
-		kimariji: "きみがためを"
+		kimariji: "きみがためを",
+		translation: "For your precious sake,|Once my eager life itself|Was not dear to me.|But now it is my heart's desire|It may long, long years endure.",
+		background: "[]"
 	},
 	{
 		id: "51",
@@ -463,7 +563,9 @@ poems = Poem.create([
 		second_verse_raw: "さしもしらじなもゆるおもひを",
 		second_verse_card: "さしもしらしなもゆるおもひを",
 		second_verse_answer: "さ",
-		kimariji: "かく"
+		kimariji: "かく",
+		translation: "How can I tell her|How fierce my love for her is?|Will she understand|That the love I feel for her|Burns like Ibuki's fire plant?",
+		background: "[]"
 	},
 	{
 		id: "52",
@@ -472,7 +574,9 @@ poems = Poem.create([
 		second_verse_raw: "なほうらめしきあさぼらけかな",
 		second_verse_card: "なほうらめしきあさほらけかな",
 		second_verse_answer: "なほう",
-		kimariji: "あけ"
+		kimariji: "あけ",
+		translation: "Though I know indeed|That the night will come again|After day has dawned,|Still, in truth, I hate the sight|Of the morning's coming light.",
+		background: "[]"
 	},
 	{
 		id: "53",
@@ -481,7 +585,9 @@ poems = Poem.create([
 		second_verse_raw: "いかにひさしきものとかはしる",
 		second_verse_card: "いかにひさしきものとかはしる",
 		second_verse_answer: "いか",
-		kimariji: "なげき"
+		kimariji: "なげき",
+		translation: "Lying all alone,|Through the hours of the night,|Till the daylight comes:|Can you realize at all|The emptiness of that night?",
+		background: "[]"
 	},
 	{
 		id: "54",
@@ -490,7 +596,9 @@ poems = Poem.create([
 		second_verse_raw: "けふをかぎりのいのちともがな",
 		second_verse_card: "けふをかきりのいのちともかな",
 		second_verse_answer: "けふを",
-		kimariji: "わすれ"
+		kimariji: "わすれ",
+		translation: "If remembering me|Will for him in future years|Be too difficult,|It would be well this very day|That I should end my life.",
+		background: "[]"
 	},
 	{
 		id: "55",
@@ -499,7 +607,9 @@ poems = Poem.create([
 		second_verse_raw: "なこそながれてなほきこえけれ",
 		second_verse_card: "なこそなかれてなほきこえけれ",
 		second_verse_answer: "なこ",
-		kimariji: "たき"
+		kimariji: "たき",
+		translation: "Though the waterfall|Ceased its flowing long ago,|And its sound is stilled,|Yet, in name it ever flows,|And in fame may yet be heard.",
+		background: "[]"
 	},
 	{
 		id: "56",
@@ -508,7 +618,9 @@ poems = Poem.create([
 		second_verse_raw: "いまひとたびのあふこともがな",
 		second_verse_card: "いまひとたひのあふこともかな",
 		second_verse_answer: "いまひとたひのあ",
-		kimariji: "あらざ"
+		kimariji: "あらざ",
+		translation: "Soon my life will close.|When I am beyond this world|And have forgotten it,|Let me remember only this:|One final meeting with you.",
+		background: "[]"
 	},
 	{
 		id: "57",
@@ -517,7 +629,9 @@ poems = Poem.create([
 		second_verse_raw: "くもがくれにしよはのつきかな",
 		second_verse_card: "くもかくれにしよはのつきかな",
 		second_verse_answer: "くもか",
-		kimariji: "め"
+		kimariji: "め",
+		translation: "Meeting on the path:|But I cannot clearly know|If it was he,|Because the midnight moon|In a cloud had disappeared.",
+		background: "[]"
 	},
 	{
 		id: "58",
@@ -526,7 +640,9 @@ poems = Poem.create([
 		second_verse_raw: "いでそよひとをわすれやはする",
 		second_verse_card: "いてそよひとをわすれやはする",
 		second_verse_answer: "いて",
-		kimariji: "ありま"
+		kimariji: "ありま",
+		translation: "As Mount Arima|Sends its rustling winds across|Ina's bamboo plains,|I will be just as steadfast|And never will forget you.",
+		background: "[]"
 	},
 	{
 		id: "59",
@@ -535,7 +651,9 @@ poems = Poem.create([
 		second_verse_raw: "かたぶくまでのつきをみしかな",
 		second_verse_card: "かたふくまてのつきをみしかな",
 		second_verse_answer: "かた",
-		kimariji: "やす"
+		kimariji: "やす",
+		translation: "Better to have slept|Care-free, than to keep vain watch|Through the passing night,|Till I saw the lonely moon|Traverse her descending path.",
+		background: "[]"
 	},
 	{
 		id: "60",
@@ -544,7 +662,9 @@ poems = Poem.create([
 		second_verse_raw: "まだふみもみずあまのはしだて",
 		second_verse_card: "またふみもみすあまのはしたて",
 		second_verse_answer: "また",
-		kimariji: "おほえ"
+		kimariji: "おほえ",
+		translation: "By Oe Mountain|The road to Ikuno|Is far away,|And neither have I beheld|Nor crossed its bridge of heaven.",
+		background: "[]"
 	},
 	{
 		id: "61",
@@ -553,7 +673,9 @@ poems = Poem.create([
 		second_verse_raw: "けふここのへににほひぬるかな",
 		second_verse_card: "けふここのへににほひぬるかな",
 		second_verse_answer: "けふこ",
-		kimariji: "いに"
+		kimariji: "いに",
+		translation: "Eight-fold cherry flowers|That at Nara--ancient seat|Of our state--have bloomed,|In our nine-fold palace court|Shed their sweet perfume today.",
+		background: "[]"
 	},
 	{
 		id: "62",
@@ -562,7 +684,9 @@ poems = Poem.create([
 		second_verse_raw: "よにあふさかのせきはゆるさじ",
 		second_verse_card: "よにあふさかのせきはゆるさし",
 		second_verse_answer: "よに",
-		kimariji: "よを"
+		kimariji: "よを",
+		translation: "The rooster's crowing|In the middle of the night|Deceived the hearers;|But at Osaka's gateway|The guards are never fooled.",
+		background: "[]"
 	},
 	{
 		id: "63",
@@ -571,7 +695,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとづてならでいふよしもがな",
 		second_verse_card: "ひとつてならていふよしもかな",
 		second_verse_answer: "ひとつ",
-		kimariji: "いまは"
+		kimariji: "いまは",
+		translation: "Is there any way|Except by a messenger|To send these words to you?|If I could, I'd come to you|To say goodbye forever.",
+		background: "[]"
 	},
 	{
 		id: "64",
@@ -580,7 +706,9 @@ poems = Poem.create([
 		second_verse_raw: "あらはれわたるせぜのあじろぎ",
 		second_verse_card: "あらはれわたるせせのあしろき",
 		second_verse_answer: "あら",
-		kimariji: "あさぼらけう"
+		kimariji: "あさぼらけう",
+		translation: "In the early dawn|When the mists on Uji River|Slowly lift and clear,|From the shallows to the deep,|The stakes of fishing nets appear.",
+		background: "[]"
 	},
 	{
 		id: "65",
@@ -589,7 +717,9 @@ poems = Poem.create([
 		second_verse_raw: "こひにくちなむなこそをしけれ",
 		second_verse_card: "こひにくちなむなこそをしけれ",
 		second_verse_answer: "こひに",
-		kimariji: "うら"
+		kimariji: "うら",
+		translation: "Even when your hate|Makes me stain my sleeves with tears|In cold misery,|Worse than hate and misery|Is the loss of my good name.",
+		background: "[]"
 	},
 	{
 		id: "66",
@@ -598,7 +728,9 @@ poems = Poem.create([
 		second_verse_raw: "はなよりほかにしるひともなし",
 		second_verse_card: "はなよりほかにしるひともなし",
 		second_verse_answer: "はなよ",
-		kimariji: "もろ"
+		kimariji: "もろ",
+		translation: "On a mountain slope,|Solitary, uncompanioned,|Stands a cherry tree.|Except for you, lonely friend,|To others I am unknown.",
+		background: "[]"
 	},
 	{
 		id: "67",
@@ -607,7 +739,9 @@ poems = Poem.create([
 		second_verse_raw: "かひなくたたむなこそをしけれ",
 		second_verse_card: "かひなくたたむなこそをしけれ",
 		second_verse_answer: "かひ",
-		kimariji: "はるの"
+		kimariji: "はるの",
+		translation: "If I lay my head|Upon his arm in the dark|Of a short spring night,|This innocent dream pillow|Will be the death of my good name.",
+		background: "[]"
 	},
 	{
 		id: "68",
@@ -616,7 +750,9 @@ poems = Poem.create([
 		second_verse_raw: "こひしかるべきよはのつきかな",
 		second_verse_card: "こひしかるへきよはのつきかな",
 		second_verse_answer: "こひし",
-		kimariji: "こころに"
+		kimariji: "こころに",
+		translation: "Though I do not want|To live on in this floating world,|If I remain here,|Let me remember only|This midnight and this moonrise.",
+		background: "[]"
 	},
 	{
 		id: "69",
@@ -625,7 +761,9 @@ poems = Poem.create([
 		second_verse_raw: "たつたのかはのにしきなりけり",
 		second_verse_card: "たつたのかはのにしきなりけり",
 		second_verse_answer: "たつ",
-		kimariji: "あらし"
+		kimariji: "あらし",
+		translation: "By the wind storm's blast|From Mimuro's mountain slopes|Maples leaves are torn,|Which turn Tatsuta River|Into a rich brocade.",
+		background: "[]"
 	},
 	{
 		id: "70",
@@ -634,7 +772,9 @@ poems = Poem.create([
 		second_verse_raw: "いづこもおなじあきのゆふぐれ",
 		second_verse_card: "いつこもおなしあきのゆふくれ",
 		second_verse_answer: "いつこ",
-		kimariji: "さ"
+		kimariji: "さ",
+		translation: "In my loneliness|I leave my little hut.|When I look around,|Everywhere it is the same:|One lone, darkening autumn eve.",
+		background: "[]"
 	},
 	{
 		id: "71",
@@ -643,7 +783,9 @@ poems = Poem.create([
 		second_verse_raw: "あしのまろやにあきかぜぞふく",
 		second_verse_card: "あしのまろやにあきかせそふく",
 		second_verse_answer: "あし",
-		kimariji: "ゆふ"
+		kimariji: "ゆふ",
+		translation: "When the evening comes,|From the rice leaves at my gate,|Gentle knocks are heard,|And, into my round rush-hut,|Enters autumn's roaming breeze.",
+		background: "[]"
 	},
 	{
 		id: "72",
@@ -652,7 +794,9 @@ poems = Poem.create([
 		second_verse_raw: "かけじやそでのぬれもこそすれ",
 		second_verse_card: "かけしやそてのぬれもこそすれ",
 		second_verse_answer: "かけ",
-		kimariji: "おと"
+		kimariji: "おと",
+		translation: "Famous are the waves|That break on Takashi beach|In noisy arrogance.|If I should go near that shore.|I would only wet my sleeves.",
+		background: "[]"
 	},
 	{
 		id: "73",
@@ -661,7 +805,9 @@ poems = Poem.create([
 		second_verse_raw: "とやまのかすみたたずもあらなむ",
 		second_verse_card: "とやまのかすみたたすもあらなむ",
 		second_verse_answer: "と",
-		kimariji: "たか"
+		kimariji: "たか",
+		translation: "On that far mountain|On the slope below the peak|Cherries are in flower.|Oh, let the mountain mists|Not arise to hide the scene.",
+		background: "[]"
 	},
 	{
 		id: "74",
@@ -670,7 +816,9 @@ poems = Poem.create([
 		second_verse_raw: "はげしかれとはいのらぬものを",
 		second_verse_card: "はけしかれとはいのらぬものを",
 		second_verse_answer: "はけ",
-		kimariji: "うか"
+		kimariji: "うか",
+		translation: "It was not for this|I prayed at the holy shrine:|That she would become|As pitiless and as cold|As the storms on Hase's hills.",
+		background: "[]"
 	},
 	{
 		id: "75",
@@ -679,7 +827,9 @@ poems = Poem.create([
 		second_verse_raw: "あはれことしのあきもいぬめり",
 		second_verse_card: "あはれことしのあきもいぬめり",
 		second_verse_answer: "あはれ",
-		kimariji: "ちぎりお"
+		kimariji: "ちぎりお",
+		translation: "As dew promises|New life to the thirsty plant,|So did your vow to me.|Yet the year has passed away,|And autumn has come again.",
+		background: "[]"
 	},
 	{
 		id: "76",
@@ -688,7 +838,9 @@ poems = Poem.create([
 		second_verse_raw: "くもゐにまがふおきつしらなみ",
 		second_verse_card: "くもゐにまかふおきつしらなみ",
 		second_verse_answer: "くもゐ",
-		kimariji: "わたのはらこ"
+		kimariji: "わたのはらこ",
+		translation: "Over the wide sea|As I sail and look around,|It appears to me|That the white waves, far away,|Are the ever shining sky.",
+		background: "[]"
 	},
 	{
 		id: "77",
@@ -697,7 +849,9 @@ poems = Poem.create([
 		second_verse_raw: "われてもすゑにあはむとぞおもふ",
 		second_verse_card: "われてもすゑにあはむとそおもふ",
 		second_verse_answer: "われ",
-		kimariji: "せ"
+		kimariji: "せ",
+		translation: "Though a swift stream is|Divided by a boulder|In its headlong flow,|Though divided, on it rushes,|And at last unites again.",
+		background: "[]"
 	},
 	{
 		id: "78",
@@ -706,7 +860,9 @@ poems = Poem.create([
 		second_verse_raw: "いくよねざめぬすまのせきもり",
 		second_verse_card: "いくよねさめぬすまのせきもり",
 		second_verse_answer: "いく",
-		kimariji: "あはぢ"
+		kimariji: "あはぢ",
+		translation: "Guard of Suma Gate,|From your sleep, how many nights|Have you awakened|At the cries of sanderlings,|Flying from Awaji Island?",
+		background: "[]"
 	},
 	{
 		id: "79",
@@ -715,7 +871,9 @@ poems = Poem.create([
 		second_verse_raw: "もれいづるつきのかげのさやけさ",
 		second_verse_card: "もれいつるつきのかけのさやけさ",
 		second_verse_answer: "もれ",
-		kimariji: "あきか"
+		kimariji: "あきか",
+		translation: "See how clear and bright|Is the moonlight finding ways|Through the riven clouds|That, with drifting autumn wind,|Gracefully float in the sky.",
+		background: "[]"
 	},
 	{
 		id: "80",
@@ -724,7 +882,9 @@ poems = Poem.create([
 		second_verse_raw: "みだれてけさはものをこそおもへ",
 		second_verse_card: "みたれてけさはものをこそおもへ",
 		second_verse_answer: "みたれて",
-		kimariji: "ながか"
+		kimariji: "ながか",
+		translation: "Is it forever|That he hopes our love will last?|He did not answer.|And now my daylight thoughts|Are as tangled as my black hair.",
+		background: "[]"
 	},
 	{
 		id: "81",
@@ -733,7 +893,9 @@ poems = Poem.create([
 		second_verse_raw: "ただありあけのつきぞのこれる",
 		second_verse_card: "たたありあけのつきそのこれる",
 		second_verse_answer: "たた",
-		kimariji: "ほ"
+		kimariji: "ほ",
+		translation: "When I turned my look|Toward the place where I had heard|The cuckoo's call,|The only thing I found|Was the moon of early dawn.",
+		background: "[]"
 	},
 	{
 		id: "82",
@@ -742,7 +904,9 @@ poems = Poem.create([
 		second_verse_raw: "うきにたへぬはなみだなりけり",
 		second_verse_card: "うきにたへぬはなみたなりけり",
 		second_verse_answer: "うき",
-		kimariji: "おも"
+		kimariji: "おも",
+		translation: "Though in deep distress|Through your cruel blow, my life|Still is left to me.|But I cannot keep my tears;|They break forth from my grief.",
+		background: "[]"
 	},
 	{
 		id: "83",
@@ -751,7 +915,9 @@ poems = Poem.create([
 		second_verse_raw: "やまのおくにもしかぞなくなる",
 		second_verse_card: "やまのおくにもしかそなくなる",
 		second_verse_answer: "やま",
-		kimariji: "よのなかよ"
+		kimariji: "よのなかよ",
+		translation: "From this world I think|That there is nowhere to escape.|I wanted to hide|In the mountains' farthest depths;|But there I hear the stag's cry.",
+		background: "[]"
 	},
 	{
 		id: "84",
@@ -760,7 +926,9 @@ poems = Poem.create([
 		second_verse_raw: "うしとみしよぞいまはこひしき",
 		second_verse_card: "うしとみしよそいまはこひしき",
 		second_verse_answer: "うし",
-		kimariji: "ながら"
+		kimariji: "ながら",
+		translation: "If I should live long,|Then perhaps the present days|May be dear to me,|Just as past time filled with grief|Comes quietly back in thought.",
+		background: "[]"
 	},
 	{
 		id: "85",
@@ -769,7 +937,9 @@ poems = Poem.create([
 		second_verse_raw: "ねやのひまさへつれなかりけり",
 		second_verse_card: "ねやのひまさへつれなかりけり",
 		second_verse_answer: "ね",
-		kimariji: "よも"
+		kimariji: "よも",
+		translation: "Through an unsleeping night|Longingly I pass the hours,|While the day's dawn lags.|And now the bedroom shutters|Are keeping light and life from me.",
+		background: "[]"
 	},
 	{
 		id: "86",
@@ -778,7 +948,9 @@ poems = Poem.create([
 		second_verse_raw: "かこちがほなるわがなみだかな",
 		second_verse_card: "かこちかほなるわかなみたかな",
 		second_verse_answer: "かこ",
-		kimariji: "なげけ"
+		kimariji: "なげけ",
+		translation: "Should I blame the moon|For bringing forth this sadness,|As if it pictured grief?|Lifting up my troubled face,|I regard it through my tears.",
+		background: "[]"
 	},
 	{
 		id: "87",
@@ -787,7 +959,9 @@ poems = Poem.create([
 		second_verse_raw: "きりたちのぼるあきのゆふぐれ",
 		second_verse_card: "きりたちのほるあきのゆふくれ",
 		second_verse_answer: "き",
-		kimariji: "む"
+		kimariji: "む",
+		translation: "An autumn eve:|See the valley mists arise|Among the fir leaves|That still hold the dripping wet|Of the chill day's sudden showers.",
+		background: "[]"
 	},
 	{
 		id: "88",
@@ -796,7 +970,9 @@ poems = Poem.create([
 		second_verse_raw: "みをつくしてやこひわたるべき",
 		second_verse_card: "みをつくしてやこひわたるへき",
 		second_verse_answer: "みをつくしてや",
-		kimariji: "なにはえ"
+		kimariji: "なにはえ",
+		translation: "After one brief night--|Short as a piece of the reeds|Growing in Naniwa bay--|Must I forever long for him|With my whole heart, till life ends?",
+		background: "[]"
 	},
 	{
 		id: "89",
@@ -805,7 +981,9 @@ poems = Poem.create([
 		second_verse_raw: "しのぶることのよわりもぞする",
 		second_verse_card: "しのふることのよわりもそする",
 		second_verse_answer: "しの",
-		kimariji: "たま"
+		kimariji: "たま",
+		translation: "Like a string of gems|Grown weak, my life will break now;|For if I live on,|All I do to hide my love|May at last grow weak and fail.",
+		background: "[]"
 	},
 	{
 		id: "90",
@@ -814,7 +992,9 @@ poems = Poem.create([
 		second_verse_raw: "ぬれにぞぬれしいろはかはらず",
 		second_verse_card: "ぬれにそぬれしいろはかはらす",
 		second_verse_answer: "ぬ",
-		kimariji: "みせ"
+		kimariji: "みせ",
+		translation: "Let me show him these!|Even the fishermen's sleeves|On Ojima's shores,|Though wet through and wet again,|Do not so change their colors.",
+		background: "[]"
 	},
 	{
 		id: "91",
@@ -823,7 +1003,9 @@ poems = Poem.create([
 		second_verse_raw: "ころもかたしきひとりかもねむ",
 		second_verse_card: "ころもかたしきひとりかもねむ",
 		second_verse_answer: "ころもか",
-		kimariji: "きり"
+		kimariji: "きり",
+		translation: "In my cold bed,|Drawing close my folded quilt,|I sleep alone,|While all through the frosty night|I hear a cricket's lonely sound.",
+		background: "[]"
 	},
 	{
 		id: "92",
@@ -832,7 +1014,9 @@ poems = Poem.create([
 		second_verse_raw: "ひとこそしらねかわくまもなし",
 		second_verse_card: "ひとこそしらねかわくまもなし",
 		second_verse_answer: "ひとこそし",
-		kimariji: "わがそ"
+		kimariji: "わがそ",
+		translation: "Like a rock at sea,|At ebb-tide hidden from view,|Is my tear-drenched sleeve:|Never for a moment dry,|And no one knows it is there.",
+		background: "[]"
 	},
 	{
 		id: "93",
@@ -841,7 +1025,9 @@ poems = Poem.create([
 		second_verse_raw: "あまのをぶねのつなでかなしも",
 		second_verse_card: "あまのをふねのつなてかなしも",
 		second_verse_answer: "あまの",
-		kimariji: "よのなかは"
+		kimariji: "よのなかは",
+		translation: "If only our world|Could be always as it is!|How moving the sight|Of the little fishing boat|Drawn by ropes along the bank.",
+		background: "[]"
 	},
 	{
 		id: "94",
@@ -850,7 +1036,9 @@ poems = Poem.create([
 		second_verse_raw: "ふるさとさむくころもうつなり",
 		second_verse_card: "ふるさとさむくころもうつなり",
 		second_verse_answer: "ふる",
-		kimariji: "みよ"
+		kimariji: "みよ",
+		translation: "From Mount Yoshino|Blows a chill, autumnal wind.|In the deepening night|The ancient village shivers:|Sounds of beating cloth I hear.",
+		background: "[]"
 	},
 	{
 		id: "95",
@@ -859,7 +1047,9 @@ poems = Poem.create([
 		second_verse_raw: "わがたつそまにすみぞめのそで",
 		second_verse_card: "わかたつそまにすみそめのそて",
 		second_verse_answer: "わかた",
-		kimariji: "おほけ"
+		kimariji: "おほけ",
+		translation: "From the monastery|On Mount Hiei I look out|On this world of tears,|And though I am unworthy,|I shield it with my black sleeves.",
+		background: "[]"
 	},
 	{
 		id: "96",
@@ -868,7 +1058,9 @@ poems = Poem.create([
 		second_verse_raw: "ふりゆくものはわがみなりけり",
 		second_verse_card: "ふりゆくものはわかみなりけり",
 		second_verse_answer: "ふり",
-		kimariji: "はなさ"
+		kimariji: "はなさ",
+		translation: "Not the snow of flowers,|That the hurrying wild wind whirls|Round the garden court:|What withers and falls away|In this place is I myself.",
+		background: "[]"
 	},
 	{
 		id: "97",
@@ -877,7 +1069,9 @@ poems = Poem.create([
 		second_verse_raw: "やくやもしほのみもこがれつつ",
 		second_verse_card: "やくやもしほのみもこかれつつ",
 		second_verse_answer: "やく",
-		kimariji: "こぬ"
+		kimariji: "こぬ",
+		translation: "Like the salt sea-weed,|Burning in the evening calm.|On Matsuo's shore,|All my being is aflame,|Awaiting her who does not come.",
+		background: "[]"
 	},
 	{
 		id: "98",
@@ -886,7 +1080,9 @@ poems = Poem.create([
 		second_verse_raw: "みそぎぞなつのしるしなりける",
 		second_verse_card: "みそきそなつのしるしなりける",
 		second_verse_answer: "みそ",
-		kimariji: "かぜそ"
+		kimariji: "かぜそ",
+		translation: "To Nara's brook comes|Evening, and the rustling winds|Stir the oak-trees' leaves.|Not a sign of summer left|But the sacred bathing there.",
+		background: "[]"
 	},
 	{
 		id: "99",
@@ -895,7 +1091,9 @@ poems = Poem.create([
 		second_verse_raw: "よをおもふゆゑにものおもふみは",
 		second_verse_card: "よをおもふゆゑにものおもふみは",
 		second_verse_answer: "よをお",
-		kimariji: "ひとも"
+		kimariji: "ひとも",
+		translation: "For some men I grieve;|Some men are hateful to me;|And this wretched world|To me, with all my sadness,|Is a place of misery.",
+		background: "[]"
 	},
 	{
 		id: "100",
@@ -904,6 +1102,8 @@ poems = Poem.create([
 		second_verse_raw: "なほあまりあるむかしなりけり",
 		second_verse_card: "なほあまりあるむかしなりけり",
 		second_verse_answer: "なほあ",
-		kimariji: "もも"
+		kimariji: "もも",
+		translation: "In this ancient house,|Paved with a hundred stones,|Ferns grow in the eaves;|But numerous as they are,|My old memories are more.",
+		background: "[]"
 	}
 ]);

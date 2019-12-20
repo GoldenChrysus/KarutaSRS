@@ -17,7 +17,7 @@ export default Component.extend({
 		return (this.type === "grabber") ? this.user_input || "" : this.poem.second_verse_card;
 	}),
 	input_element : computed("element", function() {
-		return $(this.element).find("input")[0]
+		return $(this.element).find("input")[0];
 	}),
 	input_classes : computed("is_correct", "answered", function() {
 		let classes = [];
@@ -68,7 +68,9 @@ export default Component.extend({
 	},
 
 	focusInput() {
-		this.input_element.focus();
+		this.input_element.focus({
+			preventScroll: true
+		});
 	},
 
 	submitAnswer() {
