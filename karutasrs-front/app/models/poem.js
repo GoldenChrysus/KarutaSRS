@@ -8,6 +8,8 @@ export default class PoemModel extends Model {
 	@attr second_verse_card;
 	@attr second_verse_answer;
 	@attr kimariji;
+	@attr translation;
+	@attr background;
 
 	@hasMany("learned-item") learned_items;
 }

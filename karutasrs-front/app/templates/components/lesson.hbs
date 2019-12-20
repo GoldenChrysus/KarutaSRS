@@ -3,8 +3,6 @@
 
 	<AudioPlayer @url="/assets/audio/poem-readings/poem-{{this.poem.id}}.mp3"/>
 
-	<p>Maybe some background info here?</p>
-
 	<div class="ui segment">
 		<div class="ui gray ribbon label">First Verse</div>
 		<p>{{{this.first_verse}}}</p>
@@ -20,6 +18,29 @@
 			{{#each this.archaic_warnings as |warning|}}
 				<p>{{warning}}</p>
 			{{/each}}
+		{{/if}}
+
+		<div class="ui gray ribbon label">Translation</div>
+		<p>{{{this.translation}}}</p>
+
+		{{#if this.background.length}}
+			<div class="ui gray ribbon label">Background</div>
+
+			<div>
+				{{{get this.background 0}}}
+
+				{{#if (gt this.background.length 1)}}
+					<details>
+						<summary>Read more...</summary>
+						{{#each this.background as |paragraph index|}}
+							{{#if (gt index 0)}}
+								<p>{{{paragraph}}}</p>
+							{{/if}}
+						{{/each}}
+					</details>
+				{{/if}}
+				<p class="credit">Background information provided courtesy of <a href="http://www.jlit.net/premodernlit/hyakunin-isshu/" target="_blank">Jlit.net</a>.</p>
+			</div>
 		{{/if}}
 	</div>
 </div>

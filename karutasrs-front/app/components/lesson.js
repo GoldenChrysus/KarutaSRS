@@ -19,6 +19,12 @@ export default Component.extend({
 	first_verse       : computed("poem", function() {
 		return this.poem_serv.formatFirstVerse(this.poem.first_verse);
 	}),
+	translation       : computed("poem", function() {
+		return this.poem_serv.formatTranslation(this.poem.translation);
+	}),
+	background        : computed("poem", function() {
+		return JSON.parse(this.poem.background);
+	}),
 	archaic_warnings  : computed("poem", function() {
 		let warnings = [];
 
