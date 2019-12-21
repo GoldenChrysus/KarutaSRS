@@ -53,7 +53,7 @@ export default Route.extend(ApplicationRouteMixin, {
 	},
 
 	actions : {
-		error(e, xhr, two, thr) {
+		error(e) {
 			let json = e.responseJSON;
 
 			if (json && json.errors) {
