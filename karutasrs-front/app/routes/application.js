@@ -53,7 +53,7 @@ export default Route.extend(ApplicationRouteMixin, {
 	},
 
 	actions : {
-		error(e) {
+		error(e, xhr, two, thr) {
 			let json = e.responseJSON;
 
 			if (json && json.errors) {
@@ -70,9 +70,16 @@ export default Route.extend(ApplicationRouteMixin, {
 								})
 								.modal("show");
 							setTimeout(() => window.location.reload(), 5000);
-							break;
+							return;
 					}
 				}
+			}
+
+			switch (e.message) {
+				case "Network request failed":
+					document.write("The server is either undergoing maintenance or we broke it.");
+
+					return;
 			}
 		}
 	}
