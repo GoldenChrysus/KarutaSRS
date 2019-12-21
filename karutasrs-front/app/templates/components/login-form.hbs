@@ -15,7 +15,7 @@
 			</div>
 		</div>
 	{{/if}}
-	<form class="ui form" name="login-form" id="login-form" {{action "login" on="submit"}}>
+	<form class="ui form" id="login-form" onSubmit={{action "handleSubmit"}}>
 		<div class="field">
 			<div class="ui icon input">
 				{{input value=email placeholder="Email" name="email"}} <i class="user icon"></i>
@@ -35,9 +35,9 @@
 		{{/if}}
 		<div class="ui buttons">
 			{{#if (eq this.type "register")}}
-				<input type="submit" name="register" class="ui green button" value="Register" {{action "register" on="click"}}>
+				<input type="submit" name="register" class="ui green button" value="Register">
 			{{else}}
-				<input type="submit" name="submit" class="ui blue button" value="Login" {{action "login" on="click"}}>
+				<input type="submit" name="submit" class="ui blue button" value="Login">
 			{{/if}}
 		</div>
 	</form>

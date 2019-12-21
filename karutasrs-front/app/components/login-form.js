@@ -10,6 +10,7 @@ export default Component.extend({
 	login_error   : false,
 	login_message : "",
 	type          : "login",
+	processing    : false,
 
 	didRender() {
 		$(this.element).find("#login-form").form({
@@ -59,10 +60,25 @@ export default Component.extend({
 	},
 
 	actions : {
+		handleSubmit() {
+			if (this.processing) {
+				return false;
+			}
+
+			this.processing = true;
+
+			let action = (this.type === "login") ? "login" : "register";
+
+			this.send(action);
+			return false;
+		},
+
 		login() {
 			this.set("login_error", false);
 
 			if (!this.formIsValid()) {
+				this.processing = false;
+
 				return false;
 			}
 
@@ -74,15 +90,21 @@ export default Component.extend({
 					// transition
 				})
 				.catch(() => {
+					this.processing = false;
+
 					this.set("login_error", true);
 					this.set("login_message", "Login failed. Please try again.");
 				});
+
+			return false;
 		},
 
 		async register() {
 			this.set("login_error", false);
 
 			if (!this.formIsValid()) {
+				this.processing = false;
+
 				return false;
 			}
 
@@ -107,14 +129,20 @@ export default Component.extend({
 							// transition
 						})
 						.catch((e) => {
+							this.processing = false;
+
 							this.set("login_error", true);
 							this.set("login_message", "Authentication failed. Please try reloading the page.");
 						});
 				})
 				.catch((e) => {
+					this.processing = false;
+
 					this.set("login_error", true);
 					this.set("login_message", "Registration failed. Do you already have an account?");
 				});
+
+			return false;
 		}
 	}
 });
