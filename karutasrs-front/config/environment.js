@@ -18,7 +18,8 @@ module.exports = function(environment) {
 		},
 
 		APP: {
-			preloader: {
+			name      : process.env.APP_NAME,
+			preloader : {
 				loadedClass : "disappear",
 				removeDelay : 250
 			}
@@ -38,7 +39,7 @@ module.exports = function(environment) {
 					// Use `analytics_debug.js` in development
 					debug: (environment === "development"),
 					// Use verbose tracing of GA events
-					trace: (environment === "development"),
+					trace: false,
 					// Ensure development env hits aren"t sent to GA
 					sendHitTask: (environment !== "development")
 				}

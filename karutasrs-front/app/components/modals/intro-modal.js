@@ -1,6 +1,7 @@
 import Component from '@ember/component';
 import { action } from "@ember/object";
 import { inject as service } from "@ember/service";
+import config from "../../config/environment";
 
 export default Component.extend({
 	elementId  : "intro-modal",
@@ -12,6 +13,7 @@ export default Component.extend({
 	router     : service("router"),
 	session    : service("session"),
 	active     : false,
+	name       : config.APP.name,
 
 	didInsertElement() {
 		$(this.element).find("a").on("click", () => $(this.element).modal("hide"));
