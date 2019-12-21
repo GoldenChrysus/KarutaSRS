@@ -4,7 +4,7 @@ import { inject as service } from "@ember/service";
 import config from "../config/environment";
 
 export default Component.extend({
-	title         : config.name,
+	title         : config.APP_NAME,
 	session       : service(),
 	store         : service("store"),
 	login_error   : false,

@@ -150,7 +150,7 @@ export default Component.extend({
 						avg_correct_time : this.answers[item_id].timings.correct / this.answers[item_id].correct
 					};
 					let request = {
-						url         : `${config.api_host}/learned-items/${item_id}/complete-review`,
+						url         : `${config.API_HOST}/learned-items/${item_id}/complete-review`,
 						type        : "POST",
 						contentType : "application/json",
 						data        : JSON.stringify(Object.assign({}, this.answers[item_id].wrong, timings))

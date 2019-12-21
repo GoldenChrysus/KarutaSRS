@@ -3,5 +3,5 @@ import config from "../config/environment";
 
 export default class ApplicationSerializer extends JSONAPISerializer {
 	namespace = "api";
-	host      = config.api_host;
+	host      = config.API_HOST;
 }

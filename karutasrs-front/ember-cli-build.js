@@ -6,10 +6,6 @@ const MergeTrees = require("broccoli-merge-trees");
 
 module.exports = function(defaults) {
 	let app = new EmberApp(defaults, {
-		yamlConfig            : {
-			fileNames                 : ["config.yml"],
-			warnAboutNonexistingFiles : true
-		},
 		"ember-cli-preloader" : {
 			paths : {
 				html : "app/preloader/preloader.html",

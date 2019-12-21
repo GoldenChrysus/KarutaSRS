@@ -14,7 +14,7 @@ export default class UserModel extends Model {
 	get lesson_queue() {
 		return (async () => {
 			return await $.get({
-				url : `${config.api_host}/users/${this.id}/lesson-queue`
+				url : `${config.API_HOST}/users/${this.id}/lesson-queue`
 			});
 		})();
 	}
@@ -22,7 +22,7 @@ export default class UserModel extends Model {
 	get review_queue() {
 		return (async () => {
 			return await $.get({
-				url : `${config.api_host}/users/${this.id}/review-queue`
+				url : `${config.API_HOST}/users/${this.id}/review-queue`
 			});
 		})();
 	}
@@ -30,7 +30,7 @@ export default class UserModel extends Model {
 	get dashboard_stats() {
 		return (async () => {
 			return await $.get({
-				url : `${config.api_host}/users/${this.id}/stats?type=dashboard`
+				url : `${config.API_HOST}/users/${this.id}/stats?type=dashboard`
 			});
 		})();
 	}
@@ -38,7 +38,7 @@ export default class UserModel extends Model {
 	get review_stats() {
 		return (async () => {
 			return await $.get({
-				url : `${config.api_host}/users/${this.id}/stats?type=review`
+				url : `${config.API_HOST}/users/${this.id}/stats?type=review`
 			});
 		})();
 	}

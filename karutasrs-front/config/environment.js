@@ -27,7 +27,23 @@ module.exports = function(environment) {
 		"ember-simple-auth" : {
 			routeAfterAuthentication    : "authenticated.dashboard",
 			routeIfAlreadyAuthenticated : "authenticated.dashboard"
-		}
+		},
+
+		metricsAdapters : [
+			{
+				name         : "GoogleAnalytics",
+				environments : ["development", "production"],
+				config       : {
+					id: process.env.GOOGLE_ANALYTICS_ID,
+					// Use `analytics_debug.js` in development
+					debug: (environment === "development"),
+					// Use verbose tracing of GA events
+					trace: (environment === "development"),
+					// Ensure development env hits aren"t sent to GA
+					sendHitTask: (environment !== "development")
+				}
+			}
+		]
 	};
 
 	if (environment === 'development') {

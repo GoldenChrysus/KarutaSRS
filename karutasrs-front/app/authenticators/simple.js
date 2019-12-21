@@ -19,7 +19,7 @@ export default class SimpleAuthenticator extends Base {
 			}
 
 			$.ajax({
-				url         : config.api_host + "/sessions/authenticate",
+				url         : config.API_HOST + "/sessions/authenticate",
 				type        : "POST",
 				contentType : "application/json",
 				data        : JSON.stringify({

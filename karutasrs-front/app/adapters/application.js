@@ -4,7 +4,7 @@ import { computed } from "@ember/object";
 import config from "../config/environment";
 
 export default JSONAPIAdapter.extend(DataAdapterMixin, {
-	host    : config.api_host,
+	host    : config.API_HOST,
 	headers : computed("session.data.authenticated.user", function() {
 		let headers = {};
 
