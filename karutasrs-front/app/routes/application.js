@@ -23,6 +23,10 @@ export default Route.extend(ApplicationRouteMixin, {
 				this.refresh();
 			}
 		});
+
+		$(document).ajaxError((e, xhr) => {
+			this.send("error", xhr);
+		});
 	},
 
 	getLatestHour() {
@@ -50,6 +54,26 @@ export default Route.extend(ApplicationRouteMixin, {
 
 	actions : {
 		error(e) {
+			let json = e.responseJSON;
+
+			if (json && json.errors) {
+				let error = json.errors[0];
+
+				if (typeof error === "object" && error !== null) {
+					switch (error.code) {
+						// Item can't be reviewed
+						case 12001:
+							$(document).find("#unreviewable-modal").modal(
+								"show",
+								{
+									closable : false
+								}
+							);
+							setTimeout(() => window.location.reload(), 5000);
+							break;
+					}
+				}
+			}
 		}
 	}
 });
