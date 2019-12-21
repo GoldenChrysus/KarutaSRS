@@ -14,6 +14,7 @@ export default Component.extend({
 	answered     : false,
 	resetting    : true,
 	demo         : false,
+	first_load   : true,
 	grabber_text : computed("type", "second_verse_card", "user_input", function() {
 		return (this.type === "grabber") ? this.user_input || "" : this.poem.second_verse_card;
 	}),
@@ -46,7 +47,7 @@ export default Component.extend({
 				}
 			);
 
-			if (!this.demo) {
+			if (!this.demo || !this.first_load) {
 				this.focusInput();
 			}
 
@@ -69,6 +70,8 @@ export default Component.extend({
 					this.find("audio")[0].pause();
 				}
 			});
+
+		this.first_load = false;
 	},
 
 	focusInput() {
