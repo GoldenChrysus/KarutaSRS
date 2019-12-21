@@ -12,7 +12,7 @@ export default Component.extend({
 	type          : "login",
 	processing    : false,
 
-	didRender() {
+	didInsertElement() {
 		$(this.element).find("#login-form").form({
 			inline : true,
 			fields : {
