@@ -7,11 +7,17 @@ export default Route.extend(ApplicationRouteMixin, {
 	prefilter : service("ajax-prefilter"),
 	user      : service("current-user"),
 	router    : service("router"),
+	metrics   : service("metrics"),
 
 	init() {
 		this._super(...arguments);
 
 		this.router.on("routeDidChange", (transition) => {
+			const page  = this.router.currentURL;
+			const title = this.router.currentRouteName || "unknown";
+
+			this.metrics.trackPage({ page, title });
+
 			if (!transition.from) {
 				return;
 			}
