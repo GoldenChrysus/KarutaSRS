@@ -11,6 +11,7 @@ export default Component.extend({
 	current_lesson_elem  : "lesson_one",
 	queue                : [],
 	multiple_lessons     : false,
+	demo                 : false,
 
 	init() {
 		this._super(...arguments);

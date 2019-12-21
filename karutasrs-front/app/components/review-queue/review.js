@@ -13,6 +13,7 @@ export default Component.extend({
 	is_correct   : false,
 	answered     : false,
 	resetting    : true,
+	demo         : false,
 	grabber_text : computed("type", "second_verse_card", "user_input", function() {
 		return (this.type === "grabber") ? this.user_input || "" : this.poem.second_verse_card;
 	}),
@@ -44,7 +45,10 @@ export default Component.extend({
 					useObsoleteKana : true
 				}
 			);
-			this.focusInput();
+
+			if (!this.demo) {
+				this.focusInput();
+			}
 
 			this.start_time = (new Date()).getTime();
 
@@ -104,7 +108,10 @@ export default Component.extend({
 		}
 
 		$(this.input_element).attr("disabled", true);
-		this.completeReview();
+
+		if (!this.demo) {
+			this.completeReview();
+		}
 
 		$(document).on("keypress", (e) => {
 			if (e.keyCode === 13) {
@@ -131,8 +138,18 @@ export default Component.extend({
 
 	triggerNextReview() {
 		$(document).off("keypress");
+
+		let was_correct = this.is_correct;
+
 		this.resetComponent();
-		this.toNext();
+
+		if (!this.demo) {
+			this.toNext();
+		} else if (was_correct) {
+			let new_type = (this.type === "kimariji") ? "grabber" : "kimariji";
+
+			this.set("type", new_type)
+		}
 	},
 
 	actions : {

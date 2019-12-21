@@ -1,1 +1,38 @@
-{{outlet}}
+<h2 class="ui center aligned header">User Guide</h2>
+
+<!-- Lesson Queue Info -->
+<h3 class="ui center aligned header">The Lesson Queue</h3>
+
+<p class="center aligned">
+	Everything you learn in Karuta SRS first begins with lessons. You can access these by clicking the "Lessons" link in the navigation menu. You can do five lessons per day.
+</p>
+<p class="center aligned">
+	Each lesson item is a poem and information about that poem. The parts you will be quizzed on are the "<em>kimariji</em>" and "2nd verse key characters." <em>Kimariji</em> are the key characters of the first verse needed to accurately identify a poem. For example, in the first lesson below, the <em>kimariji</em> are {{@model.first_poem.kimariji}}. In a game of karuta, you would hit the appropriate card after hearing {{@model.first_poem.kimariji}}.
+</p>
+<p class="center aligned">
+	The "2nd verse key characters" are the characters that uniquely identify the second verse. They are like the <em>kimariji</em> of the second verse, but we call them "2nd verse key characters" to avoid confusion. In the lesson below, the key characters for the second verse are {{@model.first_poem.second_verse_answer}}. In a karuta game, after hearing the <em>kimariji</em> {{@model.first_poem.kimariji}}, you would immediately try to hit the card that begins with {{@model.first_poem.second_verse_answer}}.
+</p>
+<p class="center aligned">
+	The queue of five items below is what your lesson queue will look like. Each lesson contains the audio of the poem, the <em>kimariji</em> and 2nd verse key characters, and the English translation. Some poems have background info, and others have explanations of archaic characters used in the poem. Each lesson also has a visual playing card with the 2nd verse key characters highlighted in blue.
+</p>
+<p class="center aligned">
+	To navigate the queue, desktop users should click each item labeled 1 through 5 at the top of the queue, then you will be allowed to proceed to the lesson quiz. Note that you cannot proceed to the lesson quiz using the queue below, as it is only a demonstration. Mobile users can swipe left or right over each lesson to navigate the lessons and proceed to the quiz. A lesson's quiz must be passed before the poem will enter your review queue.
+</p>
+
+<LessonCarousel @queue={{@model.demo_queue}} @demo=true/>
+
+<!-- Review Queue Info -->
+<h3 class="ui center aligned header">The Review Queue</h3>
+
+<p class="center aligned">
+	Reviews are the way Karuta SRS reinforces what you learned in your lessons. You can access these by clicking the "Reviews" link in the navigation menu. Each completed lesson will periodically be in your review queue to ensure you remember what you learned. In each review, you will need to recall the <em>kimariji</em> and 2nd verse key characters. The space between each review increases with each successful review. This way, you're forced to recall the information as you're about to forget it, reinforcing your memory of the item. For the <em>kimariji</em> portion of the review, you will be shown the corresponding playing card, and you must type the correct <em>kimariji</em>. For the 2nd verse portion of the review, a blank playing card will be shown the audio of the first verse will be played, and you must type the correct 2nd verse key characters. In the 2nd verse portion, you are free to type as much of the 2nd verse as you want, but the key characters must be correct; incorrect characters after the key characters will not count against you.
+</p>
+<p class="center aligned">
+	Try out the demonstration review below. The first review is for the <em>kimariji</em>, which you know because the review is displaying the full playing card. The card starts with {{@model.first_poem.second_verse_answer}} which you learned are the 2nd verse key characters from the poem in the above lesson. So, the <em>kimariji</em> for this poem (and the correct answer for the review) is {{@model.first_poem.kimariji}}. You can enter <em>hiragana</em> by typing <em>romaji</em> into the input below the card. For example, you can enter "tago" and it will automatically convert to {{@model.first_poem.kimariji}}.
+</p>
+
+<ReviewQueue::Review @poem={{@model.first_poem}} @type="kimariji" @item_id=0 @demo=true/>
+
+<p class="center aligned last">
+	Once you submit your answer, the input box locks and will turn red for an incorrect answer or green for a correct answer. An "Item Info" dropdown will also appear so you can review the lesson if you've forgotten the poem. For 2nd verse key character reviews, the <em>hiragana</em> will appear on the card as you type it. Like the input box, incorrect characters will change to red and correct characters will change to green when you submit your answer. Remember, characters after the 2nd verse key characters don't count against you! Try continuing the demonstration review above. It will alternate between the <em>kimariji</em> review and the 2nd verse key character review. Try typing both correct and incorrect answers to see the various colored feeback provided.
+</p>

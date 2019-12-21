@@ -11,6 +11,8 @@ export default class LessonCarouselSelectorComponent extends Component {
 	@tracked queue          = this.args.queue;
 	@tracked completed      = [];
 
+	demo = this.args.demo || false;
+
 	@action
 	didInsert() {
 		this.updateCompletion(this.current_lesson);
@@ -57,6 +59,10 @@ export default class LessonCarouselSelectorComponent extends Component {
 
 	@action
 	async saveAndTransition() {
+		if (this.demo) {
+			return false;
+		}
+
 		let queue = JSON.stringify(this.queue);
 
 		await localForage.setItem("lesson-review-queue", queue);

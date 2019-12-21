@@ -9,10 +9,14 @@
 			</div>
 		</div>
 	{{/each}}
-	{{#if (eq this.queue.length this.completed.length)}}
-		<button class="ui green button step review" {{on "click" this.saveAndTransition}}>Go To Review</button>
+	{{#if (eq this.demo false)}}
+		{{#if (eq this.queue.length this.completed.length)}}
+			<button class="ui green button step review" {{on "click" this.saveAndTransition}}>Go To Review</button>
+		{{/if}}
 	{{/if}}
 </div>
-{{#if (eq this.queue.length this.completed.length)}}
-	<button class="ui green button mobile review" {{on "click" this.saveAndTransition}}>Go To Review</button>
+{{#if (eq this.demo false)}}
+	{{#if (eq this.queue.length this.completed.length)}}
+		<button class="ui green button mobile review" {{on "click" this.saveAndTransition}}>Go To Review</button>
+	{{/if}}
 {{/if}}

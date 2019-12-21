@@ -1,6 +1,6 @@
 {{#if this.queue.length}}
 	<div class="ui center aligned container selector">
-		<LessonCarousel::Selector @queue={{this.queue}} @onChange={{action "changeLesson"}}/>
+		<LessonCarousel::Selector @queue={{this.queue}} @onChange={{action "changeLesson"}} @demo={{this.demo}}/>
 	</div>
 	<div class="lessons" key="lesson-carousel-lessons">
 		<Lesson key="lesson-one" @poem={{this.lesson_one_poem}} {{ref this "lesson_one"}}/>
