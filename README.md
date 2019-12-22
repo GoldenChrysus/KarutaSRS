@@ -1,6 +1,10 @@
 # Karuta SRS
 Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu or the one hundred poets/poems used in kyogi karuta.
 
+## Official Build
+
+You can use all of the features of Karuta SRS at https://karutasrs.com/.
+
 ## To-Do List
 - ☑️ Grabber card component
   - ☑️ Highlight grabber key characters based on state (learning: blue, review correct: lime green, review incorrect: light red)
