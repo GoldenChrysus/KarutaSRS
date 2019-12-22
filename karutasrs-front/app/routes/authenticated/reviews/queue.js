@@ -1,12 +1,15 @@
 import Route from '@ember/routing/route';
 import AuthenticatedRouteMixin from "ember-simple-auth/mixins/authenticated-route-mixin";
 import localForage from "localforage";
+import { inject as service } from "@ember/service";
 
 export default Route.extend(AuthenticatedRouteMixin, {
+	user_serv : service("current-user"),
+
 	async model(params) {
 		let type  = params.type;
 		let queue = [];
-		let user  = await this.store.findRecord("user", 1);
+		let user  = this.user_serv.peekUser();
 
 		if (type === "lessons") {
 			queue = await localForage.getItem("lesson-review-queue");
