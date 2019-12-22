@@ -30,11 +30,6 @@ export default Component.extend({
 				this.answers = {};
 			}
 		}
-
-		console.log("Answers:");
-		console.log(this.answers);
-		console.log("Queue:");
-		console.log(this.queue);
 	},
 
 	chunkQueue() {
@@ -77,9 +72,6 @@ export default Component.extend({
 	setActiveReview() {
 		this.current_chunk_index = Math.floor(Math.random() * this.chunk.length);
 
-		console.log("Chunk:");
-		console.log(this.chunk);
-
 		this.set("current_poem", this.chunk[this.current_chunk_index].poem);
 		this.set("current_type", this.chunk[this.current_chunk_index].type);
 		this.set("current_id", this.chunk[this.current_chunk_index].id);
@@ -87,9 +79,6 @@ export default Component.extend({
 
 	actions : {
 		async completeReview(correct, time_elapsed) {
-			console.log("Queue:");
-			console.log(this.queue);
-
 			let id      = this.current_id;
 			let item_id = this.queue[id].id;
 
@@ -122,9 +111,6 @@ export default Component.extend({
 
 				this.answers[item_id].timings.correct += time_elapsed;
 			}
-
-			console.log("Answers:");
-			console.log(this.answers);
 
 			if (correct) {
 				delete this.chunk[this.current_chunk_index];
