@@ -1,6 +1,10 @@
 # [Karuta SRS](https://karutasrs.com/)
 Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu or the one hundred poets/poems used in kyogi karuta.
 
+[![GitHub](https://img.shields.io/github/license/GoldenChrysus/KarutaSRS.svg)](https://github.com/GoldenChrysus/KarutaSRS/blob/master/LICENSE)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/KarutaSRS/master.svg)
+![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/KarutaSRS.svg)
+
 ## Official Build
 
 You can use all of the features of Karuta SRS at https://karutasrs.com/.
