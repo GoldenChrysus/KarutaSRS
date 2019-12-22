@@ -1,4 +1,4 @@
-# Karuta SRS
+# [Karuta SRS](https://karutasrs.com/)
 Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu or the one hundred poets/poems used in kyogi karuta.
 
 ## Official Build
