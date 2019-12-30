@@ -1,3 +1,28 @@
+# Auto detect text files and perform LF normalization
+* text auto
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+*.pyc binary
+*.pdf binary
+
+
 karutasrs-front/semantic/* linguist-vendored
 karutasrs-front/fomantic/* linguist-vendored
 karutasrs-front/tests/* linguist-vendored
