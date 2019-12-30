@@ -1,12 +1,12 @@
 <div class="review" key="review">
 	<div class="ui one column centered grid">
 		<div class="row">
-			<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
+			<div class="six wide widescreen six wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
 				<GrabberCard @width="100%" @text="{{this.grabber_text}}" @answer="{{this.poem.second_verse_answer}}" @card="{{this.poem.second_verse_card}}" @type="review" @size="review" @validate={{this.validate}} key="review-grabber" @key="review-grabber"/>
 			</div>
 		</div>
 		<div class="row">
-			<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
+			<div class="six wide widescreen six wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
 				<div class="ui huge fluid icon input {{this.input_classes}}">
 					<input type="text" maxlength="17" placeholder="{{if (eq this.type 'grabber') '2nd verse key characters' 'Kimariji'}}" onKeyUp={{action "handleInput"}} onChange={{action "handleInput"}}>
 
@@ -18,7 +18,7 @@
 		</div>
 		{{#if (eq this.type 'grabber')}}
 			<div class="row">
-				<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
+				<div class="six wide widescreen six wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
 					<div class="ui segment">
 						<h4 class="ui header">First Verse</h4>
 						{{{this.first_verse}}}
@@ -29,7 +29,7 @@
 		{{/if}}
 		{{#if this.answered}}
 			<div class="row">
-				<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
+				<div class="six wide widescreen six wide large screen sixteen wide computer sixteen wide tablet sixteen wide mobile column">
 					<div class="ui styled fluid accordion">
 						<div class="title">
 							<i class="dropdown icon"></i>
