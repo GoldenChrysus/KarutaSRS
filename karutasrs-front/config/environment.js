@@ -27,7 +27,8 @@ module.exports = function(environment) {
 
 		"ember-simple-auth" : {
 			routeAfterAuthentication    : "authenticated.dashboard",
-			routeIfAlreadyAuthenticated : "authenticated.dashboard"
+			routeIfAlreadyAuthenticated : "authenticated.dashboard",
+			authenticationRoute         : "index"
 		},
 
 		metricsAdapters : [
