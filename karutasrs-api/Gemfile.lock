@@ -85,7 +85,6 @@ GEM
     faker (2.7.0)
       i18n (>= 1.6, < 1.8)
     ffi (1.11.3)
-    ffi (1.11.3-x64-mingw32)
     figaro (1.1.1)
       thor (~> 0.14)
     globalid (0.4.2)
@@ -116,14 +115,10 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.13.0)
     msgpack (1.3.1)
-    msgpack (1.3.1-x64-mingw32)
     nio4r (2.5.2)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.5-x64-mingw32)
-      mini_portile2 (~> 2.4.0)
     pg (1.1.4)
-    pg (1.1.4-x64-mingw32)
     public_suffix (4.0.1)
     puma (4.3.1)
       nio4r (~> 2.0)
@@ -188,8 +183,6 @@ GEM
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.2.1)
       ffi (~> 1.9)
-    sassc (2.2.1-x64-mingw32)
-      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -217,8 +210,6 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2019.3)
-      tzinfo (>= 1.0.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -237,7 +228,6 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -270,4 +260,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.1.2
+   2.0.2
