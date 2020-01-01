@@ -1,7 +1,11 @@
 module Api
 	class PoemNotesController < ApplicationController
 		def index
-			raise ApiErrors::AccessError::Forbidden.new
+			unless PoemNotePolicy.new(session[:current_user], params).index?
+				raise ApiErrors::AccessError::Forbidden.new
+			end
+
+			process_request
 		end
 
 		def create
