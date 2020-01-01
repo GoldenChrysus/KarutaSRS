@@ -56,5 +56,11 @@ export default Component.extend({
 
 	didRender() {
 		$(this.element).find("audio")[0].load();
+	},
+
+	actions : {
+		changeNotes(notes) {
+			console.log(notes);
+		}
 	}
 });

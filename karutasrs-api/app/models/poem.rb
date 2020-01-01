@@ -1,4 +1,6 @@
 class Poem < ApplicationRecord
+	@@current_user = nil
+
 	# Validation
 	validates :name, presence: true
 	validates :first_verse, presence: true
@@ -12,6 +14,20 @@ class Poem < ApplicationRecord
 	# Relationships
 	has_many :learned_items
 	has_many :poem_notes
+
+	def note
+		if (!@@current_user)
+			return nil
+		end
+
+		note = PoemNote.where(:user_id => @@current_user.id).first
+
+		return (note) ? note.note : nil
+	end
+
+	def self.set_current_user(user)
+		@@current_user = user
+	end
 
 	def self.update_or_create(objects)
 		objects.each do |attributes|

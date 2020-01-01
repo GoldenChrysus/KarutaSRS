@@ -10,6 +10,7 @@ export default class UserModel extends Model {
 	@attr review_queue_length;
 
 	@hasMany("learned-item") learned_items;
+	@hasMany("poem-note") poem_notes;
 
 	get lesson_queue() {
 		return (async () => {

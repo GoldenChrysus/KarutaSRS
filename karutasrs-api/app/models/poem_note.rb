@@ -1,6 +1,5 @@
 class PoemNote < ApplicationRecord
 	# Validation
-	validates :note
 	validates :user, presence: true
 	validates :poem, presence: true
 

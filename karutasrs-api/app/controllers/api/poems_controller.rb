@@ -11,9 +11,11 @@ module Api
 		end
 
 		def show
-			unless PoemPolicy.new(session[:current_user], params).show?
+			unless (!params[:include] && PoemPolicy.new(session[:current_user], params).show?)
 				raise ApiErrors::AccessError::Forbidden.new
 			end
+
+			Poem.set_current_user(session[:current_user])
 
 			process_request
 		end

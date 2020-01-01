@@ -24,8 +24,6 @@ module Api
 			unless PoemNotePolicy.new(session[:current_user], params).show?
 				raise ApiErrors::AccessError::Forbidden.new
 			end
-
-			process_request
 		end
 
 		def update

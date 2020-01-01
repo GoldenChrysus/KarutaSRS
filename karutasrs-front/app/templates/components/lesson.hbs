@@ -42,6 +42,11 @@
 				<p class="credit">Background information provided courtesy of <a href="http://www.jlit.net/premodernlit/hyakunin-isshu/" target="_blank">Jlit.net</a>.</p>
 			</div>
 		{{/if}}
+
+		<div class="ui gray ribbon label">Personal Notes</div>
+		<div class="ui fluid input">
+			<textarea name="notes" onChange={{action "changeNotes" value="target.value"}}>{{this.poem.note}}</textarea>
+		</div>
 	</div>
 </div>
 <div class="{{this.classes}} column">

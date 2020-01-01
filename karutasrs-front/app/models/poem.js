@@ -10,6 +10,8 @@ export default class PoemModel extends Model {
 	@attr kimariji;
 	@attr translation;
 	@attr background;
+	@attr note;
 
 	@hasMany("learned-item") learned_items;
+	@hasMany("poem-note") poem_notes;
 }
