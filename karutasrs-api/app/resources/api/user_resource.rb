@@ -3,6 +3,7 @@ module Api
 		attributes :email, :password, :bearer, :lesson_queue_length, :review_queue_length
 
 		has_many :learned_items
+		has_many :poem_notes
 
 		filters :email
 

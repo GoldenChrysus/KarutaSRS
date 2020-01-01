@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_22_004106) do
+ActiveRecord::Schema.define(version: 2020_01_01_022056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 2019_12_22_004106) do
     t.index ["poem_id"], name: "index_learned_items_on_poem_id"
     t.index ["user_id", "poem_id"], name: "index_learned_items_on_user_id_and_poem_id", unique: true
     t.index ["user_id"], name: "index_learned_items_on_user_id"
+  end
+
+  create_table "poem_notes", force: :cascade do |t|
+    t.string "note"
+    t.bigint "user_id", null: false
+    t.bigint "poem_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["poem_id"], name: "index_poem_notes_on_poem_id"
+    t.index ["user_id", "poem_id"], name: "index_poem_notes_on_user_id_and_poem_id", unique: true
+    t.index ["user_id"], name: "index_poem_notes_on_user_id"
   end
 
   create_table "poems", force: :cascade do |t|
@@ -63,5 +74,7 @@ ActiveRecord::Schema.define(version: 2019_12_22_004106) do
 
   add_foreign_key "learned_items", "poems"
   add_foreign_key "learned_items", "users"
+  add_foreign_key "poem_notes", "poems"
+  add_foreign_key "poem_notes", "users"
   add_foreign_key "reviews", "learned_items"
 end

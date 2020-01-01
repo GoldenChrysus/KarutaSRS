@@ -10,6 +10,7 @@ class User < ApplicationRecord
 
 	# Relationships
 	has_many :learned_items
+	has_many :poem_notes
 
 	# Callbacks
 	before_validation :create_bearer, on: :create

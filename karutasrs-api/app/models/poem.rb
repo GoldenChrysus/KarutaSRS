@@ -11,6 +11,7 @@ class Poem < ApplicationRecord
 
 	# Relationships
 	has_many :learned_items
+	has_many :poem_notes
 
 	def self.update_or_create(objects)
 		objects.each do |attributes|
