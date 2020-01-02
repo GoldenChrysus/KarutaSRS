@@ -1,3 +1,8 @@
+{{#each @model.messages as |message|}}
+	<div class="ui message">
+		{{{message}}}
+	</div>
+{{/each}}
 <Statistics/>
 <div id="intro-reminder" class="ui basic center aligned segment">
 	Need a refresher on how everything works? Feel free to <LinkTo @route="authenticated.guide">visit the guide.</LinkTo>
