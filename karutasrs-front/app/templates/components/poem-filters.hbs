@@ -1,0 +1,25 @@
+<div class="poem-filters" {{did-insert this.didInsert}}>
+	<div class="poem-filter-types">
+		<button class="ui basic button">
+			Kimariji Length
+		</button>
+		<button class="ui basic button">
+			2nd Verse Length
+		</button>
+		<button class="ui basic button">
+			Status
+		</button>
+	</div>
+	<div class="poem-filter-sort">
+		<div class="ui floating dropdown">
+			<Input @type="hidden" @value={{this.sort}} />
+			<span class="default text">Sort</span>
+			<i class="icon sort"></i>
+			<div class="menu">
+				<div class="item" data-value="num">Poem #</div>
+				<div class="item" data-value="kimariji">Kimariji Length</div>
+				<div class="item" data-value="verse2">2nd Verse Length</div>
+			</div>
+		</div>
+	</div>
+</div>
