@@ -1,4 +1,4 @@
-export const isString = a => Object.prototype.toString.call(a) === '[object String]';
+export const isString = a => Object.prototype.toString.call(a) === "[object String]";
 
 export const sortBy = (...cbs) => (a, b) => {
 	for (const cb of cbs) {
@@ -9,9 +9,12 @@ export const sortBy = (...cbs) => (a, b) => {
 				? bb.localeCompare(aa)
 				: bb - aa
 			: isString(aa)
-			? aa.localeCompare(bb)
-			: aa - bb;
-		if (diff !== 0) return diff;
+				? aa.localeCompare(bb)
+				: aa - bb;
+
+		if (diff !== 0) {
+			return diff;
+		}
 	}
 	return 0;
 };
