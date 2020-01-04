@@ -3,12 +3,12 @@ name: Rails CI
 on:
   push:
     paths:
-      - 'karutasrs-api/*'
-      - '.github/workflows/*'
+      - 'karutasrs-api/**'
+      - '.github/workflows/**'
   pull_request:
     paths:
-      - 'karutasrs-api/*'
-      - '.github/workflows/*'
+      - 'karutasrs-api/**'
+      - '.github/workflows/**'
 
 jobs:
   build:
