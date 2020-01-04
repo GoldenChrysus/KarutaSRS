@@ -29,8 +29,16 @@ jobs:
         sudo apt-get install -y google-chrome-unstable --no-install-recommends
         sudo rm -rf /var/lib/apt/lists/*
 
-    - name: Test Ember
+    - name: Create .env-test file
+      run: |
+        cd karutasrs-front/config
+        cp .env-sample .env-test
+
+    - name: Build Ember application
       run: |
         cd karutasrs-front
         npm i
+
+    - name: Test Ember
+      run:
         ./node_modules/.bin/ember test
