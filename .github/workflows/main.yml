@@ -39,8 +39,7 @@ jobs:
 
     - name: Build Rails application
       run: |
-        pwd
-        cd ../
+        cd karutasrs-api
         gem install bundler
         bundle install --jobs 4 --retry 3
 
