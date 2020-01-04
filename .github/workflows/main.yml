@@ -25,7 +25,7 @@ jobs:
     - name: Set up Ruby 2.6
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 2.6.x
+        ruby-version: 2.6.5
 
     - name: Create application.yml file
       run: |
@@ -45,9 +45,11 @@ jobs:
 
     - name: Migrate and seed Rails
       run: |
+        cd karutasrs-api
         rake db:migrate
         rake db:seed
 
     - name: Build and test with Rake
       run: |
+        cd karutasrs-api
         bundle exec rspec
