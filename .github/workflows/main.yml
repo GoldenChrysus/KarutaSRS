@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Setup PostgreSQL
+    - name: Set up PostgreSQL
       uses: Harmon758/postgresql-action@v1.0.0
       with:
         # Version of PostgreSQL to use
@@ -23,9 +23,9 @@ jobs:
         postgresql password: test_pw
 
     - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+      uses: eregon/use-ruby-action@master
       with:
-        ruby-version: 2.6.5
+        ruby-version: ruby-2.6.5
 
     - name: Create application.yml file
       run: |
