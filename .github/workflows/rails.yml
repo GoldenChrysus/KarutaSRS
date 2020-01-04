@@ -1,10 +1,17 @@
 name: Rails CI
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'karutasrs-api/*'
+      - '.github/workflows/*'
+  pull_request:
+    paths:
+      - 'karutasrs-api/*'
+      - '.github/workflows/*'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
