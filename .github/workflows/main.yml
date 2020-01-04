@@ -21,8 +21,6 @@ jobs:
         postgresql user: test_user
         # POSTGRES_PASSWORD - superuser password
         postgresql password: test_pw
-      run:
-        sudo apt-get install libpq-dev
 
     - name: Set up Ruby 2.6
       uses: eregon/use-ruby-action@master
@@ -42,6 +40,7 @@ jobs:
     - name: Build Rails application
       run: |
         cd karutasrs-api
+        sudo apt-get install libpq-dev
         gem install bundler
         gem install pg -v '1.1.4' --source 'https://rubygems.org/'
         bundle install --jobs 4 --retry 3
