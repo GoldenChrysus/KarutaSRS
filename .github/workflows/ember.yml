@@ -1,0 +1,21 @@
+name: Ember CI
+
+on:
+  push:
+    paths:
+      - 'karutasrs-front/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install Node
+      uses: nuxt/actions-yarn@node-10
+      args:
+        - install
+
+    - name: Test Ember
+      uses: alexlafroscia/actions-ember-testing@master
