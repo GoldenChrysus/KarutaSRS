@@ -15,8 +15,6 @@ jobs:
 
     - name: Install Node
       uses: nuxt/actions-yarn@node-10
-      args:
-        - install
 
     - name: Test Ember
       uses: alexlafroscia/actions-ember-testing@master
