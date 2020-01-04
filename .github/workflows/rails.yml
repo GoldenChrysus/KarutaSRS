@@ -1,6 +1,6 @@
-name: CI
+name: Rails CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -18,9 +18,9 @@ jobs:
         # POSTGRES_DB - name for the default database that is created
         postgresql db: test_db
         # POSTGRES_USER - create the specified user with superuser power
-        postgresql user: test_user
+        postgresql user: itsmethedbuser
         # POSTGRES_PASSWORD - superuser password
-        postgresql password: test_pw
+        postgresql password: password123
 
     - name: Set up Ruby 2.6
       uses: eregon/use-ruby-action@master
@@ -30,12 +30,7 @@ jobs:
     - name: Create application.yml file
       run: |
         cd karutasrs-api/config
-        echo api_path: "/api" >> application.yml
-        echo db_username: test_user >> application.yml
-        echo db_password: test_pw >> application.yml
-        echo db_port: "5432" >> application.yml
-        echo db_database: test_db >> application.yml
-        echo frontend_address: "localhost:4200" >> application.yml
+        cp application.yml.sample application.yml
 
     - name: Build Rails application
       run: |
@@ -51,7 +46,7 @@ jobs:
         rake db:migrate
         rake db:seed
 
-    - name: Build and test with Rake
+    - name: Test Rails with RSpec
       run: |
         cd karutasrs-api
         bundle exec rspec
