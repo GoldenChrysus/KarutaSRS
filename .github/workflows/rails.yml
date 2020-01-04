@@ -41,12 +41,16 @@ jobs:
         bundle install --jobs 4 --retry 3
 
     - name: Migrate and seed Rails
+      env:
+        RAILS_ENV: test
       run: |
         cd karutasrs-api
         rake db:migrate
         rake db:seed
 
     - name: Test Rails with RSpec
+      env:
+        RAILS_ENV: test
       run: |
         cd karutasrs-api
         bundle exec rspec
