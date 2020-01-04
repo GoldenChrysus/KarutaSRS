@@ -1,0 +1,7 @@
+[
+	{
+		"type"    : "dashboard",
+		"date"    : "2020-01-05 23:59:59",
+		"message" : "Some poems were found to have incorrect <em>kimariji</em>. All users have not yet learned most of these poems. However, to ensure users learn the correct karuta information, the following poems have been reset for all users: 26, 39, 41, 43, 44, 45, 47, 60, 71, 78, 88, 95. We apologize for the inconvenience. Karuta SRS is still in alpha, and we want to ensure it is the most reliable and accurate tool for everyone wanting to learn karuta."
+	}
+]

@@ -288,7 +288,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "いまひとたびのみゆきまたなむ",
 		second_verse_card: "いまひとたひのみゆきまたなむ",
 		second_verse_answer: "いまひとたひのみ",
-		kimariji: "をぐ",
+		kimariji: "おぐ",
 		translation: "If the maple leaves|On Ogura mountain|Could only have hearts,|They would longingly await|The emperor's pilgrimage.",
 		background: "[\"This poem is taken from the &quot;Miscellaneous Autumn&quot; section of the <em>Sh\u016bish\u016b<\/em> anthology of waka, which was completed at the beginning of the 11th century. Teishin-k\u014d was the posthumous name given to Fujiwara no Tadahira (880-949), who served as regent and chancellor during the reigns of Emperor Suzaku and Emperor Murakami and prepared the way for the peak of Fujiwara influence. \",\"The headnote to the poem in the <em>Sh\u016bishu<\/em> says it was composed by Tadahira during or after an excursion to Ogura by former Emperor Uda, who expressed his wish that Emperor Daigo might also enjoy the colorful autumn scenery.&nbsp; Mount Ogura was one of the most famous Heian locations for viewing autumn foliage, and the poet here addresses it directly (the technique of <em><strong>gijin-h\u014d<\/strong><\/em>, or personification). Technically speaking, the reading <em>miyuki<\/em> is used for two different combinations of Chinese characters. When written as <span class='jtext'>\u884c\u5e78<\/span>, the reference is to an excursion by the reigning emperor; as <span class='jtext'>\u5fa1\u5e78<\/span>, the reference is to an excursion by an abdicated or cloistered emperor or by one of the reigning emperor's close female relatives or consorts). The versions that appear in the headnote make it clear that the &quot;second,&quot; hoped-for excursion would be the one by the reigning emperor, Daigo. This can be considered a good example of the context provided by such headnotes, problematizing the tendency to read waka as &quot;discrete&quot; poems.\"]"
 	},
@@ -431,7 +431,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "あまりてなどかひとのこひしき",
 		second_verse_card: "あまりてなとかひとのこひしき",
 		second_verse_answer: "あまり",
-		kimariji: "あさぢ",
+		kimariji: "あさじ",
 		translation: "Bamboo growing|Among the tangled reeds|Like my hidden love:|But it is too much to bear|That I still love her so.",
 		background: "[\"This poem appears in the first &ldquo;Love&rdquo; section of <em>Gosensh\u016b<\/em>. Minamoto no Hitoshi (880-951; &ldquo;counselor&rdquo; was his court title) was a descendent of Emperor Saga (r. 809-823), but otherwise his life is obscure.\",\"The opening two phrases of the Japanese can be said to constitute a <strong><em>jokotoba<\/em><\/strong> introducing <em>shinobu<\/em> (conceal, endure), with the first three phrases as a whole unified phonetically by the repeated <em>no<\/em>. The semantic connection between a conventional <em>jokotoba<\/em> and the word or phrase it introduces is not always clear in classical poetry (wordplay often seems as important as meaning), but here there seems to be a suggestion that while the bamboo grass may not be easily distinguished visually from the other plants growing in the meadow, the fact that its leaves rustle in the slightest breeze can be expected to give it away. The suggested tension between concealment and revelation is explicitly related to love in the final two phrases, in which a rhetorical question signals the poet's consternation at being subject to feelings of love so powerful that they threaten to betray him.\"]"
 	},
@@ -453,7 +453,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "ひとしれずこそおもひそめしか",
 		second_verse_card: "ひとしれすこそおもひそめしか",
 		second_verse_answer: "ひとし",
-		kimariji: "こひ",
+		kimariji: "こい",
 		translation: "It is true I love,|But the rumor of my love|Had gone far and wide,|When people should not have known|That I had begun to love.",
 		background: "[]"
 	},
@@ -475,7 +475,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "むかしはものをおもはざりけり",
 		second_verse_card: "むかしはものをおもはさりけり",
 		second_verse_answer: "むか",
-		kimariji: "あひ",
+		kimariji: "あい",
 		translation: "I have met my love.|When I compare this present|With feelings of the past,|My passion is now as if|I have never loved before.",
 		background: "[]"
 	},
@@ -486,7 +486,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "ひとをもみをもうらみざらまし",
 		second_verse_card: "ひとをもみをもうらみさらまし",
 		second_verse_answer: "ひとを",
-		kimariji: "あふ",
+		kimariji: "おおこ",
 		translation: "If it should happen|That we never met again,|I would not complain;|And I doubt that she or I|Would feel that we were left alone.",
 		background: "[]"
 	},
@@ -497,7 +497,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "身のいたづらになりぬべきかな",
 		second_verse_card: "みのいたつらになりぬへきかな",
 		second_verse_answer: "みの",
-		kimariji: "あはれ",
+		kimariji: "あわれ",
 		translation: "Surely there is none|Who will speak a pitying word|About my lost love.|Now my folly's fitting end|Is my own nothingness.",
 		background: "[]"
 	},
@@ -519,7 +519,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "ひとこそみえねあきはきにけり",
 		second_verse_card: "ひとこそみえねあきはきにけり",
 		second_verse_answer: "ひとこそみ",
-		kimariji: "やへ",
+		kimariji: "やえ",
 		translation: "To the dim cottage|Overgrown with thick-leaved vines|In its loneliness|Comes the dreary autumn time:|But there no people come.",
 		background: "[]"
 	},
@@ -662,7 +662,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "まだふみもみずあまのはしだて",
 		second_verse_card: "またふみもみすあまのはしたて",
 		second_verse_answer: "また",
-		kimariji: "おほえ",
+		kimariji: "おおえ",
 		translation: "By Oe Mountain|The road to Ikuno|Is far away,|And neither have I beheld|Nor crossed its bridge of heaven.",
 		background: "[]"
 	},
@@ -783,7 +783,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "あしのまろやにあきかぜぞふく",
 		second_verse_card: "あしのまろやにあきかせそふく",
 		second_verse_answer: "あし",
-		kimariji: "ゆふ",
+		kimariji: "ゆう",
 		translation: "When the evening comes,|From the rice leaves at my gate,|Gentle knocks are heard,|And, into my round rush-hut,|Enters autumn's roaming breeze.",
 		background: "[]"
 	},
@@ -860,7 +860,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "いくよねざめぬすまのせきもり",
 		second_verse_card: "いくよねさめぬすまのせきもり",
 		second_verse_answer: "いく",
-		kimariji: "あはぢ",
+		kimariji: "あわじ",
 		translation: "Guard of Suma Gate,|From your sleep, how many nights|Have you awakened|At the cries of sanderlings,|Flying from Awaji Island?",
 		background: "[]"
 	},
@@ -970,7 +970,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "みをつくしてやこひわたるべき",
 		second_verse_card: "みをつくしてやこひわたるへき",
 		second_verse_answer: "みをつくしてや",
-		kimariji: "なにはえ",
+		kimariji: "なにわえ",
 		translation: "After one brief night--|Short as a piece of the reeds|Growing in Naniwa bay--|Must I forever long for him|With my whole heart, till life ends?",
 		background: "[]"
 	},
@@ -1047,7 +1047,7 @@ poems = Poem.update_or_create([
 		second_verse_raw: "わがたつそまにすみぞめのそで",
 		second_verse_card: "わかたつそまにすみそめのそて",
 		second_verse_answer: "わかた",
-		kimariji: "おほけ",
+		kimariji: "おおけ",
 		translation: "From the monastery|On Mount Hiei I look out|On this world of tears,|And though I am unworthy,|I shield it with my black sleeves.",
 		background: "[]"
 	},
