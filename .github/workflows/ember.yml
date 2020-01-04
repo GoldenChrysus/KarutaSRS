@@ -41,4 +41,5 @@ jobs:
 
     - name: Test Ember
       run:
+        cd karutasrs-front
         ./node_modules/.bin/ember test
