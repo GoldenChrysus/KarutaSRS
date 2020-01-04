@@ -14,7 +14,9 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Install Node
-      uses: nuxt/actions-yarn@node-10
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
 
     - name: Test Ember
       uses: alexlafroscia/actions-ember-testing@master
