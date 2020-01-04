@@ -13,10 +13,23 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Install Node
+    - name: Install Node 10.x
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
 
+    - name: Install Chrome
+      run: |
+        apt-get update
+        apt-get install -yq libgconf-2-4
+        apt-get install -y wget --no-install-recommends
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+        sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+        apt-get update
+        apt-get install -y google-chrome-unstable --no-install-recommends
+        rm -rf /var/lib/apt/lists/*
+
     - name: Test Ember
-      uses: alexlafroscia/actions-ember-testing@master
+      run: |
+        cd karutasrs-front
+        ./node_modules/.bin/ember test
