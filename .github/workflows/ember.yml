@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'karutasrs-front/**'
+      - '.github/workflows/ember.yml'
 
 jobs:
   build:

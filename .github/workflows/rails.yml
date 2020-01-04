@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - 'karutasrs-api/**'
+      - '.github/workflows/rails.yml'
   pull_request:
     paths:
       - 'karutasrs-api/**'
+      - '.github/workflows/rails.yml'
 
 jobs:
   build:
