@@ -30,7 +30,8 @@ export default class PoemFiltersComponent extends Component {
 		return { sort: this.sort, kimariji_length: this.kimariji_length, verse2_length: this.verse2_length };
 	}
 
-	@action onChange(filters) {
+	@action
+	onChange(filters) {
 		this.args.onChange && this.args.onChange(filters);
 	}
 
