@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 	rescue_from StandardError, with: :handle_standard_error
 
 	def render_unprocessable_entity_response(exception)
-		render json: exception.record.errors, status: :unprocessable_entity
+		render json: exception.record.errors, status: :unprocessable_entity 
 	end
 
 	def render_api_error(exception)
