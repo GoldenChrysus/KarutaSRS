@@ -1,8 +1,9 @@
-<div class="poem-filters" {{did-insert this.didInsert}}>
+<div class="poem-filters ui message" {{did-insert this.didInsert}}>
 	<div class="poem-filter-types">
-		<div class="ui clearable selection dropdown">
+		<div class="ui clearable selection dropdown compact">
 			<Input @type="hidden" @value={{this.kimariji_length}} />
 			<span class="default text">Kimariji Length</span>
+			<i class="dropdown icon"></i>
 			<div class="menu">
 				<div class="header">Kimariji Length</div>
 				<div class="item">1</div>
@@ -13,9 +14,10 @@
 				<div class="item">6</div>
 			</div>
 		</div>
-		<div class="ui clearable selection dropdown">
+		<div class="ui clearable selection dropdown compact">
 			<Input @type="hidden" @value={{this.verse2_length}} />
 			<span class="default text">2nd Verse Length</span>
+			<i class="dropdown icon"></i>
 			<div class="menu">
 				<div class="header">2nd Verse Length</div>
 				<div class="item">1</div>

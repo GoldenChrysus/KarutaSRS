@@ -11,7 +11,7 @@ export default class PoemFiltersComponent extends Component {
 	}
 
 	get kimariji_length() {
-		return this.args.kimariji_length;
+		return this.args.kimariji_length && Number(this.args.kimariji_length);
 	}
 
 	set kimariji_length(kimariji_length) {
@@ -19,7 +19,7 @@ export default class PoemFiltersComponent extends Component {
 	}
 
 	get verse2_length() {
-		return this.args.verse2_length;
+		return this.args.verse2_length && Number(this.args.verse2_length);
 	}
 
 	set verse2_length(verse2_length) {

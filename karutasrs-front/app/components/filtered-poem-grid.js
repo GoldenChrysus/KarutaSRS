@@ -11,16 +11,16 @@ export default class FilteredPoemGridComponent extends Component {
 	get poems() {
 		let poems = this.args.poems.toArray();
 		if (this.kimariji_length)
-			poems = poems.filter(p => [...p.kimariji].length === this.kimariji_length);
+			poems = poems.filter(p => p.kimariji.length === this.kimariji_length);
 		if (this.verse2_length)
-		  poems = poems.filter(p => [...p.second_verse_answer].length === this.verse2_length);
+		  poems = poems.filter(p => p.second_verse_answer.length === this.verse2_length);
 		return poems.sort(
 			sortBy(
 				p =>
 					this.sort === 'kimariji'
-						? [...p.kimariji].length
+						? p.kimariji.length
 						: this.sort === 'verse2'
-						? [...p.second_verse_answer].length
+						? p.second_verse_answer.length
 						: 0,
 				p => Number(p.id)
 			)
@@ -29,8 +29,10 @@ export default class FilteredPoemGridComponent extends Component {
 
 	@action
 	onChange({ sort, kimariji_length, verse2_length }) {
-		this.sort = sort;
-		this.kimariji_length = kimariji_length;
-		this.verse2_length = verse2_length;
+		setTimeout(() => {
+			this.sort = sort;
+			this.kimariji_length = kimariji_length;
+			this.verse2_length = verse2_length;
+		}, 0);
 	}
 }
