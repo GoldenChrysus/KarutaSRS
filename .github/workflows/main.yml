@@ -41,6 +41,7 @@ jobs:
       run: |
         cd karutasrs-api
         gem install bundler
+        gem install pg -v '1.1.4' --source 'https://rubygems.org/'
         bundle install --jobs 4 --retry 3
 
     - name: Migrate and seed Rails
