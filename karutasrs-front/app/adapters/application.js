@@ -1,4 +1,4 @@
- import JSONAPIAdapter from '@ember-data/adapter/json-api';
+import JSONAPIAdapter from '@ember-data/adapter/json-api';
 import DataAdapterMixin from "ember-simple-auth/mixins/data-adapter-mixin";
 import { computed } from "@ember/object";
 import config from "../config/environment";
