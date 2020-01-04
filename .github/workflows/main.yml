@@ -39,6 +39,7 @@ jobs:
 
     - name: Build Rails application
       run: |
+        echo pwd
         cd ../
         gem install bundler
         bundle install --jobs 4 --retry 3
