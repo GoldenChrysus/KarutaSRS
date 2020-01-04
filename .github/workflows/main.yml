@@ -37,6 +37,11 @@ jobs:
         echo db_database: test_db >> application.yml
         echo frontend_address: "localhost:4200" >> application.yml
 
+    - name: Build Rails application
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+
     - name: Migrate and seed Rails
       run: |
         rake db:migrate
@@ -44,6 +49,4 @@ jobs:
 
     - name: Build and test with Rake
       run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
         bundle exec rspec
