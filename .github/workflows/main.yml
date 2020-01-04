@@ -21,6 +21,8 @@ jobs:
         postgresql user: test_user
         # POSTGRES_PASSWORD - superuser password
         postgresql password: test_pw
+      run:
+        sudo apt-get install libpq-dev
 
     - name: Set up Ruby 2.6
       uses: eregon/use-ruby-action@master
