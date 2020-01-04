@@ -301,7 +301,7 @@ class User < ApplicationRecord
 	end
 
 	def self.hash_value(value)
-		return Digest::SHA256.hexdigest(value)
+		return Digest::SHA256.hexdigest(value.to_s)
 	end
 
 	def self.login(email, password)
