@@ -48,6 +48,7 @@ class User < ApplicationRecord
 						i2.created_at > :cutoff_time
 				)"
 
+		Poem.set_current_user(self)
 		return Poem
 			.where("id IN (#{sql})", params)
 			.order("LENGTH(kimariji)", "LENGTH(second_verse_answer)", :id)
@@ -58,6 +59,7 @@ class User < ApplicationRecord
 	end
 
 	def review_queue
+		Poem.set_current_user(self)
 		return JSON.parse LearnedItem
 				.where(
 					"user_id = :user_id AND

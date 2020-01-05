@@ -96,11 +96,17 @@ export default Component.extend({
 			if (note.length) {
 				note = note.get("firstObject");
 			} else {
+				let poem = this.poem;
+
+				if (poem.constructor.name !== "PoemModel") {
+					poem = await this.store.findRecord("poem", poem.id);
+				}
+
 				note = this.store.createRecord(
 					"poem-note",
 					{
 						user : user,
-						poem : this.poem
+						poem : poem
 					}
 				);
 			}

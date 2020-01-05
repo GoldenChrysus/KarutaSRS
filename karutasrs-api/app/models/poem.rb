@@ -1,6 +1,9 @@
 class Poem < ApplicationRecord
 	@@current_user = nil
 
+	# Attributes
+	attribute :note
+
 	# Validation
 	validates :name, presence: true
 	validates :first_verse, presence: true
