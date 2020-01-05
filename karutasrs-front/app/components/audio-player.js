@@ -7,9 +7,9 @@ export default Component.extend({
 		"volume",
 		"controlslist"
 	],
-	controlslist      : "nodownload",
-	autoplay          : false,
-	controls          : true,
+	controlslist : "nodownload",
+	autoplay     : false,
+	controls     : true,
 
 	init() {
 		this._super(...arguments);
@@ -29,9 +29,11 @@ export default Component.extend({
 
 			localStorage.setItem("default-volume", new_volume);
 
-			$(document).find("audio").each(function() {
-				this.volume = new_volume;
-			});
+			$(document)
+				.find("audio")
+				.each(function() {
+					this.volume = new_volume;
+				});
 		});
 	}
 });

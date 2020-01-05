@@ -35,7 +35,7 @@
 	To navigate the queue, desktop users should click each item labeled 1 through 5 at the top of the queue, then you will be allowed to proceed to the lesson quiz. Note that you cannot proceed to the lesson quiz using the queue below, as it is only a demonstration. Mobile users can swipe left or right over each lesson to navigate the lessons and proceed to the quiz. A lesson's quiz must be passed before the poem will enter your review queue.
 </div>
 
-<LessonCarousel @queue={{@model.demo_queue}} @demo=true/>
+<LessonCarousel @queue={{@model.demo_queue}} @demo={{true}}/>
 
 <!-- Review Queue Info -->
 <h3 class="ui center aligned header">The Review Queue</h3>
@@ -64,7 +64,7 @@
 	Try out the demonstration review below. The first review is for the <em>kimariji</em> since the review is displaying the full playing card. The card starts with {{@model.first_poem.second_verse_answer}} which you learned are the 2nd verse key characters from the poem in the above lesson. The <em>kimariji</em> for this poem (and the correct answer for the review) is {{@model.first_poem.kimariji}}. You can enter <em>hiragana</em> by typing <em>romaji</em> into the input below the card. For example, you can enter "tago" and it will automatically convert to {{@model.first_poem.kimariji}}. Hit enter to submit your answer.
 </div>
 
-<ReviewQueue::Review @poem={{@model.first_poem}} @type="kimariji" @item_id=0 @demo=true/>
+<ReviewQueue::Review @poem={{@model.first_poem}} @type="kimariji" @item_id="0" @demo={{true}}/>
 
 <div class="ui segment">
 	<h4 class="ui header">Review Feedback</h4>

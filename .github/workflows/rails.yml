@@ -1,0 +1,63 @@
+name: Rails CI
+
+on:
+  push:
+    paths:
+      - 'karutasrs-api/**'
+      - '.github/workflows/rails.yml'
+  pull_request:
+    paths:
+      - 'karutasrs-api/**'
+      - '.github/workflows/rails.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Set up PostgreSQL 10.11
+      uses: Harmon758/postgresql-action@v1.0.0
+      with:
+        # Version of PostgreSQL to use
+        postgresql version: 10.11
+        # POSTGRES_DB - name for the default database that is created
+        postgresql db: test_db
+        # POSTGRES_USER - create the specified user with superuser power
+        postgresql user: itsmethedbuser
+        # POSTGRES_PASSWORD - superuser password
+        postgresql password: password123
+
+    - name: Set up Ruby 2.6.5
+      uses: eregon/use-ruby-action@master
+      with:
+        ruby-version: ruby-2.6.5
+
+    - name: Create application.yml file
+      run: |
+        cd karutasrs-api/config
+        cp application.yml.sample application.yml
+
+    - name: Build Rails application
+      run: |
+        cd karutasrs-api
+        sudo apt-get install libpq-dev
+        gem install bundler
+        gem install pg -v '1.1.4' --source 'https://rubygems.org/'
+        bundle install --jobs 4 --retry 3
+
+    - name: Migrate and seed Rails
+      env:
+        RAILS_ENV: test
+      run: |
+        cd karutasrs-api
+        rake db:migrate
+        rake db:seed
+
+    - name: Test Rails with RSpec
+      env:
+        RAILS_ENV: test
+      run: |
+        cd karutasrs-api
+        bundle exec rspec

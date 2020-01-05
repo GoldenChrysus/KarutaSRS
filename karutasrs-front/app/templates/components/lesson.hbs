@@ -39,7 +39,7 @@
 						{{/each}}
 					</details>
 				{{/if}}
-				<p class="credit">Background information provided courtesy of <a href="http://www.jlit.net/premodernlit/hyakunin-isshu/" target="_blank">Jlit.net</a>.</p>
+				<p class="credit">Background information provided courtesy of <a href="http://www.jlit.net/premodernlit/hyakunin-isshu/" target="_blank" rel="noopener">Jlit.net</a>.</p>
 			</div>
 		{{/if}}
 
@@ -50,5 +50,5 @@
 	</div>
 </div>
 <div class="{{this.classes}} column">
-	<GrabberCard @width="100%" @text="{{this.poem.second_verse_card}}" @answer="{{this.poem.second_verse_answer}}" @type="learn" @size={{this.grabber_size}}/>
+	<GrabberCard @width="100%" @text={{this.poem.second_verse_card}} @answer={{this.poem.second_verse_answer}} @type="learn" @size={{this.grabber_size}}/>
 </div>

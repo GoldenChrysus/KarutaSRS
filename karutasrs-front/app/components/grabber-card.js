@@ -1,8 +1,8 @@
 import Component from "@ember/component";
-import { action, computed } from "@ember/object";
+import { computed } from "@ember/object";
 
 export default Component.extend({
-	classNames        : [
+	classNames : [
 		"grabber-card-outer"
 	],
 	classNameBindings : [
@@ -11,14 +11,14 @@ export default Component.extend({
 	attributeBindings : [
 		"key:key"
 	],
-	height            : 0,
-	width             : "444px",
-	text              : "",
-	card              : "",
-	answer            : "",
-	type              : "",
-	validate          : false,
-	char_array        : computed("text", "answer", function() {
+	height     : 0,
+	width      : "444px",
+	text       : "",
+	card       : "",
+	answer     : "",
+	type       : "",
+	validate   : false,
+	char_array : computed("text", "answer", function() {
 		let chars_array  = this.text.split("");
 		let answer_array = (this.answer) ? this.answer.split("") : [];
 		let card_array   = (this.card) ? this.card.split("") : [];
@@ -95,7 +95,12 @@ export default Component.extend({
 		let $element = $(this.element);
 
 		// If not visible, the card is in an accordion, so get the width of the nearest visible parent to get the width of this card
-		let width = ($element.is(":visible")) ? $element.width() : $element.parentsUntil(":visible").last().width();
+		let width = ($element.is(":visible"))
+			? $element.width()
+			: $element
+				.parentsUntil(":visible")
+				.last()
+				.width();
 
 		if (!width) {
 			$(window).off("resize", this.setHeight.bind(this));
@@ -106,7 +111,7 @@ export default Component.extend({
 	},
 
 	calculateHeight(width) {
-		let unit_match = String(width).match(/[^\d\.]+/g);
+		let unit_match = String(width).match(/[^\d.]+/g);
 
 		if (unit_match) {
 			width = +width.replace(unit_match[0], "");

@@ -4,23 +4,23 @@ import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Component | menus/menu-links', function(hooks) {
-  setupRenderingTest(hooks);
+	setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Menus::MenuLinks />`);
+		await render(hbs`<Menus::MenuLinks @top={{true}}/>`);
 
-    assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 5), 'Login');
 
-    // Template block usage:
-    await render(hbs`
-      <Menus::MenuLinks>
+		// Template block usage:
+		await render(hbs`
+      <Menus::MenuLinks @top={{true}}>
         template block text
       </Menus::MenuLinks>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
-  });
+		assert.equal(this.element.textContent.trim().slice(0, 5), 'Login');
+	});
 });

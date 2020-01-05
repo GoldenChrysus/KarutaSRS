@@ -3,7 +3,7 @@ import AuthenticatedRouteMixin from "ember-simple-auth/mixins/authenticated-rout
 
 export default Route.extend(AuthenticatedRouteMixin, {
 	async model(params) {
-		let poem = await this.store.findRecord("poem", params["id"]);
+		let poem = await this.store.findRecord("poem", params.id);
 
 		return {
 			poem : poem

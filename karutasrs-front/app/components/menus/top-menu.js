@@ -1,6 +1,4 @@
 import Component from '@ember/component';
-import { tracked } from '@glimmer/tracking';
-import { action } from "@ember/object";
 
 export default Component.extend({
 	elementId  : "top-menu",
@@ -10,10 +8,18 @@ export default Component.extend({
 		"icon",
 		"menu"
 	],
-	user       : {},
-	actions    : {
+	user    : undefined,
+	actions : {
 		openSidebar() {
-			$(document).find("body > .sidebar").sidebar("toggle");
+			$(document)
+				.find("body > .sidebar")
+				.sidebar("toggle");
 		}
+	},
+
+	init() {
+		this.user = this.user || {};
+
+		this._super(...arguments);
 	}
 })

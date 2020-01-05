@@ -5,9 +5,9 @@
 		{{else}}
 			Login to
 		{{/if}}
-		{{title}}
+		{{this.title}}
 	</h4>
-	{{#if login_error}}
+	{{#if this.login_error}}
 		<div class="ajax-response" data-for="login-form">
 			<div class="ui error message">
 				<i class="remove icon"></i>
@@ -15,21 +15,21 @@
 			</div>
 		</div>
 	{{/if}}
-	<form class="ui form" id="login-form" onSubmit={{action "handleSubmit"}}>
+	<form class="ui form" id="login-form" onsubmit={{action "handleSubmit"}}>
 		<div class="field">
 			<div class="ui icon input">
-				{{input value=email placeholder="Email" name="email"}} <i class="user icon"></i>
+				{{input value=this.email placeholder="Email" name="email"}} <i class="user icon"></i>
 			</div>
 		</div>
 		<div class="field">
 			<div class="ui icon input">
-				{{input value=password type="password" placeholder="Password" name="password"}} <i class="lock icon"></i>
+				{{input value=this.password type="password" placeholder="Password" name="password"}} <i class="lock icon"></i>
 			</div>
 		</div>
 		{{#if (eq this.type "register")}}
 			<div class="field">
 				<div class="ui icon input">
-					{{input value=confirm_password type="password" placeholder="Confirm Password" name="confirm_password"}} <i class="lock icon"></i>
+					{{input value=this.confirm_password type="password" placeholder="Confirm Password" name="confirm_password"}} <i class="lock icon"></i>
 				</div>
 			</div>
 		{{/if}}
