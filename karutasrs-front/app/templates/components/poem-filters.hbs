@@ -1,44 +1,53 @@
-<div class="poem-filters ui message" {{did-insert this.didInsert}}>
-	<div class="poem-filter-types">
-		<div class="ui clearable selection dropdown compact">
-			<Input @type="hidden" @value={{this.kimariji_length}} />
-			<span class="default text">Kimariji Length</span>
-			<i class="dropdown icon"></i>
-			<div class="menu">
-				<div class="header">Kimariji Length</div>
-				<div class="item">1</div>
-				<div class="item">2</div>
-				<div class="item">3</div>
-				<div class="item">4</div>
-				<div class="item">5</div>
-				<div class="item">6</div>
-			</div>
-		</div>
-		<div class="ui clearable selection dropdown compact">
-			<Input @type="hidden" @value={{this.second_verse_answer_length}} />
-			<span class="default text">2nd Verse Length</span>
-			<i class="dropdown icon"></i>
-			<div class="menu">
-				<div class="header">2nd Verse Length</div>
-				<div class="item">1</div>
-				<div class="item">2</div>
-				<div class="item">3</div>
-				<div class="item">4</div>
-				<div class="item">5</div>
-				<div class="item">7</div>
-				<div class="item">8</div>
-			</div>
-		</div>
+<div class="ui styled accordion fluid poem-filters-container" {{did-insert this.didInsert}}>
+	<div class="title">
+		<i class="dropdown icon"></i>
+		Filters
 	</div>
-	<div class="poem-filter-sort">
-		<div class="ui floating dropdown">
-			<Input @type="hidden" @value={{this.sort}} />
-			<span class="default text">Sort</span>
-			<i class="icon sort"></i>
-			<div class="menu">
-				<div class="item" data-value="num">Poem #</div>
-				<div class="item" data-value="kimariji">Kimariji Length</div>
-				<div class="item" data-value="second_verse">2nd Verse Length</div>
+	<div class="content">
+		<div class="poem-filters">
+			<div class="poem-filter-types">
+				<div class="ui clearable selection dropdown compact">
+					<Input @type="hidden" @value={{this.kimariji_length}} />
+					<span class="default text">Kimariji Length</span>
+					<i class="dropdown icon"></i>
+					<div class="menu">
+						<div class="header">Kimariji Length</div>
+						<div class="item">1</div>
+						<div class="item">2</div>
+						<div class="item">3</div>
+						<div class="item">4</div>
+						<div class="item">5</div>
+						<div class="item">6</div>
+					</div>
+				</div>
+				<div class="ui clearable selection dropdown compact">
+					<Input @type="hidden" @value={{this.second_verse_answer_length}} />
+					<span class="default text">2nd Verse Length</span>
+					<i class="dropdown icon"></i>
+					<div class="menu">
+						<div class="header">2nd Verse Length</div>
+						<div class="item">1</div>
+						<div class="item">2</div>
+						<div class="item">3</div>
+						<div class="item">4</div>
+						<div class="item">5</div>
+						<div class="item">7</div>
+						<div class="item">8</div>
+					</div>
+				</div>
+			</div>
+			<div class="poem-filter-sort">
+				<div class="ui compact selection dropdown">
+					<Input @type="hidden" @value={{this.sort}} />
+					<i class="icon sort"></i>
+					<span class="default text">Sort</span>
+					<i class="dropdown icon"></i>
+					<div class="menu">
+						<div class="item" data-value="num">Poem #</div>
+						<div class="item" data-value="kimariji">Kimariji Length</div>
+						<div class="item" data-value="second_verse">2nd Verse Length</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

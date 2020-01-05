@@ -40,5 +40,7 @@ export default class PoemFiltersComponent extends Component {
 		$(element)
 			.find('.ui.dropdown')
 			.dropdown();
+		$(element)
+			.accordion();
 	}
 }
