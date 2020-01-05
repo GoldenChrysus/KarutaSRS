@@ -6,6 +6,7 @@ module('Unit | Route | authenticated/reviews/index', function(hooks) {
 
 	test('it exists', function(assert) {
 		let route = this.owner.lookup('route:authenticated/reviews/index');
+
 		assert.ok(route);
 	});
 });

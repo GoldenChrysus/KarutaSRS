@@ -146,7 +146,7 @@ export default Component.extend({
 						contentType : "application/json",
 						data        : JSON.stringify(Object.assign({}, this.answers[item_id].wrong, timings))
 					};
-					
+
 					await $.ajax(request);
 				}
 

@@ -95,7 +95,12 @@ export default Component.extend({
 		let $element = $(this.element);
 
 		// If not visible, the card is in an accordion, so get the width of the nearest visible parent to get the width of this card
-		let width = ($element.is(":visible")) ? $element.width() : $element.parentsUntil(":visible").last().width();
+		let width = ($element.is(":visible"))
+			? $element.width()
+			: $element
+				.parentsUntil(":visible")
+				.last()
+				.width();
 
 		if (!width) {
 			$(window).off("resize", this.setHeight.bind(this));

@@ -8,6 +8,7 @@ module('Unit | Model | poem', function(hooks) {
 	test('it exists', function(assert) {
 		let store = this.owner.lookup('service:store');
 		let model = store.createRecord('poem', {});
+
 		assert.ok(model);
 	});
 });

@@ -6,6 +6,7 @@ module('Unit | Route | authenticated/guide', function(hooks) {
 
 	test('it exists', function(assert) {
 		let route = this.owner.lookup('route:authenticated/guide');
+
 		assert.ok(route);
 	});
 });

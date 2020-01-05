@@ -6,6 +6,7 @@ module('Unit | Route | authenticated/poems/show', function(hooks) {
 
 	test('it exists', function(assert) {
 		let route = this.owner.lookup('route:authenticated/poems/show');
+
 		assert.ok(route);
 	});
 });

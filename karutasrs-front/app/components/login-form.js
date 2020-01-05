@@ -12,50 +12,54 @@ export default Component.extend({
 	processing    : false,
 
 	didRender() {
-		$(this.element).find("#login-form").form({
-			inline : true,
-			fields : {
-				email : {
-					identifier : "email",
-					rules      : [
-						{
-							type   : "empty",
-							prompt : "Enter your email."
-						},
-						{
-							type   : "email",
-							prompt : "Enter a valid email."
-						}
-					]
-				},
-				password : {
-					identifier : "password",
-					rules      : [
-						{
-							type   : "empty",
-							prompt : "Enter your password."
-						}
-					]
-				},
-				confirm_password : {
-					identifier : "confirm_password",
-					rules      : [
-						{
-							type   : "empty",
-							prompt : "Confirm your password."
-						},
-						{
-							type   : "match[password]",
-							prompt : "Passwords must match."
-						}
-					]
+		$(this.element)
+			.find("#login-form")
+			.form({
+				inline : true,
+				fields : {
+					email : {
+						identifier : "email",
+						rules      : [
+							{
+								type   : "empty",
+								prompt : "Enter your email."
+							},
+							{
+								type   : "email",
+								prompt : "Enter a valid email."
+							}
+						]
+					},
+					password : {
+						identifier : "password",
+						rules      : [
+							{
+								type   : "empty",
+								prompt : "Enter your password."
+							}
+						]
+					},
+					confirm_password : {
+						identifier : "confirm_password",
+						rules      : [
+							{
+								type   : "empty",
+								prompt : "Confirm your password."
+							},
+							{
+								type   : "match[password]",
+								prompt : "Passwords must match."
+							}
+						]
+					}
 				}
-			}
-		});
+			});
 	},
 
 	formIsValid() {
-		return $(this.element).find("#login-form").form("validate form");
+		return $(this.element)
+			.find("#login-form")
+			.form("validate form");
 	},
 
 	actions : {
@@ -122,7 +126,7 @@ export default Component.extend({
 						user    : Object.assign({}, user.toJSON(), {id : user.id})
 					};
 
-					this.session.authenticate("authenticator:simple", data)	
+					this.session.authenticate("authenticator:simple", data)
 						.then(() => {
 							this.session.set("data.new_account", true);
 							// transition

@@ -23,17 +23,16 @@ export default Component.extend({
 	},
 
 	actions : {
-		async changeLesson(index) {
+		changeLesson(index) {
 			if (index === this.current_lesson_index) {
 				return;
 			}
 
-			let new_lesson_elem  = (this.current_lesson_elem === "lesson_one") ? "lesson_two" : "lesson_one";
-			let new_lesson_index = `${new_lesson_elem}_index`;
-			let new_lesson_poem  = `${new_lesson_elem}_poem`;
-
-			let $new_lesson_elem     = $(this[new_lesson_elem]);
-			let $current_lesson_elem = $(this[this.current_lesson_elem]);
+			let new_lesson_elem       = (this.current_lesson_elem === "lesson_one") ? "lesson_two" : "lesson_one";
+			let new_lesson_index      = `${new_lesson_elem}_index`;
+			let new_lesson_poem       = `${new_lesson_elem}_poem`;
+			let $new_lesson_elem      = $(this[new_lesson_elem]);
+			let $current_lesson_elem  = $(this[this.current_lesson_elem]);
 
 			if (index !== this[new_lesson_index]) {
 				this.set(new_lesson_poem, this.queue[index]);

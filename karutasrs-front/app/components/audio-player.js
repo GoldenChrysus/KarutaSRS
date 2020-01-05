@@ -29,9 +29,11 @@ export default Component.extend({
 
 			localStorage.setItem("default-volume", new_volume);
 
-			$(document).find("audio").each(function() {
-				this.volume = new_volume;
-			});
+			$(document)
+				.find("audio")
+				.each(function() {
+					this.volume = new_volume;
+				});
 		});
 	}
 });

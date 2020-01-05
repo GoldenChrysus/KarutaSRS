@@ -84,7 +84,7 @@ export default class LessonCarouselSelectorComponent extends Component {
 		if (!queue[index]) {
 			return;
 		}
-		
+
 		queue[index].completed = true;
 
 		this.queue = queue;

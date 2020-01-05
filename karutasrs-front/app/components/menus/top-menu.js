@@ -11,7 +11,9 @@ export default Component.extend({
 	user    : undefined,
 	actions : {
 		openSidebar() {
-			$(document).find("body > .sidebar").sidebar("toggle");
+			$(document)
+				.find("body > .sidebar")
+				.sidebar("toggle");
 		}
 	},
 

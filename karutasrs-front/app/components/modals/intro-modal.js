@@ -15,7 +15,9 @@ export default Component.extend({
 	name    : config.APP.name,
 
 	didInsertElement() {
-		$(this.element).find("a").on("click", () => $(this.element).modal("hide"));
+		$(this.element)
+			.find("a")
+			.on("click", () => $(this.element).modal("hide"));
 
 		if (this.active) {
 			this.showModal();

@@ -30,7 +30,7 @@ export default Component.extend({
 		} catch {
 			background = [];
 		}
-		
+
 		return background;
 	}),
 	archaic_warnings : computed("poem", function() {

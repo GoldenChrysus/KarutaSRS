@@ -6,6 +6,7 @@ module('Unit | Route | application', function(hooks) {
 
 	test('it exists', function(assert) {
 		let route = this.owner.lookup('route:application');
+
 		assert.ok(route);
 	});
 });
