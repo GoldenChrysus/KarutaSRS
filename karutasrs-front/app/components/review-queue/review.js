@@ -40,7 +40,7 @@ export default Component.extend({
 
 		this._super(...arguments);
 
-		if (!this.poem) {
+		if (!this.poem.id) {
 			throw new Error("No poem provided for review.");
 		}
 	},

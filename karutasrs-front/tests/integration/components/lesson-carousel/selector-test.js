@@ -12,7 +12,7 @@ module('Integration | Component | lesson-carousel/selector', function(hooks) {
 
 		await render(hbs`<LessonCarousel::Selector />`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 6), 'Lesson');
 
 		// Template block usage:
 		await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | lesson-carousel/selector', function(hooks) {
       </LessonCarousel::Selector>
     `);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 6), 'Lesson');
 	});
 });

@@ -10,17 +10,10 @@ module('Integration | Component | lesson', function(hooks) {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.set('myAction', function(val) { ... });
 
-		await render(hbs`<Lesson />`);
-
-		assert.equal(this.element.textContent.trim(), '');
-
-		// Template block usage:
-		await render(hbs`
-      <Lesson>
-        template block text
-      </Lesson>
-    `);
-
-		assert.equal(this.element.textContent.trim(), '');
+		assert.throws(
+			async () => await render(hbs`<Lesson />`),
+			/poem/,
+			"raised error message mentions a poem"
+		);
 	});
 });

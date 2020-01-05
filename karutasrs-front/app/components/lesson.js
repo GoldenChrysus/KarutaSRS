@@ -68,6 +68,10 @@ export default Component.extend({
 		this.poem = this.poem || {};
 
 		this._super(...arguments);
+
+		if (!this.poem.id) {
+			throw new Error("No poem provided for the lesson.");
+		}
 	},
 
 	didRender() {
