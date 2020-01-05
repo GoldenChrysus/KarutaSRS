@@ -8,7 +8,7 @@ export default class LessonCarouselSelectorComponent extends Component {
 	@service router;
 
 	@tracked current_lesson = 0;
-	@tracked queue          = this.args.queue;
+	@tracked queue          = this.args.queue || [];
 	@tracked completed      = [];
 
 	demo = this.args.demo || false;
@@ -16,7 +16,14 @@ export default class LessonCarouselSelectorComponent extends Component {
 	@action
 	didInsert() {
 		this.updateCompletion(this.current_lesson);
-		$(this.steps).closest(".lesson-carousel").swipe({
+
+		let $carousel = $(this.steps).closest(".lesson-carousel");
+
+		if (!$carousel.length) {
+			return;
+		}
+
+		$carousel.swipe({
 			allowPageScroll       : "vertical",
 			fallbackToMouseEvents : false,
 			swipe                 : (e, direction) => {
@@ -73,7 +80,11 @@ export default class LessonCarouselSelectorComponent extends Component {
 	updateCompletion(index) {
 		let queue     = JSON.parse(JSON.stringify(this.queue));
 		let completed = JSON.parse(JSON.stringify(this.completed));
-		
+
+		if (!queue[index]) {
+			return;
+		}
+
 		queue[index].completed = true;
 
 		this.queue = queue;

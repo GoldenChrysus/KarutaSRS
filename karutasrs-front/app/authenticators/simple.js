@@ -6,7 +6,7 @@ export default class SimpleAuthenticator extends Base {
 		return (data.success) ? Promise.resolve(data) : Promise.reject();
 	}
 
-	authenticate(email, password) {
+	authenticate() {
 		return new Promise((resolve, reject) => {
 			if (typeof arguments[0] === "object" && arguments[0] !== null) {
 				if (arguments[0].success) {
@@ -27,17 +27,17 @@ export default class SimpleAuthenticator extends Base {
 					password : arguments[1] || "",
 				})
 			})
-			.then((response) => {
-				if (!response.data.success) {
-					reject(response.data);
-					return;
-				}
+				.then((response) => {
+					if (!response.data.success) {
+						reject(response.data);
+						return;
+					}
 
-				resolve(response.data);
-			})
-			.catch((e) => {
-				reject(e);
-			});
+					resolve(response.data);
+				})
+				.catch((e) => {
+					reject(e);
+				});
 		});
 	}
 }

@@ -27,9 +27,9 @@ class ApplicationController < ActionController::Base
 		end
 
 		if (class_name === "ActiveRecord::RecordNotFound")
-			error = ApiErrors::BaseError.new("Record not found", "The #{exception.model} identified by #{exception.id} could not be found", 404)
+			error = ApiErrors::BaseError.new("Record not found", "The #{exception.model} identified by #{exception.id} could not be found", 404, 404)
 		else
-			error = ApiErrors::BaseError.new("Server error", exception.message, 500)
+			error = ApiErrors::BaseError.new("Server error", exception.message, 500, 500)
 		end
 
 		self.render_api_error(error)

@@ -7,6 +7,12 @@ export default Component.extend({
 		"unstackable",
 		"table"
 	],
-	poems      : [],
-	title      : ""
+	title : "",
+	poems : undefined,
+
+	init() {
+		this.poems = this.poems || [];
+
+		this._super(...arguments);
+	}
 });

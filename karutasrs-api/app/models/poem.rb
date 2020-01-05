@@ -20,7 +20,7 @@ class Poem < ApplicationRecord
 			return nil
 		end
 
-		note = PoemNote.where(:user_id => @@current_user.id).first
+		note = PoemNote.where(:user_id => @@current_user.id, :poem_id => self.id).first
 
 		return (note) ? note.note : nil
 	end

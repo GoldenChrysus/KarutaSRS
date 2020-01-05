@@ -2,21 +2,21 @@
 	<div class="ui one column centered grid">
 		<div class="row">
 			<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
-				<GrabberCard @width="100%" @text="{{this.grabber_text}}" @answer="{{this.poem.second_verse_answer}}" @card="{{this.poem.second_verse_card}}" @type="review" @size="review" @validate={{this.validate}} key="review-grabber" @key="review-grabber"/>
+				<GrabberCard @width="100%" @text={{this.grabber_text}} @answer={{this.poem.second_verse_answer}} @card={{this.poem.second_verse_card}} @type="review" @size="review" @validate={{this.validate}} key="review-grabber" @key="review-grabber"/>
 			</div>
 		</div>
 		<div class="row">
 			<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
 				<div class="ui huge fluid icon input {{this.input_classes}}">
-					<input type="text" maxlength="17" placeholder="{{if (eq this.type 'grabber') '2nd verse key characters' 'Kimariji'}}" onKeyUp={{action "handleInput"}} onChange={{action "handleInput"}}>
+					<input type="text" maxlength="17" placeholder={{if (eq this.type "grabber") "2nd verse key characters" "Kimariji"}} onKeyUp={{action "handleInput"}} onChange={{action "handleInput"}}>
 
 					{{#if this.answered}}
-						<i class="arrow right link icon" {{action "triggerNextReview" on="click"}}></i>
+						<i class="arrow right link icon" role="button" {{action "triggerNextReview" on="click"}}></i>
 					{{/if}}
 				</div>
 			</div>
 		</div>
-		{{#if (eq this.type 'grabber')}}
+		{{#if (eq this.type "grabber")}}
 			<div class="row">
 				<div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
 					<div class="ui segment">
@@ -36,7 +36,7 @@
 							Item Info
 						</div>
 						<div class="content">
-							<Lesson key="review-lesson" @poem={{this.poem}} @grabber_size="review-info" @stacked=true/>
+							<Lesson key="review-lesson" @poem={{this.poem}} @grabber_size="review-info" @stacked={{true}}/>
 						</div>
 					</div>
 				</div>

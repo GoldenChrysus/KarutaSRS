@@ -43,7 +43,7 @@ export default Route.extend(ApplicationRouteMixin, {
 		return Math.floor(time / 60 / 60);
 	},
 
-	async sessionAuthenticated() {
+	sessionAuthenticated() {
 		this._super(...arguments);
 		this.refresh();
 	},

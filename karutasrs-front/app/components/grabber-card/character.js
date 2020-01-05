@@ -1,8 +1,8 @@
 import Component from '@ember/component';
-import { action, computed } from "@ember/object";
+import { computed } from "@ember/object";
 
 export default Component.extend({
-	classNames        : [
+	classNames : [
 		"character"
 	],
 	classNameBindings : [
@@ -10,22 +10,22 @@ export default Component.extend({
 		"validation",
 		"learning"
 	],
-	index             : 0,
-	char              : "",
-	validate          : false,
-	is_answer         : false,
-	is_correct        : false,
-	is_learning       : computed("type", function() {
+	index       : 0,
+	char        : "",
+	validate    : false,
+	is_answer   : false,
+	is_correct  : false,
+	is_learning : computed("type", function() {
 		return (["learn", "demo"].includes(this.type));
 	}),
-	validation        : computed("validate", "is_correct", function() {
+	validation : computed("validate", "is_correct", function() {
 		return (this.validate)
 			? ((this.is_correct)
 				? "correct"
 				: "incorrect")
 			: "";
 	}),
-	learning          : computed("is_answer", "is_learning", function() {
+	learning : computed("is_answer", "is_learning", function() {
 		return (this.is_answer && this.is_learning) ? "learn" : "";
 	}),
 });

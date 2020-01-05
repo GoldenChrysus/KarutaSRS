@@ -32,6 +32,10 @@ export default class StatisticsComponent extends Component {
 	async didInsert() {
 		let data = await this.current_user.peekUser()[`${this.type}_stats`];
 
+		if (!data) {
+			return;
+		}
+
 		data = data.data;
 
 		if (this.type === "review") {
@@ -114,7 +118,7 @@ export default class StatisticsComponent extends Component {
 
 	processReviewData(data) {
 		let performance = {
-			kimariji     : {
+			kimariji : {
 				1 : {
 					value : "N/A",
 					label : "One",
