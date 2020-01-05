@@ -4,6 +4,8 @@ import { inject as service } from "@ember/service";
 
 export default Component.extend({
 	poem_serv  : service("poem"),
+	user_serv  : service("current-user"),
+	store      : service("store"),
 	classNames : [
 		"ui",
 		"centered",
@@ -79,8 +81,33 @@ export default Component.extend({
 	},
 
 	actions : {
-		changeNotes(notes) {
-			console.log(notes);
+		async changeNotes(notes) {
+			let user = this.user_serv.peekUser();
+			let note = await this.store.query(
+				"poem-note",
+				{
+					filter : {
+						user_id : user.id,
+						poem_id : this.poem.id
+					}
+				}
+			);
+
+			if (note.length) {
+				note = note.get("firstObject");
+			} else {
+				note = this.store.createRecord(
+					"poem-note",
+					{
+						user : user,
+						poem : this.poem
+					}
+				);
+			}
+
+			note.note = notes;
+
+			await note.save();
 		}
 	}
 });

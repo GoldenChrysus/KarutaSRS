@@ -17,7 +17,7 @@ module Api
 				tmp_params[:id] = params[:data][:relationships][:user][:data][:id]
 			end
 
-			unless PoemNotePolicy.new(session[:current_user], tmp_params).show?
+			unless UserPolicy.new(session[:current_user], tmp_params).show?
 				raise ApiErrors::AccessError::Forbidden.new
 			end
 
