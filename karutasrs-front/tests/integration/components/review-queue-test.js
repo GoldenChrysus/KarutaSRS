@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { render, setupOnerror } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Component | review-queue', function(hooks) {
@@ -10,7 +10,7 @@ module('Integration | Component | review-queue', function(hooks) {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.set('myAction', function(val) { ... });
 		setupOnerror((err) => {
-			assert.equal(err.message.slice(0, 7), "No poem");
+			assert.equal(err.message, "No poem provided for review.");
 		});
 
 		await render(hbs`<ReviewQueue />`);
