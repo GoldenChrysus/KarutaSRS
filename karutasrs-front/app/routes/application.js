@@ -82,10 +82,10 @@ export default Route.extend(ApplicationRouteMixin, {
 			}
 
 			switch (e.message) {
-			case "Network request failed":
-				document.write("The server is either undergoing maintenance or we broke it.");
+				case "Network request failed":
+					document.write("The server is either undergoing maintenance or we broke it.");
 
-				return;
+					return;
 			}
 		}
 	}
