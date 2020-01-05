@@ -15,7 +15,7 @@ export default class PoemFiltersComponent extends Component {
 	}
 
 	set kimariji_length(kimariji_length) {
-		this.onChange({ ...this.filters, kimariji_length: Number(kimariji_length) });
+		this.onChange({ ...this.filters, kimariji_length : Number(kimariji_length) });
 	}
 
 	get second_verse_answer_length() {
@@ -23,11 +23,11 @@ export default class PoemFiltersComponent extends Component {
 	}
 
 	set second_verse_answer_length(second_verse_answer_length) {
-		this.onChange({ ...this.filters, second_verse_answer_length: Number(second_verse_answer_length) })
+		this.onChange({ ...this.filters, second_verse_answer_length : Number(second_verse_answer_length) })
 	}
 
 	get filters() {
-		return { sort: this.sort, kimariji_length: this.kimariji_length, second_verse_answer_length: this.second_verse_answer_length };
+		return { sort : this.sort, kimariji_length : this.kimariji_length, second_verse_answer_length : this.second_verse_answer_length };
 	}
 
 	@action

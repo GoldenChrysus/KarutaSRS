@@ -17,7 +17,7 @@ export default class FilteredPoemGridComponent extends Component {
 		}
 
 		if (this.second_verse_answer_length) {
-		  poems = poems.filter(p => p.second_verse_answer.length === this.second_verse_answer_length);
+			poems = poems.filter(p => p.second_verse_answer.length === this.second_verse_answer_length);
 		}
 
 		return poems.sort(
