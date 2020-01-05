@@ -6,7 +6,8 @@ module.exports = {
 		sourceType  : 'module'
 	},
 	plugins : [
-		'ember'
+		'ember',
+		"align-assignments"
 	],
 	extends : [
 		'eslint:recommended',
@@ -16,6 +17,12 @@ module.exports = {
 		browser : true
 	},
 	rules : {
+		"align-assignments/align-assignments" : [
+			"error",
+			{
+				"requiresOnly" : false
+			}
+		],
 		"array-bracket-newline" : [
 			"error",
 			"consistent"
