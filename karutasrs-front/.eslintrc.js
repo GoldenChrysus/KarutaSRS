@@ -21,7 +21,10 @@ module.exports = {
 		"ember/no-unnecessary-route-path-option" : 0,
 		"indent"                                 : [
 			"error",
-			"tab"
+			"tab",
+			{
+				SwitchCase : 1
+			}
 		],
 		"key-spacing" : [
 			"error",

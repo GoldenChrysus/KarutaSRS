@@ -36,15 +36,15 @@ export default class LessonCarouselSelectorComponent extends Component {
 				let max_index = this.queue.length - 1;
 
 				switch(direction) {
-				case "left":
-					new_index = (this.current_lesson === max_index) ? 0 : this.current_lesson + 1;
+					case "left":
+						new_index = (this.current_lesson === max_index) ? 0 : this.current_lesson + 1;
 
-					break;
+						break;
 
-				case "right":
-					new_index = (this.current_lesson === 0) ? max_index : this.current_lesson - 1;
+					case "right":
+						new_index = (this.current_lesson === 0) ? max_index : this.current_lesson - 1;
 
-					break;
+						break;
 				}
 
 				this.changeLesson(new_index);

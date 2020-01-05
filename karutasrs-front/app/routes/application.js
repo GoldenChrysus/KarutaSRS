@@ -67,16 +67,16 @@ export default Route.extend(ApplicationRouteMixin, {
 
 				if (typeof error === "object" && error !== null) {
 					switch (error.code) {
-					// Item can't be reviewed
-					case 12001:
-						$(document)
-							.find("#unreviewable-modal")
-							.modal({
-								closable : false
-							})
-							.modal("show");
-						setTimeout(() => window.location.reload(), 5000);
-						return;
+						// Item can't be reviewed
+						case 12001:
+							$(document)
+								.find("#unreviewable-modal")
+								.modal({
+									closable : false
+								})
+								.modal("show");
+							setTimeout(() => window.location.reload(), 5000);
+							return;
 					}
 				}
 			}
