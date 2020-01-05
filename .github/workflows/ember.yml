@@ -43,3 +43,13 @@ jobs:
       run: |
         cd karutasrs-front
         ./node_modules/.bin/ember test
+
+    - name: Lint Ember templates
+      run: |
+        cd karutasrs-front
+        yarn lint:hbs
+
+    - name: Lint Ember JavaScript
+      run: |
+        cd karutasrs-front
+        yarn lint:js

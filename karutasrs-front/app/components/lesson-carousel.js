@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import { action } from "@ember/object";
 
 export default Component.extend({
 	classNames           : ["lesson-carousel"],
@@ -9,11 +8,13 @@ export default Component.extend({
 	lesson_two_index     : 1,
 	current_lesson_index : 0,
 	current_lesson_elem  : "lesson_one",
-	queue                : [],
+	queue                : undefined,
 	multiple_lessons     : false,
 	demo                 : false,
 
 	init() {
+		this.queue = this.queue || [];
+
 		this._super(...arguments);
 
 		this.set("lesson_one_poem", this.queue[0]);
@@ -21,7 +22,7 @@ export default Component.extend({
 		this.set("multiple_lessons", (this.queue.length > 1));
 	},
 
-	actions: {
+	actions : {
 		async changeLesson(index) {
 			if (index === this.current_lesson_index) {
 				return;

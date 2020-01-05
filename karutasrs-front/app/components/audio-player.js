@@ -7,9 +7,9 @@ export default Component.extend({
 		"volume",
 		"controlslist"
 	],
-	controlslist      : "nodownload",
-	autoplay          : false,
-	controls          : true,
+	controlslist : "nodownload",
+	autoplay     : false,
+	controls     : true,
 
 	init() {
 		this._super(...arguments);

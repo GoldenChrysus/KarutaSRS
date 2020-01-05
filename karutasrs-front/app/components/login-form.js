@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import { action } from "@ember/object";
 import { inject as service } from "@ember/service";
 import config from "../config/environment";
 
@@ -16,7 +15,7 @@ export default Component.extend({
 		$(this.element).find("#login-form").form({
 			inline : true,
 			fields : {
-				email    : {
+				email : {
 					identifier : "email",
 					rules      : [
 						{
@@ -128,14 +127,14 @@ export default Component.extend({
 							this.session.set("data.new_account", true);
 							// transition
 						})
-						.catch((e) => {
+						.catch(() => {
 							this.processing = false;
 
 							this.set("login_error", true);
 							this.set("login_message", "Authentication failed. Please try reloading the page.");
 						});
 				})
-				.catch((e) => {
+				.catch(() => {
 					this.processing = false;
 
 					this.set("login_error", true);

@@ -67,25 +67,25 @@ export default Route.extend(ApplicationRouteMixin, {
 
 				if (typeof error === "object" && error !== null) {
 					switch (error.code) {
-						// Item can't be reviewed
-						case 12001:
-							$(document)
-								.find("#unreviewable-modal")
-								.modal({
-									closable : false
-								})
-								.modal("show");
-							setTimeout(() => window.location.reload(), 5000);
-							return;
+					// Item can't be reviewed
+					case 12001:
+						$(document)
+							.find("#unreviewable-modal")
+							.modal({
+								closable : false
+							})
+							.modal("show");
+						setTimeout(() => window.location.reload(), 5000);
+						return;
 					}
 				}
 			}
 
 			switch (e.message) {
-				case "Network request failed":
-					document.write("The server is either undergoing maintenance or we broke it.");
+			case "Network request failed":
+				document.write("The server is either undergoing maintenance or we broke it.");
 
-					return;
+				return;
 			}
 		}
 	}

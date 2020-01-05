@@ -2,12 +2,12 @@ import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
 module('Unit | Model | learned item', function(hooks) {
-  setupTest(hooks);
+	setupTest(hooks);
 
-  // Replace this with your real tests.
-  test('it exists', function(assert) {
-    let store = this.owner.lookup('service:store');
-    let model = store.createRecord('learned-item', {});
-    assert.ok(model);
-  });
+	// Replace this with your real tests.
+	test('it exists', function(assert) {
+		let store = this.owner.lookup('service:store');
+		let model = store.createRecord('learned-item', {});
+		assert.ok(model);
+	});
 });

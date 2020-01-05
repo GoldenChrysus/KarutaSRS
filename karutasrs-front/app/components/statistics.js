@@ -114,7 +114,7 @@ export default class StatisticsComponent extends Component {
 
 	processReviewData(data) {
 		let performance = {
-			kimariji     : {
+			kimariji : {
 				1 : {
 					value : "N/A",
 					label : "One",

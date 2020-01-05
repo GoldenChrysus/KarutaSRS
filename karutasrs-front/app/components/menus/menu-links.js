@@ -4,7 +4,7 @@ import { inject as service } from "@ember/service";
 
 export default Component.extend({
 	session             : service(),
-	user                : {},
+	user                : undefined,
 	top                 : false,
 	openSidebar         : false,
 	lesson_queue_length : computed("user.lesson_queue_length", function() {
@@ -14,13 +14,19 @@ export default Component.extend({
 		return this.user.review_queue_length || 0;
 	}),
 
+	init() {
+		this.user = this.user || {};
+
+		this._super(...arguments);
+	},
+
 	didInsertElement() {
 		if (this.top) {
 			return;
 		}
 
 		$(this.element).sidebar({
-			mobileTransition: "overlay"
+			mobileTransition : "overlay"
 		});
 		$(this.element).on("click", ".item", () => {
 			$(this.element).sidebar("toggle");

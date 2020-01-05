@@ -6,18 +6,21 @@ import config from "../config/environment";
 export default Component.extend({
 	store               : service(),
 	router              : service("router"),
-	queue               : [],
+	queue               : undefined,
 	type                : "",
-	chunk               : [],
-	answers             : {},
+	chunk               : undefined,
+	answers             : undefined,
 	last_pushed_index   : 0,
 	current_chunk_index : 0,
-	user                : {},
+	user                : undefined,
 
 	async init() {
-		this._super(...arguments);
+		this.queue   = this.queue || [];
+		this.answers = this.answers || {};
+		this.user    = this.user || {};
+		this.chunk   = [];
 
-		this.chunk = [];
+		this._super(...arguments);
 
 		this.chunkQueue();
 
@@ -84,12 +87,12 @@ export default Component.extend({
 
 			if (!this.answers[item_id]) {
 				this.answers[item_id] = {
-					correct  : 0,
-					timings  : {
+					correct : 0,
+					timings : {
 						total   : 0,
 						correct : 0
 					},
-					wrong    : {
+					wrong : {
 						wrong_answers  : 0,
 						wrong_kimariji : 0,
 						wrong_grabber  : 0
@@ -141,7 +144,8 @@ export default Component.extend({
 						contentType : "application/json",
 						data        : JSON.stringify(Object.assign({}, this.answers[item_id].wrong, timings))
 					};
-					let result  = await $.ajax(request);
+					
+					await $.ajax(request);
 				}
 
 				this.pushItemToChunk(this.last_pushed_index + 1);
