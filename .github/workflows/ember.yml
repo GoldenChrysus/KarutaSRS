@@ -5,6 +5,10 @@ on:
     paths:
       - 'karutasrs-front/**'
       - '.github/workflows/ember.yml'
+  pull_request:
+    paths:
+      - 'karutasrs-front/**'
+      - '.github/workflows/ember.yml'
 
 jobs:
   build:
