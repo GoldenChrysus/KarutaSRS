@@ -15,7 +15,8 @@ export default Component.extend({
 	}),
 
 	init() {
-		this.user = this.user || {};
+		this.user        = this.user || {};
+		this.openSidebar = this.openSidebar || function() {};
 
 		this._super(...arguments);
 	},

@@ -12,7 +12,7 @@ module('Integration | Component | modals/intro-modal', function(hooks) {
 
 		await render(hbs`<Modals::IntroModal />`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 7), 'Welcome');
 
 		// Template block usage:
 		await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | modals/intro-modal', function(hooks) {
       </Modals::IntroModal>
     `);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 7), 'Welcome');
 	});
 });

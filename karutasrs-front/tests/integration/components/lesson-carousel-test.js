@@ -12,7 +12,7 @@ module('Integration | Component | lesson-carousel', function(hooks) {
 
 		await render(hbs`<LessonCarousel />`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim(), 'No lessons.');
 
 		// Template block usage:
 		await render(hbs`<LessonCarousel/>`);

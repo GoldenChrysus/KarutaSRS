@@ -28,11 +28,11 @@ export default Component.extend({
 	archaic_warnings : computed("poem", function() {
 		let warnings = [];
 
-		if ((this.poem.first_verse + this.poem.second_verse_card).includes("ゑ")) {
+		if (String(this.poem.first_verse + this.poem.second_verse_card).includes("ゑ")) {
 			warnings.push("ゑ can be written as 'e'.");
 		}
 
-		if ((this.poem.first_verse + this.poem.second_verse_card).includes("ゐ")) {
+		if (String(this.poem.first_verse + this.poem.second_verse_card).includes("ゐ")) {
 			warnings.push("ゐ can be written as 'i' or 'wi'.");
 		}
 

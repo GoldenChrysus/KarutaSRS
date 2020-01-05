@@ -12,7 +12,7 @@ module('Integration | Component | footer', function(hooks) {
 
 		await render(hbs`<Footer />`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 9), 'Developed');
 
 		// Template block usage:
 		await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | footer', function(hooks) {
       </Footer>
     `);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 9), 'Developed');
 	});
 });

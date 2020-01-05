@@ -10,17 +10,9 @@ module('Integration | Component | review-queue', function(hooks) {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.set('myAction', function(val) { ... });
 
-		await render(hbs`<ReviewQueue />`);
-
-		assert.equal(this.element.textContent.trim(), '');
-
-		// Template block usage:
-		await render(hbs`
-      <ReviewQueue>
-        template block text
-      </ReviewQueue>
-    `);
-
-		assert.equal(this.element.textContent.trim(), '');
+		assert.throws(
+			async () => await render(hbs`<ReviewQueue />`),
+			"No poem provided for review."
+		);
 	});
 });

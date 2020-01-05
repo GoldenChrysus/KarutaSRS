@@ -73,6 +73,10 @@ export default class LessonCarouselSelectorComponent extends Component {
 	updateCompletion(index) {
 		let queue     = JSON.parse(JSON.stringify(this.queue));
 		let completed = JSON.parse(JSON.stringify(this.completed));
+
+		if (!queue[index]) {
+			return;
+		}
 		
 		queue[index].completed = true;
 

@@ -39,6 +39,10 @@ export default Component.extend({
 		this.poem = this.poem || {};
 
 		this._super(...arguments);
+
+		if (!this.poem) {
+			throw new Error("No poem provided for review.");
+		}
 	},
 
 	didRender() {
