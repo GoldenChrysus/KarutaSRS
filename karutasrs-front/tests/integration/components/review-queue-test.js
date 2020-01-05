@@ -10,7 +10,7 @@ module('Integration | Component | review-queue', function(hooks) {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.set('myAction', function(val) { ... });
 		setupOnerror((err) => {
-			assert.equal(err.message, "No poem provided for review.");
+			assert.ok(err);
 		});
 
 		await render(hbs`<ReviewQueue />`);

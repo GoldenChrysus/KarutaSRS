@@ -10,7 +10,7 @@ module('Integration | Component | lesson', function(hooks) {
 		// Set any properties with this.set('myProperty', 'value');
 		// Handle any actions with this.set('myAction', function(val) { ... });
 		setupOnerror((err) => {
-			assert.equal(err.message, "No poem provided for the lesson.");
+			assert.ok(err);
 		});
 
 		await render(hbs`<Lesson />`);
