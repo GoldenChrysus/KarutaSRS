@@ -21,6 +21,6 @@ module('Integration | Component | review-queue/review', function(hooks) {
       </ReviewQueue::Review>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

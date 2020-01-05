@@ -21,6 +21,6 @@ module('Integration | Component | menus/side-menu', function(hooks) {
       </Menus::SideMenu>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

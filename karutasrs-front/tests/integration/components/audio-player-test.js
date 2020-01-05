@@ -21,6 +21,6 @@ module('Integration | Component | audio-player', function(hooks) {
       </AudioPlayer>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

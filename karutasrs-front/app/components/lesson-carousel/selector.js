@@ -8,7 +8,7 @@ export default class LessonCarouselSelectorComponent extends Component {
 	@service router;
 
 	@tracked current_lesson = 0;
-	@tracked queue          = this.args.queue;
+	@tracked queue          = this.args.queue || [];
 	@tracked completed      = [];
 
 	demo = this.args.demo || false;

@@ -21,6 +21,6 @@ module('Integration | Component | footer', function(hooks) {
       </Footer>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

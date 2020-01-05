@@ -21,6 +21,6 @@ module('Integration | Component | poem-grid', function(hooks) {
       </PoemGrid>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

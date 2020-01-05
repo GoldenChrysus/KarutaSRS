@@ -12,7 +12,7 @@ module('Integration | Component | menus/top-menu', function(hooks) {
 
 		await render(hbs`<Menus::TopMenu />`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 3), 'かるた');
 
 		// Template block usage:
 		await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | menus/top-menu', function(hooks) {
       </Menus::TopMenu>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim().slice(0, 3), 'かるた');
 	});
 });

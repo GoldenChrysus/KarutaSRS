@@ -21,6 +21,6 @@ module('Integration | Component | lesson', function(hooks) {
       </Lesson>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

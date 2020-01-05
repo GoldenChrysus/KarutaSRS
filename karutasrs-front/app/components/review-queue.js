@@ -46,7 +46,9 @@ export default Component.extend({
 			this.last_pushed_index = i;
 		}
 
-		this.setActiveReview();
+		if (this.chunk.length) {
+			this.setActiveReview();
+		}
 	},
 
 	pushItemToChunk(index) {

@@ -12,7 +12,7 @@ module('Integration | Component | statistics/poem-list', function(hooks) {
 
 		await render(hbs`<Statistics::PoemList />`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 1), '#');
 
 		// Template block usage:
 		await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | statistics/poem-list', function(hooks) {
       </Statistics::PoemList>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim().slice(0, 1), '#');
 	});
 });

@@ -21,6 +21,6 @@ module('Integration | Component | grabber-card', function(hooks) {
       </GrabberCard>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });

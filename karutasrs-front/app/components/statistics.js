@@ -32,6 +32,10 @@ export default class StatisticsComponent extends Component {
 	async didInsert() {
 		let data = await this.current_user.peekUser()[`${this.type}_stats`];
 
+		if (!data) {
+			return;
+		}
+
 		data = data.data;
 
 		if (this.type === "review") {

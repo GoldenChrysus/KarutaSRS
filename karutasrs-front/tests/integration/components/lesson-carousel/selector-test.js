@@ -21,6 +21,6 @@ module('Integration | Component | lesson-carousel/selector', function(hooks) {
       </LessonCarousel::Selector>
     `);
 
-		assert.equal(this.element.textContent.trim(), 'template block text');
+		assert.equal(this.element.textContent.trim(), '');
 	});
 });
