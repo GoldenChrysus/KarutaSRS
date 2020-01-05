@@ -12,7 +12,7 @@ module('Integration | Component | menus/menu-links', function(hooks) {
 
 		await render(hbs`<Menus::MenuLinks @top={{true}}/>`);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 5), 'Login');
 
 		// Template block usage:
 		await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | menus/menu-links', function(hooks) {
       </Menus::MenuLinks>
     `);
 
-		assert.equal(this.element.textContent.trim(), '');
+		assert.equal(this.element.textContent.trim().slice(0, 5), 'Login');
 	});
 });

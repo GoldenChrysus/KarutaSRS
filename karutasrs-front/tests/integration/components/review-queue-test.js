@@ -12,7 +12,8 @@ module('Integration | Component | review-queue', function(hooks) {
 
 		assert.throws(
 			async () => await render(hbs`<ReviewQueue />`),
-			"No poem provided for review."
+			/poem/,
+			"raised error message mentions a poem"
 		);
 	});
 });

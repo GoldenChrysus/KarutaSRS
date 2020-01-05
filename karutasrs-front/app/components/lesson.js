@@ -23,7 +23,15 @@ export default Component.extend({
 		return this.poem_serv.formatTranslation(this.poem.translation);
 	}),
 	background : computed("poem", function() {
-		return JSON.parse(this.poem.background);
+		let background = [];
+
+		try {
+			background = JSON.parse(this.poem.background);
+		} catch {
+			background = [];
+		}
+		
+		return background;
 	}),
 	archaic_warnings : computed("poem", function() {
 		let warnings = [];
