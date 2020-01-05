@@ -1,4 +1,4 @@
-export const isString = a => Object.prototype.toString.call(a) === '[object String]';
+export const isString = a => Object.prototype.toString.call(a) === "[object String]";
 
 export const sortBy = (...cbs) => (a, b) => {
 	for (const cb of cbs) {
