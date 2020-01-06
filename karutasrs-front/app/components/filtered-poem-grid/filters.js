@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 
-export default class PoemFiltersComponent extends Component {
+export default class FilteredPoemGridFiltersComponent extends Component {
 	get sort() {
 		return this.args.sort;
 	}
