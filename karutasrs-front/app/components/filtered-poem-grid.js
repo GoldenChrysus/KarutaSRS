@@ -10,6 +10,10 @@ export default class FilteredPoemGridComponent extends Component {
 	@tracked second_verse_answer_length;
 
 	get poems() {
+		if (!this.args.poems) {
+			return [];
+		}
+
 		let poems = this.args.poems.toArray();
 
 		if (this.kimariji_length) {
