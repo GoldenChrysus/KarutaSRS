@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | filtered-poem-grid', function(hooks) {
+module('Integration | Component | audio-player', function(hooks) {
 	setupRenderingTest(hooks);
 
 	test('it renders', async function(assert) {
