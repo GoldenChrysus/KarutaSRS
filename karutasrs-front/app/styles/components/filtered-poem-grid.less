@@ -1,0 +1,35 @@
+.poem-filters-container {
+	margin-bottom: 1rem;
+}
+
+.poem-filters-container.ui.styled.accordion .content {
+	padding-bottom: 1rem;
+}
+
+.poem-filters, .poem-filter-types {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+
+.poem-filters > .poem-filter-types {
+	flex: 1
+}
+
+.poem-filter-types .ui.dropdown {
+	margin-right: 0.5rem;
+}
+
+@media screen and (max-width: @tabletBreakpoint - 1) {
+	.poem-filters, .poem-filter-types, .poem-filter-sort {
+		flex-flow: column;
+		align-items: start;
+		width: 100%;
+	}
+
+	.poem-filters .ui.dropdown {
+		width: 100%;
+		margin-bottom: 0.5rem;
+		margin-right: 0;
+	}
+}

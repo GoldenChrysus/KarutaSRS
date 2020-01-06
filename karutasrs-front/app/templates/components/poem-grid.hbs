@@ -1,9 +1,9 @@
 <div class="ui grid">
-	{{#each this.poems as |poem|}}
+	{{#each this.poems key="id" as |poem|}}
 		<div class={{this.classes}}>
 			<div class="ui segment">
 				<h3><LinkTo @route="authenticated.poems.show" @model={{poem.id}}>Poem {{poem.id}}</LinkTo></h3>
-				
+
 				<div class="ui gray ribbon label">Poet</div>
 				<p>{{poem.name}}</p>
 
