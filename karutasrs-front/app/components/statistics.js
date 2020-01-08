@@ -232,9 +232,10 @@ export default class StatisticsComponent extends Component {
 		let time   = (now.isAfter(review)) ? "Now" : false;
 
 		if (!time) {
-			let diff = now.diff(review, "days");
+			let diff      = review.diff(now, "days");
+			let days_word = (diff !== 1) ? "days" : "day";
 
-			time = (diff === 0) ? review.format("h:ss a") : `${diff} days`;
+			time = (diff === 0) ? review.format("h:ss a") : `${diff} ${days_word}`;
 		}
 
 		return time;
