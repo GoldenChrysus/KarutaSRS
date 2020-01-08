@@ -10,10 +10,10 @@ RSpec.describe User, type: :model do
 
 	# ensure email is case-insensitively unique
 	subject {
-		User.create(
-			:email    : "test@test.com",
-			:password : "1234"
-		)
+		User.create({
+			:email    => "test@test.com",
+			:password => "1234"
+		})
 	}
 
 	it { should validate_uniqueness_of(:email).case_insensitive }
