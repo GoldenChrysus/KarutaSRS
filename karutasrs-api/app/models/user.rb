@@ -327,7 +327,7 @@ class User < ApplicationRecord
 
 	private
 		def normalize_email
-			self.email = self.email.to_s.downcase
+			self.email.to_s.downcase!
 		end
 
 		def create_bearer
