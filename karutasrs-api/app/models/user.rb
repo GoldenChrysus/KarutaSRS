@@ -4,7 +4,7 @@ class User < ApplicationRecord
 	attr_accessor :lesson_queue_length
 
 	# Validation
-	validates :email, presence: true, uniqueness: true
+	validates :email, presence: true, uniqueness: {:case_sensitive: => false }
 	validates :password, presence: true
 	validates :bearer, presence: true, uniqueness: true
 
@@ -13,8 +13,8 @@ class User < ApplicationRecord
 	has_many :poem_notes
 
 	# Callbacks
-	before_validation :create_bearer, on: :create,
-	before_validation :normalize_email, on: :create
+	before_validation :create_bearer, on: :create
+	after_validation :normalize_email, on: :create
 	after_validation :hash_password, on: :create
 
 	def lesson_queue
