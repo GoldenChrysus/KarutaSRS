@@ -1,9 +1,21 @@
 import Base from 'ember-simple-auth/authenticators/base';
 import config from "../config/environment";
+import { inject as service } from "@ember/service";
 
 export default class SimpleAuthenticator extends Base {
-	restore(data) {
-		return (data.success) ? Promise.resolve(data) : Promise.reject();
+	@service store;
+
+	async restore(data) {
+		if (data.success) {
+			try {
+				await this.store.findRecord("user", data.authenticated.user.id);
+				Promise.resolve(data);
+			} catch {
+				Promise.reject();
+			}
+		} else {
+			Promise.reject();
+		}
 	}
 
 	authenticate() {
