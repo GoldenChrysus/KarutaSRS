@@ -4,7 +4,7 @@ class User < ApplicationRecord
 	attr_accessor :lesson_queue_length
 
 	# Validation
-	validates :email, presence: true, uniqueness: true
+	validates :email, presence: true, uniqueness: {:case_sensitive => false}
 	validates :password, presence: true
 	validates :bearer, presence: true, uniqueness: true
 
