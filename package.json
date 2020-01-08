@@ -2,7 +2,7 @@
 	"name": "KarutaSRS",
 	"description": "Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu or the one hundred poets/poems used in kyogi karuta.",
 	"license": "GPL-3.0-only",
-	"version": "0.2.0-alpha",
+	"version": "0.2.1-alpha",
 	"keywords": [
 		"karuta",
 		"ogura-hyakunin-isshu",
