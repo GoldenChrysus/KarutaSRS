@@ -59,14 +59,15 @@ module.exports = {
 			"error",
 			"always-multiline"
 		],
-		"newline-per-chained-call" : "error",
-		"no-extend-native"         : "error",
-		"no-lonely-if"             : "error",
-		"no-multi-assign"          : "error",
-		"no-return-assign"         : "error",
-		"no-sequences"             : "error",
-		"no-trailing-spaces"       : "error",
-		"object-curly-newline"     : [
+		"newline-per-chained-call"  : "error",
+		"no-async-promise-executor" : 0,
+		"no-extend-native"          : "error",
+		"no-lonely-if"              : "error",
+		"no-multi-assign"           : "error",
+		"no-return-assign"          : "error",
+		"no-sequences"              : "error",
+		"no-trailing-spaces"        : "error",
+		"object-curly-newline"      : [
 			"error",
 			{
 				consistent : true
