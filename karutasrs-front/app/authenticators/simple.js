@@ -5,17 +5,27 @@ import { inject as service } from "@ember/service";
 export default class SimpleAuthenticator extends Base {
 	@service store;
 
-	async restore(data) {
-		if (data.success) {
-			try {
-				await this.store.findRecord("user", data.authenticated.user.id);
-				Promise.resolve(data);
-			} catch {
-				Promise.reject();
+	restore(data) {
+		return new Promise(async (resolve, reject) => {
+			if (data.success) {
+				try {
+					await $.ajax({
+						url         : config.API_HOST + "/users/" + data.user.id,
+						type        : "GET",
+						contentType : "application/json",
+						headers     : {
+							Authorization : `Bearer ${data.user.bearer}`
+						}
+					});
+
+					resolve(data);
+				} catch {
+					reject();
+				}
+			} else {
+				reject();
 			}
-		} else {
-			Promise.reject();
-		}
+		});
 	}
 
 	authenticate() {
