@@ -4,7 +4,7 @@ class User < ApplicationRecord
 	attr_accessor :lesson_queue_length
 
 	# Validation
-	validates :email, presence: true, uniqueness: {:case_sensitive => false}
+	validates :email, presence: true, uniqueness: true
 	validates :password, presence: true
 	validates :bearer, presence: true, uniqueness: true
 
@@ -13,7 +13,8 @@ class User < ApplicationRecord
 	has_many :poem_notes
 
 	# Callbacks
-	before_validation :create_bearer, on: :create
+	before_validation :create_bearer, on: :create,
+	before_validation :normalize_email, on: :create
 	after_validation :hash_password, on: :create
 
 	def lesson_queue
@@ -325,6 +326,10 @@ class User < ApplicationRecord
 	end
 
 	private
+		def normalize_email
+			self.email = self.email.to_s.downcase
+		end
+
 		def create_bearer
 			while (!self.bearer || self.class.bearer_exists?(self.bearer))
 				self.bearer = self.class.hash_value(SecureRandom.uuid)
