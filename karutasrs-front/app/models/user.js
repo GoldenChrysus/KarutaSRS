@@ -8,6 +8,7 @@ export default class UserModel extends Model {
 	@attr bearer;
 	@attr lesson_queue_length;
 	@attr review_queue_length;
+	@attr created_at;
 
 	@hasMany("learned-item") learned_items;
 	@hasMany("poem-note") poem_notes;

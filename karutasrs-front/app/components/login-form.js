@@ -128,7 +128,6 @@ export default Component.extend({
 
 					this.session.authenticate("authenticator:simple", data)
 						.then(() => {
-							this.session.set("data.new_account", true);
 							// transition
 						})
 						.catch(() => {
