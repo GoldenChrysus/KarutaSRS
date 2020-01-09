@@ -3,6 +3,7 @@ import config from "../config/environment";
 import { inject as service } from "@ember/service";
 
 export default class SimpleAuthenticator extends Base {
+	@service session;
 	@service store;
 
 	restore(data) {
@@ -32,6 +33,7 @@ export default class SimpleAuthenticator extends Base {
 		return new Promise((resolve, reject) => {
 			if (typeof arguments[0] === "object" && arguments[0] !== null) {
 				if (arguments[0].success) {
+					this.session.set("data.new_account", true);
 					resolve(arguments[0]);
 				} else {
 					reject(arguments[0]);
