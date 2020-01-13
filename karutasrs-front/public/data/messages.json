@@ -3,5 +3,10 @@
 		"type"    : "dashboard",
 		"date"    : "2020-01-05T23:59:59.99Z",
 		"message" : "Some poems were found to have incorrect <em>kimariji</em>. All users have not yet learned most of these poems. However, to ensure users learn the correct karuta information, the following poems have been reset for all users: 26, 39, 41, 43, 44, 45, 47, 60, 71, 78, 88, 95. We apologize for the inconvenience. Karuta SRS is still in alpha, and we want to ensure it is the most reliable and accurate tool for everyone wanting to learn karuta."
+	},
+	{
+		"type"    : "dashboard",
+		"date"    : "2020-01-12T15:49:59.99Z",
+		"message" : "Poem notes and poem filtering have been added! During lessons, reviews (by clicking 'Item Info'), or from the poems page, add your own notes in the textbox to help remember the poem. You can also filter and sort the poem page by <em>kimariji</em> and second verse answer length."
 	}
 ]
