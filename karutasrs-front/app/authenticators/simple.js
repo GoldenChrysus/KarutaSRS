@@ -32,6 +32,10 @@ export default class SimpleAuthenticator extends Base {
 	authenticate() {
 		return new Promise((resolve, reject) => {
 			if (typeof arguments[0] === "object" && arguments[0] !== null) {
+				if (arguments[0].user) {
+					arguments[0].user.password = null;
+				}
+
 				if (arguments[0].success) {
 					this.session.set("data.new_account", true);
 					resolve(arguments[0]);
