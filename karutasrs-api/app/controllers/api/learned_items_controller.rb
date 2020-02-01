@@ -14,7 +14,11 @@ module Api
 		end
 
 		def index
-			raise ApiErrors::AccessError::Forbidden.new
+			unless LearnedItemPolicy.new(session[:current_user], params).index?
+				raise ApiErrors::AccessError::Forbidden.new
+			end
+
+			process_request
 		end
 
 		def create

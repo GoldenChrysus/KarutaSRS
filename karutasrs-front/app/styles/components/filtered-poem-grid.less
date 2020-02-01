@@ -6,7 +6,8 @@
 	padding-bottom: 1rem;
 }
 
-.poem-filters, .poem-filter-types {
+.poem-filters,
+.poem-filter-types {
 	display: flex;
 	flex-flow: row;
 	align-items: center;
@@ -16,18 +17,41 @@
 	flex: 1
 }
 
-.poem-filter-types .ui.dropdown {
+.poem-filters > .poem-filter-types > .ui.dropdown,
+.poem-filters > .poem-filter-types > .ui.input {
 	margin-right: 0.5rem;
 }
 
-@media screen and (max-width: @tabletBreakpoint - 1) {
-	.poem-filters, .poem-filter-types, .poem-filter-sort {
-		flex-flow: column;
+@media screen and (max-width: @computerBreakpoint - 1) {
+	.poem-filters,
+	.poem-filter-types,
+	.poem-filter-sort {
+		display: flex;
 		align-items: start;
+		flex-wrap: wrap;
 		width: 100%;
 	}
 
-	.poem-filters .ui.dropdown {
+	.poem-filters > .poem-filter-types > .ui.dropdown,
+	.poem-filters > .poem-filter-types > .ui.input,
+	.poem-filters > .poem-filter-sort > .ui.dropdown {
+		margin-bottom: 0.5rem;
+		margin-right: 1%;
+		flex: 1 1 49%;
+		min-width: 49%;
+	}
+}
+
+@media screen and (max-width: @tabletBreakpoint - 1) {
+	.poem-filters,
+	.poem-filter-types,
+	.poem-filter-sort {
+		flex-flow: column;
+	}
+
+	.poem-filters > .poem-filter-types > .ui.dropdown,
+	.poem-filters > .poem-filter-types > .ui.input,
+	.poem-filters > .poem-filter-sort > .ui.dropdown {
 		width: 100%;
 		margin-bottom: 0.5rem;
 		margin-right: 0;

@@ -35,6 +35,23 @@
 						<div class="item">8</div>
 					</div>
 				</div>
+				<div class="ui input">
+					<Input name="kimariji" @type="text" @placeholder="Kimariji" @value={{this.kimariji}}/>
+				</div>
+				<div class="ui input">
+					<Input name="second_verse" @type="text" @placeholder="2nd Verse" @value={{this.second_verse}}/>
+				</div>
+				<div class="ui clearable selection dropdown compact">
+					<Input @type="hidden" @value={{this.learned}} />
+					<span class="default text">Learned</span>
+					<i class="dropdown icon"></i>
+					<div class="menu">
+						<div class="header">Learned</div>
+						<div class="item" data-value="-1">All</div>
+						<div class="item" data-value="1">Yes</div>
+						<div class="item" data-value="0">No</div>
+					</div>
+				</div>
 			</div>
 			<div class="poem-filter-sort">
 				<div class="ui compact selection dropdown">

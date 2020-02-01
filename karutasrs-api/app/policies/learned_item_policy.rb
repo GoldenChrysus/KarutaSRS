@@ -4,6 +4,14 @@ class LearnedItemPolicy
 		@params = params
 	end
 
+	def index?
+		if (!@params[:filter] || !@params[:filter][:user_id])
+			return false
+		end
+
+		return (@params[:filter][:user_id] === @user.id.to_s)
+	end
+
 	def show?
 		item = get_learned_item(@params[:id])
 		user = item.user
