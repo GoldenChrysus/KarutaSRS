@@ -80,3 +80,13 @@ You can use all of the features of Karuta SRS at https://karutasrs.com/.
     - ☑️ Average response delay
     - ❌ Ability to select time range
       - ❌ Unlimited time range will show correct answer rate over time
+
+## License
+[GNU General Public License v3.0 only](/LICENSE)
+
+## Copyright
+Copyright (C) 2019-2020, Patrick Golden. All rights reserved.
+
+Copyrights licensed under GNU General Public License v3.0 only.
+
+See the accompanying [LICENSE](/LICENSE) file for terms.
