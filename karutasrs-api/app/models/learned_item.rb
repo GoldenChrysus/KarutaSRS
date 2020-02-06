@@ -38,7 +38,7 @@ class LearnedItem < ApplicationRecord
 			new_level = current_level + 1
 		elsif (current_level > 1)
 			penalty    = (current_level >= 5) ? 2 : 1
-			adjustment = ((wrong_answers / 2).to_f).ceil
+			adjustment = ((wrong_answers / 2.0).to_f).ceil
 			new_level  = [current_level - (adjustment * penalty), 1].max
 		end
 
