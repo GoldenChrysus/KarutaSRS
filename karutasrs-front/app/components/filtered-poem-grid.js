@@ -5,7 +5,7 @@ import { sortBy } from '../common/util';
 
 export default class FilteredPoemGridComponent extends Component {
 	@tracked sort    = "num";
-	@tracked learned = "-1";
+	@tracked learned = -1;
 
 	@tracked kimariji_length;
 	@tracked second_verse_answer_length;
