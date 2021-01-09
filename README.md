@@ -8,10 +8,11 @@ Rails and Ember spaced repetition system for memorizing the Ogura Hyakunin Isshu
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/KarutaSRS.svg)
 
 #### Funding
+<a href="https://cash.app/$chrysus"><img src="https://img.shields.io/badge/Donate-on%20Cash%20App-yellowgreen?style=flat-square&logo=cash-app" alt="Donate on Cash App" height="23"></a>
 <a href="https://paypal.me/goldenchrysus"><img src="https://i.imgur.com/ugzarwk.png" alt="Donate at PayPal" height="23"></a>
 <a href="https://ko-fi.com/S6S611OOG"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Donate at Ko-fi" height="23"></a>
 <a href="https://patreon.com/Chrysus"><img src="https://i.imgur.com/cjMRY6Q.png" alt="Become a Patron" height="23"></a>
-<a href="https://streamelements.com/chrysus/tip"><img src="https://img.shields.io/badge/Donate-at%20StreamElements-green" alt="Donate at StreamElements" height="23"></a>
+<a href="https://chrysus.live/tip"><img src="https://img.shields.io/badge/Donate-at%20Streamlabs-yellowgreen?style=flat-square&logo=twitch" alt="Donate at Streamlabs" height="23"></a>
 
 ## Official Build
 

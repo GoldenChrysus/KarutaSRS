@@ -231,7 +231,7 @@ poems = Poem.update_or_create([
 		name: "Sosei Hoshi",
 		first_verse: "いまこむと|いひしばかりに|ながつきの",
 		second_verse_raw: "ありあけのつきをまちいでつるかな",
-		second_verse_card: "ありあけのつきをまちてつるかな",
+		second_verse_card: "ありあけのつきをまちいてつるかな",
 		second_verse_answer: "あり",
 		kimariji: "いまこ",
 		translation: "Just because she said,|\"In a moment I will come,\"|I've awaited her|Until the moon of daybreak,|In the long month, has appeared.",

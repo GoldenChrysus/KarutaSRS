@@ -6,18 +6,22 @@ export default Component.extend({
 		"grabber-card-outer"
 	],
 	classNameBindings : [
-		"size"
+		"size",
+		"text_length"
 	],
 	attributeBindings : [
 		"key:key"
 	],
-	height     : 0,
-	width      : "444px",
-	text       : "",
-	card       : "",
-	answer     : "",
-	type       : "",
-	validate   : false,
+	height      : 0,
+	width       : "444px",
+	text        : "",
+	card        : "",
+	answer      : "",
+	type        : "",
+	validate    : false,
+	text_length : computed("text", function() {
+		return (this.text.length === 16) ? "sixteen-length" : "fifteen-length";
+	}),
 	char_array : computed("text", "answer", function() {
 		let chars_array  = this.text.split("");
 		let answer_array = (this.answer) ? this.answer.split("") : [];
@@ -40,7 +44,7 @@ export default Component.extend({
 
 		let result      = [];
 		let column_data = [
-			char_data.slice(10, 15), // left column characters
+			char_data.slice(10), // left column characters
 			char_data.slice(5, 10), // middle column characters
 			char_data.slice(0, 5) // right column characters
 		];
@@ -49,6 +53,10 @@ export default Component.extend({
 			for (let tmp_chars of column_data) {
 				result.push(tmp_chars[i] || {});
 			}
+		}
+
+		if (this.text.length === 16) {
+			result.push(column_data[0][5]);
 		}
 
 		return result;
