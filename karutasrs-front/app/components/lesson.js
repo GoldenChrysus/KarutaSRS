@@ -30,6 +30,7 @@ export default Component.extend({
 		try {
 			background = JSON.parse(this.poem.background);
 		} catch {
+			console.log(this.poem.background);
 			background = [];
 		}
 

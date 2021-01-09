@@ -21,6 +21,9 @@ Router.map(function() {
 		this.route("lessons", { path : "/lessons" }, function() {
 			this.route("queue");
 		});
+		this.route("practice", { path : "/practice" }, function() {
+			this.route("quiz");
+		});
 		this.route("poems", { path : "/poems" }, function() {
 			this.route("show", { path : "/:id" });
 		});

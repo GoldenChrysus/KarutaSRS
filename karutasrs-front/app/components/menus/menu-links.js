@@ -22,6 +22,10 @@ export default Component.extend({
 	},
 
 	didInsertElement() {
+		$(this.element)
+			.find(".dropdown")
+			.dropdown();
+
 		if (this.top) {
 			return;
 		}
@@ -29,7 +33,7 @@ export default Component.extend({
 		$(this.element).sidebar({
 			mobileTransition : "overlay"
 		});
-		$(this.element).on("click", ".item", () => {
+		$(this.element).on("click", ".item:not(.dropdown)", () => {
 			$(this.element).sidebar("toggle");
 		});
 	}

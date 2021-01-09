@@ -455,7 +455,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ひとし",
 		kimariji: "こい",
 		translation: "It is true I love,|But the rumor of my love|Had gone far and wide,|When people should not have known|That I had begun to love.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Sh\u016bish\u016b<\/em>. The dates of the poet, who was active in the middle of the 10th century, are unknown, but he was the son of Mibu no Tadamine. As mentioned above, the poem was submitted in competition with the previous one, and perhaps for political reasons it was judged the loser. Interestingly, the order of the two is reversed in the <em>Sh\u016bish\u016b<\/em>.\",\"Both Poem 41 and Poem 40 reflect surprise and chagrin at the poets&rsquo; learning that their love has become something of an open secret; both use the technique of inversion (<strong><em>t\u014dchi-h\u014d<\/em><\/strong>); and both insert grammatical breaks inside the poem after similarly inflected verbs, although here the break comes after the third line (<strong><em>sankugire<\/em><\/strong>) rather than the second. They are indeed a well-matched pair. \"]"
 	},
 	{
 		id: "42",
@@ -466,7 +466,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "す",
 		kimariji: "ちぎりき",
 		translation: "Our sleeves were wet with tears|As pledges that our love--|Will last until|Over Sue's Mount of Pines|Ocean waves are breaking.",
-		background: "[]"
+		background: "[\"The source is the fourth &ldquo;Love&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 770). Kiyohara no Motosuke (908-990) -- the grandson of Kiyohara no Fukayabu.\",\"The poem is essentially a lover&rsquo;s lament at having been abandoned despite the couple&rsquo;s pledge of eternal love, a pledge implicit in the literal meaning of the place name (&quot;End-Waiting Pine Mountain&quot;). The precise location of Sue-no-matsuyama is unclear. Two primary candidates exist, the more likely of which (since it is actually closer to the ocean ) is a hill next to Takarakuni Temple in the present-day city of Tagaj\u014d in Miyagi Prefecture. Two large pines grow side by side on this hill -- labeled &quot;Old Pine Hill&quot; on street signs -- which would certainly be in accord with the central message of undying love. This is also the hill mentioned by Matsuo Bash\u014d in <em>Oku no hosomichi<\/em> (he visited on the Eighth Day of the Fifth Month of 1689). The other possibility is Namiuchi (&quot;Wave Striking&quot;) Pass on the old \u014csh\u016b Highway in the town of Ichinohe in present-day Iwate Prefecture, a mountainous area covered by red pines and known for an abundance of exposed sea fossils. Whichever spot may have provided the original inspiration, a waka in the <em>Kokinsh\u016b<\/em> (SKT 1093) turned Sue-no-matsuyama into a metaphor for resistance to the vicissitudes of change, ensuring its use as an <strong>utamakura<\/strong> by generations of future poets.\",\"Grammatical inversion (<strong><em>t\u014dchi-h\u014d<\/em><\/strong>) has been used to place at the beginning what would normally be the last line, resulting in a full syntactic break after the first line (the technique of <strong><em>shokugire<\/em><\/strong>). Although in translation the interruption is less emphatic, the combination highlights an ambivalent mix of resentment and affection (sort of like beginning with &ldquo;But you promised!&rdquo;) that can be said to give the poem its distinctive flavor.\"]"
 	},
 	{
 		id: "43",
@@ -477,7 +477,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "むか",
 		kimariji: "あい",
 		translation: "I have met my love.|When I compare this present|With feelings of the past,|My passion is now as if|I have never loved before.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of the <em>Sh\u016bish\u016b<\/em> (SKT 710). Fujiwara no Atsutada (906-943)\u00a0 was the third son of Minister of the Left Fujiwara no Tokihira (871-909) and known for his skill at playing the <em>biwa<\/em> (lute).\",\"The translation follows the interpretation that this is a morning-after poem (<em>kinuginu no uta<\/em>) meant to convey the message that the intensity of the poet's feelings has only increased as a result of spending the night with the woman he has visited. Under this interpretation, the poet is conventionally seeking to reassure the woman that theirs was more than a one-night stand, but there is an affecting sincerity in the man's forthright assertion of desire and affection, along with just the slightest hint that obstacles may stand in the way of further meetings. Other interpretations hold that the waka was written after a period during which such obstacles prevented the poet from meeting the woman again, or that the original meeting itself has given rise to worries that are now causing the poet anguish.\"]"
 	},
 	{
 		id: "44",
@@ -488,7 +488,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ひとを",
 		kimariji: "おおこ",
 		translation: "If it should happen|That we never met again,|I would not complain;|And I doubt that she or I|Would feel that we were left alone.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Sh\u016bish\u016b<\/em> (SKT 678). Fujiwara no Asatada (910-966) was the fifth son of Sanj\u014d Minister of the Right Sadakata.\",\"The verb <em>uramu<\/em> (&ldquo;resent&rdquo;) indicates that the poet is lamenting his treatment at the hands of the woman to whom the poem is being sent: she is not permitting him to visit as often as he would like. The paradoxical result is that his frustration is even greater than it would have been had he not been able to visit her at all. Although no specific poetic technique is involved, it is worth examining the various grammatical relationships involved to gain a better appreciation of how the irony is produced.\",\"First, <em>taete<\/em> is an emphatic adverb that (like <em>kesshite<\/em> or <em>mattaku<\/em> in modern Japanese) presumes a subsequent negative grammatical element, here the adjective <em>nashi<\/em> (&ldquo;not-being,&rdquo; inflected as <em>naku<\/em> because another grammatical element is appended). Thus, up to <em>naku<\/em>, the sense is &ldquo;not ever meeting at all.&rdquo; Adding the particle <em>wa<\/em> establishes the first two lines as a hypothetical condition that presumes the use of a subsequent <em>-mashi<\/em> to denote the (preferred) outcome should the condition have been fulfilled. \",\"<em>Nakanakani<\/em> is an adverb that allows a transition between the current state of affairs and a more desirable, but contrary to fact, outcome. And since both the hypothetical condition and the desirable outcome (<em>uramizara-<\/em>, or &quot;not-feeling-resentment&quot;) are negatives, the overall message becomes something like &ldquo;Not meeting you at all would have been preferable to meeting you as infrequently as I do, since in that case I would not have felt this much resentment.&rdquo; It says something about the expressive power of classical Japanese that this sort of irony can be produced without either prosaicness or semantic confusion.\"]"
 	},
 	{
 		id: "45",
@@ -499,7 +499,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "みの",
 		kimariji: "あわれ",
 		translation: "Surely there is none|Who will speak a pitying word|About my lost love.|Now my folly's fitting end|Is my own nothingness.",
-		background: "[]"
+		background: "[\"The source is the fifth &ldquo;Love&rdquo; book of the <em>Sh\u016bish\u016b<\/em> (SKT 950). Prince Kentoku was the posthumous title awarded to Fujiwara no Koremasa (924-972), one of the compilers of the <em>Gosensh\u016b<\/em>.\",\"The poet is directing a complaint at a woman who is treating him coldly, so much so that when he dies, she seems unlikely to express sorrow at the purposeless of his life after being rejected by her. The first three lines are set against the last two, but since the two parts are related grammatically by a conjunctive verb ending (<em>-ede<\/em>), this is not considered an example of the <strong><em>kugire<\/em><\/strong> technique. The Japanese <em>beki<\/em>, which appears twice in the text, implies natural expectation or likelihood, but the difference in connotation seems to warrant different treatment in translation.\"]"
 	},
 	{
 		id: "46",
@@ -510,7 +510,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ゆく",
 		kimariji: "ゆら",
 		translation: "Like a mariner|Sailing over Yura's strait|With his rudder gone:|Where, over the deep of love,|The end lies, I do not know.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 1071). Sone no Yoshitada\u00a0 was active in the second half of the 10th century. He had the reputation of being something of a narrow-minded egocentric.\",\"The Yura is a broad-mouthed river in present-day Kyoto Prefecture that empties into the Sea of Japan not far from the famous land bridge of Amanohashidate (although an alternate interpretation holds that the reference is to the Kitan Strait between present-day Wakayama Prefecture and the island of Awaji). The first three lines constitute a <strong><em>jokotoba<\/em><\/strong> preface, here used to set up a metaphorical parallel between the boatman and the poet. The strong currents of the river&rsquo;s estuary make navigation difficult even at the best of times; having let his oar drop into the water, the boatman is completely at the mercy of those currents. The somewhat abashed poet, likewise, has no choice but to submit to the unruly dictates of love. The words <em>to<\/em>, <em>wataru<\/em>, <em>funabito<\/em>, <em>kaji<\/em>, and <em>yukue<\/em> are all <strong><em>engo<\/em><\/strong> (associated words), focusing attention on the metaphorical imagery in this otherwise relatively undistinguished poem.\"]"
 	},
 	{
 		id: "47",
@@ -521,7 +521,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ひとこそみ",
 		kimariji: "やえ",
 		translation: "To the dim cottage|Overgrown with thick-leaved vines|In its loneliness|Comes the dreary autumn time:|But there no people come.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Autumn&rdquo; book of the <em>Sh\u016bish\u016b<\/em> (SKT 140). Egy\u014d (fl. ca. 985) apparently served as a monk at the provincial Buddhist temple (<em>kokubunji<\/em>) established during the Nara period in Harima (present-day Hy\u014dgo Prefecture).\",\"The headnote to the poem in the <em>Sh\u016bish\u016b<\/em> (compiled around 1006) refers to the long-deserted Kawara-no-in mansion of Minamoto no T\u014dru in the Rokuj\u014d district of Kyoto, which is also thought to have been the model for the desolate house to which Y\u016bgao is abducted by Hikaru Genji in <em>The Tale of Genji<\/em>. The poet, aware of this history, is moved to note that autumn has not failed to pay a visit even to such a desolate spot (the mansion was apparently occupied at the time by Egy\u014d&rsquo;s close friend -- and T\u014dru&rsquo;s great-grandson -- the monk Anp\u014d). An example of the persistence of cultural tradition.\"]"
 	},
 	{
 		id: "48",
@@ -532,7 +532,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "くた",
 		kimariji: "かぜを",
 		translation: "Like a driven wave,|Dashed by fierce winds on a rock,|So am I:  alone|And crushed upon the shore,|Remembering what has been.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Shikash\u016b<\/em> (SKT 211). Minamoto no Shigeyuki (? \u2013 1000), who served in a number of provincial posts, was the great-grandson of Emperor Seiwa (850-880; r.&nbsp;858-876).\",\"Corresponding in a way to sonnets about the poet&rsquo;s treatment at the hands of a cruel mistress, this waka compares the woman being addressed to the unmoving rocks against which the waves of the poet&rsquo;s ardor batter themselves futilely. The comparison is a is a striking one, even if to speak of the shattering of the poet&rsquo;s troubled thoughts (by convention, to &ldquo;think things&rdquo; is to be troubled by thoughts of love) can be said to be somewhat trite. The first two lines (up to <em>iwa utsu nami no<\/em>) constitute a <strong><em>jokotoba<\/em><\/strong> that gives the waka its metaphorical vitality.\"]"
 	},
 	{
 		id: "49",
@@ -543,7 +543,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ひる",
 		kimariji: "みかき",
 		translation: "Like the guard's fires|Kept at the imperial gateway--|Burning through the night,|Dull in ashes through the day--|Is the love aglow in me.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Shikash\u016b<\/em> (SKT 225). \u014cnakatomi no Yoshinobu (921-991) was considered one of the Thirty-six Immortals of Japanese Poetry and took part in the compilation of the <em>Gosensh\u016b<\/em>.\",\"As in the previous poem, a <strong><em>jokotoba<\/em><\/strong> provides a striking image that anchors a comparison between the repeated lighting and extinguishing of the watchfires and the waxing and waning of the passion of the poet, alternating between consuming desire at night and disheartened frustration during the day. Pairing similarly constructed waka on the same topic -- but with contrasting images of water and fire -- suggests one of the ordering principles at work in <em>One Hundred Poems by One Hundred Poets<\/em>: readers are meant to recognize and appreciate the parallels being drawn by the compiler. In this way, the sum of the parts becomes a more significant whole.\"]"
 	},
 	{
 		id: "50",
@@ -554,7 +554,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "なかく",
 		kimariji: "きみがためを",
 		translation: "For your precious sake,|Once my eager life itself|Was not dear to me.|But now it is my heart's desire|It may long, long years endure.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 669). Fujiwara no Yoshitaka (954-974) was the third son of Prince Kentoku and the father of Fujiwara no Yukinari (972-1028), who was considered one of Japan&rsquo;s greatest calligraphers. Yoshitaka fell victim to smallpox in his twenty-first year.\",\"A continuation of sorts of the previous poem, in that the passionately expressed romantic goal of the poet has at last been achieved, but his former willingness to risk everything for the woman&rsquo;s love has paradoxically transformed itself into an equally powerful desire to risk nothing now that he has won it. This insight into the nature of love is treated as something of a discovery. No special poetic device has been used, but the repetition of the key verb <em>omou<\/em> (think) in Poems 48-51 is suggestive, particularly because of the different inflections.\"]"
 	},
 	{
 		id: "51",
@@ -565,7 +565,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "さ",
 		kimariji: "かく",
 		translation: "How can I tell her|How fierce my love for her is?|Will she understand|That the love I feel for her|Burns like Ibuki's fire plant?",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of <em>Gosh\u016bish\u016b<\/em> (SKT 612). Fujiwara no Sanekata (? \u2013 998) was a court luminary on close terms with Sei Sh\u014dnagon who died while serving as Governor of Michinoku in northern Honsh\u016b.\",\"As a love poem, it is something of a mystery as to why this waka should follow the previous one, since not only does it come earlier in the collection from which both were taken, but the natural progression of love has been reversed\u2014we are back to when the man is confessing his feelings for the first time (the headnote in the source makes the situation explicit). Perhaps this poem was thought by Teika to be a later composition and he accorded that aspect more weight in his placement.\",\"A remarkable array of poetic devices is packed into these five lines: a prefatory <strong><em>jokotoba<\/em><\/strong> (<em>Ibuki no sashimogusa<\/em>); a pair of <strong><em>kakekotoba<\/em><\/strong> (<em>iu<\/em> \/ <em>Ibuki<\/em> and <em>omoi<\/em> \/ <em>hi<\/em>; in classical orthography, there is no distinction between <em>iu<\/em> and <em>ibu<\/em> or between the <em>i<\/em>-inflection of <em>omoi<\/em> and the noun <em>hi<\/em>); and three <strong><em>engo<\/em><\/strong> (<em>sashimogusa<\/em> [moxa], <em>moyuru<\/em> [burn], and <em>hi<\/em> [flame]); <strong><em>t\u014dchi-h\u014d<\/em><\/strong> (inversion of the fourth and fifth lines, thereby also producing a <strong><em>shikugire<\/em><\/strong> syntactic break at the end of the fourth line). And all this in addition to the phonetic repetition of <em>sashimo<\/em>. In English, something has to give, and here it is the inversion that creates the break after the fourth line. Japanese critics apparently regard the technical virtuosity as evidence of expressive sincerity rather than rhetorical overkill. \"]"
 	},
 	{
 		id: "52",
@@ -576,7 +576,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "なほう",
 		kimariji: "あけ",
 		translation: "Though I know indeed|That the night will come again|After day has dawned,|Still, in truth, I hate the sight|Of the morning's coming light.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of <em>Gosh\u016bish\u016b<\/em> (SKT 672).\u00a0Fujiwara no Michinobu (972-994), son of Fujiwara no Tamemitsu, was an admired poet who died in his 23rd year. \",\"The resentment arises because dawn is when the man must leave the woman with whom he has spent the night (in other words, this is a <em>kinuginu no uta<\/em>, or &ldquo;morning-after poem&rdquo;). There is some consolation to be taken in the fact that night will inevitably arrive again, providing the man with another opportunity to call, but that does not keep him from wishing he did not have to leave in the first place. The sentiment is straightforwardly expressed; the sincerity can be said to elevate the waka above the merely trite. Arguments exist over the difference in nuance between the words <em>asaborake<\/em> and <em>akebono<\/em>, both of which refer to the gathering light of dawn, before sunrise. The more pedantic appear to favor the sequence <em>akebono<\/em> --&gt; <em>asaborake<\/em>, but that judgment is by no means universal. In any case, it does seem that <em>asaborake<\/em> is more commonly associated with the seasons of autumn and winter in particular.\"]"
 	},
 	{
 		id: "53",
@@ -587,7 +587,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "いか",
 		kimariji: "なげき",
 		translation: "Lying all alone,|Through the hours of the night,|Till the daylight comes:|Can you realize at all|The emptiness of that night?",
-		background: "[]"
+		background: "[\"The source is the fourth &ldquo;Love&rdquo; book of <em>Sh\u016bish\u016b<\/em> (SKT 912). The Mother of Michitsuna was famous as the author of <em>Kager\u014d nikki<\/em> (<em>The Gossamer Diary<\/em>), a work that contributed to the creation of <em>The Tale of Genji<\/em> by adding an element of psychological introspection to the received narrative forms of <em>tsukuri monogatari<\/em> (invented tales) and <em>uta monogatari<\/em> (poem tales). She was the secondary wife of Fujiwara no Kaneie (929 \u2013 990), the father -- by his primary wife -- of Fujiwara no Michinaga (966 \u2013 1027) and one of the most powerful men of his time.\",\"The poet is, of course, leveling her anger and resentment at her husband, who, according to the headnote in the <em>Sh\u016bish\u016b<\/em>, arrived home late and complained when servants were slow to open the gate. The waka also appears in <em>Kager\u014d nikki<\/em> (The Gossamer Diary), where it is said to have been delivered to Kaneie after he had been made to wait until dawn before being allowed to enter the compound. Thanks to <em>Kager\u014d nikki<\/em>, the Mother of Michitsuna has long been cast in the role of the resentful secondary wife, but the diary is much more than an account of a resentful wife. This waka, however, conforms closely to the received stereotype.\"]"
 	},
 	{
 		id: "54",
@@ -598,7 +598,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "けふを",
 		kimariji: "わすれ",
 		translation: "If remembering me|Will for him in future years|Be too difficult,|It would be well this very day|That I should end my life.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Love&rdquo; book of <em>Shinkokinsh\u016b<\/em> (SKT 1149). The Mother of\u00a0the Honorary Grand Minister (? \u2013 996) -- her actual name was Takashina no Kishi (or Takako) -- was the wife of Fujiwara no Michitaka (953 \u2013 995) and the mother of Korechika (974 - 1010), Takaie (979 - 1044), and Empress Teishi (976 - 1000). Korechika, deeply implicated in the intra-family politics of the time, acquired the unofficial title of &quot;Honorary Grand Minister&quot; (<em>Gid\u014dsanshi<\/em>) when he was appointed Deputy Minister (<em>Jun-daijin<\/em>) in 1008, signifying a status equivalent to that of the three highest regular court ministers.\",\"The poet is conveying an ambivalent message of love: her pleasure at her lover&rsquo;s promise not to forget her is overshadowed by her awareness that such promises do not last forever. Rather than hold out hope for an unrealistic future, she thinks it might be better for her life to end while the promise remains sincere. An implied shift in perspective from the romantic ardor of the man to the anticipatory despair of the woman is rather neatly balanced on the fulcrum of everyday reality, with no poetic device intervening to mitigate the direct expression of her feelings.\"]"
 	},
 	{
 		id: "55",
@@ -609,7 +609,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "なこ",
 		kimariji: "たき",
 		translation: "Though the waterfall|Ceased its flowing long ago,|And its sound is stilled,|Yet, in name it ever flows,|And in fame may yet be heard.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 1035). Fujiwara no Kint\u014d (966 \u2013 1041), the compiler of the early-11th-century <em>Wakan r\u014deish\u016b<\/em> (Collection of Japanese and Chinese Songs to Sing), was adept at composing both waka and Chinese poems, and was also a talented musician.\",\"According to the headnote in the source, the reference is to an artificial cascade constructed at the detached palace of Emperor Saga (786 \u2013 842; r.&nbsp;809-823). The palace was converted to a Shingon temple in 876 and at some point the waterfall ran dry, but its reputation as a symbol of aristocratic elegance remained. Although the <strong><em>engo<\/em><\/strong> of <em>taki<\/em> (&quot;waterfall&quot;) and <em>nagareru<\/em> (&quot;flow&quot;) on the one hand and <em>oto<\/em> (&ldquo;sound&rdquo;) and <em>kikoe <\/em>(&ldquo;be heard&rdquo;) on the other help to unify the imagery -- and despite the skillful use of alliteration-- it is not easy to consider the poem as being much more than a conventional expression of imperial nostalgia.\"]"
 	},
 	{
 		id: "56",
@@ -620,7 +620,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "いまひとたひのあ",
 		kimariji: "あらざ",
 		translation: "Soon my life will close.|When I am beyond this world|And have forgotten it,|Let me remember only this:|One final meeting with you.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Love&rdquo; book of the <em>Gosh\u016bish\u016b <\/em>(SKT 763). Izumi Shikibu (978 \u2013 ?) was the mother of Koshikibu and served Empress Sh\u014dshi (988 \u2013 1074), principal consort of Emperor Ichij\u014d (980 - 1011; r. 986 \u2013 1011). The authorship of <em>Izumi Shikibu nikki<\/em> (The Diary of Izumi Shikibu) is traditionally attributed to her.\",\"The message is to be taken as one sent from the poet's sickbed, which she despairs of being able to leave again. She therefore wishes she could at least see her lover once more before she dies. The lack of rhetorical artifice can be taken to signal the poet's sincerity. Such intensity of feeling has long been considered characteristic of Izumi Shikibu's waka, so much so that some modern critics have regarded this to be among her less passionate ones.\"]"
 	},
 	{
 		id: "57",
@@ -631,7 +631,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "くもか",
 		kimariji: "め",
 		translation: "Meeting on the path:|But I cannot clearly know|If it was he,|Because the midnight moon|In a cloud had disappeared.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 1499). Murasaki Shikibu (973? \u2013 1019?) was the mother of Fujiwara no Katako and the author of both <em>The Tale of Genji<\/em>and <em>Murasaki Shikibu nikki<\/em>.\",\"As with the other poems in the <em>Hyakunin isshu,<\/em> critics typically look to the headnote in the source for an interpretive context. In this case, the headnote describes the poet&rsquo;s being visited by a childhood friend who could not stay long and had to hurry away. The problem for translation, of course, is that the metaphorical meaning is not explicit -- it must either be extrapolated or added elsewhere if it is to appear at all. A translation describing a friend who vanished <em>like<\/em> the moon behind the clouds might well be justified on the basis of the source, but poem's occasion is not mentioned in the <em>Hyakunin isshu<\/em>, even though Fujiwara no Teika -- as one of the compilers of the <em>Shinkokinsh\u016b<\/em> -- would surely have been aware of it. It turns out to be the reader's responsibility to recognize the reference. The two words <em>meguru<\/em> (&ldquo;revolve&quot;) and <em>tsuki<\/em> (&ldquo;moon&rdquo;) are considered <strong><em>engo<\/em><\/strong>, the single rhetorical device to be found in the poem.\"]"
 	},
 	{
 		id: "58",
@@ -642,7 +642,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "いて",
 		kimariji: "ありま",
 		translation: "As Mount Arima|Sends its rustling winds across|Ina's bamboo plains,|I will be just as steadfast|And never will forget you.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of <em>Gosh\u016bish\u016b<\/em> (SKT 709). &ldquo;Daini no Sanmi&rdquo; is a reference to Fujiwara no Takako (c.&nbsp;1000 \u2013 c.&nbsp;1082), the daughter of Fujiwara no Nobutaka (1126 - 1179) and Murasaki Shikibu. The appellation derives from combining the Dazai Daini administrative post held by Takako&rsquo;s husband Takashina no Nariaki (990 \u2013 1058) and Takako&rsquo;s own court rank of Junior Third Rank, which was accorded her upon the accession of Emperor Go-Reizei (1025 - 1068; r.&nbsp;1045 - 1068), whom she had nursed.\",\"The verse is characteristic of classical Japanese poetry in the way natural scenery is used to give expression to human feelings. Mount Arima is located in present-day Hy\u014dgo Prefecture, and it was often paired in poetry with nearby Ina Plain. The headnote in the source explains that the waka was sent in response to a man now far away who complained that he was being neglected. Very much as in the previous waka, an awareness of the headnote is central to an interpretation of the meaning because <em>so yo<\/em> (&ldquo;that-thing!&rdquo; in the literal rendition) must be taken to refer specifically to the resentment expressed by the man to whom the poet is replying (that is, &ldquo;Now, then, with respect to what you said about worrying that I had forgotten you -- how could I have done that?). Adding the second-person pronoun in English makes the implication a little clearer than it is in Japanese.\",\"The first three phrases constitute a <strong><em>jokotoba<\/em><\/strong>, with a natural scene leading up to the mention of the rustling sound <em>soyo<\/em>, which as a <strong>kakekotoba<\/strong> pivots grammatically (when interpreted as two separate parts of speech, a pronoun and an emphatic particle) to refer to the content of the poem the woman has received. The force of the final rhetorical question is somewhat recriminatory: &ldquo;You may have forgotten, but not I.&rdquo;\"]"
 	},
 	{
 		id: "59",
@@ -653,7 +653,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "かた",
 		kimariji: "やす",
 		translation: "Better to have slept|Care-free, than to keep vain watch|Through the passing night,|Till I saw the lonely moon|Traverse her descending path.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of <em>Gosh\u016bish\u016b<\/em> (SKT 680). Akazome Emon, who lived in the second half of the 10th century and the first half of the 11th century, left behind a private collection of poetry (<em>Akazome Emon sh\u016b<\/em>) and is frequently credited with the authorship of the historical tale <em>Eiga monogatari<\/em> (A Tale of Flowering Fortunes).\",\"The headnote in the <em>Gosh\u016bish\u016b<\/em> has it that Akazome Emon composed the waka on behalf of one of her sisters, who waited in vain for a promised visit from her lover. Although no standard poetic device has been employed, the use of a negative verb form (<em>yasurawade<\/em>), combined with a conjunction of contrast (<em>monoo<\/em>) and a contrary-to-fact conditional construction (<em>nenamashi<\/em>, or &ldquo;might better have gone to sleep&rdquo;) effectively conveys a sense of forlorn frustration. Some doubt exists about the attribution, since the waka also appears in the private collection of Uma no Naishi, a contemporary of Akazome Emon who was not a blood relation.\"]"
 	},
 	{
 		id: "60",
@@ -664,7 +664,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "また",
 		kimariji: "おおえ",
 		translation: "By Oe Mountain|The road to Ikuno|Is far away,|And neither have I beheld|Nor crossed its bridge of heaven.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Kin&rsquo;y\u014dsh\u016b<\/em> (SKT 550). Koshikibu no Naishi (1000 \u2013 1025?) was the daughter of Izumi Shikibu and, like her mother, served Empress Sh\u014dshi.\",\"This is the fifth waka in a row by a female poet, a mini-sequence that -- quite fittingly -- is opened by a mother and closed by her daughter. Indeed, the framing effect is reinforced by the context, which is described in a lengthy headnote in the source. Izumi Shikibu had accompanied her husband to her native Tango Province (in the northern part of modern Kyoto Prefecture), so when Koshikibu no Naishi was invited to take part in a poetry contest at court, Fujiwara no Sadayori teased her by asking whether she had already received a reply to a message asking her mother for help (Koshikibu was rumoured not to compose her own poems). The waka was supposedly Koshikibu's impromptu reply.\",\"The use of four different poetic devices gives the lie to rumors about Koshikibu's poetic skill: <strong><em>shikugire<\/em><\/strong>, <strong><em>kakekotoba<\/em><\/strong>, <strong><em>engo<\/em><\/strong>, and <strong><em>t\u014dchi-h\u014d<\/em><\/strong>. The first has the effect of setting off the place name &ldquo;Amanohashidate,&rdquo; one of the most famous natural sites of Japan. The meanings &ldquo;letter&rdquo; and &ldquo;set foot in&rdquo; are both contained in the word <em>fumi<\/em>, and in the second sense, <em>fumi<\/em> is an <em><strong>engo<\/strong><\/em> of <em>hashi<\/em> (&ldquo;bridge,&rdquo; which forms part of the place name -- that is, one walks across a bridge).\u00a0 Finally, the semantic break between the fourth and fifth lines is achieved by reversing standard Japanese word order, which normally places the object before the verb. Not only that, Koshikibu no Naishi has mentioned three place names, an unusually large number for a waka. That the poem reads so smoothly despite the demonstration of rhetorical virtuosity suggests genuine talent, although the effect is mostly lost unless one is made aware of the context, and even then the motivation seems to trivialize the content.\"]"
 	},
 	{
 		id: "61",
@@ -675,7 +675,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "けふこ",
 		kimariji: "いに",
 		translation: "Eight-fold cherry flowers|That at Nara--ancient seat|Of our state--have bloomed,|In our nine-fold palace court|Shed their sweet perfume today.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Spring&rdquo; book of the <em>Shikash\u016b<\/em> (SKT 29). Ise no Taifu, who lived in the first half of the 11th century, was the granddaughter of Fujiwara no Yoshinonu and another of the talented women in attendance on Empress Sh\u014dshi.\",\"According to headnotes found in the <em>Shikash\u016b<\/em> and in the <em>Ise no Taifu sh\u016b<\/em> private collection, which also contains the waka, the occasion of the poem's composition was the reception of a gift to the emperor of Nara cherry blossoms (perhaps a blossoming tree). Ise no Taifu was accorded the honor of officially receiving the gift and instructed to compose a suitable poem. The Japanese includes a conventional reference to the palace as a structure accessed through nine gates, on the Chinese model. The increase in number from eight to nine is a witty piece of wordplay that superimposes the image of the current imperial palace upon the image of the Nara cherry blossoms while enhancing the splendor of the former.\"]"
 	},
 	{
 		id: "62",
@@ -686,7 +686,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "よに",
 		kimariji: "よを",
 		translation: "The rooster's crowing|In the middle of the night|Deceived the hearers;|But at Osaka's gateway|The guards are never fooled.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Miscellaneous&rdquo; book of <em>Gosh\u016bish\u016b<\/em> (SKT 939). Sei Sh\u014dnagon (966? \u2013 1027?) is the author of <em>Makura no s\u014dshi<\/em> (The Pillow Book), the prime Heian-period example of the <em>zuihitsu<\/em> (essay or miscellany) genre.\",\"As a headnote in the source makes clear, this waka is based on an allusion to an anecdote in the <em>Shiki<\/em> (Chinese <em>Shiji<\/em>; Records of the Grand Historian) in which an aide to M\u00e8ngch\u00e1ngj\u016bn (Lord Mengchang; 3rd century BCE) enables his lord's party to escape enemy territory by imitating a cock's call, prompting guards to open the gate at Hangu Pass early. Sei is making a playful response to a poem sent by Fujiwara no Yukinari (972-1028), who the previous night had abruptly left the palace because he realized that otherwise an abstinence (<em>monoimi<\/em>) would prevent his departure. Yukinari writes the folllowing morning -- in the manner of a <em>kiniginu no uta<\/em>, or &quot;morning-after poem&quot; -- to excuse his conduct by claiming that he had been deceived by the sound of a cock's call, initiating the reference to the Chinese anecdote. Sei continues in the same spirit by shifting the scene to Japan and saying, in effect, &quot;You might have gained passage through the barrier at Hangu, but I will never allow you past \u014csaka Barrier to meet me.&quot; The waka is too witty by half, but it is the sort of cleverness for which Sei Sh\u014dnagon had a reputation.\"]"
 	},
 	{
 		id: "63",
@@ -697,7 +697,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ひとつ",
 		kimariji: "いまは",
 		translation: "Is there any way|Except by a messenger|To send these words to you?|If I could, I'd come to you|To say goodbye forever.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Love&rdquo; book of <em>Gosh\u016bish\u016b<\/em> (SKT 750). Fujiwara no Michimasa (993 \u2013 1054) had the reputation of being a loose cannon, and his affair with the imperial princess T\u014dshi (1001 \u2013 1022) earned him the enmity of her father, Retired Emperor Sanj\u014d (976 \u2013 1017, r.&nbsp;1011 \u2013 1017), who put a watch on his daughter and essentially banned Michimasa from the palace. Although Michimasa eventually regained his aristocratic standing, T\u014dshi took religious orders and died some six years after the affair.\",\"This waka was composed by Michimasa after being forbidden to meet T\u014dshi. The headnote in the source does not mention him by name, but the incident is prominently featured in the historical <em>Eiga monogatari<\/em> (A Tale of Flowering Fortunes).\"]"
 	},
 	{
 		id: "64",
@@ -708,7 +708,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "あら",
 		kimariji: "あさぼらけう",
 		translation: "In the early dawn|When the mists on Uji River|Slowly lift and clear,|From the shallows to the deep,|The stakes of fishing nets appear.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Winter&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 420). Fujiwara no Sadayori (995 \u2013 1045) was the oldest son of Fujiwara no Kint\u014d who enjoyed a high reputation for his calligraphy and musical talent as well as for his poetry (he is credited with a total of 46 waka in imperial anthologies).\",\"Uji, with its famous river, was a location much favored by aristocrats seeking a respite from the &ldquo;dust&rdquo; of city life in Kyoto. It lay on the way to Hase Temple and the Yamato region. Fishing weirs -- posts bound together to guide fish to a spot where a fisherman would be waiting, typically on a sloped platform, to catch them -- were used at Uji to catch <em>hio<\/em> (immature sweetfish) during the winter. The waka concludes with a nominative, illustrating the evocative technique of <strong><em>taigendome<\/em><\/strong> (this is not a case of grammatical inversion; rather, the predicate has been omitted).\"]"
 	},
 	{
 		id: "65",
@@ -719,7 +719,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "こひに",
 		kimariji: "うら",
 		translation: "Even when your hate|Makes me stain my sleeves with tears|In cold misery,|Worse than hate and misery|Is the loss of my good name.",
-		background: "[]"
+		background: "[\"The source is the fourth &ldquo;Love&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 815). The poet, whose dates are unknown, is called Sagami because her husband, \u014ce no Kin'yori (? - 1040), held the position of Governor of Sagami (spanning most of present-day Kanagawa Prefecture). She later separated from her husband and served in attendance upon an imperial princess, taking part in a large number of poetry contests.\",\"Composed for a poetry contest -- and therefore on a conventionally assigned topic -- the waka nonetheless effectively suggests the psychological stages that follow in the wake of failed romance: first overwhelming resentment, then concern for what comes next. That concern, moreover, encompasses aspects both personal (hence relatively trivial) and public (of major social import). The order of precedence is suggested by the use of the adverbial particle <em>dani<\/em>, &quot;even,&quot; which implies a contrast with a similar item of weightier significance. Thus, the poet realizes that not only have the sleeves of her kimono likely been ruined by her endless tears, but her reputation too will be left in tatters as a result of her failure in love. Grammatically, an adjective corresponding to the &quot;regrettable&quot; of line five can be assumed to have been omitted between <em>dani<\/em> and the verb <em>aru<\/em>, which is the justification for the explicitness of the translation.\"]"
 	},
 	{
 		id: "66",
@@ -730,7 +730,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "はなよ",
 		kimariji: "もろ",
 		translation: "On a mountain slope,|Solitary, uncompanioned,|Stands a cherry tree.|Except for you, lonely friend,|To others I am unknown.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Kin&rsquo;y\u014dsh\u016b<\/em> (SKT 521). Gy\u014dson (1055 \u2013 1135) was the son of Minamoto no Motohira (1026 \u2013 1064) and renowned for the efficacy of his spells and incantations (<em>kaji kit\u014d<\/em>).\",\"The situation, according to the headnote in the source, is that the poet, while undertaking rigorous ascetic training in the mountains, unexpectedly comes upon a mountain cherry whose blossoms are being ravaged by the wind. The poet&rsquo;s sympathies are awakened by a sense of forsaken companionship. The third line marks a full semantic stop -- the <strong><em>sankugire<\/em><\/strong> technique -- and since the poet directly addresses the cherry blossoms, <strong><em>gijinh\u014d<\/em><\/strong> has also been employed.\"]"
 	},
 	{
 		id: "67",
@@ -741,7 +741,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "かひ",
 		kimariji: "はるの",
 		translation: "If I lay my head|Upon his arm in the dark|Of a short spring night,|This innocent dream pillow|Will be the death of my good name.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 964). Su\u014d no Naishi lived in the second half of the 11th century; her name comes from the post held by her father, Taira no Munenaka (dates unknown), as governor of the province of Su\u014d (currently eastern Yamaguchi Prefecture).\",\"Said in the source&rsquo;s headnote to have been composed when Major Counselor Fujiwara no Tadaie teasingly thrust his arm under a reed blind when he overheard a sleepy S\u016bo no Naishi mutter that she could use a pillow. Her response parries the tease with a <strong><em>kakekotoba<\/em><\/strong> play on the word for &ldquo;arm,&rdquo; <em>kaina<\/em>, which is then inflected as the adjective <em>kainaku<\/em>, &quot;purposeless,&quot; to suggest the unwelcome scandal that would result should she take him up on his offer. The similarity to <a href=\"#poem-65\" class=\"text-link\">Poem 65<\/a> -- the final line is exactly the same, and the sleeve-covered arm of Tadaie repeats the image of kimono sleeves -- is unlikely to be a coincidence, either in terms of composition or selection.\"]"
 	},
 	{
 		id: "68",
@@ -752,7 +752,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "こひし",
 		kimariji: "こころに",
 		translation: "Though I do not want|To live on in this floating world,|If I remain here,|Let me remember only|This midnight and this moonrise.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 860). Sanj\u014d (976 \u2013 1017; r.&nbsp;1011 \u2013 1016), the second son of Emperor Reizei (950-1011; r.&nbsp;967-969), had the misfortune of having as an uncle the powerful Fujiwara no Michinaga (966 \u2013 1027), who pushed Sanj\u014d -- who had failing eyesight -- to abdicate in favor of Michinaga&rsquo;s own grandson.\",\"The headnote in the source notes that the waka was composed when Sanj\u014d was contemplating abdication because of his illness (this was about a year before he actually abdicated, and only two years before he died). Readers would of course be familiar with the politics involved and with Sanj\u014d's relatively early death following his abdication. A stark contrast is drawn between the melancholy of the everyday world and the perfect brightness of the moon, itself fated to become a memory of an earlier, better time.\"]"
 	},
 	{
 		id: "69",
@@ -763,7 +763,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "たつ",
 		kimariji: "あらし",
 		translation: "By the wind storm's blast|From Mimuro's mountain slopes|Maples leaves are torn,|Which turn Tatsuta River|Into a rich brocade.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Autumn&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 366). N\u014din (988 \u2013 ?), whose lay name was Tachibana no Nagayasu, took a special interest in <strong><em>utamakura<\/em><\/strong>, place names with traditional poetic associations.\",\"Both Mount Mimuro and the Tatsuta River, in Nara, were <strong><em>utamakura<\/em><\/strong> -- and famous for their colorful autumn foliage. The distinctiveness of the waka comes from the way N\u014din has paired the images in a single waka. The pairing works to elevate the effect above the otherwise trite comparison, or <strong><em>mitate<\/em><\/strong>, of autumn leaves to colorful brocade. N\u014din is also clearly alluding to an anonymously composed waka in the <em>Kokinsh\u016b<\/em> (SKT 284) that mentions both locations, although in that poem the autumn leaves floating on the Tatsuta are juxtaposed with a wintry shower falling on Mount Mimuro. Perhaps Teika, by selecting N\u014din&rsquo;s waka, had in mind the intended setting on Mount Ogura, also famous for its autumn scenery.\"]"
 	},
 	{
 		id: "70",
@@ -774,7 +774,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "いつこ",
 		kimariji: "さ",
 		translation: "In my loneliness|I leave my little hut.|When I look around,|Everywhere it is the same:|One lone, darkening autumn eve.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Autumn&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 333). Ry\u014dzen, active in the first half of the 11th century, was a monk on Mount Hiei who served as chief administrative officer of Gion Shrine (present-day Yasaka Shrine). Although much about his life is obscure, he frequently took part in poetry contests, and 30 of his waka were selected for inclusion in imperial anthologies.\",\"The use of a nominative at the end of the last line of the original -- the <strong><em>taigendome<\/em><\/strong> technique -- is intended to create powerful overtones. This particular ending is highly conventional, but the fact that the poet&rsquo;s isolation is only reinforced when he steps outside the confines of his hut casts a sort of monochromatic pall over the scene.\"]"
 	},
 	{
 		id: "71",
@@ -785,7 +785,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "あし",
 		kimariji: "ゆう",
 		translation: "When the evening comes,|From the rice leaves at my gate,|Gentle knocks are heard,|And, into my round rush-hut,|Enters autumn's roaming breeze.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Autumn&rdquo; book of the <em>Kin&rsquo;y\u014dsh\u016b<\/em> (SKT 173). Minamoto no Tsunenobu (1016 \u2013 1097), an expert in matters of courtly decorum, was known for his talent in composing both Japanese and Chinese poetry music as well as for his skill as a musician.\",\"As is the case with other classical waka, &ldquo;hut&rdquo; is a conventional reference to a dwelling that may in fact have been larger and more permanent in nature. In fact, Tsunenobu owned a villa in Umezu, on the left bank of the Katsura River to the west of the capital, and the headnote in the source mentions an outing there as the occasion for the poem's composition. (Heian aristocrats, in other words, were not beyond adopting a rustic pose to demonstrate their own refined sensibilities.) The poem scans as a single sentence integrating visual, auditory, and tactile impressions into a refreshingly unified experience. The word <em>otozurete<\/em> functions unobtrusively as onomatopoeia linking the upper hemistich with the lower one, although it is not technically considered a <em>kakekotoba<\/em>. \"]"
 	},
 	{
 		id: "72",
@@ -796,7 +796,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "かけ",
 		kimariji: "おと",
 		translation: "Famous are the waves|That break on Takashi beach|In noisy arrogance.|If I should go near that shore.|I would only wet my sleeves.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of the <em>Kin&rsquo;y\u014dsh\u016b<\/em> (SKT 469). Kii, whose dates are unknown, was a lady-in-waiting to Y\u016bshi, eldest daughter of Emperor Go-Suzaku (1009 \u2013 1045; r. 1036-1045), in the second half of the 11th century.\",\"The headnote in the source refers to its being composed on the stipulated topic of a woman's response to the romantic proposal of a man. &quot;Takashi&quot; functions as a <em><strong>kakekotoba<\/strong><\/em> that pivots the meaning from the adjectival &quot;high&quot; (&quot;of high renown&quot; when combined with the first line) to the proper noun &quot;Takashi,&quot; referring to a stretch of shoreline in modern Osaka Prefecture between the cities of Sakai and Takaishi. Metaphorically, then, the poet is parrying the man's approach by comparing the tears that would result from a tryst with such an untrustworthy partner to the unpleasant drenching of her sleeves that would come from being caught by an incoming wave at Takashi.\"]"
 	},
 	{
 		id: "73",
@@ -807,7 +807,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "と",
 		kimariji: "たか",
 		translation: "On that far mountain|On the slope below the peak|Cherries are in flower.|Oh, let the mountain mists|Not arise to hide the scene.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Spring&rdquo; book of the <em>Gosh\u016bish\u016b<\/em> (SKT 120). \u014ce no Masafusa (1041 \u2013 1111) was the great-grandson of \u014ce no Masahira (952 \u2013 1012), an eminent scholar and composer of Chinese poetry who was married to Akazome Emon.\",\"The poet is essentially imploring the mist not to rise from the foothills lest it obscure the view of the cherry blossoms on the ridge in the distance. One theory has it that <em>takasago<\/em> should considered an <strong><em>utamakura<\/em><\/strong> referring to the mountain of that name in the province of Harima (present-day Hy\u014dgo Prefecture). The standard interpretation, however, takes the word to be a common noun (literally, &ldquo;high pile of sand&rdquo;), referring simply to the crest of a mountain (or mountain ridge). The syntactic break after the third line illustrates the technique of <strong><em>sankugire<\/em><\/strong>.\"]"
 	},
 	{
 		id: "74",
@@ -818,7 +818,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "はけ",
 		kimariji: "うか",
 		translation: "It was not for this|I prayed at the holy shrine:|That she would become|As pitiless and as cold|As the storms on Hase's hills.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 708). Minamoto no Toshiyori (1055 \u2013 1129) was the son of Major Counselor Tsunenobu and the compiler of the <em>Kin&rsquo;y\u014dsh\u016b<\/em>. \",\"Hatsuse is the location of the Hasedera temple in Nara, at which those who offered prayers to the bodhisattva Kannon might expect to achieve miraculous results. Here the poet complains that his prayers only had the effect of causing the woman he was pusuing to reject his advances even more callously, much like the unexpectedly harsh wind now gusting down from the mountain on which Hasedera stands.\u00a0The direct address to the mountain gale -- signalled by the exclamatory particle <em>yo<\/em> -- demonstrates the technique of <strong><em>gijin-h\u014d<\/em><\/strong>, or personification. The syntax of the translation differs from that of the Japanese, which mentions &quot;the one who&quot; in the first line and places an imperative form of the adjective &quot;harsh&quot; at the beginning of the fourth. Japanese paraphrases of the poem's meaning usually find it necessary to repeat the verb &quot;pray&quot; to make the irony clear: &quot;I may have prayed, but it was not a prayer for me to be treated even more cruelly!&quot;\"]"
 	},
 	{
 		id: "75",
@@ -829,7 +829,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "あはれ",
 		kimariji: "ちぎりお",
 		translation: "As dew promises|New life to the thirsty plant,|So did your vow to me.|Yet the year has passed away,|And autumn has come again.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 1026). Fujiwara no Mototoshi (1060 \u2013 1141) was the compiler of the early-12th-century <em>Shinsen r\u014dei sh\u016b<\/em>, and he is considered to represent a more conservative poetic style than that of Fujiwara no Toshiyori,\",\"Because of the mention of a promise, the reader's first impulse might be to interpret this as a love poem. There is, in fact, nothing in the wording to explicitly exclude such an interpretation. Yet waka is an occasional form of poetry in which the implications are often spelled out in headnotes, and in this case, the headnote in the source explains that this is a complaint directed at Fujiwara no Tadamichi, who had obliquely promised Mototoshi -- by means of a poetic allusion involving wormwood taken from the <em>Shinkokinsh\u016b<\/em> -- that he would appoint Mototoshi's son, a priest at the K\u014dfukuji in Nara, to a prestigious post as lecturer (<em>k\u014dji<\/em>) on the Vimalak\u012brti Sutra (these lectures were held annually at the K\u014dfukuji for about a week in the tenth lunar month under the sponsorship of the head of the Fujiwara family). The expected appointment, however, has failed to materialize, so Mototoshi is venting his resentment. It is the poetic allusion that provides the textual clue the reader needs to properly fill out the context. The <em>-oki<\/em> embedded in the verb in the first line (the connotation is that the action was performed for a future purpose) and the word <em>tsuyu<\/em> in the second are <strong><em>engo<\/em><\/strong>, since &quot;dew &quot; is something that &quot;rests upon&quot; a plant.\"]"
 	},
 	{
 		id: "76",
@@ -840,7 +840,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "くもゐ",
 		kimariji: "わたのはらこ",
 		translation: "Over the wide sea|As I sail and look around,|It appears to me|That the white waves, far away,|Are the ever shining sky.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Miscellaneous&rdquo; book of the <em>Shikash\u016b<\/em> (SKT 382). Fujiwara no Tadamichi (1097 \u2013 1164) contended with his father and brother over court appointments in the increasingly turbulent middle years of the 12th century. His name has been used here rather than the long title that constitutes the actual attribution: Lay Priest of the Hossh\u014dji and the Former Regent and Minister of State (<em>Hossh\u014dji ny\u016bd\u014d saki no kanpaku daij\u014ddaijin<\/em>).\",\"In this descriptive poem, a sense of scale is evoked by the use of both the <strong><em>makurakotoba<\/em><\/strong> <em>hisakata<\/em> -- often used in classical poetry before such celestial phenomena as &ldquo;sky,&rdquo; &ldquo;heaven,&rdquo; &ldquo;sun,&rdquo; &ldquo;moon,&rdquo; and &ldquo;light&rdquo; to suggest distance or scope -- and the <strong><em>taigendome<\/em><\/strong> technique of ending the poem with a concrete image. The effect is to push back the edge of the horizon where the cresting waves can be seen. The impression is strikingly different from that of Poem 11, which the poet may have had in mind. It should be remembered that description in classical Japanese poetry is not necessarily inspired by an actual visit to the site described: the headnote in the source indicates that this waka was composed on a set topic at a poetry contest held at the imperial court. The reader (or listener) is meant to envision the scenery with the mind&rsquo;s eye.\"]"
 	},
 	{
 		id: "77",
@@ -851,7 +851,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "われ",
 		kimariji: "せ",
 		translation: "Though a swift stream is|Divided by a boulder|In its headlong flow,|Though divided, on it rushes,|And at last unites again.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Shikash\u016b<\/em> (SKT 229). Retired Emperor Sutoku (1119 \u2013 1164; r.&nbsp;1123 \u2013 1141) \u00a0was the eldest son of Emperor Toba (1103 \u2013 1156; r.&nbsp;1107 \u2013 1123). He was exiled to the island of Sanuki after the H\u014dgen Disturbance of 1156, and after his death, his vengeful spirit was considered a force to be reckoned with in the capital.\",\"The rushing stream, of course, is a metaphor for the passion of two lovers, which can only be temporarily interrupted by any obstruction. Rhetorically, the first three lines constitute a descriptive <strong><em>jokotoba<\/em><\/strong> preface that leads up to the word <em>warete<\/em> (&ldquo;divide&rdquo;), where the superimposition of human concerns begins. The poet's own determination to meet his lover again is then reflected in the emphatic last line, which also corresponds to the logical outcome of the cause adduced in the first line (&quot;because the rapids are swift, its waters will surely meet again&quot;).\"]"
 	},
 	{
 		id: "78",
@@ -862,7 +862,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "いく",
 		kimariji: "あわじ",
 		translation: "Guard of Suma Gate,|From your sleep, how many nights|Have you awakened|At the cries of sanderlings,|Flying from Awaji Island?",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Winter&rdquo; book of the <em>Kin&rsquo;y\u014dsh\u016b<\/em> (SKT 270). Minamoto no Kanemasa, about whom little is known, was active at the start of the 12th century.\",\" Suma Barrier, located in what is the modern city of Kobe, had long since fallen into disrepair by Kanemasa&rsquo;s time (Awaji lies about four kilometers off the coast). A sense of nostalgia is thus invoked, reinforced by the awareness that Suma was the site of Hikaru Genji&rsquo;s self-imposed exile and the conventional association of the plaintive cries of plovers with the loneliness of winter. These are not especially distinguished conceits, and the headnote in the source makes it clear that the waka was composed on the assigned topic of hearing the cries of plovers while approaching a travel barrier. However, the poet has attempted to create interest by inverting the grammar of the fourth and fifth lines (the <strong><em>t\u014dchi-h\u014d<\/em><\/strong> technique), which creates a syntactic break after the end of the fourth line: the <strong><em>shikugire<\/em><\/strong> technique. A certain ambiguity attends the verb <em>kayou<\/em>, which could be taken as referring to the plovers making the crossing in either direction, or indeed -- given enough time -- in both directions. Also, more than one theory has been proposed to account for the grammatical irregularity of the inflection <em>nezamenu<\/em>, which to operate attributively (i.e., &quot;the night-awakened barrier guards&quot;) should read <em>nezamenuru<\/em>. It may be that the poet simply cropped the word to fit the standard seven-syllable format.\"]"
 	},
 	{
 		id: "79",
@@ -873,7 +873,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "もれ",
 		kimariji: "あきか",
 		translation: "See how clear and bright|Is the moonlight finding ways|Through the riven clouds|That, with drifting autumn wind,|Gracefully float in the sky.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Autumn&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 413). Fujiwara no Akisuke (1090 \u2013 1155) was the compiler of the <em>Shikash\u016b<\/em>, the sixth imperially commissioned collection of waka.\",\"This waka, which according to the headnote in the source was originally composed for a poetry session sponsored by Retired Emperor Sutoku, represents a relatively unusual case for translation, since the imagery can be conveyed quite concisely. The poem ends with a nominative -- the evocative <strong><em>taigendome<\/em><\/strong> technique -- but since that nominative is derived from an adjective, it seemed more practicable in English to use &quot;bright and clear&quot; as adjectives and use &quot;autumn moon&quot; as the final noun. The language does not call attention to itself, but the waka does effectively capture a particular instant in time against the backdrop of a constantly shifting night sky.\"]"
 	},
 	{
 		id: "80",
@@ -884,7 +884,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "みたれて",
 		kimariji: "ながか",
 		translation: "Is it forever|That he hopes our love will last?|He did not answer.|And now my daylight thoughts|Are as tangled as my black hair.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 802). Taikenmon&rsquo;in no Horikawa served Taikenmon&rsquo;in (1101 \u2013 1145), empress of Emperor Toba (1103 \u2013 1156; r.&nbsp;1107 \u2013 1123), in the first half of the 12th century.\",\"This waka, as stated in the source's headnote, was composed at the same poetry session that produced <a href=\"#poem-77\" class=\"text-link\">Poem 77<\/a> and <a href=\"#poem-79\" class=\"text-link\">Poem 79<\/a>. Framed as a response to a man&rsquo;s morning-after poem (<em>kinuginu no uta<\/em>), the poem is unified rhetorically by the &quot;associated words,&quot; or <strong><em>engo<\/em><\/strong>, of <em>kami<\/em> (&ldquo;hair&rdquo;), <em>nagashi<\/em> (&ldquo;long,&rdquo; here transformed to &ldquo;constancy&rdquo;), and <em>midarete<\/em> (&ldquo;in disarray&rdquo;). The gnawing uncertainty about the man&rsquo;s sincerity is given a sensual inflection by the poet's reference to her disheveled black hair after the night the two have spent together.\"]"
 	},
 	{
 		id: "81",
@@ -895,7 +895,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "たた",
 		kimariji: "ほ",
 		translation: "When I turned my look|Toward the place where I had heard|The cuckoo's call,|The only thing I found|Was the moon of early dawn.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Summer&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 161). Fujiwara no Sanesada (1139 \u2013 1191) was a cousin of Fujiwara no Teika and talented at playing the biwa and composing poetry in a variety of styles. &quot;Tokudaiji&quot; was the appelation of a branch of the Fujiwara family originating with a courtier who founded the Tokudai Temple in Kyoto; Sanesada affected the form Go-Tokudaiji.\",\"The cuckoo is a migratory bird traditionally considered a harbinger of summer, and hearing its first call was a highly anticipated event among court aristocrats. The waka transitions from the auditory to the visual -- from the call of the cuckoo to the sight of the moon. It is this transition that gives the poem its unique approach to an otherwise conventional pairing of images.\"]"
 	},
 	{
 		id: "82",
@@ -906,7 +906,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "うき",
 		kimariji: "おも",
 		translation: "Though in deep distress|Through your cruel blow, my life|Still is left to me.|But I cannot keep my tears;|They break forth from my grief.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 818). D\u014din, (1090 \u2013 1182?), whose lay name was Fujiwara no Atsuyori, apparently had trouble freeing himself from his attachment to poetry. According to the <em>Mumy\u014dsh\u014d<\/em> (Nameless Notes) of Kamo no Ch\u014dmei (1155 \u2013 1216), D\u014din prayed regularly for inspiration at Sumiyoshi Shrine and, after his death, supposedly appeared to Fujiwara no Shunzei in a dream to thank him for including so many of his waka in the <em>Senzaish\u016b<\/em>.\",\"The contrast between the objective continuity of life and the emotional devastation of rejection in love reflects the dissociation that can occur at times of psychological distress, with the poet's tears -- which seem to fall of their own accord -- acting as a mediary between the two worlds. Despite the waka's inclusion in the &quot;Love&quot; book of the <em>Senzaish\u016b<\/em>, the headnote simply remarks that the topic is unknown (<em>dai shirazu<\/em>), so the circumstances surrounding the poem's composition are unclear, and it also seems possible to interpret the poem in a broader sense more in keeping with D\u014din's status as a monk. \"]"
 	},
 	{
 		id: "83",
@@ -917,7 +917,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "やま",
 		kimariji: "よのなかよ",
 		translation: "From this world I think|That there is nowhere to escape.|I wanted to hide|In the mountains' farthest depths;|But there I hear the stag's cry.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Miscellaneous&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 1151). Fujiwara no Shunzei (or Toshinari, 1114 \u2013 1204), the compiler of the <em>Senzaish\u016b<\/em>, was the father of Fujiwara no Teika (or Sadaie, see <a href=\"poems_91-100.html#poem-97\" class=\"text-link\">Poem 97<\/a>), the presumed compiler of the <em>Hyakunin isshu<\/em>.\",\"The metaphorical message is, of course, that one cannot escape the melancholy sorrow of human life. The conventional loneliness associated with a stag calling for mate is here given a slight ironic twist because even though presumably the poet was actively seeking isolation, he is put even more in mind of the sadness attending upon human loneliness. The ambivalence gains in subtlety by being conveyed indirectly through the image of a stag. A syntactic break after the second phrase marks the <strong><em>nikugire<\/em><\/strong> technique, establishing a clearly defined contrast between the two hemistiches of the waka (unlike the previous waka, however, no conjunction meliorates the contrast).\"]"
 	},
 	{
 		id: "84",
@@ -928,7 +928,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "うし",
 		kimariji: "ながら",
 		translation: "If I should live long,|Then perhaps the present days|May be dear to me,|Just as past time filled with grief|Comes quietly back in thought.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Miscellaneous&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 1843). Fujiwara no Kiyosuke (1104&nbsp;\u2013 1177) was the son of Fujiwara no Akisuke, from whom he was long estranged. Despite a relative lack of success at obtaining preferment at court, Kiyosuke was much admired for his discernment as a critic.\",\"The shifts in time give this waka its appeal: the first three lines move from the present to the future, while the last two lines move from the present to the past. In that way, past, present, and future are marshalled to suggest not only the sadness of life but also the particular sense of resignation that comes from living it. The question that is completed grammatically at end of the third line signals the use of the <strong><em>sankugire<\/em><\/strong> technique. \"]"
 	},
 	{
 		id: "85",
@@ -939,7 +939,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ね",
 		kimariji: "よも",
 		translation: "Through an unsleeping night|Longingly I pass the hours,|While the day's dawn lags.|And now the bedroom shutters|Are keeping light and life from me.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 766). Shun&rsquo;e (1113 \u2013 ?) was the son of Fujiwara no Toshiyori and waka teacher to Kamo no Ch\u014dmei (1155 \u2013 1216), the author of <em>Tsurezuregusa<\/em> (Essays in Idleness).\",\"The (rather exaggerated) complaint is that the woman resents not only the heartlessness of her neglectful lover but also the &quot;cruelty&quot; of the gaps between her bedroom doors (and presumably between the doors and their frame), which give no sign of the approach of dawn and thus an end to her anguished waiting. Shun&rsquo;e is writing in the persona of a spurned woman, a fairly common pose in classical Japanese poetry.\"]"
 	},
 	{
 		id: "86",
@@ -950,7 +950,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "かこ",
 		kimariji: "なげけ",
 		translation: "Should I blame the moon|For bringing forth this sadness,|As if it pictured grief?|Lifting up my troubled face,|I regard it through my tears.",
-		background: "[]"
+		background: "[\"The source is the fifth &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 929). Saigy\u014d (1118 \u2013 1190), whose lay name was Sat\u014d Norikiyo, is known for the waka he composed during his lengthy travels around Japan. Poets such as Matsuo Bash\u014d (1654 \u2013 1694) made a point of visiting the places Saigy\u014d had memorialized in his poetry.\",\"The moon, it is clear, is not to be regarded solely as a symbol of austere beauty -- it also evokes the resentment of unrequited love (this motif can be traced in part to the influence of Chinese poetry, particularly that of Bai Juyi [772 \u2013 846]). The <strong><em>gijin-h\u014d<\/em><\/strong> technique is apparent in the personification of both the moon, which is blamed for the poet's morose feelings, and the poet&rsquo;s tears, which deliver a rebuke in the poet's stead. The question-response format signals the use of the <strong><em>sankugire <\/em><\/strong>technique, as in <a href=\"#poem-84\" class=\"p7STE-scroll-to-element\" data-top-offset=\"100\">Poem 84<\/a>, above.\"]"
 	},
 	{
 		id: "87",
@@ -961,7 +961,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "き",
 		kimariji: "む",
 		translation: "An autumn eve:|See the valley mists arise|Among the fir leaves|That still hold the dripping wet|Of the chill day's sudden showers.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Autumn&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 491). Jakuren (1139? \u2013 1202), whose lay name was Fujiwara no Sadanaga, was the nephew of Fujiwara no Shunzei and one of the compilers of the <em>Shinkokinsh\u016b<\/em>, although he died before its completion.\",\"The word <em>maki<\/em> is a general term for such evergreens as Japanese cedar and Japanese cypress. The image of dark trees enveloped by white mist on an autumn evening creates the impression of a monochromatic\u00a0ink painting (one immediately thinks of the folding screens of Hasegawa T\u014dhaku), but one that shifts in perspective from near (the drops on the leaves) to distant (trees in the mist). The entire waka constitutes a single nominative clause, illustrating the <strong><em>taigendome<\/em><\/strong> technique. The somber beauty evoked is extraordinary.\"]"
 	},
 	{
 		id: "88",
@@ -972,7 +972,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "みをつくしてや",
 		kimariji: "なにわえ",
 		translation: "After one brief night--|Short as a piece of the reeds|Growing in Naniwa bay--|Must I forever long for him|With my whole heart, till life ends?",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em>. (SKT 807). The poet, whose dates are unknown, was active in the 12th century and served under Empress Seishi (1121 \u2013 1181), wife of Emperor Sutoku.\",\"An extended metaphor, and thus difficult to translate within the prescribed syllabic format, the waka contains no fewer than three <strong><em>kakekotoba<\/em><\/strong>, or pivot words: <em>karine<\/em>, representing both cropped reeds and a short sleep; <em>hitoyo<\/em>, meaning both one segment of a reed stalk (between two nodes) and a single night; and <em>miotsukushi<\/em>, used nominatively for &ldquo;channel marker&rdquo; and verbally as part of a phrase meaning &ldquo;consuming oneself.&rdquo; In addition, the place name Naniwa-e is accompanied by the related words (<strong><em>engo<\/em>) <\/strong>of <em>ashi<\/em> (&ldquo;reeds&rdquo;), <em>karine<\/em>, <em>hitoyo<\/em>, and <em>miotsukushi<\/em>. Finally, the <em>kakekotoba<\/em> pair of <em>karine \/ hitoyo<\/em> is prefaced by a descriptive <strong><em>jokotoba<\/em><\/strong> referring to reeds at the entrance to Naniwa (Osaka) Bay, known for its large population of prostitutes. The connection is made clear in the headnote in the source, which specifies as the topic a love tryst at an inn for travelers. Ostensibly, then, the waka becomes a sympathetic depiction of the tenuous existence of such women, continually sacrificing themselves for a series of brief romantic liaisons, although from a modern perspective the conflation of prostitution with romance sits rather uneasily. Surprisingly, the waka scans quite smoothly in Japanese despite the convoluted wordplay.\"]"
 	},
 	{
 		id: "89",
@@ -983,7 +983,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "しの",
 		kimariji: "たま",
 		translation: "Like a string of gems|Grown weak, my life will break now;|For if I live on,|All I do to hide my love|May at last grow weak and fail.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Love&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 1034). Shokushi (sometimes spelled Shikishi; 1149 \u2013 1201) was the third daughter of Emperor Go-Shirakawa (1127 \u2013 1192; r.&nbsp;1155-1158). She served as Vestal Virgin of Kamo Shrine and eventually became a nun.\",\"The passionate tone of this waka and the previous one are conventionally held to be characteristic of female poets of the classical period (and later). The first two lines give expression to the poet&rsquo;s romantic desperation, while the next three add apprehension over the possibility of her secret being discovered. The clear syntactic break at the end of the second line demonstrates the <strong><em>nikugire<\/em><\/strong> technique. <em>Tae<\/em> (&quot;breaking&quot;), <em>nagarae<\/em> (&quot;living on&quot;), and <em>yowari<\/em> (&quot;losing strength&quot;) are all <em><strong>engo<\/strong><\/em> associated with the word <em>o<\/em> (&quot;thread&quot; or &quot;cord&quot;). The headnote in the source specifies the topic as &quot;concealed love.&quot; That concealment demands forebearance is so implicit in the verb <em>shinobu<\/em> that it is not treated as a <em>kakekotoba<\/em> in Japanese poetics despite the difference in English nuance.\"]"
 	},
 	{
 		id: "90",
@@ -994,7 +994,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ぬ",
 		kimariji: "みせ",
 		translation: "Let me show him these!|Even the fishermen's sleeves|On Ojima's shores,|Though wet through and wet again,|Do not so change their colors.",
-		background: "[]"
+		background: "[\"The source is the fourth &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 886). The poet (1131? \u20131200?) was the daughter of Fujiwara no Nubunari (1197 \u2013 ?) and lady-in-waiting to Princess Ry\u014dshi (1147 \u2013 1216), more commonly referred to as Inpumon&rsquo;in.\",\"The conventional notion at the center of the waka's meaning is that one's passionate tears (tears of blood, that is) dye the sleeves of one's kimono red. The poem itself is an allusive variation of <a href=\"poems_41-50.html#poem-48\" class=\"text-link\">Poem 48<\/a>: this is the rhetorical device of <strong><em>honkadori<\/em><\/strong>, which is present in eight of the last eleven waka of the <em>Hyakunin isshu<\/em> and can therefore be said to demonstrate one of the shaping impulses of the compiler. In this case, the image of the water-soaked sleeves of common fishermen is being appropriated for aristocratic use to suggest the rather more elegant anguish of the poet (the headnote in the source specifies the topic as love). Rather unusually in terms of rhetorical devices, the waka has semantic breaks after both the first and fourth lines (<strong><em>shokugire<\/em><\/strong> and <strong><em>shikugire<\/em><\/strong>); the translation retains only the first of these. It should also be noted that this is the third in succession of a short series of passionate waka composed by women.\"]"
 	},
 	{
 		id: "91",
@@ -1005,7 +1005,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ころもか",
 		kimariji: "きり",
 		translation: "In my cold bed,|Drawing close my folded quilt,|I sleep alone,|While all through the frosty night|I hear a cricket's lonely sound.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Autumn&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 518). Fujiwara no Yoshitsune (1169 \u2013 1206), the second son of Regent Fujiwara no Kanezane (1149 \u2013 1207), composed the <em>kana<\/em> preface of the <em>Shinkokinsh\u016b<\/em>. The actual attribution in the <em>Hyakunin isshu<\/em> uses the appellation <span class=\"poet-name\"><em>Goky\u014dgoku sessh\u014d saki no daij\u014ddaijin<\/em><\/span>: Gokyoku Regent and Former Minister of State.\",\"Like the previous waka, this is an example of <strong><em>honkadori<\/em><\/strong>, although here two earlier waka are involved: <a href=\"poems_01-10.html#poem-03\" class=\"text-link\">Poem 3<\/a> by Kakinomoto no Hitomaro, from the <em>Sh\u016bish\u016b<\/em>, and an anonymous waka in the <em>Kokinsh\u016b<\/em> (SKT 689) about the Maiden of Uji Bridge waiting for her lover. There may also be an allusion to a verse in the <em>Man&rsquo;yosh\u016b<\/em> (SKT 1696) that contains an identical last two lines. The Japanese word for &ldquo;straw mat&rdquo; is homophonous with the word for &ldquo;cold,&rdquo; so this <strong><em>kakekotoba<\/em><\/strong> is the second poetic device at work in the waka. The situation might be envisioned as someone living alone in a mountain village or perhaps spending the night at an inn while traveling: despite the reference to sleeping alone -- and despite the classification of the <em>Kokinsh\u016b<\/em> source as a love poem -- the focus in the <em>Shinkokinsh\u016b<\/em> is more on the lonesomeness of the season than on the loneliness of a lover, even if the suggestion of the latter remains.\"]"
 	},
 	{
 		id: "92",
@@ -1016,7 +1016,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ひとこそし",
 		kimariji: "わがそ",
 		translation: "Like a rock at sea,|At ebb-tide hidden from view,|Is my tear-drenched sleeve:|Never for a moment dry,|And no one knows it is there.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Love&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 760). Sanuki (1141? \u2013 1217?) was the daughter of Minamoto no Yorimasa (1104 \u2013 1180) and served Empress Ninshi (1174 \u2013 1238), the wife of both Emperor Nij\u014d (1143 \u2013 1165; r.&nbsp;1158 \u2013 1165) and Emperor Go-Toba.\",\"This is the last in a short series of three waka that focuses on the image of kimono sleeves, and the second poem in a row to rely on the allusive technique of <strong><em>honkadori<\/em><\/strong>, evident in the close rewording of an original in the <em>Izumi Shikibu sh\u016b<\/em> (for Izumi Shikibu, see <a href=\"poems_51-60.html\" class=\"text-link\">Poem 56<\/a>). The second and third lines of the Japanese original function as a descriptive <strong><em>jokotoba<\/em><\/strong> prefacing the more subjective reflections of the last two lines. The poet likely intends the &ldquo;any&rdquo; to refer not just to people generally but to one person in particular -- the one in whom she has a romantic interest.\"]"
 	},
 	{
 		id: "93",
@@ -1027,7 +1027,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "あまの",
 		kimariji: "よのなかは",
 		translation: "If only our world|Could be always as it is!|How moving the sight|Of the little fishing boat|Drawn by ropes along the bank.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Travel&rdquo; book of the <em>Shinchokusensh\u016b<\/em> (SKT 525). Minamoto no Sanetomo (1192 \u2013 1219) was the second son of Minamoto no Yoritomo (1147 \u2013 1199) and the third sh\u014dgun of the Kamakura bakufu. He was assassinated by his nephew Kugy\u014d at the Tsuraoka Hanchimang\u016b shrine in Kamakura.\",\"There are two allusions to earlier poems that inform the waka's meaning, illustrating the <strong><em>honkadori<\/em><\/strong> technique. One is the reference to a verse in the <em>Man'y\u014dsh\u016b<\/em> (SKT 22) in which the poet explicitly wishes for things to remain unchanged. The other refers to a poem in the <em>Kokinsh\u016b<\/em> (SKT 1088) which remarks on the sadness inspired by the sight of towlines trailing behind boats in Shiogama Bay (present-day Matsushima Bay in Miyagi Prefecture). That the same sight would have been visible on the coast of Kamakura establishes a connection with the fate of Sanetomo (who studied waka composition with Teika). The <strong><em>nikugire<\/em><\/strong> technique is evident in the semantic break at the end of the second phrase, neatly separating the two allusions so they can be synthesized through juxtaposition.\"]"
 	},
 	{
 		id: "94",
@@ -1038,7 +1038,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ふる",
 		kimariji: "みよ",
 		translation: "From Mount Yoshino|Blows a chill, autumnal wind.|In the deepening night|The ancient village shivers:|Sounds of beating cloth I hear.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Autumn&rdquo; book of the <em>Shinkokinsh\u016b<\/em> (SKT 483). Fujiwara no Masatsune (1170 \u2013 1221) was one of the compilers of the <em>Shinkokinsh\u016b<\/em>.\",\"Yoshino, in present-day Nara Prefecture (&quot;mi-&quot; is a beautifying prefix), was the site of a detached palace built in the 8th century (possibly preceded by others) to which early Japanese emperors frequently repaired. By the time of the <em>Kokinsh\u016b<\/em>, the region had acquired connotations of desolation and distant imperial glory. This is another <strong><em>honkadori<\/em><\/strong> poem, based on a waka in the &ldquo;Winter&rdquo; book of the <em>Kokinsh\u016b<\/em> (SKT 325) about the freezing cold of Yoshino when it lies buried under deep snow. The season has been transposed to autumn and the visual image of snow replaced by the conventionally desolate sound of the fulling block, which is carried on the wind.\"]"
 	},
 	{
 		id: "95",
@@ -1049,7 +1049,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "わかた",
 		kimariji: "おおけ",
 		translation: "From the monastery|On Mount Hiei I look out|On this world of tears,|And though I am unworthy,|I shield it with my black sleeves.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Miscellaneous&rdquo; book of the <em>Senzaish\u016b<\/em> (SKT 1137). Jien (1155 \u2013 1225) was the son of Fujiwara no Tadamichi and the author of the historical treatise <em>Gukansh\u014d<\/em>.\",\"A new priest is announcing his resolve to make good use of the saving grace of Buddha: he figuratively declares that he will use his new status (symbolized by his black sleeves) to protect the ordinary inhabitants of this world through prayer. To convey this presumably self-referential message, Jien has employed a number of rhetorical techniques: a semantic break after the third phrase (<strong><em>sankugire<\/em><\/strong>); wordplay involving the <strong><em>kakekotoba<\/em><\/strong> <em>sumizome<\/em> to refer to both sleeves that have been &quot;dyed ink-black&rdquo; and his &ldquo;newly started life&rdquo; as a priest on Mount Hiei; the associations between the words <em>sode<\/em> (&ldquo;sleeve&rdquo;) and <em>\u014du<\/em> (&ldquo;cover&rdquo;) that make them <em><strong>engo<\/strong><\/em>; and the implied grammatical inversion, or <strong><em>t\u014dchi-h\u014d<\/em><\/strong>, of displacing <em>sumizome no sode<\/em> from its expected position as the object of the verb <em>\u014du<\/em> (that is, &quot;use sleeves of my robe to protectively cover&quot;; it is an implied inversion because the accusative particle <em>o<\/em> is missing from the end of the fifth line). Moreover, there is a <strong><em>honkadori<\/em><\/strong> allusion to a <em>Shinkokinsh\u016b<\/em> poem (SKT 1920, a <em>shakky\u014d<\/em>, or poem on Siikyamuni's teachings) supposedly composed by Saich\u014d (767 \u2013 822) when he built the main hall of the Enryakuji, headquarters of the Tendai sect on Mount Hiei, in which he invokes the various Buddhas' protection (<em>soma<\/em> refers to a mountain that serves as a source of timber for temples and palaces; by extension, the reference here is to Mount Hiei).\"]"
 	},
 	{
 		id: "96",
@@ -1060,7 +1060,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "ふり",
 		kimariji: "はなさ",
 		translation: "Not the snow of flowers,|That the hurrying wild wind whirls|Round the garden court:|What withers and falls away|In this place is I myself.",
-		background: "[]"
+		background: "[\"The source is the first &ldquo;Miscellaneous&rdquo; book of the <em>Shinchokusensh\u016b<\/em> (SKT 1052). Fujiwara no Kintsune (1171 \u2013 1244) was the brother-in-law of Fujiwara no Teika and one of the most powerful men at court after the J\u014dky\u016b Disturbance of 1221.\",\"Both the mountain gale and the blossoms are personifications (the gale is &ldquo;enticing&rdquo; the blossoms into the garden): the <strong><em>gijinh\u014d<\/em><\/strong> technique. The <strong><em>kakekotoba<\/em><\/strong> <em>furiyuku<\/em> pivots the meaning from &ldquo;continue to fall&rdquo; to &ldquo;continue to age.&rdquo; Finally, cherry blossoms are being compared to snow: the likening technique of <strong><em>mitate<\/em><\/strong>. The picturesque description of cherry blossoms thickly scattered in a garden gives way to a more somber reflection on the passage of time; that the beauty of the garden requires the scattering of the blossoms establishes a poignant thematic link between the two parts of the waka.\"]"
 	},
 	{
 		id: "97",
@@ -1071,7 +1071,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "やく",
 		kimariji: "こぬ",
 		translation: "Like the salt sea-weed,|Burning in the evening calm.|On Matsuo's shore,|All my being is aflame,|Awaiting her who does not come.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Love&rdquo; book of the <em>Shinchokusensh\u016b<\/em> (SKT 849). Fujiwara no Teika (or Sadaie, 1162 \u2013 1241) was the son of Fujiwara no Shunzei (or Toshinari, see <a href=\"poems_81-90.html#poem-83\" class=\"text-link\">Poem 83<\/a>). Besides the <em>Ogura Hyakunin isshu, <\/em>he played a leading role in compiling the <em>Shinkokinsh\u016b<\/em> and also compiled the <em>Shinchokusensh\u016b<\/em>. The headnote in the source dates the waka to a poetry contest held in the palace in 1218, but Teika's private <em>Sh\u016bi gus\u014d<\/em> (Gleanings from Humble Scribbles) collection more reliably gives the date as 1216.\",\"The poet has assumed the persona of a woman waiting in vain for her lover to come. Matsuho Bay is located at the northernmost point of Awaji Island in the Seto Inland Sea off of K\u014dbe. A place name, it also incorporates the familiar <strong><em>kakekotoba<\/em><\/strong> <em>matsu<\/em>, a homonym for &ldquo;to wait.&rdquo; The second and third lines constitute a descriptive <strong><em>jokotoba<\/em><\/strong> used to &ldquo;introduce&rdquo; the image of searing passion. &ldquo;Burn,&rdquo; &ldquo;seaweed salt,&rdquo; and &ldquo;scorch&rdquo; are related words, or <strong><em>engo<\/em><\/strong>. There is also an allusion to a poem in Book 6 of the <em>Man&rsquo;y\u014dsh\u016b<\/em> (SKT 940) that describes the burning of seaweed for salt at Matsuho Bay: the <strong><em>honkadori<\/em><\/strong> technique. The language does seem a bit overwrought, but one would hesitate to gainsay the foremost (or at least most influential) poet of the day.\"]"
 	},
 	{
 		id: "98",
@@ -1082,7 +1082,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "みそ",
 		kimariji: "かぜそ",
 		translation: "To Nara's brook comes|Evening, and the rustling winds|Stir the oak-trees' leaves.|Not a sign of summer left|But the sacred bathing there.",
-		background: "[]"
+		background: "[\"The source is the &ldquo;Summer&rdquo; book of the <em>Shinchokusensh\u016b<\/em> (SKT 192). Fujiwara no Ietaka (1158 \u2013 1237), here identified by his court rank, was one of the compilers of the <em>Shinkokinsh\u016b<\/em>.\",\"The purification rite at the Nara stream -- a segment of the Mitarashi River that runs through Upper Kamo Shrine in Kyoto and takes its name from the surrounding oak (<em>nara<\/em>) trees -- was held on the last day of the lunar Sixth Month and served as an occasion for participants to wash away the defilements of the first half of the year. The waka first sets a scene more appropriate to autumn: a peaceful evening with the breeze blowing through the leaves. Then, in the last two lines, the reader is reminded by mention of the annual purification ceremony that summer has not yet passed: we are actually only on autumn's cusp. The poet, in other words, is giving expression to a sensibility that goes beyond simply dividing the year into four distinct seasons. The description is a mediated one, however, since the headnote in the source explains that the poem was composed to complement a scene painted on folding screen being brought into the palace by an incoming imperial consort (in this case,Teika's daughter Shunshi, in 1229).\",\"As noted above, the waka contains an untranslatable <strong><em>kakekotoba<\/em><\/strong> play on words in the form of <em>nara\/Nara<\/em>, which refers both to oak trees and to the stream flowing through them. This is also the last in a nearly uninterrupted series of verses, beginning with Poem 90, that constitute allusive variations of earlier waka (the <em><strong>honkadori<\/strong><\/em> technique). The allusions here are to poems on &quot;Nara&quot; in the <em>Kokinrokuj\u014d<\/em> (Six Volumes of Ancient and Modern Poetry, SKT 118; poss. late 10th century) and the <em>Gosh\u016bish\u016b<\/em> (SKT 231). \"]"
 	},
 	{
 		id: "99",
@@ -1093,7 +1093,7 @@ poems = Poem.update_or_create([
 		second_verse_answer: "よをお",
 		kimariji: "ひとも",
 		translation: "For some men I grieve;|Some men are hateful to me;|And this wretched world|To me, with all my sadness,|Is a place of misery.",
-		background: "[]"
+		background: "[\"The source is the second &ldquo;Miscellaneous&quot; book of the <em>Shokugosensh\u016b<\/em> (SKT 1202). Go-Toba (1180 \u2013 1239; r.&nbsp;1183 \u2013 1198) was the fourth son of Emperor Takakura (1161 \u2013 1181; r.&nbsp;1168 \u2013 1180). He ordered the compilation of the <em>Shinkokinsh\u016b<\/em> but spent the last 19 years of his life in exile on the island of Oki after the J\u014dky\u016b Disturbance of 1221.\",\"Although this waka was composed more than eight years before the J\u014dky\u016b Disturbance, scholars tend to view it as presaging Go-Toba&rsquo;s open conflict with the Kamakura shogunate. One certainly gets a sense of the personal politics involved at the highest levels of court life. Disagreement exists over whether Go-Toba is referring to different types of people or to different aspects that can be discerned in the same individual. The translation attempts to straddle the boundary between specific and general. Poetic techniques include the use of a <strong><em>nikugire<\/em><\/strong> syntactic break after the second line and the <strong><em>t\u014dchi-h\u014d<\/em><\/strong> inversion of the first two lines and the last three.\",\"The last two waka of <em>One Hundred Poems by One Hundred Poets -- <\/em>both by retired emperors who are also father and son -- are clearly meant to parallel the opening pair, attributed to emperors who were father and daughter. This frame can be said to give the collection as a whole a political tinge, as if Teika were suggesting solidarity with the court and lamenting the current state of imperial decline. At the same time, this bookend-style arrangement also draws attention to the role of the collection as an affirmation of cultural identity.\"]"
 	},
 	{
 		id: "100",
@@ -1104,6 +1104,6 @@ poems = Poem.update_or_create([
 		second_verse_answer: "なほあ",
 		kimariji: "もも",
 		translation: "In this ancient house,|Paved with a hundred stones,|Ferns grow in the eaves;|But numerous as they are,|My old memories are more.",
-		background: "[]"
+		background: "[\"The source is the third &ldquo;Miscellaneous&rdquo; book of the <em>Shokugosensh\u016b<\/em> (SKT 1205). Juntoku (1197 \u2013 1242; r.&nbsp;1210 \u2013 1221) was the third son of Emperor Go-Toba. He too was exiled after the J\u014dky\u016b Disturbance, but to the island of Sado, which was where he died.\",\"Continuing in the manner of the previous waka, this one laments the loss of imperial grandeur as evident in the current dilapidated state of the palace. The sole poetic device is the <strong><em>kakekotoba<\/em><\/strong> <em>shinobu<\/em>, acting as a noun to refer to the ferns now growing wild at the palace eaves and doubling as a verb meaning &ldquo;reminisce&quot; (although the first two lines do come close to functioning as a descriptive <strong><em>jokotoba<\/em><\/strong> preface). The poet is overwhelmed by the thought of what once was but is no more. These last two waka represent a darkening of the mood after the purification scene described in <a href=\"#poem-98\" class=\"p7STE-scroll-to-element\" data-top-offset=\"100\">Poem 98<\/a>, but perhaps this melancholy note was precisely what Teika was seeking to convey.\"]"
 	}
 ]);

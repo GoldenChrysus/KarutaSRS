@@ -19,6 +19,27 @@
 		Reviews
 	</LinkTo>
 
+	{{#if this.top}}
+		<div class="ui dropdown item">
+			Practice
+			<i class="dropdown icon"></i>
+			<div class="menu">
+				<LinkTo @route="authenticated.practice.quiz" class="item">
+					Quiz
+				</LinkTo>
+			</div>
+		</div>
+	{{else}}
+		<div class="item">
+			Practice
+			<div class="menu">
+				<LinkTo @route="authenticated.practice.quiz" class="item">
+					Quiz
+				</LinkTo>
+			</div>
+		</div>
+	{{/if}}
+
 	<LinkTo @route="authenticated.poems" class="item">
 		Poems
 	</LinkTo>

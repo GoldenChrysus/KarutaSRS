@@ -1,0 +1,29 @@
+<div class="quiz-filters ui segment">
+	<div class="ui multiple selection dropdown">
+		<Input @type="hidden" @value={{this.kimariji_length}} />
+		<span class="default text">Kimariji Length</span>
+		<i class="dropdown icon"></i>
+		<div class="menu">
+			<div class="header">Kimariji Length</div>
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+		</div>
+	</div>
+	<div class="ui selection dropdown">
+		<Input @type="hidden" @value={{this.card_count}} />
+		<span class="default text"># Cards to Display</span>
+		<i class="dropdown icon"></i>
+		<div class="menu">
+			<div class="header"># Cards to Display</div>
+			<div class="item">4</div>
+			<div class="item">8</div>
+			<div class="item">12</div>
+			<div class="item">16</div>
+		</div>
+	</div>
+	<button class="ui blue button" onclick={{action "start"}}>Start</button>
+</div>

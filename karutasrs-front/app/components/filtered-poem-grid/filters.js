@@ -91,14 +91,14 @@ export default class FilteredPoemGridFiltersComponent extends Component {
 		$(element)
 			.accordion();
 		bindWanaKana(
-			$(element).find("[name=kimariji")[0],
+			$(element).find("[name=kimariji]")[0],
 			{
 				IMEMode         : "toHiragana",
 				useObsoleteKana : true
 			}
 		);
 		bindWanaKana(
-			$(element).find("[name=second_verse")[0],
+			$(element).find("[name=second_verse]")[0],
 			{
 				IMEMode         : "toHiragana",
 				useObsoleteKana : true
