@@ -1,14 +1,13 @@
 import Component from '@ember/component';
-import { computed } from "@ember/object";
 import { inject as service } from "@ember/service";
 
 export default Component.extend({
-	session             : service(),
-	user                : undefined,
-	top                 : false,
-	openSidebar         : false,
-	kimariji_length     : "",
-	card_count          : "",
+	session         : service(),
+	user            : undefined,
+	top             : false,
+	openSidebar     : false,
+	kimariji_length : "",
+	card_count      : "",
 
 	didInsertElement() {
 		$(this.element)
