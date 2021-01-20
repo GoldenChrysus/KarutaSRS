@@ -120,6 +120,7 @@ export default Component.extend({
 			this.set("is_correct", input === answer);
 		}
 
+		$("#main-column").focus();
 		$(this.input_element).attr("disabled", true);
 
 		if (!this.demo) {
