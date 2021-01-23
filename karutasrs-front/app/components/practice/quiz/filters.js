@@ -24,7 +24,7 @@ export default Component.extend({
 				return false;
 			}
 
-			if (this.quiz_length && (isNaN(this.quiz_length) || +this.quiz_length <= 0 || this.quiz_length > 100)) {
+			if (this.quiz_length && (isNaN(this.quiz_length) || +this.quiz_length <= 0 || +this.quiz_length > 100 || !Number.isInteger(+this.quiz_length))) {
 				alert("Please enter a quiz length between 1 and 100 or leave it blank.");
 				return false;
 			}
