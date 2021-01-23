@@ -6,9 +6,16 @@ export default Component.extend({
 	countdown   : 3,
 	interval    : null,
 	time        : 0,
+	width       : "24%",
+	size        : "quiz",
 
 	didReceiveAttrs() {
 		this._super(...arguments);
+
+		let large_screen = (window.innerWidth >= 1200);
+
+		this.set("width", (large_screen) ? "12%" : "24%");
+		this.set("size", (large_screen) ? "quiz quiz-small" : "quiz");
 		this.set("countdown", 3);
 		this.set("state", "countdown");
 

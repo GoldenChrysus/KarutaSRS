@@ -11,7 +11,16 @@
 	user-select: none;
 }
 
-.grabber-card-outer.quiz:nth-of-type(4n) {
+.grabber-card-outer.quiz.quiz-small {
+	margin-right: 0.57%;
+	margin-bottom: 0.57%;
+}
+
+.grabber-card-outer.quiz:not(.quiz-small):nth-of-type(4n) {
+	margin-right: 0;
+}
+
+.grabber-card-outer.quiz.quiz-small:nth-of-type(8n) {
 	margin-right: 0;
 }
 
@@ -89,9 +98,16 @@
 	font-size: 3.90vw;
 }
 
-.grabber-card-outer.demo > .grabber-card-inner > .character > p,
-.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+.grabber-card-outer.demo > .grabber-card-inner > .character > p {
 	font-size: 2.90vw;
+}
+
+.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+	font-size: 2.80vw;
+}
+
+.grabber-card-outer.quiz.quiz-small > .grabber-card-inner > .character > p {
+	font-size: 1.10vw;
 }
 
 .grabber-card-outer > .grabber-card-inner > .character.learn > p,
@@ -118,6 +134,10 @@
 
 	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
 		font-size: 3.35vw;
+	}
+
+	.grabber-card-outer.quiz.quiz-small > .grabber-card-inner > .character > p {
+		font-size: 1.50vw;
 	}
 }
 
@@ -161,11 +181,15 @@
 		font-size: 6.00vw;
 	}
 
-	.grabber-card-outer.demo > .grabber-card-inner > .character > p,
-	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
 		font-size: 4.40vw;
 	}
+
+	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+		font-size: 4.20vw;
+	}
 }
+
 @media screen and (max-width: @tabletBreakpoint - 1) {
 	.grabber-card-outer.standalone-poem > .grabber-card-inner > .character > p {
 		font-size: 19.00vw !important;
@@ -187,6 +211,12 @@
 		font-size: 8.50vw;
 	}
 
+	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+		font-size: 3.40vw;
+	}
+}
+
+@media screen and (max-width: 420px) {
 	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
 		font-size: 2.70vw;
 	}

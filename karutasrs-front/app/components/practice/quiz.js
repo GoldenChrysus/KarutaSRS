@@ -44,7 +44,7 @@ export default Component.extend({
 			let poem_array      = this.poems.toArray();
 			let candidate_poems = poem_array.filter((a) => {
 				let valid = true;
-				
+
 				if (valid && filters.kimariji_length && filters.kimariji_length.length) {
 					valid = (filters.kimariji_length.includes(String(a.kimariji.length)));
 				}
