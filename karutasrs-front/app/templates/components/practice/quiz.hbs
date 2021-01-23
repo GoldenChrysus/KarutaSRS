@@ -1,0 +1,7 @@
+{{#if (eq this.state "filtering")}}
+	<Practice::Quiz::Filters @poems={{this.poems}} @learned={{this.learned}} @start={{action "start"}}/>
+{{else if (eq this.state "playing")}}
+	<Practice::Quiz::Item @set={{this.current_set}} @answer={{action "answer"}}/>
+{{else}}
+	finish
+{{/if}}

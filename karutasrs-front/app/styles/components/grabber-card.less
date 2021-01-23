@@ -3,6 +3,17 @@
 	margin: 0 auto;
 }
 
+.grabber-card-outer.quiz {
+	float: left;
+	margin-right: 1.333%;
+	margin-bottom: 1.333%;
+	cursor: pointer;
+}
+
+.grabber-card-outer.quiz:nth-of-type(4n) {
+	margin-right: 0;
+}
+
 .grabber-card-outer > .grabber-card-inner {
 	position: relative;
 	width: 93.71%;
@@ -77,7 +88,8 @@
 	font-size: 3.90vw;
 }
 
-.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+.grabber-card-outer.demo > .grabber-card-inner > .character > p,
+.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
 	font-size: 2.90vw;
 }
 
@@ -102,6 +114,10 @@
 	.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
 		font-size: 4.20vw;
 	}
+
+	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+		font-size: 3.35vw;
+	}
 }
 
 @media screen and (max-width: @largeMonitorBreakpoint - 1) {
@@ -120,8 +136,9 @@
 	.grabber-card-outer.review-info > .grabber-card-inner > .character > p {
 		font-size: 6.60vw;
 	}
-
-	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+	
+	.grabber-card-outer.demo > .grabber-card-inner > .character > p,
+	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
 		font-size: 4.50vw;
 	}
 }
@@ -143,7 +160,8 @@
 		font-size: 6.00vw;
 	}
 
-	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
+	.grabber-card-outer.demo > .grabber-card-inner > .character > p,
+	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
 		font-size: 4.40vw;
 	}
 }
@@ -166,5 +184,9 @@
 
 	.grabber-card-outer.demo > .grabber-card-inner > .character > p {
 		font-size: 8.50vw;
+	}
+
+	.grabber-card-outer.quiz > .grabber-card-inner > .character > p {
+		font-size: 2.70vw;
 	}
 }

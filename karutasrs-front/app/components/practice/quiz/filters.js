@@ -17,8 +17,10 @@ export default Component.extend({
 
 	actions : {
 		start() {
-			console.log(this.kimariji_length);
-			console.log(this.card_count);
+			this.start({
+				kimariji_length : this.kimariji_length.split(","),
+				card_count      : +this.card_count
+			});
 		}
 	}
 });
