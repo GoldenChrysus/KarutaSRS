@@ -1,0 +1,49 @@
+<button class="ui button" onclick={{action "restart"}}>Restart</button>
+
+<h4 class="ui horizontal divider header">
+	<i class="bar chart icon"></i>
+	Your Results
+</h4>
+
+<div class="ui four statistics">
+	<div class="statistic">
+		<div class="value">{{this.quiz_length}}</div>
+		<div class="label">Total Items</div>
+	</div>
+	<div class="statistic">
+		<div class="value">{{this.correct_percent}}</div>
+		<div class="label">Items Correct</div>
+	</div>
+	<div class="statistic">
+		<div class="value">{{this.average_correct_time}}</div>
+		<div class="label">Avg. Correct Response Time</div>
+	</div>
+	<div class="statistic">
+		<div class="value">{{this.average_total_time}}</div>
+		<div class="label">Avg. Response Time</div>
+	</div>
+</div>
+
+{{#if this.incorrect.length}}
+	<h4 class="ui horizontal divider header">
+		Incorrect Answers
+	</h4>
+	<div id="incorrect-list" class="ui relaxed divided list">
+		{{#each this.incorrect as |item|}}
+			<div class="item">
+				<div class="content">
+					<LinkTo target="_blank" class="icon" @route="authenticated.poems.show" @model={{item.poem.id}}>
+						<div class="small">
+							Poem
+						</div>
+						<div class="big">
+							{{item.poem.id}}
+						</div>
+					</LinkTo>
+					<div><strong>Kimariji:</strong> {{item.poem.kimariji}}</div>
+					<div>You chose card {{item.chosen_verse}} but the correct card was {{item.poem.second_verse_answer}}.</div>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+{{/if}}

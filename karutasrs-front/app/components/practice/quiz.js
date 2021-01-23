@@ -1,23 +1,76 @@
-import Component from '@ember/component';
+import Component from "@ember/component";
+import { inject as service } from "@ember/service";
 
 export default Component.extend({
+	store : service("store"),
+
 	state         : "filtering",
-	poems         : [],
-	learned       : [],
-	sets          : [],
+	poems         : null,
+	learned_poems : null,
+	sets          : null,
 	quiz_length   : 5,
 	current_set   : null,
 	current_index : 0,
-	incorrect     : [],
+	incorrect     : null,
+	timings       : null,
+
+	init() {
+		this.poems         = this.poems || [];
+		this.learned_poems = this.learned_poems || [];
+
+		this.reset();
+		this._super(...arguments);
+	},
+
+	reset() {
+		this.sets          = [];
+		this.current_index = 0;
+
+		this.set("learned", undefined);
+		this.set("incorrect", []);
+		this.set("timings", {
+			correct   : 0,
+			incorrect : 0,
+		});
+	},
 
 	actions : {
+		restart() {
+			this.reset();
+			this.set("state", "filtering");
+		},
+
 		start(filters) {
 			let poem_array      = this.poems.toArray();
 			let candidate_poems = poem_array.filter((a) => {
-				return (filters.kimariji_length.includes(String(a.kimariji.length)));
+				let valid = true;
+				
+				if (valid && filters.kimariji_length && filters.kimariji_length.length) {
+					valid = (filters.kimariji_length.includes(String(a.kimariji.length)));
+				}
+
+				if (valid && [0, 1].includes(filters.learned)) {
+					let valid_poem_ids = this.learned_poems.map(b => b.poem.get("id"));
+					let expected       = (filters.learned === 1) ? true : false;
+
+					valid = (valid_poem_ids.includes(a.id) === expected);
+				}
+
+				return valid;
 			});
 
-			for (let i = 0; i < this.quiz_length; i++) { // hard-coded quiz length
+			if (!candidate_poems.length) {
+				alert("No eligible poems found. Please try different filters.");
+				return false;
+			}
+
+			if (!filters.quiz_length || candidate_poems.length < filters.quiz_length) {
+				filters.quiz_length = candidate_poems.length;
+			}
+
+			this.set("quiz_length", filters.quiz_length);
+
+			for (let i = 0; i < this.quiz_length; i++) {
 				let index           = Math.floor(Math.random() * candidate_poems.length);
 				let poem            = candidate_poems[index];
 				let main_poem_index = 0;
@@ -48,14 +101,32 @@ export default Component.extend({
 			this.set("state", "playing");
 		},
 
-		answer(selected_poem_id) {
-			if (selected_poem_id !== +this.current_set.poem.id) {
-				// track incorrect answer
+		answer(selected_poem_id, time_elapsed) {
+			let incorrect = (selected_poem_id !== +this.current_set.poem.id);
+
+			if (incorrect) {
+				let correct_poem   = this.store.peekRecord("poem", this.current_set.poem.id);
+				let incorrect_poem = this.store.peekRecord("poem", selected_poem_id);
+				let incorrect      = this.incorrect;
+
+				incorrect.push({
+					poem         : correct_poem,
+					chosen_verse : incorrect_poem.second_verse_answer
+				});
+
+				this.set("incorrect", incorrect);
 			}
+
+			let timings = this.timings;
+
+			timings[(incorrect) ? "incorrect" : "correct"] += time_elapsed;
+
+			this.set("timings", timings);
 
 			this.current_index++;
 
 			if (this.current_index === this.quiz_length) {
+				this.set("state", "results");
 				return;
 			}
 

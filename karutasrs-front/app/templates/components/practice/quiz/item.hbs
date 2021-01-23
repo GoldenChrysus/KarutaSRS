@@ -1,5 +1,11 @@
-<AudioPlayer id="quiz-audio" @url="/assets/audio/poem-readings/first-verse/poem-{{this.set.poem.id}}.mp3"/>
+{{#if (eq this.state "countdown")}}
+	<div id="quiz-countdown">
+		{{this.countdown}}
+	</div>
+{{else}}
+	<AudioPlayer id="quiz-audio" @url="/assets/audio/poem-readings/first-verse/poem-{{this.current_set.poem.id}}.mp3"/>
 
-{{#each this.set.cards as |card|}}
-	<GrabberCard @width="24%" @text={{card.second_verse_card}} @answer={{card.second_verse_answer}} @card={{card.second_verse_card}} @type="quiz" @size="quiz" onclick={{action "answer" card.id}}/>
-{{/each}}
+	{{#each this.current_set.cards as |card|}}
+		<GrabberCard @width="24%" @text={{card.second_verse_card}} @answer={{card.second_verse_answer}} @card={{card.second_verse_card}} @type="quiz" @size="quiz" onclick={{action "answer" card.id}}/>
+	{{/each}}
+{{/if}}
