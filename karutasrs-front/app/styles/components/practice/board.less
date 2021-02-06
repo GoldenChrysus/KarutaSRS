@@ -1,0 +1,26 @@
+.player-board {
+	width: 100%;
+}
+
+.player-board > .board-row {
+	width: 100%;
+}
+
+.player-board > .board-row:not(:last-of-type) {
+	margin-bottom: 0.03%;
+}
+
+.player-board > .board-row > .card {
+	display: inline-block;
+	width: 8%;
+	margin-right: 0.03%;
+	box-sizing: border-box;
+}
+
+.player-board > .board-row > .card:nth-of-type(12n) {
+	margin-right: 0;
+}
+
+.player-board > .board-row > .card.placeholder {
+	border: 2px dashed lightgray;
+}
