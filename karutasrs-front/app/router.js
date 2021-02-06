@@ -23,6 +23,7 @@ Router.map(function() {
 		});
 		this.route("practice", { path : "/practice" }, function() {
 			this.route("quiz");
+			this.route("layout");
 		});
 		this.route("poems", { path : "/poems" }, function() {
 			this.route("show", { path : "/:id" });
