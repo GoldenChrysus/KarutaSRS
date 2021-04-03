@@ -29,7 +29,7 @@ export default Component.extend({
 
 		try {
 			background = JSON.parse(this.poem.background);
-		} catch {
+		} catch (e) {
 			console.log(this.poem.background);
 			background = [];
 		}
