@@ -1,13 +1,30 @@
 import Component from "@ember/component";
+import { computed } from "@ember/object";
 
 export default Component.extend({
-	classNames : [
-		"card"
-	],
 	classNameBindings : [
-		"type"
+		"hover"
 	],
-	type : "placeholder",
+	dropzone   : false,
+	draggable  : true,
+	in_deck    : false,
+	card_index : null,
+	row_index  : null,
+	index      : computed("card_index", "row_index", function() {
+		return this.card_index + (this.row_index * 12);
+	}),
+	grabber_type : computed("in_deck", function() {
+		return (this.in_deck) ? "deck" : "board";
+	}),
+	grabber_size : computed("in_deck", function() {
+		let classes = ["board"];
+
+		if (this.in_deck) {
+			classes.push("deck");
+		}
+
+		return classes.join(" ");
+	}),
 
 	didInsertElement() {
 		this.setHeight();
@@ -18,15 +35,10 @@ export default Component.extend({
 	},
 
 	setHeight() {
-		let $element = $(this.element);
+		let $element = $(this.element).find(".card");
 
 		// If not visible, the card is in an accordion, so get the width of the nearest visible parent to get the width of this card
-		let width = ($element.is(":visible"))
-			? $element.width()
-			: $element
-				.parentsUntil(":visible")
-				.last()
-				.width();
+		let width = $(this.element).width();
 
 		if (!width) {
 			$(window).off("resize", this.setHeight.bind(this));
@@ -50,5 +62,37 @@ export default Component.extend({
 		}
 
 		return `${height}px`;
+	},
+
+	actions : {
+		onDragStart(e) {
+			if (!this.draggable) {
+				e.preventDefault();
+				return false;
+			}
+
+			window.board_dragging_card          = this.card.index;
+			window.board_dragging_existing_card = (!this.card.hover && !this.in_deck);
+			window.board_dragging_origin_index  = this.index;
+		},
+
+		onDragEnter(e) {
+			if (!this.dropzone || !this.draggable || this.in_deck) {
+				e.preventDefault();
+				return false;
+			}
+
+			console.log(this.index + " entering");
+			this.onDragEnter(this.index, window.board_dragging_card);
+		},
+
+		onDrop(e) {
+			if (!this.draggable) {
+				e.preventDefault();
+				return false;
+			}
+
+			this.onDrop();
+		}
 	}
 });

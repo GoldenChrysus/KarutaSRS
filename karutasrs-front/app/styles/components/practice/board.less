@@ -10,17 +10,23 @@
 	margin-bottom: 0.03%;
 }
 
-.player-board > .board-row > .card {
+.player-board > .board-row > div {
 	display: inline-block;
 	width: 8%;
 	margin-right: 0.03%;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
-.player-board > .board-row > .card:nth-of-type(12n) {
+.player-board > .board-row > div.hover {
+	opacity: 0.5;
+}
+
+.player-board > .board-row > div:nth-of-type(12n) {
 	margin-right: 0;
 }
 
-.player-board > .board-row > .card.placeholder {
+.player-board > .board-row > div > .card.placeholder {
+	box-sizing: border-box;
 	border: 2px dashed lightgray;
 }

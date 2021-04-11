@@ -6,7 +6,7 @@ export default Route.extend(AuthenticatedRouteMixin, {
 		let poems = await this.store.findAll("poem");
 
 		return {
-			poems
+			poems : poems.toArray()
 		};
 	}
 });

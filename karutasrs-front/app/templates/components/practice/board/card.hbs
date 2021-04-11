@@ -1,1 +1,5 @@
-<div class="card placeholder"></div>
+{{#if card}}
+	<GrabberCard @width="100%" @poem_index={{card.index}} @text={{card.second_verse_card}} @answer={{card.second_verse_answer}} @type={{grabber_type}} @size={{grabber_size}} draggable={{draggable}} ondragstart={{action "onDragStart"}} ondragenter={{action "onDragEnter"}} ondragend={{action "onDrop"}}/>
+{{else}}
+	<div class="card placeholder" ondragenter={{action "onDragEnter"}}></div>
+{{/if}}

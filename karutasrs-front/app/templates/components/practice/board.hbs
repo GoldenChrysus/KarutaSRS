@@ -1,8 +1,18 @@
+<Practice::CardDeck @onDrop={{action "onDrop"}}/>
+
 <div class="player-board">
-	{{#each this.rows as |cards|}}
+	{{#each this.rows key="board-rows" as |cards row_index|}}
 		<div class="board-row">
-			{{#each cards as |card|}}
-				<Practice::Board::Card/>
+			{{#each cards as |card card_index|}}
+				{{#if (eq card null)}}
+					<Practice::Board::Card @row_index={{row_index}} @card_index={{card_index}} @card={{card}} @dropzone={{true}} @onDragEnter={{action "onDragEnter"}}/>
+				{{else}}
+					{{#if card.hover}}
+						<Practice::Board::Card @card={{card}} @row_index={{row_index}} @card_index={{card_index}} @draggable={{false}} @hover={{true}}/>
+					{{else}}
+						<Practice::Board::Card @card={{card}} @row_index={{row_index}} @card_index={{card_index}} @dropzone={{true}} @onDragEnter={{action "onDragEnter"}} @onDrop={{action "onDrop"}}/>
+					{{/if}}
+				{{/if}}
 			{{/each}}
 		</div>
 	{{/each}}

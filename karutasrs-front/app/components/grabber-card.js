@@ -10,7 +10,8 @@ export default Component.extend({
 		"text_length"
 	],
 	attributeBindings : [
-		"key:key"
+		"key:key",
+		"draggable"
 	],
 	height      : 0,
 	width       : "444px",
@@ -21,6 +22,9 @@ export default Component.extend({
 	validate    : false,
 	text_length : computed("text", function() {
 		return (this.text.length === 16) ? "sixteen-length" : "fifteen-length";
+	}),
+	index : computed("card_index", "row_index", function() {
+		return this.card_index + (this.row_index * 12);
 	}),
 	char_array : computed("text", "answer", function() {
 		let chars_array  = this.text.split("");
@@ -102,13 +106,35 @@ export default Component.extend({
 	setHeight() {
 		let $element = $(this.element);
 
-		// If not visible, the card is in an accordion, so get the width of the nearest visible parent to get the width of this card
-		let width = ($element.is(":visible"))
-			? $element.width()
-			: $element
-				.parentsUntil(":visible")
-				.last()
-				.width();
+		let width;
+
+		switch (this.type) {
+			case "board":
+				width = $element
+					.closest(".board-row")
+					.find("div")
+					.first()
+					.width();
+
+				break;
+
+			case "deck":
+				width = $element
+					.closest("div")
+					.width();
+
+				break;
+
+			default:
+				width = ($element.is(":visible"))
+					? $element.width()
+					: $element
+						.parentsUntil(":visible")
+						.last()
+						.width();
+
+				break;
+		}
 
 		if (!width) {
 			$(window).off("resize", this.setHeight.bind(this));

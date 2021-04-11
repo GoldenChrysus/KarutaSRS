@@ -1,0 +1,3 @@
+{{#each cards as |card|}}
+	<Practice::Board::Card @card={{card}} @in_deck={{true}} ondragend={{action "onDrop"}}/>
+{{/each}}
