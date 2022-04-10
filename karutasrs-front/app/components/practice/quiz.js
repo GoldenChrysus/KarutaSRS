@@ -83,7 +83,7 @@ export default Component.extend({
 					}
 				}
 
-				let cards = this.selectCards(main_poem_index, filters.card_count, poem_array);
+				let cards = this.selectCards(main_poem_index, filters.card_count, poem_array, filters.card_inversion);
 
 				this.sets.push({
 					poem  : poem,
@@ -134,7 +134,7 @@ export default Component.extend({
 		}
 	},
 
-	selectCards(main_poem_index, count, poem_array) {
+	selectCards(main_poem_index, count, poem_array, inversion) {
 		let card_indices = [main_poem_index];
 		let cards        = [];
 
@@ -149,6 +149,8 @@ export default Component.extend({
 		}
 
 		for (let index of card_indices) {
+			poem_array[index].inverted = (inversion == 1 || (inversion == 2 && index % 2 == 0));
+
 			cards.push(poem_array[index]);
 		}
 

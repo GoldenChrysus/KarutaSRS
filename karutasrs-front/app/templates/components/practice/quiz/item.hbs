@@ -6,6 +6,6 @@
 	<AudioPlayer id="quiz-audio" @url="/assets/audio/poem-readings/first-verse/poem-{{this.current_set.poem.id}}.mp3"/>
 
 	{{#each this.current_set.cards as |card|}}
-		<GrabberCard @width={{this.width}} @text={{card.second_verse_card}} @answer={{card.second_verse_answer}} @card={{card.second_verse_card}} @type="quiz" @size={{this.size}} onclick={{action "answer" card.id}}/>
+		<GrabberCard @width={{this.width}} @text={{card.second_verse_card}} @answer={{card.second_verse_answer}} @card={{card.second_verse_card}} @type="quiz" @size={{this.size}} @inverted={{card.inverted}} onclick={{action "answer" card.id}}/>
 	{{/each}}
 {{/if}}

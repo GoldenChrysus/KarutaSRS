@@ -8,6 +8,7 @@ export default Component.extend({
 	openSidebar     : false,
 	kimariji_length : "",
 	card_count      : null,
+	card_inversion  : null,
 	quiz_length     : null,
 	learned         : undefined,
 
@@ -32,6 +33,7 @@ export default Component.extend({
 			this.start({
 				kimariji_length : (this.kimariji_length) ? this.kimariji_length.split(",") : [],
 				card_count      : +this.card_count,
+				card_inversion  : +this.card_inversion,
 				quiz_length     : +this.quiz_length,
 				learned         : (this.learned === undefined) ? -1 : +this.learned
 			});

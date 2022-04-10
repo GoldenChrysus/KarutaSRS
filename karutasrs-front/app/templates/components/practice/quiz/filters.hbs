@@ -26,6 +26,17 @@
 				<div class="item">16</div>
 			</div>
 		</div>
+		<div class="ui selection dropdown">
+			<Input @type="hidden" @value={{this.card_inversion}} />
+			<span class="default text">Card Inversion</span>
+			<i class="dropdown icon"></i>
+			<div class="menu">
+				<div class="header">Card Inversion</div>
+				<div class="item" data-value="0">None</div>
+				<div class="item" data-value="1">Inverted</div>
+				<div class="item" data-value="2">Mixed</div>
+			</div>
+		</div>
 		<div class="ui clearable selection dropdown compact">
 			<Input @type="hidden" @value={{this.learned}} />
 			<span class="default text">Learned</span>

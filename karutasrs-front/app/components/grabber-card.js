@@ -7,7 +7,8 @@ export default Component.extend({
 	],
 	classNameBindings : [
 		"size",
-		"text_length"
+		"text_length",
+		"inverted"
 	],
 	attributeBindings : [
 		"key:key",
@@ -20,6 +21,7 @@ export default Component.extend({
 	answer      : "",
 	type        : "",
 	validate    : false,
+	inverted    : false,
 	text_length : computed("text", function() {
 		return (this.text.length === 16) ? "sixteen-length" : "fifteen-length";
 	}),
