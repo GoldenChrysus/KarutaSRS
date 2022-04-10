@@ -68,7 +68,7 @@
     "broccoli-funnel": "^3.0.0",
     "broccoli-merge-trees": "^4.0.0",
     "fomantic-ui": "^2.8.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "semantic-ui": "^2.4.2",
     "yamljs": "^0.3.0"
   }
